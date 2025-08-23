@@ -1,0 +1,21 @@
+{
+  "kind": "random",
+  "n_iter": 120,
+  "space_sizes": {
+    "criterion": 1,
+    "class_weight": 1,
+    "max_depth": 5,
+    "min_samples_leaf": 4,
+    "min_samples_split": 4,
+    "max_features": 1
+  },
+  "best_score": 0.779008998819842,
+  "best_params": {
+    "min_samples_split": 2,
+    "min_samples_leaf": 200,
+    "max_features": null,
+    "max_depth": 14,
+    "criterion": "entropy",
+    "class_weight": null
+  }
+}

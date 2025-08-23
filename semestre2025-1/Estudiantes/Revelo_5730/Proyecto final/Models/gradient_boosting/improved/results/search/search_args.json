@@ -1,0 +1,9 @@
+{
+  "algo": "hgb",
+  "search": "random",
+  "n_iter": 60,
+  "cv": 3,
+  "cv_frac": 0.2,
+  "cv_jobs": 2,
+  "search_time_sec": 439.14
+}

@@ -1,0 +1,39 @@
+{
+  "stage": "BEST",
+  "algo": "hgb",
+  "feature_set": "all",
+  "sample_frac": 0.5,
+  "test_size": 0.2,
+  "fit_time_seconds": 60.523,
+  "search": {
+    "kind": "random",
+    "best_cv_roc_auc": 0.8248452250198343,
+    "best_params": {
+      "min_samples_leaf": 100,
+      "max_leaf_nodes": 511,
+      "max_depth": 11,
+      "max_bins": 128,
+      "learning_rate": 0.0802,
+      "l2_regularization": 0.001
+    }
+  },
+  "metrics_thr0.5": {
+    "accuracy": 0.7470754545454545,
+    "balanced_accuracy": 0.745713542287946,
+    "precision": 0.757688059552544,
+    "recall": 0.7684727711901624,
+    "f1": 0.7630423099493153,
+    "roc_auc": 0.8296739623226159,
+    "average_precision": 0.8442767440926988
+  },
+  "metrics_thr_opt": {
+    "accuracy": 0.7459454545454546,
+    "balanced_accuracy": 0.746565283424412,
+    "precision": 0.7734609866699349,
+    "recall": 0.7362071805006588,
+    "f1": 0.7543744308933086,
+    "roc_auc": 0.8296739623226159,
+    "average_precision": 0.8442767440926988
+  },
+  "threshold_opt": 0.5310937991446799
+}
