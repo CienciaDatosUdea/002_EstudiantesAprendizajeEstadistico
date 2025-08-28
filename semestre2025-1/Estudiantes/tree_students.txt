@@ -1,0 +1,331 @@
+.
+├── Alzate_52
+│   ├── Laboratorio_01_pandas_CAH_v1.ipynb
+│   ├── Laboratorio_03_CAH.ipynb
+│   ├── Laboratorio_04_CAH.ipynb
+│   ├── Laboratorio_05_ABC_Modelo_CAH.ipynb
+│   ├── Tarea_Sesion_01b_CAH_pandas_V2.ipynb
+│   └── readme.md
+├── Avendaño_20
+│   ├── readme.md
+│   ├── tarea1_AE.ipynb
+│   ├── tarea2_AE.ipynb
+│   ├── tarea3_AE.ipynb
+│   ├── tarea4_AE.ipynb
+│   ├── tarea5_AE.ipynb
+│   └── tarea6_AE.ipynb
+├── Bedoya_10
+│   ├── Tarea_00_penguins.ipynb
+│   └── readme.md
+├── Chaverra_69
+│   ├── Laboratorio_03.ipynb
+│   ├── Laboratorio_04.ipynb
+│   ├── Laboratorio_05.ipynb
+│   ├── Laboratorio_07.ipynb
+│   ├── Laboratorio_08.ipynb
+│   ├── Proyecto_Final (Sismología).ipynb
+│   ├── Sesion_08.ipynb
+│   ├── Sesion_11_SVM.ipynb
+│   ├── Tarea_00_penguins.ipynb
+│   └── readme.md
+├── Felix_1080
+│   ├── Laboratorio_01.ipynb
+│   ├── Laboratorio_03_Felix_1080.ipynb
+│   ├── Laboratorio_04_Felix_1080.ipynb
+│   ├── Laboratorio_05_Felix_1080.ipynb
+│   ├── Laboratorio_08_Felix_1080.ipynb
+│   ├── Proyecto_Final
+│   │   ├── README.md
+│   │   ├── codigo_solucion.ipynb
+│   │   ├── datos.csv
+│   │   └── requirements.txt
+│   ├── Tarea_00_penguins.ipynb
+│   ├── Tarea_11_1_Felix_1080.ipynb
+│   ├── Tareas_sesion_08_Felix_1080.ipynb
+│   └── readme.md
+├── Gallego_78
+│   ├── Readme.md
+│   ├── laboratorio_11_gallego_78.ipynb
+│   ├── laboratorio_1_gallego_78.ipynb
+│   ├── laboratorio_3_gallego_78.ipynb
+│   ├── laboratorio_4_gallego_78.ipynb
+│   ├── laboratorio_5_gallego_78.ipynb
+│   ├── laboratorio_7_gallego_78.ipynb
+│   ├── laboratorio_8_gallego_78.ipynb
+│   └── tarea_00.ipynb
+├── Gaviria_13
+│   ├── Laboratorio_01_pandas_v1.ipynb
+│   ├── Laboratorio_03_reg_lin_grad_descV1.ipynb
+│   ├── Laboratorio_04_reg_multivariada.ipynb
+│   ├── Laboratorio_05_ABC_Modelo_v1.ipynb
+│   ├── Laboratorio_07_nn_zeroV1.ipynb
+│   ├── Laboratorio_08_nn_keras__V1.ipynb
+│   ├── Proyecto Final
+│   │   ├── Informe_PINN.pdf
+│   │   └── LinkRepositorio.txt
+│   ├── Sesion_11_SVM_v2.ipynb
+│   ├── Tarea_00_penguins.ipynb
+│   ├── readme.md
+│   ├── test_catvnoncat.h5
+│   └── train_catvnoncat.h5
+├── Gomez_12
+│   ├── Algoritmo_PC_(2).ipynb
+│   ├── LAB_11_SVM.ipynb
+│   ├── Laborario_04_reg_multivaraida.ipynb
+│   ├── Laboratorio_03_reg_lin_grad_descV1.ipynb
+│   ├── Laboratorio_05_ABC_Modelo_v1 (1).ipynb
+│   ├── Laboratorio_08_nn_keras__V1.ipynb
+│   ├── Laboratorio_1 (1).ipynb
+│   ├── PFAE.pptx
+│   ├── PROYECTO AE.pptx
+│   ├── PROYECTO_FINAL_APRENDIZAJE_ESTADISTICO.pdf
+│   ├── Readme.md
+│   ├── Redes neuronales, laboratorio 7.ipynb
+│   ├── Tarea_00_penguins.ipynb
+│   ├── sección 8, tarea 1,2.ipynb
+│   └── tarea_00_penguins.py
+├── Gomez_72
+│   ├── Laboratorio_01_pandas_v1_Miguel_Angel_Gomez.ipynb
+│   ├── Tarea_00_penguins_Miguel_Angel_Gomez_Pineda.ipynb
+│   └── readme.md
+├── Lopez_51
+│   ├── AndresLopezE_Laborario_04_reg_multivaraida.ipynb
+│   ├── AndresLopezE_Laboratorio_08_nn_keras__V1.ipynb
+│   ├── AndresLopez_Laboratorio_03_reg_lin_grad_desc.ipynb
+│   ├── AndresLopez_Laboratorio_05_ABC_Modelo_v1 (1).ipynb
+│   ├── Informe_AE.pdf
+│   ├── Laboratorio_01_pandas_AndresLopez.ipynb
+│   ├── Laboratorio_11_SVM_AndresLopezEcheverri.ipynb
+│   ├── pinguinos_pandas_Lopez51.ipynb
+│   └── readme.md
+├── Ortiz_51
+│   ├── Laboratorio1_Ortiz_51.ipynb
+│   ├── Laboratorio_03_reg_line_Ortiz_51.ipynb
+│   ├── Laboratorio_04_reg_multivariada_Ortiz_51.ipynb
+│   ├── Laboratorio_05_ABC_Modelo_v1_Ortiz_51.ipynb
+│   ├── Laboratorio_07_nn_zeroV1_Ortiz_51.ipynb
+│   ├── Laboratorio_08_nn_keras__V1_Ortiz_51.ipynb
+│   ├── Laboratorio_11_SVM_Ortiz_51.ipynb
+│   ├── Pandas_Ortiz_51.ipynb
+│   ├── Proyecto_final_aprendizaje_estadistico.ipynb
+│   └── readme.md
+├── Revelo_5730
+│   ├── Laborario_04_reg_multivaraida.ipynb
+│   ├── Laboratorio_01_pandas_v1.ipynb
+│   ├── Laboratorio_03_reg_lin_grad_descV1.ipynb
+│   ├── Laboratorio_05_ABC_Modelo_v1.ipynb
+│   ├── Proyecto final
+│   │   ├── Models
+│   │   │   ├── Logistic_Regression
+│   │   │   │   ├── improved
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── figures
+│   │   │   │   │   │   ├── calibration_curve.png
+│   │   │   │   │   │   ├── confusion_matrix_thr0.5.png
+│   │   │   │   │   │   ├── confusion_matrix_thrOPT.png
+│   │   │   │   │   │   ├── feature_importances_top20.png
+│   │   │   │   │   │   ├── pr_curve.png
+│   │   │   │   │   │   ├── proba_hist.png
+│   │   │   │   │   │   └── roc_curve.png
+│   │   │   │   │   ├── improved_LR.py
+│   │   │   │   │   └── results
+│   │   │   │   │       ├── best_params.json
+│   │   │   │   │       ├── classification_report_thr0.5.txt
+│   │   │   │   │       ├── confusion_matrix_thr0.5.csv
+│   │   │   │   │       ├── confusion_matrix_thrOPT.csv
+│   │   │   │   │       ├── cv_results_stage1.csv
+│   │   │   │   │       ├── cv_results_stage2.csv
+│   │   │   │   │       ├── feature_importances_full.csv
+│   │   │   │   │       ├── pr_points.csv
+│   │   │   │   │       ├── roc_points.csv
+│   │   │   │   │       ├── search_summary_stage1.json
+│   │   │   │   │       ├── search_summary_stage2.json
+│   │   │   │   │       └── summary.json
+│   │   │   │   └── raw
+│   │   │   │       ├── README.md
+│   │   │   │       ├── figures
+│   │   │   │       │   ├── calibration_curve.png
+│   │   │   │       │   ├── confusion_matrix_thr0.5.png
+│   │   │   │       │   ├── feature_importances_top20.png
+│   │   │   │       │   ├── pr_curve.png
+│   │   │   │       │   ├── proba_hist.png
+│   │   │   │       │   └── roc_curve.png
+│   │   │   │       ├── raw_LR.py
+│   │   │   │       └── results
+│   │   │   │           ├── classification_report_thr0.5.txt
+│   │   │   │           ├── confusion_matrix_thr0.5.csv
+│   │   │   │           ├── feature_importances_full.csv
+│   │   │   │           ├── pr_points.csv
+│   │   │   │           ├── roc_points.csv
+│   │   │   │           └── summary.json
+│   │   │   ├── decision_tree
+│   │   │   │   ├── improved
+│   │   │   │   │   ├── README.md
+│   │   │   │   │   ├── figures
+│   │   │   │   │   │   ├── calibration_curve.png
+│   │   │   │   │   │   ├── confusion_matrix_thr0.5.png
+│   │   │   │   │   │   ├── confusion_matrix_thrOPT.png
+│   │   │   │   │   │   ├── feature_importances_top20.png
+│   │   │   │   │   │   ├── pr_curve.png
+│   │   │   │   │   │   ├── proba_hist.png
+│   │   │   │   │   │   └── roc_curve.png
+│   │   │   │   │   ├── improved_DT.py
+│   │   │   │   │   └── results
+│   │   │   │   │       ├── best_params.json
+│   │   │   │   │       ├── classification_report_thr0.5.txt
+│   │   │   │   │       ├── confusion_matrix_thr0.5.csv
+│   │   │   │   │       ├── confusion_matrix_thrOPT.csv
+│   │   │   │   │       ├── cv_results_stage1.csv
+│   │   │   │   │       ├── cv_results_stage2.csv
+│   │   │   │   │       ├── feature_importances_full.csv
+│   │   │   │   │       ├── pr_points.csv
+│   │   │   │   │       ├── roc_points.csv
+│   │   │   │   │       ├── search_summary_stage1.json
+│   │   │   │   │       ├── search_summary_stage2.json
+│   │   │   │   │       └── summary.json
+│   │   │   │   └── raw
+│   │   │   │       ├── README.md
+│   │   │   │       ├── figures
+│   │   │   │       │   ├── calibration_curve.png
+│   │   │   │       │   ├── confusion_matrix_thr0.5.png
+│   │   │   │       │   ├── feature_importances_top20.png
+│   │   │   │       │   ├── pr_curve.png
+│   │   │   │       │   ├── proba_hist.png
+│   │   │   │       │   └── roc_curve.png
+│   │   │   │       ├── raw_DT.py
+│   │   │   │       └── results
+│   │   │   │           ├── classification_report_thr0.5.txt
+│   │   │   │           ├── confusion_matrix_thr0.5.csv
+│   │   │   │           ├── feature_importances_full.csv
+│   │   │   │           ├── pr_points.csv
+│   │   │   │           ├── roc_points.csv
+│   │   │   │           └── summary.json
+│   │   │   └── gradient_boosting
+│   │   │       ├── improved
+│   │   │       │   ├── README.md
+│   │   │       │   ├── figures
+│   │   │       │   │   ├── best
+│   │   │       │   │   │   ├── calibration_curve.png
+│   │   │       │   │   │   ├── confusion_matrix_thr0.5.png
+│   │   │       │   │   │   ├── confusion_matrix_thrOPT.png
+│   │   │       │   │   │   ├── feature_importances_top20.png
+│   │   │       │   │   │   ├── pr_curve.png
+│   │   │       │   │   │   ├── proba_hist.png
+│   │   │       │   │   │   └── roc_curve.png
+│   │   │       │   │   └── final_all_data
+│   │   │       │   │       ├── calibration_curve.png
+│   │   │       │   │       ├── confusion_matrix_thr0.5.png
+│   │   │       │   │       ├── confusion_matrix_thrOPT.png
+│   │   │       │   │       ├── feature_importances_top20.png
+│   │   │       │   │       ├── pr_curve.png
+│   │   │       │   │       ├── proba_hist.png
+│   │   │       │   │       └── roc_curve.png
+│   │   │       │   ├── improved_GBC.py
+│   │   │       │   └── results
+│   │   │       │       ├── best
+│   │   │       │       │   ├── classification_report_thr0.5.txt
+│   │   │       │       │   ├── confusion_matrix_thr0.5.csv
+│   │   │       │       │   ├── confusion_matrix_thrOPT.csv
+│   │   │       │       │   ├── feature_importances_full.csv
+│   │   │       │       │   ├── model.joblib
+│   │   │       │       │   ├── pr_points.csv
+│   │   │       │       │   ├── roc_points.csv
+│   │   │       │       │   └── summary.json
+│   │   │       │       ├── final_all_data
+│   │   │       │       │   ├── classification_report_thr0.5.txt
+│   │   │       │       │   ├── confusion_matrix_thr0.5.csv
+│   │   │       │       │   ├── confusion_matrix_thrOPT.csv
+│   │   │       │       │   ├── feature_importances_full.csv
+│   │   │       │       │   ├── model.joblib
+│   │   │       │       │   ├── pr_points.csv
+│   │   │       │       │   ├── roc_points.csv
+│   │   │       │       │   └── summary.json
+│   │   │       │       └── search
+│   │   │       │           ├── best_params.json
+│   │   │       │           ├── cv_results.csv
+│   │   │       │           └── search_args.json
+│   │   │       └── raw
+│   │   │           ├── README.md
+│   │   │           ├── figures
+│   │   │           │   ├── calibration_curve.png
+│   │   │           │   ├── confusion_matrix_thr0.5.png
+│   │   │           │   ├── feature_importances_top20.png
+│   │   │           │   ├── pr_curve.png
+│   │   │           │   ├── proba_hist.png
+│   │   │           │   └── roc_curve.png
+│   │   │           ├── raw_GBC.py
+│   │   │           └── results
+│   │   │               ├── classification_report_thr0.5.txt
+│   │   │               ├── confusion_matrix_thr0.5.csv
+│   │   │               ├── feature_importances_full.csv
+│   │   │               ├── pr_points.csv
+│   │   │               ├── roc_points.csv
+│   │   │               └── summary.json
+│   │   ├── README.md
+│   │   ├── README2.md
+│   │   └── comparison
+│   │       ├── figures
+│   │       │   ├── bar_f1_thr0.5.png
+│   │       │   ├── bar_f1_thrOPT.png
+│   │       │   ├── bar_pr_auc.png
+│   │       │   ├── bar_recall_thr0.5.png
+│   │       │   ├── bar_recall_thrOPT.png
+│   │       │   ├── bar_roc_auc.png
+│   │       │   ├── delta_roc_auc_by_family.png
+│   │       │   ├── feature_importances_top.png
+│   │       │   ├── pr_overlay_best_of_each.png
+│   │       │   ├── pr_overlay_improved.png
+│   │       │   ├── pr_overlay_raw.png
+│   │       │   ├── raw_vs_improved
+│   │       │   │   ├── bar_metrics_raw_vs_improved_DT.png
+│   │       │   │   ├── bar_metrics_raw_vs_improved_GBC.png
+│   │       │   │   ├── bar_metrics_raw_vs_improved_LR.png
+│   │       │   │   ├── pr_raw_vs_improved_DT.png
+│   │       │   │   ├── pr_raw_vs_improved_GBC.png
+│   │       │   │   ├── pr_raw_vs_improved_LR.png
+│   │       │   │   ├── roc_raw_vs_improved_DT.png
+│   │       │   │   ├── roc_raw_vs_improved_GBC.png
+│   │       │   │   └── roc_raw_vs_improved_LR.png
+│   │       │   ├── roc_overlay_best_of_each.png
+│   │       │   ├── roc_overlay_improved.png
+│   │       │   └── roc_overlay_raw.png
+│   │       ├── models_comparison.csv
+│   │       ├── models_comparison.md
+│   │       ├── raw_vs_improved_deltas.csv
+│   │       └── report.md
+│   ├── README.md
+│   ├── Sesion_08_clasificacion.ipynb
+│   └── Tarea_00_penguins.ipynb
+├── Ruiz_266
+│   ├── Tarea_00_penguins_Santiago_Ruiz.ipynb
+│   └── prueba_git_22_04
+├── Salinas_41
+│   ├── Escudo-UdeA.svg.png
+│   └── readme.md
+├── Torres_52
+│   ├── Tarea_01_penguins.ipynb
+│   └── readme.md
+├── Vargas_29
+│   ├── DigitsImages
+│   │   ├── 0.jpg
+│   │   ├── 1.jpg
+│   │   ├── 2.jpg
+│   │   ├── 3.jpg
+│   │   ├── 4.jpg
+│   │   ├── 5.jpg
+│   │   ├── 6.jpg
+│   │   ├── 7.jpg
+│   │   ├── 8.jpg
+│   │   ├── 9.jpg
+│   │   └── Readme
+│   ├── Laboratory3_629.ipynb
+│   ├── Laboratory4_629.ipynb
+│   ├── Laboratory5_629.ipynb
+│   ├── Laboratory7_629.ipynb
+│   ├── Laboratory8_629.ipynb
+│   ├── Tarea1_DanielVargas_29.ipynb
+│   └── readme.md
+├── entregas18Jun2025.txt
+└── tree_students.txt
+
+51 directories, 278 files
