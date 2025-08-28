@@ -1,0 +1,45 @@
+{
+  "model": "LogisticRegression",
+  "data": "C:\\Projects\\U\\Pro_fin3\\data\\higgs_train.parquet",
+  "target": "target",
+  "n_train": 8800000,
+  "n_test": 2200000,
+  "used_for_metrics": 2000000,
+  "params": {
+    "C": 1.0,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": null,
+    "max_iter": 100,
+    "multi_class": "deprecated",
+    "n_jobs": null,
+    "penalty": "l2",
+    "random_state": null,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "metrics_thr0.5": {
+    "accuracy": 0.64135,
+    "balanced_accuracy": 0.6349281545672922,
+    "precision": 0.639282645786239,
+    "recall": 0.741953560508791,
+    "f1": 0.6868022037807292,
+    "roc_auc": 0.6838946030923445,
+    "average_precision": 0.6835247844352401
+  },
+  "metrics_thr_opt": null,
+  "threshold_opt": null,
+  "coef_stats": {
+    "n_features": 28,
+    "n_iter_": 55
+  },
+  "fit_time_seconds": 20.06,
+  "total_time_seconds": 36.811,
+  "test_size": 0.2,
+  "sample_frac": 1.0,
+  "random_state_split": 42
+}

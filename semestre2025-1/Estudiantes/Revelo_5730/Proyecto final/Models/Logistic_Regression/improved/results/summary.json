@@ -1,0 +1,54 @@
+{
+  "model": "LogisticRegression (pipeline: StandardScaler -> LR)",
+  "data": "C:\\Projects\\U\\Pro_fin3\\data\\higgs_train.parquet",
+  "target": "target",
+  "splits": {
+    "test_size": 0.2,
+    "cv_frac": 0.1,
+    "final_frac": 1.0
+  },
+  "cv": {
+    "folds": 3,
+    "n_candidates_stage1": 24,
+    "factor_stage1": 4
+  },
+  "stage1_caps": {
+    "min_resources": 10000,
+    "max_resources": 2500000
+  },
+  "stage2": {
+    "kind": "random",
+    "budget": 120
+  },
+  "best_params": {
+    "lr__penalty": "l1",
+    "lr__fit_intercept": true,
+    "lr__class_weight": "balanced",
+    "lr__C": 3.0
+  },
+  "coef_stats": {
+    "n_features": 28,
+    "n_iter_": 8
+  },
+  "metrics_thr0.5": {
+    "accuracy": 0.637337,
+    "balanced_accuracy": 0.6356278492169273,
+    "precision": 0.6559182665654161,
+    "recall": 0.664112271380364,
+    "f1": 0.6599898370934837,
+    "roc_auc": 0.6839315834002664,
+    "average_precision": 0.6838555696026682
+  },
+  "metrics_thr_opt": {
+    "threshold": 0.48571234941482544,
+    "accuracy": 0.64013,
+    "balanced_accuracy": 0.6361060952568438,
+    "precision": 0.6478816678937153,
+    "recall": 0.7031678212231475,
+    "f1": 0.6743935651402876
+  },
+  "threshold_opt": 0.48571234941482544,
+  "fit_time_seconds": 58.11,
+  "total_time_seconds": 109.296,
+  "mode": "auto"
+}
