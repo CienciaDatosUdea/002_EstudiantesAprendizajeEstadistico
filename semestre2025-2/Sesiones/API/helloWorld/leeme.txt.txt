@@ -1,0 +1,10 @@
+# Creer el virtual enviorment con la dependencia de python necesarias para la api.
+
+1. conda create -n myenv python=3.9
+#In mac chip M2
+  conda create -n hello_world_api python=3.9 -c conda-forge
+2. conda activate hello_world_api 
+3. pip install -r requerimientos.txt
+
+
+
