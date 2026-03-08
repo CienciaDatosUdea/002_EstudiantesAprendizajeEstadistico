@@ -1,0 +1,53 @@
+GUÍA PARA CONSTRUIR EL RUNNER (ESTUDIANTES)
+
+Objetivo
+Crear un runner en Python que ejecute operaciones del observatorio y escriba artifacts reproducibles.
+
+Estructura mínima del runner
+1) Cargar dataset
+- Preferir seaborn.load_dataset('penguins') si está disponible.
+- Fallback: CSV remoto de seaborn.
+
+2) Operaciones obligatorias (catálogo)
+- profile_dataset
+- infer_schema
+- missing_report
+- duplicates_report
+- numeric_summary
+- categorical_summary
+- crosstab(a,b)
+- correlation_matrix(method)
+- plot_count, plot_hist, plot_box, plot_scatter, plot_heatmap_corr
+
+3) Artifacts que debe escribir
+- artifacts/00_raw_profile.json
+- artifacts/04_descriptive_stats.json
+- artifacts/05_visual_registry.json
+
+Opcional (si aplica):
+- artifacts/02_imputation_log.json
+- artifacts/06_hypotheses_log.json
+- artifacts/07_conclusions.json
+- artifacts/08_tests.json
+- artifacts/09_questions.json
+- artifacts/report.md
+
+Convenciones recomendadas
+- Guardar plots en artifacts/plots/ con nombres claros.
+- Usar JSON con UTF-8 y sin NaN (usar null).
+- No inventar valores: todo debe venir de cálculos reales.
+
+Esqueleto sugerido
+- funciones para cada operación.
+- un main() con argumento --phase (OBSERVE/DESCRIBE/HYPOTHESIZE_AND_CONCLUDE).
+- escritura de artifacts por fase.
+
+Checklist
+- [ ] El runner crea la carpeta artifacts/ y artifacts/plots/.
+- [ ] Los JSON son válidos (sin NaN).
+- [ ] Los gráficos se guardan y se registran en 05_visual_registry.json.
+- [ ] Se puede reproducir ejecutando python runner.py --phase OBSERVE y DESCRIBE.
+
+Sugerencia de pruebas
+- Ejecutar el runner y validar que los artifacts no estén vacíos.
+- Abrir el HTML final (si existe) y verificar que las rutas de gráficos son correctas.
