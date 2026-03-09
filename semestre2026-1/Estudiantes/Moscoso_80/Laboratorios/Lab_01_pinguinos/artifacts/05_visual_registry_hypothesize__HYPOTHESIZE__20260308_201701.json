@@ -1,0 +1,16 @@
+{
+  "plots": [
+    {
+      "plot_id": "scatter_bill_depth_mm_vs_bill_length_mm_hue_species",
+      "phase": "HYPOTHESIZE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_depth_mm_vs_bill_length_mm_hue_species__HYPOTHESIZE__20260308_201701.png",
+      "timestamp": "20260308_201701"
+    },
+    {
+      "plot_id": "box_body_mass_g_by_sex",
+      "phase": "HYPOTHESIZE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_body_mass_g_by_sex__HYPOTHESIZE__20260308_201701.png",
+      "timestamp": "20260308_201701"
+    }
+  ]
+}
