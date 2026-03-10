@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-06T00:34:02.660312",
+    "source": "data/penguins.csv"
+  },
+  "payload": {
+    "plots": [
+      "05_correlation_heatmap.png",
+      "05_boxplot_exploratory.png"
+    ]
+  }
+}

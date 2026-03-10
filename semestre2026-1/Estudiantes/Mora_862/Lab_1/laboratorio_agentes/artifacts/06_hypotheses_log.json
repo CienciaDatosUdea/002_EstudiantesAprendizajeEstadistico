@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-06T00:37:22.408613",
+    "source": "data/penguins.csv"
+  },
+  "payload": {
+    "hypotheses": [
+      {
+        "id": "H1",
+        "statement": "El valor de bill_length_mm var\u00eda seg\u00fan la categor\u00eda species."
+      },
+      {
+        "id": "H2",
+        "statement": "Existe una asociaci\u00f3n lineal entre bill_length_mm y bill_depth_mm."
+      },
+      {
+        "id": "H3",
+        "statement": "La variable species est\u00e1 asociada con la variable island."
+      }
+    ]
+  }
+}
