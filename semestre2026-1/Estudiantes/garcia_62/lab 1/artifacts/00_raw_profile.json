@@ -1,0 +1,144 @@
+{
+  "rows": 344,
+  "columns": 7,
+  "column_names": [
+    "species",
+    "island",
+    "bill_length_mm",
+    "bill_depth_mm",
+    "flipper_length_mm",
+    "body_mass_g",
+    "sex"
+  ],
+  "dtypes": {
+    "species": "str",
+    "island": "str",
+    "bill_length_mm": "float64",
+    "bill_depth_mm": "float64",
+    "flipper_length_mm": "float64",
+    "body_mass_g": "float64",
+    "sex": "str"
+  },
+  "memory_usage_mb": 0.0675,
+  "schema": {
+    "species": {
+      "dtype": "str",
+      "nunique": 3,
+      "inferred_type": "other",
+      "sample_values": [
+        "Adelie",
+        "Adelie",
+        "Adelie",
+        "Adelie",
+        "Adelie"
+      ]
+    },
+    "island": {
+      "dtype": "str",
+      "nunique": 3,
+      "inferred_type": "other",
+      "sample_values": [
+        "Torgersen",
+        "Torgersen",
+        "Torgersen",
+        "Torgersen",
+        "Torgersen"
+      ]
+    },
+    "bill_length_mm": {
+      "dtype": "float64",
+      "nunique": 164,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "39.1",
+        "39.5",
+        "40.3",
+        "36.7",
+        "39.3"
+      ]
+    },
+    "bill_depth_mm": {
+      "dtype": "float64",
+      "nunique": 80,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "18.7",
+        "17.4",
+        "18.0",
+        "19.3",
+        "20.6"
+      ]
+    },
+    "flipper_length_mm": {
+      "dtype": "float64",
+      "nunique": 55,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "181.0",
+        "186.0",
+        "195.0",
+        "193.0",
+        "190.0"
+      ]
+    },
+    "body_mass_g": {
+      "dtype": "float64",
+      "nunique": 94,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "3750.0",
+        "3800.0",
+        "3250.0",
+        "3450.0",
+        "3650.0"
+      ]
+    },
+    "sex": {
+      "dtype": "str",
+      "nunique": 2,
+      "inferred_type": "other",
+      "sample_values": [
+        "Male",
+        "Female",
+        "Female",
+        "Female",
+        "Male"
+      ]
+    }
+  },
+  "missing_report": {
+    "species": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "island": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "bill_length_mm": {
+      "missing_count": 2,
+      "missing_pct": 0.58
+    },
+    "bill_depth_mm": {
+      "missing_count": 2,
+      "missing_pct": 0.58
+    },
+    "flipper_length_mm": {
+      "missing_count": 2,
+      "missing_pct": 0.58
+    },
+    "body_mass_g": {
+      "missing_count": 2,
+      "missing_pct": 0.58
+    },
+    "sex": {
+      "missing_count": 11,
+      "missing_pct": 3.2
+    }
+  },
+  "duplicates_report": {
+    "total_rows": 344,
+    "duplicate_rows": 0,
+    "duplicate_pct": 0.0
+  }
+}

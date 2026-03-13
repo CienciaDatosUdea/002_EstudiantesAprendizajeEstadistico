@@ -1,0 +1,117 @@
+{
+  "descriptive_findings": [
+    {
+      "statement": "The dataset has 344 rows and 7 columns.",
+      "evidence_refs": [
+        "00_raw_profile.json:rows",
+        "00_raw_profile.json:columns"
+      ]
+    },
+    {
+      "statement": "There are 3 species, 3 islands, and 2 reported sex categories, with 11 missing values in sex.",
+      "evidence_refs": [
+        "04_descriptive_stats.json:categorical_summary.species.nunique",
+        "04_descriptive_stats.json:categorical_summary.island.nunique",
+        "04_descriptive_stats.json:categorical_summary.sex.nunique",
+        "04_descriptive_stats.json:categorical_summary.sex.top_values.nan"
+      ]
+    },
+    {
+      "statement": "Missingness is present in all measured numeric columns at 2 rows each.",
+      "evidence_refs": [
+        "00_raw_profile.json:missing_report.bill_length_mm.missing_count",
+        "00_raw_profile.json:missing_report.bill_depth_mm.missing_count",
+        "00_raw_profile.json:missing_report.flipper_length_mm.missing_count",
+        "00_raw_profile.json:missing_report.body_mass_g.missing_count"
+      ]
+    },
+    {
+      "statement": "No duplicate rows were reported.",
+      "evidence_refs": [
+        "00_raw_profile.json:duplicates_report.duplicate_rows"
+      ]
+    },
+    {
+      "statement": "The strongest numeric association in the Pearson matrix is between flipper_length_mm and body_mass_g (0.8712).",
+      "evidence_refs": [
+        "04_descriptive_stats.json:correlation_matrices.pearson.flipper_length_mm.body_mass_g"
+      ]
+    }
+  ],
+  "visual_patterns": [
+    {
+      "statement": "Grouped histograms and boxplots show species-level separation in body_mass_g.",
+      "evidence_refs": [
+        "05_visual_registry.json:hist_07",
+        "05_visual_registry.json:box_08"
+      ]
+    },
+    {
+      "statement": "Grouped histograms and boxplots show species-level separation in flipper_length_mm.",
+      "evidence_refs": [
+        "05_visual_registry.json:hist_06",
+        "05_visual_registry.json:box_09"
+      ]
+    },
+    {
+      "statement": "The heatmap pattern aligns with positive association between flipper_length_mm and body_mass_g and negative association between bill_depth_mm and flipper_length_mm.",
+      "evidence_refs": [
+        "05_visual_registry.json:heatmap_10",
+        "04_descriptive_stats.json:correlation_matrices.pearson.flipper_length_mm.body_mass_g",
+        "04_descriptive_stats.json:correlation_matrices.pearson.bill_depth_mm.flipper_length_mm"
+      ]
+    },
+    {
+      "statement": "Count plots and the species-by-island crosstab indicate uneven species composition across islands.",
+      "evidence_refs": [
+        "05_visual_registry.json:count_01",
+        "05_visual_registry.json:count_02",
+        "04_descriptive_stats.json:crosstabs.species_x_island"
+      ]
+    }
+  ],
+  "next_hypotheses": [
+    {
+      "statement": "Test whether mean body_mass_g differs across species.",
+      "suggested_tests": [
+        "Levene test",
+        "One-way ANOVA",
+        "Kruskal-Wallis"
+      ],
+      "evidence_refs": [
+        "05_visual_registry.json:box_08",
+        "05_visual_registry.json:hist_07"
+      ]
+    },
+    {
+      "statement": "Test whether mean flipper_length_mm differs across species.",
+      "suggested_tests": [
+        "Levene test",
+        "One-way ANOVA",
+        "Kruskal-Wallis"
+      ],
+      "evidence_refs": [
+        "05_visual_registry.json:box_09",
+        "05_visual_registry.json:hist_06"
+      ]
+    },
+    {
+      "statement": "Test the association between species and island using a contingency-table approach.",
+      "suggested_tests": [
+        "Chi-squared test of independence"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:crosstabs.species_x_island"
+      ]
+    },
+    {
+      "statement": "Confirm monotonic association between flipper_length_mm and body_mass_g with rank-based testing.",
+      "suggested_tests": [
+        "Spearman correlation"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:correlation_matrices.spearman.flipper_length_mm.body_mass_g"
+      ]
+    }
+  ]
+}

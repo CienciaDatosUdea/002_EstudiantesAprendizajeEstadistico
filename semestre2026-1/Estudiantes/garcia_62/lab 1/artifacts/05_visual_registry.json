@@ -1,0 +1,90 @@
+{
+  "plots": [
+    {
+      "id": "count_01",
+      "file": "artifacts/plots/count_01.png",
+      "op": "plot_count",
+      "params": {
+        "x": "species"
+      }
+    },
+    {
+      "id": "count_02",
+      "file": "artifacts/plots/count_02.png",
+      "op": "plot_count",
+      "params": {
+        "x": "island"
+      }
+    },
+    {
+      "id": "count_03",
+      "file": "artifacts/plots/count_03.png",
+      "op": "plot_count",
+      "params": {
+        "x": "sex"
+      }
+    },
+    {
+      "id": "hist_04",
+      "file": "artifacts/plots/hist_04.png",
+      "op": "plot_hist",
+      "params": {
+        "x": "bill_length_mm",
+        "groupby": "species"
+      }
+    },
+    {
+      "id": "hist_05",
+      "file": "artifacts/plots/hist_05.png",
+      "op": "plot_hist",
+      "params": {
+        "x": "bill_depth_mm",
+        "groupby": "species"
+      }
+    },
+    {
+      "id": "hist_06",
+      "file": "artifacts/plots/hist_06.png",
+      "op": "plot_hist",
+      "params": {
+        "x": "flipper_length_mm",
+        "groupby": "species"
+      }
+    },
+    {
+      "id": "hist_07",
+      "file": "artifacts/plots/hist_07.png",
+      "op": "plot_hist",
+      "params": {
+        "x": "body_mass_g",
+        "groupby": "species"
+      }
+    },
+    {
+      "id": "box_08",
+      "file": "artifacts/plots/box_08.png",
+      "op": "plot_box",
+      "params": {
+        "x": "species",
+        "y": "body_mass_g"
+      }
+    },
+    {
+      "id": "box_09",
+      "file": "artifacts/plots/box_09.png",
+      "op": "plot_box",
+      "params": {
+        "x": "species",
+        "y": "flipper_length_mm"
+      }
+    },
+    {
+      "id": "heatmap_10",
+      "file": "artifacts/plots/heatmap_10.png",
+      "op": "plot_heatmap_corr",
+      "params": {
+        "method": "pearson"
+      }
+    }
+  ]
+}
