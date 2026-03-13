@@ -1,0 +1,138 @@
+{
+  "descriptive_findings": [
+    {
+      "statement": "The dataset contains 5880 rows and 36 columns.",
+      "evidence_refs": [
+        "00_raw_profile.json:rows",
+        "00_raw_profile.json:columns"
+      ]
+    },
+    {
+      "statement": "Anomaly label is binary and the numeric summary reports mean 0.3197.",
+      "evidence_refs": [
+        "00_raw_profile.json:schema.anomaly_label.nunique",
+        "04_descriptive_stats.json:numeric_summary.anomaly_label.mean"
+      ]
+    },
+    {
+      "statement": "Patient sex counts are close across categories (F: 2966, M: 2914).",
+      "evidence_refs": [
+        "04_descriptive_stats.json:categorical_summary.patient_sex.top_values.F",
+        "04_descriptive_stats.json:categorical_summary.patient_sex.top_values.M"
+      ]
+    },
+    {
+      "statement": "No duplicate rows were reported.",
+      "evidence_refs": [
+        "00_raw_profile.json:duplicates_report.duplicate_rows"
+      ]
+    },
+    {
+      "statement": "The missing report section records zero missing_count values across listed columns.",
+      "evidence_refs": [
+        "00_raw_profile.json:missing_report"
+      ]
+    }
+  ],
+  "visual_patterns": [
+    {
+      "statement": "Cytodiffusion anomaly score distributions differ strongly between anomaly_label groups in both histogram and boxplot views.",
+      "evidence_refs": [
+        "05_visual_registry.json:hist_04",
+        "05_visual_registry.json:box_06"
+      ]
+    },
+    {
+      "statement": "Labeller confidence score shows group differences by anomaly_label in the boxplot.",
+      "evidence_refs": [
+        "05_visual_registry.json:box_07"
+      ]
+    },
+    {
+      "statement": "The heatmap aligns with strong positive association between anomaly_label and cytodiffusion_anomaly_score and negative association with cytodiffusion_classification_confidence.",
+      "evidence_refs": [
+        "05_visual_registry.json:heatmap_08",
+        "04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.cytodiffusion_anomaly_score",
+        "04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.cytodiffusion_classification_confidence"
+      ]
+    },
+    {
+      "statement": "Count and crosstab outputs indicate uneven category composition for disease_category by anomaly_label.",
+      "evidence_refs": [
+        "05_visual_registry.json:count_02",
+        "04_descriptive_stats.json:crosstabs.disease_category_x_anomaly_label"
+      ]
+    }
+  ],
+  "next_hypotheses": [
+    {
+      "statement": "Test anomaly_label association with cytodiffusion_anomaly_score.",
+      "suggested_tests": [
+        "Point-biserial correlation",
+        "Mann-Whitney U"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.cytodiffusion_anomaly_score",
+        "05_visual_registry.json:box_06"
+      ]
+    },
+    {
+      "statement": "Test anomaly_label association with cytodiffusion_classification_confidence.",
+      "suggested_tests": [
+        "Point-biserial correlation",
+        "Mann-Whitney U"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.cytodiffusion_classification_confidence",
+        "05_visual_registry.json:heatmap_08"
+      ]
+    },
+    {
+      "statement": "Test whether disease category and anomaly label are independent.",
+      "suggested_tests": [
+        "Chi-squared test of independence"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:crosstabs.disease_category_x_anomaly_label"
+      ]
+    },
+    {
+      "statement": "Test whether cell type and anomaly label are independent.",
+      "suggested_tests": [
+        "Chi-squared test of independence"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:crosstabs.cell_type_x_anomaly_label"
+      ]
+    }
+  ],
+  "tests_summary": [
+    {
+      "statement": "Group-difference tests for cytodiffusion_anomaly_score report extreme separation between anomaly_label groups across Mann-Whitney U and Welch t-test.",
+      "evidence_refs": [
+        "08_tests.json:tests.group_diff_cytodiffusion_anomaly_score.mann_whitney_u.statistic",
+        "08_tests.json:tests.group_diff_cytodiffusion_anomaly_score.mann_whitney_u.p_value",
+        "08_tests.json:tests.group_diff_cytodiffusion_anomaly_score.welch_t_test.statistic",
+        "08_tests.json:tests.group_diff_cytodiffusion_anomaly_score.welch_t_test.p_value"
+      ]
+    },
+    {
+      "statement": "Group-difference tests for cytodiffusion_classification_confidence and labeller_confidence_score return near-zero p-values in both Mann-Whitney U and Welch t-test.",
+      "evidence_refs": [
+        "08_tests.json:tests.group_diff_cytodiffusion_classification_confidence.mann_whitney_u.p_value",
+        "08_tests.json:tests.group_diff_cytodiffusion_classification_confidence.welch_t_test.p_value",
+        "08_tests.json:tests.group_diff_labeller_confidence_score.mann_whitney_u.p_value",
+        "08_tests.json:tests.group_diff_labeller_confidence_score.welch_t_test.p_value"
+      ]
+    },
+    {
+      "statement": "Chi-squared tests indicate non-independence between anomaly_label and both disease_category and cell_type.",
+      "evidence_refs": [
+        "08_tests.json:tests.chi2_disease_category_x_anomaly_label.chi2",
+        "08_tests.json:tests.chi2_disease_category_x_anomaly_label.p_value",
+        "08_tests.json:tests.chi2_cell_type_x_anomaly_label.chi2",
+        "08_tests.json:tests.chi2_cell_type_x_anomaly_label.p_value"
+      ]
+    }
+  ]
+}
