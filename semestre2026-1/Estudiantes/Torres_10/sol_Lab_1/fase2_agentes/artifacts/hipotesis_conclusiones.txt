@@ -1,0 +1,47 @@
+# Hipótesis y Conclusiones — Fase 2: Enfoque con Agentes
+
+## Hipótesis formuladas
+
+1. **La longitud de la aleta (flipper_length_mm) se asocia positivamente con la masa corporal (body_mass_g).**
+   - Evidencia: Correlación positiva observada en los artifacts descriptivos y scatterplots.
+
+2. **La longitud del pico (bill_length_mm) difiere significativamente entre especies.**
+   - Evidencia: Diferencias claras en boxplots y estadísticas descriptivas por especie.
+
+3. **La distribución de especies varía según la isla.**
+   - Evidencia: Tablas cruzadas y gráficos de conteo muestran asociaciones entre species e island.
+
+4. **La proporción de sexos no es igual en todas las especies.**
+   - Evidencia: Conteos y porcentajes por species y sex en los artifacts descriptivos.
+
+5. **La variable body_mass_g presenta mayor variabilidad en la especie Gentoo.**
+   - Evidencia: Estadísticas descriptivas y boxplots por especie.
+
+---
+
+## Conclusiones estructuradas
+
+- **Descriptivas:**
+  - El dataset presenta tres especies principales con diferencias notables en masa corporal y longitud de aleta.
+  - Existen valores faltantes principalmente en la variable sex.
+  - No se detectaron filas duplicadas relevantes.
+
+- **Patrones visuales:**
+  - Los scatterplots y boxplots confirman asociaciones entre variables numéricas y categóricas.
+  - El heatmap de correlación muestra relaciones fuertes entre flipper_length_mm y body_mass_g.
+
+- **Próximas hipótesis a probar:**
+  - Analizar si las diferencias de masa corporal se mantienen al controlar por isla.
+  - Explorar posibles efectos de la variable year en las mediciones.
+
+---
+
+## Preguntas para el investigador humano
+
+- ¿Cómo se manejaron los valores faltantes en sex? ¿Se puede imputar o es mejor excluirlos?
+- ¿Existen factores ambientales en las islas que expliquen las diferencias entre especies?
+- ¿Se dispone de información adicional sobre la variable year para análisis temporales?
+
+---
+
+(Todos los puntos anteriores están sustentados únicamente en artifacts generados por el runner y documentados en la carpeta artifacts/.)

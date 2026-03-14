@@ -1,0 +1,30 @@
+{
+  "conclusions": {
+    "descriptive_findings": [
+      {
+        "text": "La masa corporal promedio de los pingüinos es de aproximadamente 4200 g, con diferencias notables entre especies.",
+        "evidence_refs": ["04_descriptive_stats.json:numeric_summary.body_mass_g"]
+      },
+      {
+        "text": "Las especies Adelie, Chinstrap y Gentoo presentan distribuciones distintas en variables morfológicas.",
+        "evidence_refs": ["04_descriptive_stats.json:categorical_summary.species"]
+      }
+    ],
+    "visual_patterns": [
+      {
+        "text": "Los boxplots muestran que la masa corporal varía significativamente entre especies.",
+        "evidence_refs": ["05_visual_registry.json:box_species_body_mass"]
+      },
+      {
+        "text": "El scatterplot revela una asociación positiva entre la longitud de la aleta y la masa corporal.",
+        "evidence_refs": ["05_visual_registry.json:scatter_flipper_body_mass_species"]
+      }
+    ],
+    "next_hypotheses": [
+      {
+        "text": "Explorar si la isla de origen influye en la masa corporal de los pingüinos.",
+        "evidence_refs": ["04_descriptive_stats.json:categorical_summary.island"]
+      }
+    ]
+  }
+}

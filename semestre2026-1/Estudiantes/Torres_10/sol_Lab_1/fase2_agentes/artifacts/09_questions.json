@@ -1,0 +1,8 @@
+{
+  "questions": [
+    "¿Cómo se manejaron los valores faltantes en la variable sex durante la recolección de datos?",
+    "¿Existen posibles sesgos de muestreo en la representación de especies o islas?",
+    "¿Sería relevante controlar por edad o estado reproductivo en futuros análisis?",
+    "¿Qué variables adicionales serían útiles para profundizar en el estudio de la variabilidad morfológica de los pingüinos?"
+  ]
+}

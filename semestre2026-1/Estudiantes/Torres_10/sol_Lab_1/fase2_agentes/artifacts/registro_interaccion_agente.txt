@@ -1,0 +1,36 @@
+# Registro de Interacción con el Agente — Fase 2
+
+Este registro documenta los principales prompts, planes y decisiones tomadas durante la interacción entre el agente y el runner en el enfoque de agentes.
+
+## Fases y ciclos de interacción
+
+1. **OBSERVE**
+   - El agente propuso un plan de observación inicial: perfilado del dataset, identificación de variables, reporte de valores faltantes y duplicados.
+   - El runner ejecutó el perfilado y generó el artifact `00_raw_profile.json`.
+
+2. **DESCRIBE**
+   - El agente, con base en el perfil, sugirió análisis descriptivos: estadísticas numéricas, conteos categóricos, tablas cruzadas, correlaciones y visualizaciones exploratorias.
+   - El runner ejecutó los análisis y generó los artifacts `04_descriptive_stats.json` y `05_visual_registry.json`.
+
+3. **HYPOTHESIZE_AND_CONCLUDE**
+   - El agente formuló hipótesis falsables, redactó conclusiones y propuso preguntas para el investigador, todo sustentado en los artifacts descriptivos.
+   - El runner registró los artifacts `06_hypotheses_log.json`, `07_conclusions.json` y `09_questions.json`.
+
+4. **Reporte final**
+   - El agente integró los hallazgos y generó el plan para el reporte HTML y el resumen en Markdown.
+   - El runner generó `observatorio.html` y los archivos de resumen.
+
+## Decisiones clave
+
+- Se mantuvo estricta separación entre planificación (agente) y ejecución (runner).
+- Todas las interpretaciones y conclusiones se basaron únicamente en artifacts generados.
+- El flujo fue cíclico: plan → ejecución → artifact → interpretación → siguiente fase.
+
+## Ejemplo de prompt y respuesta
+
+- **Prompt al agente:** "¿Qué acciones de observación inicial recomienda para el dataset de pingüinos?"
+- **Respuesta del agente:** "Realizar perfilado, identificar variables numéricas/categóricas, reportar valores faltantes y duplicados."
+
+---
+
+Este registro garantiza la trazabilidad y reproducibilidad de todas las decisiones tomadas en el enfoque con agentes.

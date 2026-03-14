@@ -1,0 +1,29 @@
+# Comparación: Enfoque Clásico vs. Enfoque con Agentes
+
+## Enfoque Clásico (Notebook tradicional)
+- El análisis, los cálculos y la interpretación se realizan en el mismo notebook.
+- El flujo es menos estructurado: código, resultados y conclusiones se mezclan en celdas sucesivas.
+- La reproducibilidad depende del orden de ejecución de las celdas y de la disciplina del usuario.
+- Es más difícil auditar o reutilizar partes del análisis en otros contextos.
+- Las interpretaciones pueden estar influenciadas por resultados intermedios no documentados como artifacts.
+
+## Enfoque con Agentes (Agente + Runner + Artifacts)
+- Separación estricta entre planificación (agente) y ejecución (runner).
+- Todos los resultados y evidencia se almacenan como artifacts (JSON, PNG, HTML), facilitando la trazabilidad.
+- El flujo es cíclico y reproducible: el agente propone, el runner ejecuta, se generan artifacts y el agente interpreta.
+- Es fácil auditar cada decisión y generalizar el flujo a otros datasets.
+- Las conclusiones solo pueden basarse en artifacts verificables, evitando invención o sesgo.
+
+## Ventajas del enfoque con agentes
+- Mayor reproducibilidad y transparencia.
+- Mejor organización y documentación del proceso.
+- Facilita la auditoría y la extensión a nuevos problemas.
+- Permite separar claramente la lógica de análisis de la ejecución técnica.
+
+## Consideraciones
+- El enfoque con agentes requiere mayor disciplina inicial y una arquitectura de archivos/artifacts bien definida.
+- Es ideal para proyectos colaborativos, auditorías o cuando se busca generalizar el análisis a múltiples datasets.
+
+---
+
+Esta comparación evidencia cómo la arquitectura basada en agentes mejora la estructura, reproducibilidad y claridad del análisis respecto al enfoque clásico.

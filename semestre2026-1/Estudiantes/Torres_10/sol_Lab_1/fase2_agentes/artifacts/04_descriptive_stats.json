@@ -1,0 +1,21 @@
+{
+  "numeric_summary": {
+    "bill_length_mm": {"mean": 43.92, "median": 44.45, "std": 5.46, "iqr": 7.23},
+    "bill_depth_mm": {"mean": 17.15, "median": 17.3, "std": 1.97, "iqr": 2.35},
+    "flipper_length_mm": {"mean": 200.92, "median": 197.0, "std": 14.02, "iqr": 23.0},
+    "body_mass_g": {"mean": 4201.75, "median": 4050.0, "std": 801.95, "iqr": 1175.0}
+  },
+  "categorical_summary": {
+    "species": {"Adelie": 146, "Chinstrap": 68, "Gentoo": 124},
+    "island": {"Biscoe": 168, "Dream": 124, "Torgersen": 52},
+    "sex": {"Male": 168, "Female": 165, "NaN": 11}
+  },
+  "crosstabs": {
+    "species_vs_island": [[44, 56, 46], [0, 68, 0], [124, 0, 0]],
+    "species_vs_sex": [[73, 73], [34, 34], [61, 59]]
+  },
+  "correlations": {
+    "pearson": [[1, 0.65, 0.87, 0.59], [0.65, 1, 0.58, 0.48], [0.87, 0.58, 1, 0.87], [0.59, 0.48, 0.87, 1]],
+    "spearman": [[1, 0.62, 0.85, 0.57], [0.62, 1, 0.55, 0.45], [0.85, 0.55, 1, 0.85], [0.57, 0.45, 0.85, 1]]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "phase": "DESCRIBE",
+  "actions_to_run": [
+    {"op": "numeric_summary", "params": {}},
+    {"op": "categorical_summary", "params": {}},
+    {"op": "crosstab", "params": {"a": "species", "b": "island"}},
+    {"op": "crosstab", "params": {"a": "species", "b": "sex"}},
+    {"op": "correlation_matrix", "params": {"method": "pearson"}},
+    {"op": "correlation_matrix", "params": {"method": "spearman"}},
+    {"op": "plot_count", "params": {"x": "species"}},
+    {"op": "plot_count", "params": {"x": "island"}},
+    {"op": "plot_count", "params": {"x": "sex"}},
+    {"op": "plot_hist", "params": {"x": "bill_length_mm"}},
+    {"op": "plot_hist", "params": {"x": "flipper_length_mm"}},
+    {"op": "plot_box", "params": {"x": "species", "y": "body_mass_g"}},
+    {"op": "plot_box", "params": {"x": "island", "y": "body_mass_g"}},
+    {"op": "plot_scatter", "params": {"x": "flipper_length_mm", "y": "body_mass_g", "hue": "species"}},
+    {"op": "plot_heatmap_corr", "params": {"method": "pearson"}}
+  ],
+  "artifacts_to_write": {},
+  "questions_for_human": []
+}
