@@ -1,0 +1,13 @@
+{
+  "plots": [
+    {"id": "count_species", "type": "count", "x": "species", "file": "artifacts/plots/count_species.png"},
+    {"id": "count_island", "type": "count", "x": "island", "file": "artifacts/plots/count_island.png"},
+    {"id": "count_sex", "type": "count", "x": "sex", "file": "artifacts/plots/count_sex.png"},
+    {"id": "hist_bill_length", "type": "hist", "x": "bill_length_mm", "file": "artifacts/plots/hist_bill_length_mm.png"},
+    {"id": "hist_flipper_length", "type": "hist", "x": "flipper_length_mm", "file": "artifacts/plots/hist_flipper_length_mm.png"},
+    {"id": "box_species_body_mass", "type": "box", "x": "species", "y": "body_mass_g", "file": "artifacts/plots/box_species_body_mass_g.png"},
+    {"id": "box_island_body_mass", "type": "box", "x": "island", "y": "body_mass_g", "file": "artifacts/plots/box_island_body_mass_g.png"},
+    {"id": "scatter_flipper_body_mass_species", "type": "scatter", "x": "flipper_length_mm", "y": "body_mass_g", "hue": "species", "file": "artifacts/plots/scatter_flipper_body_mass_species.png"},
+    {"id": "heatmap_corr_pearson", "type": "heatmap_corr", "method": "pearson", "file": "artifacts/plots/heatmap_corr_pearson.png"}
+  ]
+}

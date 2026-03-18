@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reporte Observatorio de Datos - Pingüinos (Fase 2: Agentes)</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    h1, h2, h3 { color: #2c3e50; }
+    .section { margin-bottom: 2em; }
+    .evidence { color: #888; font-size: 0.95em; }
+    ul { margin-top: 0.2em; }
+    .plot-img { max-width: 400px; margin: 1em 0; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <h1>Reporte Observatorio de Datos - Pingüinos</h1>
+  <h2>Fase 2: Enfoque con Agentes</h2>
+
+  <div class="section">
+    <h3>Hallazgos Descriptivos</h3>
+    <ul>
+      <li>La masa corporal promedio de los pingüinos es de aproximadamente 4200 g, con diferencias notables entre especies. <span class="evidence">(Ver 04_descriptive_stats.json)</span></li>
+      <li>Las especies Adelie, Chinstrap y Gentoo presentan distribuciones distintas en variables morfológicas. <span class="evidence">(Ver 04_descriptive_stats.json)</span></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Patrones Visuales</h3>
+    <ul>
+      <li>Los boxplots muestran que la masa corporal varía significativamente entre especies. <span class="evidence">(Ver box_species_body_mass.png)</span></li>
+      <li>El scatterplot revela una asociación positiva entre la longitud de la aleta y la masa corporal. <span class="evidence">(Ver scatter_flipper_body_mass_species.png)</span></li>
+    </ul>
+    <img src="artifacts/plots/box_species_body_mass_g.png" alt="Boxplot masa corporal por especie" class="plot-img">
+    <img src="artifacts/plots/scatter_flipper_body_mass_species.png" alt="Scatterplot longitud aleta vs masa corporal" class="plot-img">
+  </div>
+
+  <div class="section">
+    <h3>Hipótesis Falsables</h3>
+    <ol>
+      <li>La masa corporal difiere entre especies de pingüinos. <span class="evidence">(ANOVA/Kruskal-Wallis)</span></li>
+      <li>Existe asociación entre la longitud de la aleta y la masa corporal. <span class="evidence">(Pearson/Spearman)</span></li>
+      <li>La proporción de sexos difiere entre especies. <span class="evidence">(Chi-cuadrado)</span></li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h3>Conclusiones</h3>
+    <ul>
+      <li>La evidencia respalda diferencias morfológicas entre especies y asociaciones entre variables numéricas clave.</li>
+      <li>Se recomienda explorar la influencia de la isla de origen en la masa corporal y considerar variables adicionales en futuros análisis.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Preguntas para el Investigador</h3>
+    <ul>
+      <li>¿Cómo se manejaron los valores faltantes en la variable <b>sex</b> durante la recolección de datos?</li>
+      <li>¿Existen posibles sesgos de muestreo en la representación de especies o islas?</li>
+      <li>¿Sería relevante controlar por edad o estado reproductivo en futuros análisis?</li>
+      <li>¿Qué variables adicionales serían útiles para profundizar en el estudio de la variabilidad morfológica de los pingüinos?</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Registro de Interacción con el Agente</h3>
+    <ul>
+      <li>Fase OBSERVE: Generación de perfil, esquema, faltantes y duplicados.</li>
+      <li>Fase DESCRIBE: Resúmenes descriptivos, tablas cruzadas, correlaciones y gráficos exploratorios.</li>
+      <li>Fase HYPOTHESIZE_AND_CONCLUDE: Hipótesis, conclusiones y preguntas generadas a partir de artifacts.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>Comparación: Enfoque Clásico vs. Enfoque con Agentes</h3>
+    <ul>
+      <li><b>Clásico:</b> El análisis y la interpretación se realizan manualmente en el notebook, con riesgo de sesgos o errores humanos.</li>
+      <li><b>Agentes:</b> El flujo es reproducible, cada afirmación está sustentada en artifacts y se separan claramente las fases de observación, descripción e interpretación.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <hr>
+    <p>Reporte generado automáticamente por el agente de observatorio de datos. <br> Marzo 2026</p>
+  </footer>
+</body>
+</html>
