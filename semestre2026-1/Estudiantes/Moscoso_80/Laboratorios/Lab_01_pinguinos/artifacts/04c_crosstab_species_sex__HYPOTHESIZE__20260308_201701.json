@@ -1,0 +1,16 @@
+{
+  "index_col": "species",
+  "columns_col": "sex",
+  "table": {
+    "Female": {
+      "Adelie": 73,
+      "Chinstrap": 34,
+      "Gentoo": 58
+    },
+    "Male": {
+      "Adelie": 73,
+      "Chinstrap": 34,
+      "Gentoo": 61
+    }
+  }
+}

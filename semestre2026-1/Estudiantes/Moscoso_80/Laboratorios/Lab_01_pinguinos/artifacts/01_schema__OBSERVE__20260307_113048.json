@@ -1,0 +1,44 @@
+{
+  "species": {
+    "dtype": "str",
+    "semantic_type": "categorical",
+    "n_unique": 3,
+    "high_cardinality": false
+  },
+  "island": {
+    "dtype": "str",
+    "semantic_type": "categorical",
+    "n_unique": 3,
+    "high_cardinality": false
+  },
+  "bill_length_mm": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 164,
+    "high_cardinality": false
+  },
+  "bill_depth_mm": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 80,
+    "high_cardinality": false
+  },
+  "flipper_length_mm": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 55,
+    "high_cardinality": false
+  },
+  "body_mass_g": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 94,
+    "high_cardinality": false
+  },
+  "sex": {
+    "dtype": "str",
+    "semantic_type": "categorical",
+    "n_unique": 2,
+    "high_cardinality": false
+  }
+}

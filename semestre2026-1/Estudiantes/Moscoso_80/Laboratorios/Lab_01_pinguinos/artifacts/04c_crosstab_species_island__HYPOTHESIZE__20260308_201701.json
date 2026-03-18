@@ -1,0 +1,21 @@
+{
+  "index_col": "species",
+  "columns_col": "island",
+  "table": {
+    "Biscoe": {
+      "Adelie": 44,
+      "Chinstrap": 0,
+      "Gentoo": 124
+    },
+    "Dream": {
+      "Adelie": 56,
+      "Chinstrap": 68,
+      "Gentoo": 0
+    },
+    "Torgersen": {
+      "Adelie": 52,
+      "Chinstrap": 0,
+      "Gentoo": 0
+    }
+  }
+}
