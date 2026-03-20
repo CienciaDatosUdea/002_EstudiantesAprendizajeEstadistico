@@ -1,0 +1,219 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-03-20T15:17:26.915252",
+      "phase": "OBSERVE",
+      "operation": "profile_dataset",
+      "params": {},
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\00_raw_profile__OBSERVE__20260320_151726.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:17:26.927540",
+      "phase": "OBSERVE",
+      "operation": "infer_schema",
+      "params": {},
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\01_schema__OBSERVE__20260320_151726.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:17:26.940181",
+      "phase": "OBSERVE",
+      "operation": "missing_report",
+      "params": {},
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\02_missing_report__OBSERVE__20260320_151726.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:17:26.953112",
+      "phase": "OBSERVE",
+      "operation": "duplicates_report",
+      "params": {},
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\03_duplicates_report__OBSERVE__20260320_151726.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:29.887501",
+      "phase": "DESCRIBE",
+      "operation": "numeric_summary",
+      "params": {},
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\04a_numeric_summary__DESCRIBE__20260320_151829.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:29.899078",
+      "phase": "DESCRIBE",
+      "operation": "categorical_summary",
+      "params": {},
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\04b_categorical_summary__DESCRIBE__20260320_151829.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:29.917405",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\04d_correlation_pearson__DESCRIBE__20260320_151829.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:29.929965",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\04d_correlation_spearman__DESCRIBE__20260320_151829.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:29.948111",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "kendall"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\04d_correlation_kendall__DESCRIBE__20260320_151829.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:30.105185",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_species"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\count_species__DESCRIBE__20260320_151830.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:30.249822",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_island"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\count_island__DESCRIBE__20260320_151830.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:30.391038",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_sex"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\count_sex__DESCRIBE__20260320_151830.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:30.735346",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_body_mass_g_by_species"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\hist_body_mass_g_by_species__DESCRIBE__20260320_151830.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:30.978039",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_flipper_length_mm_by_species"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\hist_flipper_length_mm_by_species__DESCRIBE__20260320_151830.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:31.212462",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\hist_bill_length_mm_by_species__DESCRIBE__20260320_151831.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:31.389953",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\box_bill_length_mm_by_species__DESCRIBE__20260320_151831.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:31.555655",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_depth_mm_by_species"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\box_bill_depth_mm_by_species__DESCRIBE__20260320_151831.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:31.785404",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_length_mm_vs_flipper_length_mm_hue_species"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\scatter_bill_length_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260320_151831.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:31.982802",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_depth_mm_vs_flipper_length_mm_hue_species"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\scatter_bill_depth_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260320_151831.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:18:32.209297",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "heatmap_corr_pearson"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\heatmap_corr_pearson__DESCRIBE__20260320_151832.png"
+    },
+    {
+      "timestamp": "2026-03-20T15:36:31.172061",
+      "phase": "HYPOTHESIZE",
+      "operation": "crosstab",
+      "params": {
+        "a": "species",
+        "b": "island"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\04c_crosstab_species_island__HYPOTHESIZE__20260320_153631.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:36:31.188996",
+      "phase": "HYPOTHESIZE",
+      "operation": "crosstab",
+      "params": {
+        "a": "species",
+        "b": "sex"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\04c_crosstab_species_sex__HYPOTHESIZE__20260320_153631.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:36:31.201836",
+      "phase": "HYPOTHESIZE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\04d_correlation_pearson__HYPOTHESIZE__20260320_153631.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:36:31.215707",
+      "phase": "HYPOTHESIZE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\04d_correlation_spearman__HYPOTHESIZE__20260320_153631.json"
+    },
+    {
+      "timestamp": "2026-03-20T15:36:31.414230",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_flipper_length_mm_vs_body_mass_g_hue_species"
+      },
+      "output": "semestre2026-1\\Estudiantes\\Garcia_77\\Laboratorios\\Lab_01\\artifacts\\plots\\scatter_flipper_length_mm_vs_body_mass_g_hue_species__HYPOTHESIZE__20260320_153631.png"
+    }
+  ]
+}

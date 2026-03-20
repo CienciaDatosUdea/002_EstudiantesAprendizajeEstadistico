@@ -1,0 +1,65 @@
+{
+  "alpha": 0.05,
+  "dataset": "penguins",
+  "phase": "HYPOTHESIZE_AND_CONCLUDE",
+  "tests": [
+    {
+      "id": "H1",
+      "hypothesis": "flipper_length_mm se asocia con body_mass_g",
+      "test": "Pearson",
+      "statistic": 0.8712017673060113,
+      "p_value": 4.3706809630006207e-107,
+      "decision_alpha_0_05": "rechazar_H0",
+      "n": 342
+    },
+    {
+      "id": "H1",
+      "hypothesis": "flipper_length_mm se asocia con body_mass_g",
+      "test": "Spearman",
+      "statistic": 0.8399741230312999,
+      "p_value": 2.763218997179663e-92,
+      "decision_alpha_0_05": "rechazar_H0",
+      "n": 342
+    },
+    {
+      "id": "H2",
+      "hypothesis": "bill_length_mm difiere entre especies",
+      "test": "ANOVA_one_way",
+      "statistic": 410.6002550405077,
+      "p_value": 2.6946137388895146e-91,
+      "decision_alpha_0_05": "rechazar_H0",
+      "groups": [
+        "Adelie",
+        "Chinstrap",
+        "Gentoo"
+      ]
+    },
+    {
+      "id": "H2",
+      "hypothesis": "bill_length_mm difiere entre especies",
+      "test": "Kruskal_Wallis",
+      "statistic": 244.13671803364164,
+      "p_value": 9.691371997194331e-54,
+      "decision_alpha_0_05": "rechazar_H0",
+      "groups": [
+        "Adelie",
+        "Chinstrap",
+        "Gentoo"
+      ]
+    },
+    {
+      "id": "H3",
+      "hypothesis": "species se asocia con island",
+      "test": "Chi_square_independence",
+      "statistic": 299.55032743148195,
+      "p_value": 1.354573829719252e-63,
+      "degrees_of_freedom": 4,
+      "decision_alpha_0_05": "rechazar_H0",
+      "cramers_v": 0.6598431008795325,
+      "contingency_shape": [
+        3,
+        3
+      ]
+    }
+  ]
+}

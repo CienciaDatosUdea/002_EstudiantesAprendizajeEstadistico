@@ -1,0 +1,29 @@
+{
+  "method": "spearman",
+  "matrix": {
+    "bill_length_mm": {
+      "bill_length_mm": 1.0,
+      "bill_depth_mm": -0.22174915179457866,
+      "flipper_length_mm": 0.6727719416255545,
+      "body_mass_g": 0.5838003194455482
+    },
+    "bill_depth_mm": {
+      "bill_length_mm": -0.22174915179457866,
+      "bill_depth_mm": 1.0,
+      "flipper_length_mm": -0.5232674711610737,
+      "body_mass_g": -0.4323722214130437
+    },
+    "flipper_length_mm": {
+      "bill_length_mm": 0.6727719416255545,
+      "bill_depth_mm": -0.5232674711610737,
+      "flipper_length_mm": 1.0,
+      "body_mass_g": 0.8399741230312999
+    },
+    "body_mass_g": {
+      "bill_length_mm": 0.5838003194455482,
+      "bill_depth_mm": -0.4323722214130437,
+      "flipper_length_mm": 0.8399741230312999,
+      "body_mass_g": 1.0
+    }
+  }
+}
