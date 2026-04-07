@@ -1,0 +1,32 @@
+{
+    "visualizations": [
+        {
+            "op": "plot_count",
+            "file": "artifacts/plots/count_species_none.png"
+        },
+        {
+            "op": "plot_count",
+            "file": "artifacts/plots/count_island_species.png"
+        },
+        {
+            "op": "plot_hist",
+            "file": "artifacts/plots/hist_bill_length_mm_species.png"
+        },
+        {
+            "op": "plot_hist",
+            "file": "artifacts/plots/hist_body_mass_g_species.png"
+        },
+        {
+            "op": "plot_box",
+            "file": "artifacts/plots/box_species_flipper_length_mm.png"
+        },
+        {
+            "op": "plot_scatter",
+            "file": "artifacts/plots/scatter_bill_length_mm_body_mass_g.png"
+        },
+        {
+            "op": "plot_heatmap_corr",
+            "file": "artifacts/plots/heatmap_correlation.png"
+        }
+    ]
+}
