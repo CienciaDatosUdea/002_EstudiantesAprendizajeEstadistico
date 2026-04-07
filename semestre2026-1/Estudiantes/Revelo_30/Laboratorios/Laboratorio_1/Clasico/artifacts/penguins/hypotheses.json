@@ -1,0 +1,5 @@
+{
+    "false.bill_length_mm:bill_depth_mm": "There is a correlation between bill_length_mm and bill_depth_mm.",
+    "true.bill_length_mm:flipper_length_mm": "There is no correlation between bill_length_mm and flipper_length_mm.",
+    "true.bill_length_mm:body_mass_g": "There is no correlation between bill_length_mm and body_mass_g."
+}

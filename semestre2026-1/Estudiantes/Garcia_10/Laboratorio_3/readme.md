@@ -1,0 +1,1 @@
+Se uso el notebook de la sesion 3, la solución está en la parte de abajo al final

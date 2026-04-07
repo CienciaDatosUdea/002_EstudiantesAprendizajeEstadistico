@@ -1,0 +1,22 @@
+{
+  "plots": [
+    {
+      "plot_id": "hist_concavity_mean_by_diagnosis",
+      "phase": "HYPOTHESIZE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_concavity_mean_by_diagnosis__HYPOTHESIZE__20260314_112737.png",
+      "timestamp": "20260314_112737"
+    },
+    {
+      "plot_id": "box_concave_points_mean_by_diagnosis",
+      "phase": "HYPOTHESIZE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/box_concave_points_mean_by_diagnosis__HYPOTHESIZE__20260314_112737.png",
+      "timestamp": "20260314_112737"
+    },
+    {
+      "plot_id": "scatter_concavity_mean_vs_concave_points_mean_hue_diagnosis",
+      "phase": "HYPOTHESIZE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/scatter_concavity_mean_vs_concave_points_mean_hue_diagnosis__HYPOTHESIZE__20260314_112737.png",
+      "timestamp": "20260314_112737"
+    }
+  ]
+}

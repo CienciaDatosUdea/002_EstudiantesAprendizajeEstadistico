@@ -1,0 +1,35 @@
+{
+  "total_cells": 2408,
+  "total_missing": 19,
+  "pct_missing_overall": 0.79,
+  "by_column": {
+    "species": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    "island": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    "bill_length_mm": {
+      "n_missing": 2,
+      "pct_missing": 0.58
+    },
+    "bill_depth_mm": {
+      "n_missing": 2,
+      "pct_missing": 0.58
+    },
+    "flipper_length_mm": {
+      "n_missing": 2,
+      "pct_missing": 0.58
+    },
+    "body_mass_g": {
+      "n_missing": 2,
+      "pct_missing": 0.58
+    },
+    "sex": {
+      "n_missing": 11,
+      "pct_missing": 3.2
+    }
+  }
+}

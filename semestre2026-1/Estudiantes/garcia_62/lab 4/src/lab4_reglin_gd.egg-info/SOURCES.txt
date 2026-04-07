@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/lab4_reglin/__init__.py
+src/lab4_reglin/core.py
+src/lab4_reglin_gd.egg-info/PKG-INFO
+src/lab4_reglin_gd.egg-info/SOURCES.txt
+src/lab4_reglin_gd.egg-info/dependency_links.txt
+src/lab4_reglin_gd.egg-info/requires.txt
+src/lab4_reglin_gd.egg-info/top_level.txt

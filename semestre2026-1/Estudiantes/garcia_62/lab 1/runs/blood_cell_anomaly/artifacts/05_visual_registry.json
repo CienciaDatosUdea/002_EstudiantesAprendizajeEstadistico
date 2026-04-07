@@ -1,0 +1,72 @@
+{
+  "plots": [
+    {
+      "id": "count_01",
+      "file": "artifacts/plots/count_01.png",
+      "op": "plot_count",
+      "params": {
+        "x": "anomaly_label"
+      }
+    },
+    {
+      "id": "count_02",
+      "file": "artifacts/plots/count_02.png",
+      "op": "plot_count",
+      "params": {
+        "x": "disease_category"
+      }
+    },
+    {
+      "id": "count_03",
+      "file": "artifacts/plots/count_03.png",
+      "op": "plot_count",
+      "params": {
+        "x": "patient_sex"
+      }
+    },
+    {
+      "id": "hist_04",
+      "file": "artifacts/plots/hist_04.png",
+      "op": "plot_hist",
+      "params": {
+        "x": "cytodiffusion_anomaly_score",
+        "groupby": "anomaly_label"
+      }
+    },
+    {
+      "id": "hist_05",
+      "file": "artifacts/plots/hist_05.png",
+      "op": "plot_hist",
+      "params": {
+        "x": "cell_diameter_um",
+        "groupby": "anomaly_label"
+      }
+    },
+    {
+      "id": "box_06",
+      "file": "artifacts/plots/box_06.png",
+      "op": "plot_box",
+      "params": {
+        "x": "anomaly_label",
+        "y": "cytodiffusion_anomaly_score"
+      }
+    },
+    {
+      "id": "box_07",
+      "file": "artifacts/plots/box_07.png",
+      "op": "plot_box",
+      "params": {
+        "x": "anomaly_label",
+        "y": "labeller_confidence_score"
+      }
+    },
+    {
+      "id": "heatmap_08",
+      "file": "artifacts/plots/heatmap_08.png",
+      "op": "plot_heatmap_corr",
+      "params": {
+        "method": "pearson"
+      }
+    }
+  ]
+}

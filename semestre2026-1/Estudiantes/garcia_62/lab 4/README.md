@@ -1,0 +1,43 @@
+# Lab 4 - Libreria de Regresion Lineal
+
+Este directorio contiene una libreria de Python para ajustar una regresion lineal simple usando funcion de coste cuadratica y gradiente descendente.
+
+## Estructura
+
+- src/lab4_reglin/core.py: implementacion de funciones.
+- src/lab4_reglin/__init__.py: exportacion publica del paquete.
+- examples/ejemplo_laboratorio.py: ejemplo de uso con los datos del laboratorio.
+- examples/instalacion_y_uso.md: guia rapida de instalacion y ejecucion.
+- docs/USO.md: documentacion de uso de la libreria.
+
+## Instalacion con pip
+
+Desde este directorio, ejecutar:
+
+pip install .
+
+Para modo desarrollo:
+
+pip install -e .
+
+## Funciones incluidas
+
+1. linear_hypothesis(x, theta0, theta1)
+2. compute_cost(x, y, theta0, theta1)
+3. gradient_descent(x, y, ...)
+4. fit_linear_regression(x, y, ...)
+
+## Ejemplo rapido
+
+from lab4_reglin import fit_linear_regression
+import numpy as np
+
+X = np.linspace(0, 1, 100)
+y = 0.2 + 0.2 * X + 0.02 * np.random.random(100)
+
+result = fit_linear_regression(X, y, alpha=0.5, n_iter=2000)
+print(result)
+
+## Ejecucion del ejemplo del laboratorio
+
+python examples/ejemplo_laboratorio.py

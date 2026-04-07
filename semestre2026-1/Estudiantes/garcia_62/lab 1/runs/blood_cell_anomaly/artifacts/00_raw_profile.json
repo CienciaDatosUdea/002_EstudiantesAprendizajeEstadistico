@@ -1,0 +1,666 @@
+{
+  "rows": 5880,
+  "columns": 36,
+  "column_names": [
+    "cell_id",
+    "cell_type",
+    "anomaly_label",
+    "disease_category",
+    "cell_diameter_um",
+    "nucleus_area_pct",
+    "chromatin_density",
+    "cytoplasm_ratio",
+    "circularity",
+    "eccentricity",
+    "granularity_score",
+    "lobularity_score",
+    "membrane_smoothness",
+    "cell_area_px",
+    "perimeter_px",
+    "mean_r",
+    "mean_g",
+    "mean_b",
+    "stain_intensity",
+    "patient_age_group",
+    "patient_sex",
+    "wbc_count_per_ul",
+    "rbc_count_millions_per_ul",
+    "hemoglobin_g_dl",
+    "hematocrit_pct",
+    "platelet_count_per_ul",
+    "mcv_fl",
+    "mchc_g_dl",
+    "dataset_source",
+    "staining_protocol",
+    "microscope_model",
+    "magnification_x",
+    "image_resolution_px",
+    "cytodiffusion_anomaly_score",
+    "cytodiffusion_classification_confidence",
+    "labeller_confidence_score"
+  ],
+  "dtypes": {
+    "cell_id": "str",
+    "cell_type": "str",
+    "anomaly_label": "int64",
+    "disease_category": "str",
+    "cell_diameter_um": "float64",
+    "nucleus_area_pct": "float64",
+    "chromatin_density": "float64",
+    "cytoplasm_ratio": "float64",
+    "circularity": "float64",
+    "eccentricity": "float64",
+    "granularity_score": "float64",
+    "lobularity_score": "float64",
+    "membrane_smoothness": "float64",
+    "cell_area_px": "int64",
+    "perimeter_px": "int64",
+    "mean_r": "int64",
+    "mean_g": "int64",
+    "mean_b": "int64",
+    "stain_intensity": "float64",
+    "patient_age_group": "str",
+    "patient_sex": "str",
+    "wbc_count_per_ul": "int64",
+    "rbc_count_millions_per_ul": "float64",
+    "hemoglobin_g_dl": "float64",
+    "hematocrit_pct": "float64",
+    "platelet_count_per_ul": "int64",
+    "mcv_fl": "float64",
+    "mchc_g_dl": "float64",
+    "dataset_source": "str",
+    "staining_protocol": "str",
+    "microscope_model": "str",
+    "magnification_x": "int64",
+    "image_resolution_px": "int64",
+    "cytodiffusion_anomaly_score": "float64",
+    "cytodiffusion_classification_confidence": "float64",
+    "labeller_confidence_score": "float64"
+  },
+  "memory_usage_mb": 4.0262,
+  "schema": {
+    "cell_id": {
+      "dtype": "str",
+      "nunique": 5880,
+      "inferred_type": "other",
+      "sample_values": [
+        "CELL_005371",
+        "CELL_005300",
+        "CELL_000200",
+        "CELL_003269",
+        "CELL_003505"
+      ]
+    },
+    "cell_type": {
+      "dtype": "str",
+      "nunique": 19,
+      "inferred_type": "other",
+      "sample_values": [
+        "Hypersegmented_Neutrophil",
+        "Hypersegmented_Neutrophil",
+        "Neutrophil",
+        "Normal_RBC",
+        "Normal_RBC"
+      ]
+    },
+    "anomaly_label": {
+      "dtype": "int64",
+      "nunique": 2,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "1",
+        "1",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "disease_category": {
+      "dtype": "str",
+      "nunique": 8,
+      "inferred_type": "other",
+      "sample_values": [
+        "Infection",
+        "Infection",
+        "Normal_WBC",
+        "Normal_RBC",
+        "Normal_RBC"
+      ]
+    },
+    "cell_diameter_um": {
+      "dtype": "float64",
+      "nunique": 1472,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "15.18",
+        "16.47",
+        "13.41",
+        "7.36",
+        "7.53"
+      ]
+    },
+    "nucleus_area_pct": {
+      "dtype": "float64",
+      "nunique": 607,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "58.8",
+        "73.6",
+        "55.5",
+        "0.0",
+        "0.0"
+      ]
+    },
+    "chromatin_density": {
+      "dtype": "float64",
+      "nunique": 730,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "0.542",
+        "0.583",
+        "0.448",
+        "0.0",
+        "0.0"
+      ]
+    },
+    "cytoplasm_ratio": {
+      "dtype": "float64",
+      "nunique": 610,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "0.301",
+        "0.365",
+        "0.376",
+        "1.0",
+        "1.0"
+      ]
+    },
+    "circularity": {
+      "dtype": "float64",
+      "nunique": 727,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "0.563",
+        "0.859",
+        "0.781",
+        "0.88",
+        "1.0"
+      ]
+    },
+    "eccentricity": {
+      "dtype": "float64",
+      "nunique": 878,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "0.529",
+        "0.443",
+        "0.407",
+        "0.167",
+        "0.158"
+      ]
+    },
+    "granularity_score": {
+      "dtype": "float64",
+      "nunique": 566,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "4.11",
+        "2.5",
+        "3.01",
+        "0.43",
+        "0.51"
+      ]
+    },
+    "lobularity_score": {
+      "dtype": "float64",
+      "nunique": 63,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "6.6",
+        "6.3",
+        "3.2",
+        "1.0",
+        "1.0"
+      ]
+    },
+    "membrane_smoothness": {
+      "dtype": "float64",
+      "nunique": 470,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "0.8",
+        "0.737",
+        "0.79",
+        "0.937",
+        "0.925"
+      ]
+    },
+    "cell_area_px": {
+      "dtype": "int64",
+      "nunique": 752,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "445",
+        "383",
+        "418",
+        "217",
+        "147"
+      ]
+    },
+    "perimeter_px": {
+      "dtype": "int64",
+      "nunique": 118,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "90",
+        "61",
+        "52",
+        "39",
+        "50"
+      ]
+    },
+    "mean_r": {
+      "dtype": "int64",
+      "nunique": 111,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "215",
+        "189",
+        "193",
+        "227",
+        "239"
+      ]
+    },
+    "mean_g": {
+      "dtype": "int64",
+      "nunique": 114,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "141",
+        "136",
+        "150",
+        "138",
+        "127"
+      ]
+    },
+    "mean_b": {
+      "dtype": "int64",
+      "nunique": 143,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "160",
+        "169",
+        "203",
+        "118",
+        "113"
+      ]
+    },
+    "stain_intensity": {
+      "dtype": "float64",
+      "nunique": 523,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "0.555",
+        "0.692",
+        "0.593",
+        "0.509",
+        "0.607"
+      ]
+    },
+    "patient_age_group": {
+      "dtype": "str",
+      "nunique": 3,
+      "inferred_type": "other",
+      "sample_values": [
+        "Elderly",
+        "Elderly",
+        "Adult",
+        "Adult",
+        "Elderly"
+      ]
+    },
+    "patient_sex": {
+      "dtype": "str",
+      "nunique": 2,
+      "inferred_type": "other",
+      "sample_values": [
+        "F",
+        "M",
+        "M",
+        "F",
+        "M"
+      ]
+    },
+    "wbc_count_per_ul": {
+      "dtype": "int64",
+      "nunique": 4291,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "6352",
+        "7709",
+        "7451",
+        "9196",
+        "5898"
+      ]
+    },
+    "rbc_count_millions_per_ul": {
+      "dtype": "float64",
+      "nunique": 434,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "4.44",
+        "4.9",
+        "5.72",
+        "3.42",
+        "5.36"
+      ]
+    },
+    "hemoglobin_g_dl": {
+      "dtype": "float64",
+      "nunique": 126,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "11.7",
+        "13.9",
+        "16.1",
+        "14.6",
+        "14.6"
+      ]
+    },
+    "hematocrit_pct": {
+      "dtype": "float64",
+      "nunique": 317,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "43.4",
+        "42.2",
+        "39.2",
+        "54.1",
+        "36.7"
+      ]
+    },
+    "platelet_count_per_ul": {
+      "dtype": "int64",
+      "nunique": 5818,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "257383",
+        "302274",
+        "229996",
+        "130720",
+        "228652"
+      ]
+    },
+    "mcv_fl": {
+      "dtype": "float64",
+      "nunique": 523,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "85.5",
+        "92.5",
+        "76.3",
+        "92.3",
+        "83.9"
+      ]
+    },
+    "mchc_g_dl": {
+      "dtype": "float64",
+      "nunique": 96,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "31.4",
+        "35.0",
+        "33.0",
+        "32.5",
+        "33.4"
+      ]
+    },
+    "dataset_source": {
+      "dtype": "str",
+      "nunique": 3,
+      "inferred_type": "other",
+      "sample_values": [
+        "CytoData",
+        "PBC_Dataset",
+        "CytoData",
+        "CytoData",
+        "CytoData"
+      ]
+    },
+    "staining_protocol": {
+      "dtype": "str",
+      "nunique": 3,
+      "inferred_type": "other",
+      "sample_values": [
+        "Giemsa",
+        "Wright",
+        "Wright",
+        "Wright",
+        "Wright"
+      ]
+    },
+    "microscope_model": {
+      "dtype": "str",
+      "nunique": 3,
+      "inferred_type": "other",
+      "sample_values": [
+        "Zeiss_Axio",
+        "Zeiss_Axio",
+        "Leica_DM2000",
+        "Leica_DM2000",
+        "Olympus_BX51"
+      ]
+    },
+    "magnification_x": {
+      "dtype": "int64",
+      "nunique": 3,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "100",
+        "100",
+        "100",
+        "100",
+        "100"
+      ]
+    },
+    "image_resolution_px": {
+      "dtype": "int64",
+      "nunique": 4,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "224",
+        "224",
+        "512",
+        "512",
+        "224"
+      ]
+    },
+    "cytodiffusion_anomaly_score": {
+      "dtype": "float64",
+      "nunique": 2974,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "0.7649",
+        "0.8472",
+        "0.0313",
+        "0.1293",
+        "0.1418"
+      ]
+    },
+    "cytodiffusion_classification_confidence": {
+      "dtype": "float64",
+      "nunique": 2796,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "0.5726",
+        "0.715",
+        "0.9225",
+        "0.918",
+        "0.9697"
+      ]
+    },
+    "labeller_confidence_score": {
+      "dtype": "float64",
+      "nunique": 2654,
+      "inferred_type": "numeric",
+      "sample_values": [
+        "0.567",
+        "0.7273",
+        "0.9623",
+        "0.8652",
+        "0.8898"
+      ]
+    }
+  },
+  "missing_report": {
+    "cell_id": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "cell_type": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "anomaly_label": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "disease_category": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "cell_diameter_um": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "nucleus_area_pct": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "chromatin_density": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "cytoplasm_ratio": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "circularity": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "eccentricity": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "granularity_score": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "lobularity_score": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "membrane_smoothness": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "cell_area_px": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "perimeter_px": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "mean_r": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "mean_g": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "mean_b": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "stain_intensity": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "patient_age_group": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "patient_sex": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "wbc_count_per_ul": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "rbc_count_millions_per_ul": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "hemoglobin_g_dl": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "hematocrit_pct": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "platelet_count_per_ul": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "mcv_fl": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "mchc_g_dl": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "dataset_source": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "staining_protocol": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "microscope_model": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "magnification_x": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "image_resolution_px": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "cytodiffusion_anomaly_score": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "cytodiffusion_classification_confidence": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    },
+    "labeller_confidence_score": {
+      "missing_count": 0,
+      "missing_pct": 0.0
+    }
+  },
+  "duplicates_report": {
+    "total_rows": 5880,
+    "duplicate_rows": 0,
+    "duplicate_pct": 0.0
+  }
+}

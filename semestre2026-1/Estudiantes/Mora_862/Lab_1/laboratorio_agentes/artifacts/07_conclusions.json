@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-06T00:37:22.408762",
+    "source": "data/penguins.csv"
+  },
+  "payload": {
+    "conclusions": [
+      {
+        "hypothesis_id": "H1",
+        "supported": true,
+        "evidence": "Prueba ANOVA: F=397.30, p-valor=0.0000. Se rechaza la hip\u00f3tesis nula si p < 0.05."
+      },
+      {
+        "hypothesis_id": "H2",
+        "supported": true,
+        "evidence": "Correlaci\u00f3n de Pearson: r=-0.23, p-valor=0.0000. Asociaci\u00f3n significativa detectada."
+      },
+      {
+        "hypothesis_id": "H3",
+        "supported": true,
+        "evidence": "Prueba Chi-cuadrado: estad\u00edstico=284.59, p-valor=0.0000."
+      }
+    ]
+  }
+}
