@@ -1,0 +1,27 @@
+# Reproducible Data Observatory Report (blood_cell_anomaly_20260313)
+
+## Descriptive Findings
+- The dataset contains 5880 rows and 36 columns (ref: 00_raw_profile.json:rows, 00_raw_profile.json:columns).
+- anomaly_label is binary and its numeric summary mean is 0.3197 (ref: 00_raw_profile.json:schema.anomaly_label.nunique, 04_descriptive_stats.json:numeric_summary.anomaly_label.mean).
+- Patient sex counts are close across categories (F: 2966, M: 2914) (ref: 04_descriptive_stats.json:categorical_summary.patient_sex.top_values.F, 04_descriptive_stats.json:categorical_summary.patient_sex.top_values.M).
+- The missing report section records zero missing_count values across listed columns (ref: 00_raw_profile.json:missing_report).
+- No duplicate rows were reported (ref: 00_raw_profile.json:duplicates_report.duplicate_rows).
+
+## Visual Patterns
+- Histogram and boxplot views indicate group differences in cytodiffusion_anomaly_score across anomaly_label (ref: 05_visual_registry.json:hist_04, 05_visual_registry.json:box_06).
+- Boxplot output indicates group differences in labeller_confidence_score across anomaly_label (ref: 05_visual_registry.json:box_07).
+- Heatmap output aligns with strong positive association between anomaly_label and cytodiffusion_anomaly_score and negative association with cytodiffusion_classification_confidence (ref: 05_visual_registry.json:heatmap_08, 04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.cytodiffusion_anomaly_score, 04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.cytodiffusion_classification_confidence).
+- Count and crosstab outputs indicate uneven disease_category composition by anomaly_label (ref: 05_visual_registry.json:count_02, 04_descriptive_stats.json:crosstabs.disease_category_x_anomaly_label).
+
+## Next Hypotheses To Test
+- Test anomaly_label association with cytodiffusion_anomaly_score using point-biserial correlation and Mann-Whitney U (ref: 04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.cytodiffusion_anomaly_score, 05_visual_registry.json:box_06).
+- Test anomaly_label association with cytodiffusion_classification_confidence using point-biserial correlation and Mann-Whitney U (ref: 04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.cytodiffusion_classification_confidence, 05_visual_registry.json:heatmap_08).
+- Test independence between disease_category and anomaly_label with chi-squared (ref: 04_descriptive_stats.json:crosstabs.disease_category_x_anomaly_label).
+- Test independence between cell_type and anomaly_label with chi-squared (ref: 04_descriptive_stats.json:crosstabs.cell_type_x_anomaly_label).
+
+## Statistical Tests (from 08_tests.json)
+- Cytodiffusion anomaly score group tests: Levene statistic 1223.6988855642162 (p=1.025350717507431e-243), Mann-Whitney U statistic 0.0 (p=0.0), Welch t statistic -317.86021625265795 (p=0.0) (ref: 08_tests.json:tests.group_diff_cytodiffusion_anomaly_score).
+- Cytodiffusion classification confidence group tests: Levene statistic 824.3938739809735 (p=8.86662986034481e-170), Mann-Whitney U statistic 6945868.5 (p=0.0), Welch t statistic 66.38118170333642 (p=0.0) (ref: 08_tests.json:tests.group_diff_cytodiffusion_classification_confidence).
+- Labeller confidence score group tests: Levene statistic 801.2099628912905 (p=2.3765119812696757e-165), Mann-Whitney U statistic 6484887.0 (p=0.0), Welch t statistic 51.88461057026632 (p=0.0) (ref: 08_tests.json:tests.group_diff_labeller_confidence_score).
+- Chi-squared disease_category x anomaly_label: chi2=5880.0, dof=7, p=0.0 (ref: 08_tests.json:tests.chi2_disease_category_x_anomaly_label).
+- Chi-squared cell_type x anomaly_label: chi2=5880.000000000001, dof=18, p=0.0 (ref: 08_tests.json:tests.chi2_cell_type_x_anomaly_label).

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reproducible Data Observatory Report</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --fg: #222;
+      --card: #fff;
+      --muted: #555;
+      --line: #ddd;
+      --accent: #1b5e20;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(180deg, #f9f8f3 0%, #f2f2ee 100%);
+      color: var(--fg);
+      line-height: 1.45;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    h1, h2 { margin: 0 0 10px; }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.2rem; color: var(--accent); }
+    ul { margin: 0; padding-left: 20px; }
+    li { margin: 6px 0; }
+    .meta { color: var(--muted); font-size: 0.95rem; }
+    code { background: #f0f0f0; padding: 1px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>Reproducible Data Observatory Report</h1>
+      <p class="meta">Generated from artifacts/00, 04, 05, 06 and 07.</p>
+    </section>
+
+    <section class="card">
+      <h2>Descriptive Findings</h2>
+      <ul>
+        <li>The dataset contains 344 rows and 7 columns (ref: <code>00_raw_profile.json:rows</code>, <code>00_raw_profile.json:columns</code>).</li>
+        <li>Category coverage includes 3 species, 3 islands, and 2 reported sex categories, with 11 missing entries in sex (ref: <code>04_descriptive_stats.json:categorical_summary.species.nunique</code>, <code>04_descriptive_stats.json:categorical_summary.island.nunique</code>, <code>04_descriptive_stats.json:categorical_summary.sex.nunique</code>, <code>04_descriptive_stats.json:categorical_summary.sex.top_values.nan</code>).</li>
+        <li>Missing values appear in each measured numeric variable with 2 missing rows per variable (ref: <code>00_raw_profile.json:missing_report.bill_length_mm.missing_count</code>, <code>00_raw_profile.json:missing_report.bill_depth_mm.missing_count</code>, <code>00_raw_profile.json:missing_report.flipper_length_mm.missing_count</code>, <code>00_raw_profile.json:missing_report.body_mass_g.missing_count</code>).</li>
+        <li>No duplicate rows were reported (ref: <code>00_raw_profile.json:duplicates_report.duplicate_rows</code>).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Visual Patterns</h2>
+      <ul>
+        <li>Species-level differences are visible for body mass in grouped histograms and boxplots (ref: <code>05_visual_registry.json:hist_07</code>, <code>05_visual_registry.json:box_08</code>).</li>
+        <li>Species-level differences are visible for flipper length in grouped histograms and boxplots (ref: <code>05_visual_registry.json:hist_06</code>, <code>05_visual_registry.json:box_09</code>).</li>
+        <li>The heatmap pattern is consistent with positive association between flipper length and body mass and negative association between bill depth and flipper length (ref: <code>05_visual_registry.json:heatmap_10</code>, <code>04_descriptive_stats.json:correlation_matrices.pearson.flipper_length_mm.body_mass_g</code>, <code>04_descriptive_stats.json:correlation_matrices.pearson.bill_depth_mm.flipper_length_mm</code>).</li>
+        <li>Species composition appears uneven across island categories (ref: <code>04_descriptive_stats.json:crosstabs.species_x_island</code>, <code>05_visual_registry.json:count_01</code>, <code>05_visual_registry.json:count_02</code>).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Next Hypotheses To Test</h2>
+      <ul>
+        <li>Test whether mean body mass differs by species using Levene + ANOVA/Kruskal (ref: <code>05_visual_registry.json:box_08</code>, <code>05_visual_registry.json:hist_07</code>).</li>
+        <li>Test whether mean flipper length differs by species using Levene + ANOVA/Kruskal (ref: <code>05_visual_registry.json:box_09</code>, <code>05_visual_registry.json:hist_06</code>).</li>
+        <li>Test association between species and island using chi-squared independence (ref: <code>04_descriptive_stats.json:crosstabs.species_x_island</code>).</li>
+        <li>Confirm monotonic association between flipper length and body mass using Spearman (ref: <code>04_descriptive_stats.json:correlation_matrices.spearman.flipper_length_mm.body_mass_g</code>).</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-06T02:07:07.321937",
+    "source": "data/penguins.csv"
+  },
+  "payload": {
+    "summary": {
+      "rows": 344,
+      "cols": 7
+    },
+    "missing": {
+      "species": 0,
+      "island": 0,
+      "bill_length_mm": 2,
+      "bill_depth_mm": 2,
+      "flipper_length_mm": 2,
+      "body_mass_g": 2,
+      "sex": 11
+    },
+    "columns": {
+      "numeric": [
+        "bill_length_mm",
+        "bill_depth_mm",
+        "flipper_length_mm",
+        "body_mass_g"
+      ],
+      "categorical": [
+        "species",
+        "island",
+        "sex"
+      ]
+    }
+  }
+}

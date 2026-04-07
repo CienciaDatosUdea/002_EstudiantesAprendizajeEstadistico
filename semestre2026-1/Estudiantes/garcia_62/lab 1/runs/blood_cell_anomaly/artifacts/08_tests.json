@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "rows": 5880,
+    "group_counts": {
+      "0": 4000,
+      "1": 1880
+    }
+  },
+  "tests": {
+    "group_diff_cytodiffusion_anomaly_score": {
+      "n_group_0": 4000,
+      "n_group_1": 1880,
+      "levene": {
+        "statistic": 1223.6988855642162,
+        "p_value": 1.025350717507431e-243
+      },
+      "mann_whitney_u": {
+        "statistic": 0.0,
+        "p_value": 0.0
+      },
+      "welch_t_test": {
+        "statistic": -317.86021625265795,
+        "p_value": 0.0
+      }
+    },
+    "group_diff_cytodiffusion_classification_confidence": {
+      "n_group_0": 4000,
+      "n_group_1": 1880,
+      "levene": {
+        "statistic": 824.3938739809735,
+        "p_value": 8.86662986034481e-170
+      },
+      "mann_whitney_u": {
+        "statistic": 6945868.5,
+        "p_value": 0.0
+      },
+      "welch_t_test": {
+        "statistic": 66.38118170333642,
+        "p_value": 0.0
+      }
+    },
+    "group_diff_labeller_confidence_score": {
+      "n_group_0": 4000,
+      "n_group_1": 1880,
+      "levene": {
+        "statistic": 801.2099628912905,
+        "p_value": 2.3765119812696757e-165
+      },
+      "mann_whitney_u": {
+        "statistic": 6484887.0,
+        "p_value": 0.0
+      },
+      "welch_t_test": {
+        "statistic": 51.88461057026632,
+        "p_value": 0.0
+      }
+    },
+    "chi2_disease_category_x_anomaly_label": {
+      "dof": 7,
+      "chi2": 5880.0,
+      "p_value": 0.0
+    },
+    "chi2_cell_type_x_anomaly_label": {
+      "dof": 18,
+      "chi2": 5880.000000000001,
+      "p_value": 0.0
+    }
+  }
+}

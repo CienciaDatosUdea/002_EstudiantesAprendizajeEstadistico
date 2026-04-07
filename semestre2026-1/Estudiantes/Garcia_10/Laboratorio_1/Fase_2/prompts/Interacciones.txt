@@ -1,0 +1,336 @@
+Con el fin de evitar crear muchas archivos con prompts, este documento contendra los prompts que se le pasaran al agente manteniendo un orden en el nombre de las interacciones:
+
+------------------ prompt 0 -------------------------------
+hola_agentes.txt
+------------------ prompt 1 -------------------------------
+Here is the context to initialize the session:
+
+* current_phase: OBSERVE 
+
+artifacts_content: None. The artifacts/ folder is empty. * dataset_info: seaborn.load_dataset('penguins') 
+
+Please generate the initial JSON plan following the strict schema.
+------------------ prompt 2 ---------------------------------
+Actions executed successfully. The Runner has generated the following evidence:
+
+artifacts/00_raw_profile.json:
+
+JSON
+{
+    "n_rows": 344,
+    "n_columns": 7,
+    "columns": [
+        "species",
+        "island",
+        "bill_length_mm",
+        "bill_depth_mm",
+        "flipper_length_mm",
+        "body_mass_g",
+        "sex"
+    ]
+}
+
+artifacts/02_missing_report.json:
+JSON
+{
+    "species": 0,
+    "island": 0,
+    "bill_length_mm": 2,
+    "bill_depth_mm": 2,
+    "flipper_length_mm": 2,
+    "body_mass_g": 2,
+    "sex": 11
+}
+
+artifacts/03_duplicates_report.json:
+JSON
+{
+    "total_duplicates": 0
+}
+
+Current phase: OBSERVE.
+
+Based on this evidence, what is the next step? Do we need 
+more observations or can we proceed to the DESCRIBE phase?
+
+--------------- prompt 3 --------------------------------------
+Action infer_schema executed. Here is the content of artifacts/01_schema.json:
+
+JSON
+{
+    "columns": [
+        {
+            "name": "species",
+            "dtype": "str"
+        },
+        {
+            "name": "island",
+            "dtype": "str"
+        },
+        {
+            "name": "bill_length_mm",
+            "dtype": "float64"
+        },
+        {
+            "name": "bill_depth_mm",
+            "dtype": "float64"
+        },
+        {
+            "name": "flipper_length_mm",
+            "dtype": "float64"
+        },
+        {
+            "name": "body_mass_g",
+            "dtype": "float64"
+        },
+        {
+            "name": "sex",
+            "dtype": "str"
+        }
+    ]
+}
+
+Question: Based on the profile, missing values report, and this schema,
+ do you consider we have enough information to close the OBSERVE phase and 
+ transition to DESCRIBE, or is there any other observation or data cleaning 
+ step required first?
+
+---------------------- prompt 4 -----------------------------------------
+ I have updated the artifacts/00_raw_profile.json with the 
+ content you provided to ensure our records are synchronized.
+
+The OBSERVE phase is officially closed. Please provide the plan for the DESCRIBE phase.
+
+--------------------- prompt 5 ------------------------------------------
+DESCRIBE phase actions executed. The following evidence has been generated:
+
+artifacts/04_descriptive_stats.json:
+
+JSON
+{
+    "numeric": {
+        "bill_length_mm": {
+            "count": 342.0,
+            "mean": 43.9219298246,
+            "std": 5.4595837139,
+            "min": 32.1,
+            "25%": 39.225,
+            "50%": 44.45,
+            "75%": 48.5,
+            "max": 59.6
+        },
+        "bill_depth_mm": {
+            "count": 342.0,
+            "mean": 17.1511695906,
+            "std": 1.9747931568,
+            "min": 13.1,
+            "25%": 15.6,
+            "50%": 17.3,
+            "75%": 18.7,
+            "max": 21.5
+        },
+        "flipper_length_mm": {
+            "count": 342.0,
+            "mean": 200.9152046784,
+            "std": 14.0617136794,
+            "min": 172.0,
+            "25%": 190.0,
+            "50%": 197.0,
+            "75%": 213.0,
+            "max": 231.0
+        },
+        "body_mass_g": {
+            "count": 342.0,
+            "mean": 4201.7543859649,
+            "std": 801.9545356981,
+            "min": 2700.0,
+            "25%": 3550.0,
+            "50%": 4050.0,
+            "75%": 4750.0,
+            "max": 6300.0
+        }
+    },
+    "categorical": {
+        "species": {
+            "Adelie": 152,
+            "Gentoo": 124,
+            "Chinstrap": 68
+        },
+        "island": {
+            "Biscoe": 168,
+            "Dream": 124,
+            "Torgersen": 52
+        },
+        "sex": {
+            "Male": 168,
+            "Female": 165
+        }
+    },
+    "correlation": {
+        "bill_length_mm": {
+            "bill_length_mm": 1.0,
+            "bill_depth_mm": -0.2350528704,
+            "flipper_length_mm": 0.6561813407,
+            "body_mass_g": 0.5951098244
+        },
+        "bill_depth_mm": {
+            "bill_length_mm": -0.2350528704,
+            "bill_depth_mm": 1.0,
+            "flipper_length_mm": -0.5838512165,
+            "body_mass_g": -0.4719156212
+        },
+        "flipper_length_mm": {
+            "bill_length_mm": 0.6561813407,
+            "bill_depth_mm": -0.5838512165,
+            "flipper_length_mm": 1.0,
+            "body_mass_g": 0.8712017673
+        },
+        "body_mass_g": {
+            "bill_length_mm": 0.5951098244,
+            "bill_depth_mm": -0.4719156212,
+            "flipper_length_mm": 0.8712017673,
+            "body_mass_g": 1.0
+        }
+    },
+    "crosstab": {
+        "Biscoe": {
+            "Adelie": 44,
+            "Chinstrap": 0,
+            "Gentoo": 124
+        },
+        "Dream": {
+            "Adelie": 56,
+            "Chinstrap": 68,
+            "Gentoo": 0
+        },
+        "Torgersen": {
+            "Adelie": 52,
+            "Chinstrap": 0,
+            "Gentoo": 0
+        }
+    }
+}
+
+artifacts/05_visual_registry.json:
+
+JSON
+{
+    "visualizations": [
+        {
+            "op": "plot_count",
+            "file": "artifacts/plots/count_species_none.png"
+        },
+        {
+            "op": "plot_count",
+            "file": "artifacts/plots/count_island_species.png"
+        },
+        {
+            "op": "plot_hist",
+            "file": "artifacts/plots/hist_bill_length_mm_species.png"
+        },
+        {
+            "op": "plot_hist",
+            "file": "artifacts/plots/hist_body_mass_g_species.png"
+        },
+        {
+            "op": "plot_box",
+            "file": "artifacts/plots/box_species_flipper_length_mm.png"
+        },
+        {
+            "op": "plot_scatter",
+            "file": "artifacts/plots/scatter_bill_length_mm_body_mass_g.png"
+        },
+        {
+            "op": "plot_heatmap_corr",
+            "file": "artifacts/plots/heatmap_correlation.png"
+        }
+    ]
+}
+
+All plots have been saved in the artifacts/plots/ directory as specified in the registry, you can
+acces to them.
+
+Based on these statistical summaries and the visual registry, what are your observations? 
+Are we ready to move to the HYPOTHESIZE phase or do you need to discuss any specific findings from the plots first?
+
+---------------------propmt 6 -----------------------------------------------------
+Yes, I agree with your observations. 
+Please proceed to the HYPOTHESIZE_AND_CONCLUDE phase and provide the plan.
+
+--------------------- prompt 7 --------------------------------------------------------
+HYPOTHESIZE phase actions executed. The statistical tests have been performed and the evidence is ready for your conclusion.
+
+artifacts/06_hypotheses_log.json:
+
+JSON
+{
+    "hypotheses": [
+        {
+            "id": "H1",
+            "statement": "Flipper length and body mass exhibit strong monotonic linear association."
+        },
+        {
+            "id": "H2",
+            "statement": "Physical measurements differ significantly across species groups."
+        },
+        {
+            "id": "H3",
+            "statement": "Species and island membership are significantly associated."
+        },
+        {
+            "id": "H4",
+            "statement": "Bill depth and flipper length exhibit moderate negative association."
+        },
+        {
+            "id": "H5",
+            "statement": "Sex distribution is balanced."
+        }
+    ]
+}
+artifacts/08_tests.json:
+
+JSON
+{
+    "H1": {
+        "pearson": {
+            "statistic": 0.8729788986,
+            "p_value": 3.132836251e-105,
+            "result": "significant"
+        },
+        "spearman": {
+            "statistic": 0.840390205,
+            "p_value": 4.630423991e-90,
+            "result": "significant"
+        }
+    },
+    "H2": {
+        "anova": {
+            "statistic": 341.8948949481,
+            "p_value": 3.744505126e-81,
+            "result": "significant"
+        }
+    },
+    "H3": {
+        "chi_square": {
+            "statistic": 299.5503274315,
+            "p_value": 1.35457383e-63,
+            "result": "significant"
+        }
+    },
+    "H4": {
+        "spearman": {
+            "statistic": -0.5173169963,
+            "p_value": 3.456493128e-24,
+            "result": "significant"
+        }
+    },
+    "H5": {
+        "chi_square_gof": {
+            "statistic": 0.027027027,
+            "p_value": 0.8694170607,
+            "result": "not_significant"
+        }
+    }
+}
+All null hypotheses have been evaluated using the p-value threshold of 0.05. 
+Based on these results, please provide your final interpretation and conclude the laboratory session.

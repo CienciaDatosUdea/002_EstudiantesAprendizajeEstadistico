@@ -1,0 +1,37 @@
+## Resumen en Markdown — Fase 2: Enfoque con Agentes
+
+Este resumen documenta el flujo, hallazgos y entregables generados bajo la arquitectura Agente-Runner para el análisis del dataset de pingüinos.
+
+### 1. Flujo de trabajo reproducible
+- **Separación de roles:** El agente planifica, interpreta y redacta hipótesis/conclusiones; el runner ejecuta cálculos y genera artifacts (JSON, PNG).
+- **Artifacts:** Todos los resultados y evidencia se almacenan en archivos dentro de `fase2_agentes/artifacts/`.
+- **Ciclo:** (1) El agente propone un plan para la fase actual (OBSERVE, DESCRIBE, HYPOTHESIZE_AND_CONCLUDE), (2) el runner ejecuta y guarda artifacts, (3) el agente interpreta y documenta.
+
+### 2. Hallazgos principales
+- **Perfil del dataset:** Se generó un perfil inicial con información de esquema, valores faltantes y duplicados.
+- **Estadísticas descriptivas:** Se calcularon medias, medianas, desviaciones estándar y rangos intercuartílicos para variables numéricas; conteos y porcentajes para categóricas.
+- **Visualizaciones:** Se registraron gráficos exploratorios (histogramas, boxplots, scatterplots, heatmaps) y se documentaron sus interpretaciones.
+- **Hipótesis:** Se formularon hipótesis falsables basadas en la evidencia de los artifacts.
+- **Conclusiones:** Se redactaron conclusiones en tres capas: descriptivas, patrones visuales y próximas hipótesis.
+
+### 3. Evidencia y reproducibilidad
+- **Artifacts generados:**
+    - `00_raw_profile.json`: Perfil inicial del dataset.
+    - `04_descriptive_stats.json`: Estadísticas descriptivas.
+    - `05_visual_registry.json`: Registro de visualizaciones.
+    - `06_hypotheses_log.json`: Hipótesis formuladas.
+    - `07_conclusions.json`: Conclusiones estructuradas.
+    - `09_questions.json`: Preguntas para el investigador.
+    - `observatorio.html`: Reporte final integrado.
+- **Todos los artifacts están disponibles en la carpeta `fase2_agentes/artifacts/`.**
+
+### 4. Registro de interacción con el agente
+- Se documentaron todos los prompts, planes y decisiones del agente en archivos de texto y JSON.
+- El flujo es completamente auditable y reproducible.
+
+### 5. Comparación de enfoques
+- **Clásico:** El análisis se realiza directamente en el notebook, mezclando código, resultados e interpretación.
+- **Con agentes:** Se separan claramente la planificación, ejecución y documentación. La evidencia es verificable y el flujo es más fácil de generalizar a otros datasets.
+
+### 6. Conclusión
+El enfoque con agentes permite estructurar el análisis, mejorar la reproducibilidad y facilitar la auditoría de cada decisión. Todos los resultados y conclusiones están sustentados únicamente en artifacts generados por el runner.

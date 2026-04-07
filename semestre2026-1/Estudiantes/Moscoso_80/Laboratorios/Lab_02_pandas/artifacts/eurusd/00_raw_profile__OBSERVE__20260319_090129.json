@@ -1,0 +1,35 @@
+{
+  "n_rows": 5000,
+  "n_cols": 13,
+  "columns": [
+    "id",
+    "time",
+    "open",
+    "high",
+    "low",
+    "close",
+    "tick_volume",
+    "spread",
+    "real_volume",
+    "MeanCloseOpen",
+    "Diff_Close",
+    "Diff_Open",
+    "Diff_MeanCloseOpen"
+  ],
+  "dtypes": {
+    "id": "int64",
+    "time": "str",
+    "open": "float64",
+    "high": "float64",
+    "low": "float64",
+    "close": "float64",
+    "tick_volume": "int64",
+    "spread": "int64",
+    "real_volume": "int64",
+    "MeanCloseOpen": "float64",
+    "Diff_Close": "float64",
+    "Diff_Open": "float64",
+    "Diff_MeanCloseOpen": "float64"
+  },
+  "memory_usage_kb": 798.88
+}

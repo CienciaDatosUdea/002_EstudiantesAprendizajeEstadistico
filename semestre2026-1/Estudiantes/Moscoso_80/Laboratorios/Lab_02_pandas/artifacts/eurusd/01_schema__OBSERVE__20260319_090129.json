@@ -1,0 +1,80 @@
+{
+  "id": {
+    "dtype": "int64",
+    "semantic_type": "numeric",
+    "n_unique": 5000,
+    "high_cardinality": false
+  },
+  "time": {
+    "dtype": "str",
+    "semantic_type": "categorical",
+    "n_unique": 5000,
+    "high_cardinality": true
+  },
+  "open": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 4041,
+    "high_cardinality": false
+  },
+  "high": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 4027,
+    "high_cardinality": false
+  },
+  "low": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 4037,
+    "high_cardinality": false
+  },
+  "close": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 4006,
+    "high_cardinality": false
+  },
+  "tick_volume": {
+    "dtype": "int64",
+    "semantic_type": "numeric",
+    "n_unique": 3659,
+    "high_cardinality": false
+  },
+  "spread": {
+    "dtype": "int64",
+    "semantic_type": "numeric",
+    "n_unique": 47,
+    "high_cardinality": false
+  },
+  "real_volume": {
+    "dtype": "int64",
+    "semantic_type": "numeric",
+    "n_unique": 1,
+    "high_cardinality": false
+  },
+  "MeanCloseOpen": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 4440,
+    "high_cardinality": false
+  },
+  "Diff_Close": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 719,
+    "high_cardinality": false
+  },
+  "Diff_Open": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 727,
+    "high_cardinality": false
+  },
+  "Diff_MeanCloseOpen": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 923,
+    "high_cardinality": false
+  }
+}

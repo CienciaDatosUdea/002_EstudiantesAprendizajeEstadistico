@@ -1,0 +1,22 @@
+{
+  "plots": [
+    {
+      "plot_id": "scatter_id_vs_close",
+      "phase": "HYPOTHESIZE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_id_vs_close__HYPOTHESIZE__20260326_234412.png",
+      "timestamp": "20260326_234412"
+    },
+    {
+      "plot_id": "scatter_close_vs_tick_volume",
+      "phase": "HYPOTHESIZE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_close_vs_tick_volume__HYPOTHESIZE__20260326_234412.png",
+      "timestamp": "20260326_234412"
+    },
+    {
+      "plot_id": "scatter_id_vs_spread",
+      "phase": "HYPOTHESIZE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_id_vs_spread__HYPOTHESIZE__20260326_234412.png",
+      "timestamp": "20260326_234412"
+    }
+  ]
+}

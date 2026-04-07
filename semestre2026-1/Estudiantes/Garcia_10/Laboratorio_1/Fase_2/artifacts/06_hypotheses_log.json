@@ -1,0 +1,24 @@
+{
+    "hypotheses": [
+        {
+            "id": "H1",
+            "statement": "Flipper length and body mass exhibit strong monotonic linear association."
+        },
+        {
+            "id": "H2",
+            "statement": "Physical measurements differ significantly across species groups."
+        },
+        {
+            "id": "H3",
+            "statement": "Species and island membership are significantly associated."
+        },
+        {
+            "id": "H4",
+            "statement": "Bill depth and flipper length exhibit moderate negative association."
+        },
+        {
+            "id": "H5",
+            "statement": "Sex distribution is balanced."
+        }
+    ]
+}

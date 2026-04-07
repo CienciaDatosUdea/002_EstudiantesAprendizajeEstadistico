@@ -1,0 +1,155 @@
+{
+  "numeric_summary": {
+    "bill_length_mm": {
+      "count": 342.0,
+      "mean": 43.9219,
+      "std": 5.4596,
+      "min": 32.1,
+      "25%": 39.225,
+      "50%": 44.45,
+      "75%": 48.5,
+      "max": 59.6
+    },
+    "bill_depth_mm": {
+      "count": 342.0,
+      "mean": 17.1512,
+      "std": 1.9748,
+      "min": 13.1,
+      "25%": 15.6,
+      "50%": 17.3,
+      "75%": 18.7,
+      "max": 21.5
+    },
+    "flipper_length_mm": {
+      "count": 342.0,
+      "mean": 200.9152,
+      "std": 14.0617,
+      "min": 172.0,
+      "25%": 190.0,
+      "50%": 197.0,
+      "75%": 213.0,
+      "max": 231.0
+    },
+    "body_mass_g": {
+      "count": 342.0,
+      "mean": 4201.7544,
+      "std": 801.9545,
+      "min": 2700.0,
+      "25%": 3550.0,
+      "50%": 4050.0,
+      "75%": 4750.0,
+      "max": 6300.0
+    }
+  },
+  "categorical_summary": {
+    "species": {
+      "nunique": 3,
+      "top_values": {
+        "Adelie": 152,
+        "Gentoo": 124,
+        "Chinstrap": 68
+      }
+    },
+    "island": {
+      "nunique": 3,
+      "top_values": {
+        "Biscoe": 168,
+        "Dream": 124,
+        "Torgersen": 52
+      }
+    },
+    "sex": {
+      "nunique": 2,
+      "top_values": {
+        "Male": 168,
+        "Female": 165,
+        "nan": 11
+      }
+    }
+  },
+  "correlation_matrices": {
+    "pearson": {
+      "bill_length_mm": {
+        "bill_length_mm": 1.0,
+        "bill_depth_mm": -0.2351,
+        "flipper_length_mm": 0.6562,
+        "body_mass_g": 0.5951
+      },
+      "bill_depth_mm": {
+        "bill_length_mm": -0.2351,
+        "bill_depth_mm": 1.0,
+        "flipper_length_mm": -0.5839,
+        "body_mass_g": -0.4719
+      },
+      "flipper_length_mm": {
+        "bill_length_mm": 0.6562,
+        "bill_depth_mm": -0.5839,
+        "flipper_length_mm": 1.0,
+        "body_mass_g": 0.8712
+      },
+      "body_mass_g": {
+        "bill_length_mm": 0.5951,
+        "bill_depth_mm": -0.4719,
+        "flipper_length_mm": 0.8712,
+        "body_mass_g": 1.0
+      }
+    },
+    "spearman": {
+      "bill_length_mm": {
+        "bill_length_mm": 1.0,
+        "bill_depth_mm": -0.2217,
+        "flipper_length_mm": 0.6728,
+        "body_mass_g": 0.5838
+      },
+      "bill_depth_mm": {
+        "bill_length_mm": -0.2217,
+        "bill_depth_mm": 1.0,
+        "flipper_length_mm": -0.5233,
+        "body_mass_g": -0.4324
+      },
+      "flipper_length_mm": {
+        "bill_length_mm": 0.6728,
+        "bill_depth_mm": -0.5233,
+        "flipper_length_mm": 1.0,
+        "body_mass_g": 0.84
+      },
+      "body_mass_g": {
+        "bill_length_mm": 0.5838,
+        "bill_depth_mm": -0.4324,
+        "flipper_length_mm": 0.84,
+        "body_mass_g": 1.0
+      }
+    }
+  },
+  "crosstabs": {
+    "species_x_sex": {
+      "Female": {
+        "Adelie": 73,
+        "Chinstrap": 34,
+        "Gentoo": 58
+      },
+      "Male": {
+        "Adelie": 73,
+        "Chinstrap": 34,
+        "Gentoo": 61
+      }
+    },
+    "species_x_island": {
+      "Biscoe": {
+        "Adelie": 44,
+        "Chinstrap": 0,
+        "Gentoo": 124
+      },
+      "Dream": {
+        "Adelie": 56,
+        "Chinstrap": 68,
+        "Gentoo": 0
+      },
+      "Torgersen": {
+        "Adelie": 52,
+        "Chinstrap": 0,
+        "Gentoo": 0
+      }
+    }
+  }
+}
