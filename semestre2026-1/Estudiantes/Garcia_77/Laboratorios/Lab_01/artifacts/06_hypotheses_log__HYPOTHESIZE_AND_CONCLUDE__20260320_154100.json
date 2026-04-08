@@ -1,0 +1,62 @@
+{
+  "hypotheses": [
+    {
+      "id": "H1",
+      "origin": "ai_observer",
+      "statement": "flipper_length_mm esta asociado positivamente con body_mass_g en el conjunto de datos.",
+      "variables": {
+        "x": "flipper_length_mm",
+        "y": "body_mass_g",
+        "group": "species"
+      },
+      "suggested_tests": [
+        "Pearson",
+        "Spearman"
+      ],
+      "evidence_refs": [
+        "04d_correlation_pearson__HYPOTHESIZE__20260320_153631.json:matrix.flipper_length_mm.body_mass_g",
+        "04d_correlation_spearman__HYPOTHESIZE__20260320_153631.json:matrix.flipper_length_mm.body_mass_g",
+        "05_visual_registry_hypothesize__HYPOTHESIZE__20260320_153631.json:plots[0].plot_id"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H2",
+      "origin": "ai_observer",
+      "statement": "bill_length_mm difiere entre especies.",
+      "variables": {
+        "x": "species",
+        "y": "bill_length_mm",
+        "group": "species"
+      },
+      "suggested_tests": [
+        "ANOVA",
+        "Kruskal-Wallis"
+      ],
+      "evidence_refs": [
+        "05_visual_registry__DESCRIBE__20260320_151832.json:plots[6].plot_id",
+        "04a_numeric_summary__DESCRIBE__20260320_151829.json:bill_length_mm.iqr"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H3",
+      "origin": "ai_observer",
+      "statement": "species esta asociada con island en este dataset.",
+      "variables": {
+        "x": "species",
+        "y": "island",
+        "group": "none"
+      },
+      "suggested_tests": [
+        "Chi-cuadrado de independencia"
+      ],
+      "evidence_refs": [
+        "04c_crosstab_species_island__HYPOTHESIZE__20260320_153631.json:table.Biscoe.Gentoo",
+        "04c_crosstab_species_island__HYPOTHESIZE__20260320_153631.json:table.Dream.Chinstrap",
+        "04c_crosstab_species_island__HYPOTHESIZE__20260320_153631.json:table.Torgersen.Adelie"
+      ],
+      "decision_needed": "human"
+    }
+  ]
+}
