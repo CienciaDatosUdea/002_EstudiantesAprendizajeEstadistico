@@ -1,0 +1,227 @@
+{
+  "dataset_name": "penguins",
+  "numeric_summary": [
+    {
+      "column": "bill_length_mm",
+      "mean": 43.9219298245614,
+      "median": 44.45,
+      "std": 5.4595837139265315,
+      "iqr": 9.274999999999999
+    },
+    {
+      "column": "bill_depth_mm",
+      "mean": 17.151169590643278,
+      "median": 17.3,
+      "std": 1.9747931568167814,
+      "iqr": 3.0999999999999996
+    },
+    {
+      "column": "flipper_length_mm",
+      "mean": 200.91520467836258,
+      "median": 197.0,
+      "std": 14.061713679356886,
+      "iqr": 23.0
+    },
+    {
+      "column": "body_mass_g",
+      "mean": 4201.754385964912,
+      "median": 4050.0,
+      "std": 801.9545356980955,
+      "iqr": 1200.0
+    }
+  ],
+  "categorical_summary": [
+    {
+      "column": "species",
+      "category": "Adelie",
+      "count": 152,
+      "percentage": 44.19
+    },
+    {
+      "column": "species",
+      "category": "Gentoo",
+      "count": 124,
+      "percentage": 36.05
+    },
+    {
+      "column": "species",
+      "category": "Chinstrap",
+      "count": 68,
+      "percentage": 19.77
+    },
+    {
+      "column": "island",
+      "category": "Biscoe",
+      "count": 168,
+      "percentage": 48.84
+    },
+    {
+      "column": "island",
+      "category": "Dream",
+      "count": 124,
+      "percentage": 36.05
+    },
+    {
+      "column": "island",
+      "category": "Torgersen",
+      "count": 52,
+      "percentage": 15.12
+    },
+    {
+      "column": "sex",
+      "category": "MALE",
+      "count": 168,
+      "percentage": 48.84
+    },
+    {
+      "column": "sex",
+      "category": "FEMALE",
+      "count": 165,
+      "percentage": 47.97
+    },
+    {
+      "column": "sex",
+      "category": "<MISSING>",
+      "count": 11,
+      "percentage": 3.2
+    }
+  ],
+  "crosstabs": {
+    "cross_table_species_island.json": [
+      {
+        "species": "Adelie",
+        "Biscoe": 44,
+        "Dream": 56,
+        "Torgersen": 52
+      },
+      {
+        "species": "Chinstrap",
+        "Biscoe": 0,
+        "Dream": 68,
+        "Torgersen": 0
+      },
+      {
+        "species": "Gentoo",
+        "Biscoe": 124,
+        "Dream": 0,
+        "Torgersen": 0
+      }
+    ]
+  },
+  "correlations": {
+    "pearson": [
+      {
+        "variable": "bill_length_mm",
+        "bill_length_mm": 1.0,
+        "bill_depth_mm": -0.23505287035553338,
+        "flipper_length_mm": 0.6561813407464291,
+        "body_mass_g": 0.5951098244376295
+      },
+      {
+        "variable": "bill_depth_mm",
+        "bill_length_mm": -0.23505287035553338,
+        "bill_depth_mm": 1.0,
+        "flipper_length_mm": -0.5838512164654133,
+        "body_mass_g": -0.47191562118606556
+      },
+      {
+        "variable": "flipper_length_mm",
+        "bill_length_mm": 0.6561813407464291,
+        "bill_depth_mm": -0.5838512164654133,
+        "flipper_length_mm": 1.0,
+        "body_mass_g": 0.871201767306011
+      },
+      {
+        "variable": "body_mass_g",
+        "bill_length_mm": 0.5951098244376295,
+        "bill_depth_mm": -0.47191562118606556,
+        "flipper_length_mm": 0.871201767306011,
+        "body_mass_g": 1.0
+      }
+    ],
+    "spearman": [
+      {
+        "variable": "bill_length_mm",
+        "bill_length_mm": 1.0,
+        "bill_depth_mm": -0.22174915179457866,
+        "flipper_length_mm": 0.6727719416255545,
+        "body_mass_g": 0.5838003194455482
+      },
+      {
+        "variable": "bill_depth_mm",
+        "bill_length_mm": -0.22174915179457866,
+        "bill_depth_mm": 1.0,
+        "flipper_length_mm": -0.5232674711610737,
+        "body_mass_g": -0.4323722214130437
+      },
+      {
+        "variable": "flipper_length_mm",
+        "bill_length_mm": 0.6727719416255545,
+        "bill_depth_mm": -0.5232674711610737,
+        "flipper_length_mm": 1.0,
+        "body_mass_g": 0.8399741230312999
+      },
+      {
+        "variable": "body_mass_g",
+        "bill_length_mm": 0.5838003194455482,
+        "bill_depth_mm": -0.4323722214130437,
+        "flipper_length_mm": 0.8399741230312999,
+        "body_mass_g": 1.0
+      }
+    ]
+  },
+  "histogram_descriptions": {
+    "bill_length_mm": {
+      "skewness": "approximately symmetric",
+      "center": "closer to the mean",
+      "spread": "small relative spread",
+      "outliers": 0,
+      "gaps": 0,
+      "mean": 43.9219298245614,
+      "median": 44.45,
+      "max": 59.6,
+      "min": 32.1
+    },
+    "bill_depth_mm": {
+      "skewness": "approximately symmetric",
+      "center": "closer to the mean",
+      "spread": "small relative spread",
+      "outliers": 0,
+      "gaps": 0,
+      "mean": 17.151169590643278,
+      "median": 17.3,
+      "max": 21.5,
+      "min": 13.1
+    },
+    "flipper_length_mm": {
+      "skewness": "skewed to the right",
+      "center": "closer to the mean",
+      "spread": "small relative spread",
+      "outliers": 0,
+      "gaps": 0,
+      "mean": 200.91520467836258,
+      "median": 197.0,
+      "max": 231.0,
+      "min": 172.0
+    },
+    "body_mass_g": {
+      "skewness": "skewed to the right",
+      "center": "closer to the mean",
+      "spread": "small relative spread",
+      "outliers": 0,
+      "gaps": 0,
+      "mean": 4201.754385964912,
+      "median": 4050.0,
+      "max": 6300.0,
+      "min": 2700.0
+    }
+  },
+  "evidence_refs": [
+    "artifacts/numeric_summary.json",
+    "artifacts/categorical_counts.json",
+    "artifacts/pearson_corr.json",
+    "artifacts/spearman_corr.json",
+    "artifacts/histogram_descriptions.json",
+    "artifacts/cross_table_species_island.json"
+  ]
+}

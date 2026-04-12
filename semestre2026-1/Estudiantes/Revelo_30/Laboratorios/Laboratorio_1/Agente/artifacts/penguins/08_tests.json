@@ -1,0 +1,52 @@
+[
+  {
+    "test": "Pearson",
+    "variables": {
+      "x": "flipper_length_mm",
+      "y": "body_mass_g"
+    },
+    "statistic": 0.8712017673060113,
+    "p_value": 4.3706809630004724e-107,
+    "n": 342
+  },
+  {
+    "test": "Spearman",
+    "variables": {
+      "x": "flipper_length_mm",
+      "y": "body_mass_g"
+    },
+    "statistic": 0.8399741230312999,
+    "p_value": 2.763218997179657e-92,
+    "n": 342
+  },
+  {
+    "test": "ANOVA",
+    "variables": {
+      "value_col": "bill_length_mm",
+      "group_col": "species"
+    },
+    "statistic": 410.6002550405077,
+    "p_value": 2.6946137388895495e-91,
+    "n_groups": 3
+  },
+  {
+    "test": "Kruskal",
+    "variables": {
+      "value_col": "bill_length_mm",
+      "group_col": "species"
+    },
+    "statistic": 244.13671803364164,
+    "p_value": 9.691371997194331e-54,
+    "n_groups": 3
+  },
+  {
+    "test": "Chi-square",
+    "variables": {
+      "x": "species",
+      "y": "island"
+    },
+    "statistic": 299.55032743148195,
+    "p_value": 1.3545738297192517e-63,
+    "dof": 4
+  }
+]
