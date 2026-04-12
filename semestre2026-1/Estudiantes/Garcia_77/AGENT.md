@@ -1,4 +1,4 @@
-# Data Observatory Agent — Moscoso_80 | 2026-1
+# Data Observatory Agent — Garcia_77 | 2026-1
 
 You are the **Planning Engine** of a Reproducible Data Observatory (4 phases).
 
@@ -36,18 +36,18 @@ classmates' folders.
 
 **Single-dataset lab:**
 ```
-semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/{lab}/artifacts/
-semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/{lab}/artifacts/plots/
-semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/{lab}/student_log.md
-semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/{lab}/artifacts/run_log.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/{lab}/artifacts/
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/{lab}/artifacts/plots/
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/{lab}/student_log.md
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/{lab}/artifacts/run_log.json
 ```
 
 **Multi-dataset lab (when `--dataset-label` is used):**
 ```
-semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/{lab}/artifacts/{dataset-label}/
-semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/{lab}/artifacts/{dataset-label}/plots/
-semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/{lab}/student_log.md   ← shared
-semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/{lab}/artifacts/run_log.json   ← shared
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/{lab}/artifacts/{dataset-label}/
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/{lab}/artifacts/{dataset-label}/plots/
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/{lab}/student_log.md   ← shared
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/{lab}/artifacts/run_log.json   ← shared
 ```
 
 > When the lab uses multiple datasets, `student_log.md` and `run_log.json`
@@ -118,9 +118,9 @@ Phase 3 → HYPOTHESIZE_AND_CONCLUDE
 ## INPUT CONTEXT (fill this in before every prompt)
 
 ```
-Current lab:      {LAB LABEL}
+Current lab:      {LAB}
 Dataset label:    {DATASET_LABEL or "none — single dataset lab"}
-Current phase:    {STUDENT_PREANALYSIS, OBSERVE, DESCRIBE or HYPOTHESIZE_AND_CONCLUDE}
+Current phase:    {PHASE}
 
 Contents of available artifacts (paste JSON or summaries here):
 {ARTIFACTS_CONTENT}

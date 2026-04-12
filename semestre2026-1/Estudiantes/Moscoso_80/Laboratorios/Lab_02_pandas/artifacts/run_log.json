@@ -1,0 +1,331 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-03-14T10:30:22.486040",
+      "phase": "OBSERVE",
+      "operation": "profile_dataset",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/00_raw_profile__OBSERVE__20260314_103022.json"
+    },
+    {
+      "timestamp": "2026-03-14T10:30:22.494257",
+      "phase": "OBSERVE",
+      "operation": "infer_schema",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/01_schema__OBSERVE__20260314_103022.json"
+    },
+    {
+      "timestamp": "2026-03-14T10:30:22.500280",
+      "phase": "OBSERVE",
+      "operation": "missing_report",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/02_missing_report__OBSERVE__20260314_103022.json"
+    },
+    {
+      "timestamp": "2026-03-14T10:30:22.506573",
+      "phase": "OBSERVE",
+      "operation": "duplicates_report",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/03_duplicates_report__OBSERVE__20260314_103022.json"
+    },
+    {
+      "timestamp": "2026-03-14T10:55:59.744894",
+      "phase": "DESCRIBE",
+      "operation": "numeric_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04a_numeric_summary__DESCRIBE__20260314_105559.json"
+    },
+    {
+      "timestamp": "2026-03-14T10:55:59.746604",
+      "phase": "DESCRIBE",
+      "operation": "categorical_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04b_categorical_summary__DESCRIBE__20260314_105559.json"
+    },
+    {
+      "timestamp": "2026-03-14T10:55:59.756662",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04d_correlation_pearson__DESCRIBE__20260314_105559.json"
+    },
+    {
+      "timestamp": "2026-03-14T10:55:59.769533",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04d_correlation_spearman__DESCRIBE__20260314_105559.json"
+    },
+    {
+      "timestamp": "2026-03-14T10:55:59.954011",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "kendall"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04d_correlation_kendall__DESCRIBE__20260314_105559.json"
+    },
+    {
+      "timestamp": "2026-03-14T10:56:00.093069",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/count_diagnosis__DESCRIBE__20260314_105600.png"
+    },
+    {
+      "timestamp": "2026-03-14T10:56:00.258355",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_id_by_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_id_by_diagnosis__DESCRIBE__20260314_105600.png"
+    },
+    {
+      "timestamp": "2026-03-14T10:56:00.420377",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_area_worst_by_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_area_worst_by_diagnosis__DESCRIBE__20260314_105600.png"
+    },
+    {
+      "timestamp": "2026-03-14T10:56:00.572208",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_area_mean_by_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_area_mean_by_diagnosis__DESCRIBE__20260314_105600.png"
+    },
+    {
+      "timestamp": "2026-03-14T10:56:00.675641",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_id_by_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/box_id_by_diagnosis__DESCRIBE__20260314_105600.png"
+    },
+    {
+      "timestamp": "2026-03-14T10:56:00.779960",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_radius_mean_by_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/box_radius_mean_by_diagnosis__DESCRIBE__20260314_105600.png"
+    },
+    {
+      "timestamp": "2026-03-14T10:56:00.914468",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_id_vs_area_se_hue_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/scatter_id_vs_area_se_hue_diagnosis__DESCRIBE__20260314_105600.png"
+    },
+    {
+      "timestamp": "2026-03-14T10:56:01.058197",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_radius_mean_vs_perimeter_mean_hue_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/scatter_radius_mean_vs_perimeter_mean_hue_diagnosis__DESCRIBE__20260314_105600.png"
+    },
+    {
+      "timestamp": "2026-03-14T10:56:02.564499",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "heatmap_corr_pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/heatmap_corr_pearson__DESCRIBE__20260314_105601.png"
+    },
+    {
+      "timestamp": "2026-03-14T11:27:37.195598",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_concavity_mean_by_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_concavity_mean_by_diagnosis__HYPOTHESIZE__20260314_112737.png"
+    },
+    {
+      "timestamp": "2026-03-14T11:27:37.328177",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_concave_points_mean_by_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/box_concave_points_mean_by_diagnosis__HYPOTHESIZE__20260314_112737.png"
+    },
+    {
+      "timestamp": "2026-03-14T11:27:37.497000",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_concavity_mean_vs_concave_points_mean_hue_diagnosis"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/scatter_concavity_mean_vs_concave_points_mean_hue_diagnosis__HYPOTHESIZE__20260314_112737.png"
+    },
+    {
+      "timestamp": "2026-03-19T09:01:29.247566",
+      "phase": "OBSERVE",
+      "operation": "profile_dataset",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/00_raw_profile__OBSERVE__20260319_090129.json"
+    },
+    {
+      "timestamp": "2026-03-19T09:01:29.251809",
+      "phase": "OBSERVE",
+      "operation": "infer_schema",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/01_schema__OBSERVE__20260319_090129.json"
+    },
+    {
+      "timestamp": "2026-03-19T09:01:29.271197",
+      "phase": "OBSERVE",
+      "operation": "missing_report",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/02_missing_report__OBSERVE__20260319_090129.json"
+    },
+    {
+      "timestamp": "2026-03-19T09:01:29.276445",
+      "phase": "OBSERVE",
+      "operation": "duplicates_report",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/03_duplicates_report__OBSERVE__20260319_090129.json"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:51.533266",
+      "phase": "DESCRIBE",
+      "operation": "numeric_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04a_numeric_summary__DESCRIBE__20260326_224951.json"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:51.568165",
+      "phase": "DESCRIBE",
+      "operation": "categorical_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04b_categorical_summary__DESCRIBE__20260326_224951.json"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:51.573037",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04d_correlation_pearson__DESCRIBE__20260326_224951.json"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:51.579150",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04d_correlation_spearman__DESCRIBE__20260326_224951.json"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:51.648361",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "kendall"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04d_correlation_kendall__DESCRIBE__20260326_224951.json"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:51.804564",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_tick_volume"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/hist_tick_volume__DESCRIBE__20260326_224951.png"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:51.916607",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_id"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/hist_id__DESCRIBE__20260326_224951.png"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:52.031431",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_spread"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/hist_spread__DESCRIBE__20260326_224951.png"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:52.182786",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_id_vs_high"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_id_vs_high__DESCRIBE__20260326_224952.png"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:52.318615",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_open_vs_MeanCloseOpen"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_open_vs_MeanCloseOpen__DESCRIBE__20260326_224952.png"
+    },
+    {
+      "timestamp": "2026-03-26T22:49:52.660854",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "heatmap_corr_pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/heatmap_corr_pearson__DESCRIBE__20260326_224952.png"
+    },
+    {
+      "timestamp": "2026-03-26T23:44:12.238276",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_id_vs_close"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_id_vs_close__HYPOTHESIZE__20260326_234412.png"
+    },
+    {
+      "timestamp": "2026-03-26T23:44:12.388451",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_close_vs_tick_volume"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_close_vs_tick_volume__HYPOTHESIZE__20260326_234412.png"
+    },
+    {
+      "timestamp": "2026-03-26T23:44:12.514949",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_id_vs_spread"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_id_vs_spread__HYPOTHESIZE__20260326_234412.png"
+    }
+  ]
+}

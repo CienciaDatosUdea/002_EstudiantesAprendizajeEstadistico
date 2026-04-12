@@ -1,0 +1,44 @@
+{
+  "species": {
+    "n_unique": 3,
+    "top_value": "Adelie",
+    "value_counts": {
+      "Adelie": 152,
+      "Gentoo": 124,
+      "Chinstrap": 68
+    },
+    "proportions": {
+      "Adelie": 0.4419,
+      "Gentoo": 0.3605,
+      "Chinstrap": 0.1977
+    }
+  },
+  "island": {
+    "n_unique": 3,
+    "top_value": "Biscoe",
+    "value_counts": {
+      "Biscoe": 168,
+      "Dream": 124,
+      "Torgersen": 52
+    },
+    "proportions": {
+      "Biscoe": 0.4884,
+      "Dream": 0.3605,
+      "Torgersen": 0.1512
+    }
+  },
+  "sex": {
+    "n_unique": 2,
+    "top_value": "Male",
+    "value_counts": {
+      "Male": 168,
+      "Female": 165,
+      "nan": 11
+    },
+    "proportions": {
+      "Male": 0.4884,
+      "Female": 0.4797,
+      "nan": 0.032
+    }
+  }
+}
