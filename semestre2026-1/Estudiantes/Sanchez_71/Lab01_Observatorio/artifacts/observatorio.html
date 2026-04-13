@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Reporte Final: Observatorio de Datos - Laboratorio 1</title>
+	<style>
+		:root{
+			--bg:#f4f7fb;
+			--paper:#ffffff;
+			--ink:#1f2a37;
+			--muted:#5b6b7f;
+			--primary:#0b3c5d;
+			--accent:#1f7a8c;
+			--line:#dbe3ec;
+			--ok:#0f766e;
+			--warn:#b45309;
+		}
+		*{box-sizing:border-box}
+		body{
+			margin:0;
+			background: radial-gradient(circle at 20% 0%, #e9f1fb 0%, var(--bg) 45%, #eef3f9 100%);
+			color:var(--ink);
+			font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+			line-height:1.55;
+		}
+		.container{
+			width:min(1100px, 92%);
+			margin:32px auto 52px;
+		}
+		.report{
+			background:var(--paper);
+			border:1px solid var(--line);
+			border-radius:14px;
+			box-shadow:0 12px 28px rgba(16, 24, 40, 0.08);
+			overflow:hidden;
+		}
+		.header{
+			padding:28px 34px;
+			background:linear-gradient(135deg, var(--primary), #0f5f8f 58%, var(--accent));
+			color:#fff;
+		}
+		.title{
+			margin:0;
+			font-size:1.95rem;
+			letter-spacing:.2px;
+			font-weight:700;
+		}
+		.subtitle{
+			margin:.35rem 0 0;
+			opacity:.95;
+			font-weight:500;
+			font-size:1rem;
+		}
+		.meta{
+			margin-top:14px;
+			display:grid;
+			grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+			gap:8px 16px;
+			font-size:.95rem;
+			opacity:.97;
+		}
+		.meta b{font-weight:650}
+		.disclaimer{
+			margin:18px 24px 8px;
+			border-left:5px solid var(--warn);
+			background:#fff7ed;
+			color:#7c2d12;
+			padding:12px 14px;
+			border-radius:8px;
+			font-size:.95rem;
+		}
+		.content{padding:8px 26px 30px}
+		.section{
+			margin-top:22px;
+			border-top:1px solid var(--line);
+			padding-top:18px;
+		}
+		.section h2{
+			margin:0 0 10px;
+			color:var(--primary);
+			font-size:1.35rem;
+			letter-spacing:.2px;
+		}
+		.lead{
+			color:var(--muted);
+			margin-top:0;
+		}
+		.cards{
+			display:grid;
+			grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+			gap:12px;
+			margin:10px 0 14px;
+		}
+		.card{
+			border:1px solid var(--line);
+			border-radius:10px;
+			padding:12px 13px;
+			background:#fcfdff;
+		}
+		.card h4{
+			margin:0 0 6px;
+			color:#0f3b66;
+			font-size:.98rem;
+		}
+		.badge{
+			display:inline-block;
+			padding:2px 8px;
+			border-radius:999px;
+			background:#e6f4ff;
+			color:#0b4a7a;
+			border:1px solid #c7e2fa;
+			font-size:.78rem;
+			margin-left:6px;
+			vertical-align:middle;
+		}
+		table{
+			width:100%;
+			border-collapse:collapse;
+			margin:10px 0 16px;
+			font-size:.94rem;
+		}
+		th, td{
+			border:1px solid var(--line);
+			padding:8px 10px;
+			text-align:left;
+			vertical-align:top;
+		}
+		th{
+			background:#f5f9ff;
+			color:#1e3a5f;
+			font-weight:650;
+		}
+		.muted{color:var(--muted)}
+		.equation{
+			background:#f8fbff;
+			border:1px dashed #bfd7ef;
+			border-radius:8px;
+			padding:10px 12px;
+			margin:8px 0 12px;
+			font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+			font-size:.9rem;
+			color:#12385e;
+			overflow:auto;
+		}
+		.list-tight li{margin-bottom:4px}
+		.visual-grid{
+			display:grid;
+			grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+			gap:10px;
+			margin-top:8px;
+		}
+		.visual-item{
+			border:1px solid var(--line);
+			border-radius:8px;
+			background:#fbfdff;
+			padding:9px 10px;
+			font-size:.9rem;
+		}
+		.visual-item b{color:#103a61}
+		.footer-note{
+			margin-top:16px;
+			padding:10px 12px;
+			border-radius:8px;
+			background:#eefaf6;
+			border:1px solid #b7e7d7;
+			color:#115e59;
+			font-size:.9rem;
+		}
+		code, pre{
+			font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+		}
+		pre{
+			background:#0f172a;
+			color:#e2e8f0;
+			padding:14px;
+			border-radius:10px;
+			overflow:auto;
+			border:1px solid #1e293b;
+			font-size:.85rem;
+			line-height:1.45;
+			white-space:pre-wrap;
+			word-break:break-word;
+		}
+		.small{font-size:.87rem}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<article class="report">
+			<header class="header">
+				<h1 class="title">Reporte Final: Observatorio de Datos - Laboratorio 1</h1>
+				<p class="subtitle">Análisis desacoplado Agente/Runner sobre el sistema de pingüinos</p>
+				<div class="meta">
+					<div><b>Autor:</b> Juan Pablo Sanchez</div>
+					<div><b>Curso:</b> Física Computacional 2</div>
+					<div><b>Fecha:</b> 12 de abril de 2026</div>
+					<div><b>Herramienta:</b> GitHub Copilot (Theoretical Agent)</div>
+				</div>
+			</header>
+
+			<aside class="disclaimer">
+				<b>Disclaimer:</b> Este reporte fue generado íntegramente por una Inteligencia Artificial (GitHub Copilot) mediante el análisis de artefactos de datos, bajo el protocolo de desacoplamiento Agente/Runner.
+			</aside>
+
+			<div class="content">
+
+				<section class="section" id="sec1">
+					<h2>1. Caracterización del Sistema</h2>
+					<p class="lead">
+						Fuente principal: <span class="muted">00_raw_profile.json</span>. Se analiza la estructura del espacio de fases observacional sin acceso a microestados crudos.
+					</p>
+
+					<div class="cards">
+						<div class="card">
+							<h4>Tamaño del sistema</h4>
+							<div>Observaciones: <b>344</b></div>
+							<div>Variables: <b>7</b></div>
+						</div>
+						<div class="card">
+							<h4>Tipos de variables</h4>
+							<div>Numéricas: <b>4</b> <span class="badge">bill_length, bill_depth, flipper_length, body_mass</span></div>
+							<div>Categóricas: <b>3</b> <span class="badge">species, island, sex</span></div>
+						</div>
+						<div class="card">
+							<h4>Calidad estructural</h4>
+							<div>Duplicados: <b>0</b></div>
+							<div>Baja cardinalidad: <b>species, island, sex</b></div>
+						</div>
+					</div>
+
+					<table>
+						<thead>
+							<tr>
+								<th>Variable</th>
+								<th>Valores faltantes</th>
+								<th>% sobre N=344</th>
+								<th>Interpretación</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td>species</td><td>0</td><td>0.00%</td><td>Completitud total en etiqueta de especie.</td></tr>
+							<tr><td>island</td><td>0</td><td>0.00%</td><td>Completitud total en contexto geográfico.</td></tr>
+							<tr><td>bill_length_mm</td><td>2</td><td>0.58%</td><td>Pérdida puntual mínima en dimensión física.</td></tr>
+							<tr><td>bill_depth_mm</td><td>2</td><td>0.58%</td><td>Pérdida puntual mínima en dimensión física.</td></tr>
+							<tr><td>flipper_length_mm</td><td>2</td><td>0.58%</td><td>Pérdida puntual mínima en dimensión física.</td></tr>
+							<tr><td>body_mass_g</td><td>2</td><td>0.58%</td><td>Pérdida puntual mínima en variable energética/escala.</td></tr>
+							<tr><td>sex</td><td>11</td><td>3.20%</td><td>Fuente principal de entropía de observación.</td></tr>
+						</tbody>
+					</table>
+
+					<p>
+						En términos de confiabilidad del vector de estado, la incertidumbre está concentrada en <b>sex</b>, mientras que el subespacio morfométrico conserva alta observabilidad.
+						La mezcla de faltantes no impide inferencia global, pero sí puede afectar análisis condicionados por dimorfismo sexual.
+					</p>
+				</section>
+
+				<section class="section" id="sec2">
+					<h2>2. Análisis Estadístico y Visual</h2>
+					<p class="lead">
+						Fuentes: <span class="muted">04_descriptive_stats.json</span> y <span class="muted">05_visual_registry.json</span>.
+					</p>
+
+					<h3>2.1 Estadística descriptiva (variables numéricas)</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Variable</th>
+								<th>Media</th>
+								<th>Desv. Est.</th>
+								<th>Mín</th>
+								<th>Q1</th>
+								<th>Mediana</th>
+								<th>Q3</th>
+								<th>Máx</th>
+								<th>IQR</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td>bill_length_mm</td><td>43.92</td><td>5.46</td><td>32.1</td><td>39.23</td><td>44.45</td><td>48.50</td><td>59.6</td><td>9.27</td></tr>
+							<tr><td>bill_depth_mm</td><td>17.15</td><td>1.97</td><td>13.1</td><td>15.60</td><td>17.30</td><td>18.70</td><td>21.5</td><td>3.10</td></tr>
+							<tr><td>flipper_length_mm</td><td>200.92</td><td>14.06</td><td>172.0</td><td>190.00</td><td>197.00</td><td>213.00</td><td>231.0</td><td>23.00</td></tr>
+							<tr><td>body_mass_g</td><td>4201.75</td><td>801.95</td><td>2700</td><td>3550</td><td>4050</td><td>4750</td><td>6300</td><td>1200</td></tr>
+						</tbody>
+					</table>
+
+					<h3>2.2 Distribución categórica</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Categoría</th>
+								<th>Niveles</th>
+								<th>Frecuencias</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>species</td>
+								<td>Adelie, Gentoo, Chinstrap</td>
+								<td>152 (44.19%), 124 (36.05%), 68 (19.77%)</td>
+							</tr>
+							<tr>
+								<td>island</td>
+								<td>Biscoe, Dream, Torgersen</td>
+								<td>168 (48.84%), 124 (36.05%), 52 (15.12%)</td>
+							</tr>
+							<tr>
+								<td>sex (sin NA)</td>
+								<td>Male, Female</td>
+								<td>168 (50.45%), 165 (49.55%)</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h3>2.3 Acoplamientos del espacio de fases (correlaciones)</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Par de variables</th>
+								<th>Pearson</th>
+								<th>Spearman</th>
+								<th>Lectura física</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>flipper_length_mm vs body_mass_g</td>
+								<td>0.871</td>
+								<td>0.840</td>
+								<td>Acoplamiento positivo dominante de escala corporal.</td>
+							</tr>
+							<tr>
+								<td>bill_length_mm vs flipper_length_mm</td>
+								<td>0.656</td>
+								<td>0.673</td>
+								<td>Asociación positiva moderada-fuerte.</td>
+							</tr>
+							<tr>
+								<td>bill_length_mm vs body_mass_g</td>
+								<td>0.595</td>
+								<td>0.584</td>
+								<td>Tendencia positiva de mayor longitud de pico con mayor masa.</td>
+							</tr>
+							<tr>
+								<td>bill_depth_mm vs flipper_length_mm</td>
+								<td>-0.584</td>
+								<td>-0.523</td>
+								<td>Acoplamiento inverso relevante.</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h3>2.4 Registro visual disponible</h3>
+					<div class="visual-grid">
+						<div class="visual-item"><b>Categóricas:</b> count_species.png, count_island.png, count_sex.png</div>
+						<div class="visual-item"><b>Histogramas:</b> hist_bill_length_mm.png, hist_bill_depth_mm.png, hist_flipper_length_mm.png, hist_body_mass_g.png</div>
+						<div class="visual-item"><b>Interacciones:</b> boxplot_bill_length_mm_species.png, scatter_bill_length_mm_bill_depth_mm.png</div>
+						<div class="visual-item"><b>Correlación:</b> heatmap_pearson.png</div>
+					</div>
+
+					<p class="small muted">
+						Nota técnica: el log de hipótesis menciona además evidencia visual en scatter_flipper_length_mm_body_mass_g.png, consistente con el patrón de correlación fuerte.
+					</p>
+				</section>
+
+				<section class="section" id="sec3">
+					<h2>3. Hipótesis y Validación</h2>
+					<p class="lead">
+						Fuente: <span class="muted">06_hypotheses_log.json</span>.
+					</p>
+
+					<h3>H1. Interacción aleta-masa</h3>
+					<p><b>Descripción:</b> Existe una correlación lineal positiva significativa entre la longitud de la aleta y la masa corporal.</p>
+					<div class="equation">
+						H0: rho(flipper_length_mm, body_mass_g) = 0<br/>
+						H1: rho(flipper_length_mm, body_mass_g) &gt; 0
+					</div>
+					<p><b>Prueba Runner:</b> Correlación de Pearson (y Spearman como robustez), con p-valor e IC95%.</p>
+
+					<h3>H2. Diferencias por especie en longitud de pico</h3>
+					<p><b>Descripción:</b> El valor medio de bill_length_mm varía significativamente entre especies.</p>
+					<div class="equation">
+						H0: mu_Adelie = mu_Chinstrap = mu_Gentoo<br/>
+						H1: existe al menos un par (i,j) con mu_i != mu_j
+					</div>
+					<p><b>Prueba Runner:</b> ANOVA de un factor (bill_length_mm ~ species), seguido de post-hoc de Tukey si p &lt; 0.05.</p>
+
+					<h3>H3. Asociación especie-isla</h3>
+					<p><b>Descripción:</b> La distribución de especies depende de la isla de observación.</p>
+					<div class="equation">
+						H0: species independiente de island<br/>
+						H1: species no independiente de island
+					</div>
+					<p><b>Prueba Runner:</b> Chi-cuadrado de independencia sobre tabla de contingencia species x island, con V de Cramér como tamaño de efecto.</p>
+				</section>
+
+				<section class="section" id="sec4">
+					<h2>4. Conclusiones y Preguntas de Investigación</h2>
+					<p class="lead">
+						Fuente: <span class="muted">07_conclusions.json</span>.
+					</p>
+
+					<div class="cards">
+						<div class="card">
+							<h4>Capa A: Descriptiva</h4>
+							<p><b>Hallazgo:</b> El sistema presenta lagunas de información (entropía) en variables críticas.</p>
+							<p><b>Evidencia:</b> 2 faltantes en dimensiones físicas y 11 en sex.</p>
+							<p><b>Interpretación:</b> Pérdida mínima pero concentrada; sugiere fallos puntuales de medición.</p>
+						</div>
+						<div class="card">
+							<h4>Capa B: Visual</h4>
+							<p><b>Hallazgo:</b> Acoplamientos lineales fuertes y distribuciones multimodales.</p>
+							<p><b>Evidencia:</b> Correlación Pearson 0.87 en flipper vs body_mass y bimodalidad en bill_length.</p>
+							<p><b>Interpretación:</b> Mezcla de estados (especies) con leyes de escala distintas.</p>
+						</div>
+						<div class="card">
+							<h4>Capa C: Próximas hipótesis</h4>
+							<p><b>Hallazgo:</b> body_mass_g puede modelarse como función de dimensiones de aleta.</p>
+							<p><b>Evidencia:</b> p-valor &lt; 0.05 en prueba de correlación reportada.</p>
+							<p><b>Interpretación:</b> Transición natural a regresión multivariada para predicción.</p>
+						</div>
+					</div>
+
+					<h3>Preguntas del investigador</h3>
+					<ol class="list-tight">
+						<li>¿Cómo afecta el dimorfismo sexual (sex) a las leyes de escala observadas en la masa corporal?</li>
+						<li>¿Es necesaria una imputación de faltantes antes del modelado predictivo?</li>
+						<li>¿Existen variables ambientales no registradas por isla que expliquen la segregación de especies?</li>
+					</ol>
+				</section>
+
+				<section class="section" id="sec5">
+					<h2>5. Comparación de Enfoques</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Criterio</th>
+								<th>Enfoque Clásico (exploración manual)</th>
+								<th>Enfoque con Agentes (inferencia desacoplada)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Flujo de trabajo</td>
+								<td>Secuencial, dependiente de decisiones humanas en cada paso.</td>
+								<td>Separación de roles: Runner ejecuta pruebas; Agente infiere leyes macroscópicas desde artefactos.</td>
+							</tr>
+							<tr>
+								<td>Reproducibilidad</td>
+								<td>Variable, alta sensibilidad al analista y al entorno.</td>
+								<td>Alta trazabilidad vía artefactos JSON y registro explícito de hipótesis.</td>
+							</tr>
+							<tr>
+								<td>Escalabilidad</td>
+								<td>Limitada por tiempo de inspección manual y iteraciones.</td>
+								<td>Alta: misma plantilla de inferencia sobre sistemas distintos con cambios mínimos.</td>
+							</tr>
+							<tr>
+								<td>Riesgo de leakage</td>
+								<td>Mayor, si se consulta indiscriminadamente el dataset base.</td>
+								<td>Menor, por protocolo de desacoplamiento Agente/Runner y uso de artefactos resumidos.</td>
+							</tr>
+							<tr>
+								<td>Interpretabilidad</td>
+								<td>Buena en manos expertas, pero menos estandarizada.</td>
+								<td>Estructurada por secciones (descriptiva, visual, hipótesis, validación).</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p>
+						<b>Prueba de Generalización (Iris):</b>
+						En <i>REPORT_LAB01.md</i> se documenta que el protocolo fue transferido al dataset Iris, donde el runner identificó variables dinámicamente y reprodujo el ciclo de correlaciones y ANOVA, validando la portabilidad del enfoque desacoplado a otro sistema físico-estadístico.
+					</p>
+				</section>
+
+				<section class="section" id="sec6">
+					<h2>6. Metadatos del Agente</h2>
+					<p class="lead">Prompt utilizado para generar este reporte:</p>
+					<pre>Generate a single, self-contained HTML file for the "Reporte Final: Observatorio de Datos - Laboratorio 1".
+The report must be in Spanish and follow a professional scientific aesthetic (use clean CSS/Bootstrap-like styling).
+
+Context:
+#file:artifacts/00_raw_profile.json
+#file:artifacts/04_descriptive_stats.json
+#file:artifacts/06_hypotheses_log.json
+#file:artifacts/07_conclusions.json
+#file:artifacts/05_visual_registry.json
+
+Requirements:
+1. Header: Title, Author (Juan Pablo Sanchez), Course (Física Computacional 2), and Date.
+2. Disclaimer: Add a clear note stating: "Este reporte fue generado íntegramente por una Inteligencia Artificial (GitHub Copilot) mediante el análisis de artefactos de datos, bajo el protocolo de desacoplamiento Agente/Runner."
+3. Section 1: Caracterización del Sistema (using 00_raw_profile.json).
+4. Section 2: Análisis Estadístico y Visual (using 04_descriptive_stats.json and referencing images in 05_visual_registry.json).
+5. Section 3: Hipótesis y Validación (using 06_hypotheses_log.json).
+6. Section 4: Conclusiones y Preguntas de Investigación (using 07_conclusions.json).
+7. Section 5: Comparación de Enfoques. Compare the "Enfoque Clásico" (manual exploration) vs "Enfoque con Agentes" (decoupled inference). Highlight the "Generalization" test performed with the Iris dataset.
+8. Section 6: Metadatos del Agente. Include the prompt used to generate this report.
+
+Output: Provide the full HTML/CSS code.</pre>
+
+					<div class="footer-note">
+						Este documento es autocontenido: integra contenido narrativo, tablas y estilo CSS en un único archivo HTML.
+					</div>
+				</section>
+
+			</div>
+		</article>
+	</div>
+</body>
+</html>
