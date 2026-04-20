@@ -1,0 +1,20 @@
+{
+    "descriptive_findings": [
+        {
+            "finding": "Dataset con 342 observaciones y 3 especies. Datos faltantes mínimos."
+        },
+        {
+            "finding": "Especie Adelie es la más prevalente (152), seguida de Gentoo (124) y Chinstrap (68)."
+        },
+        {
+            "finding": "Distribución de sexo balanceada (p=0.869)."
+        }
+    ],
+    "test_interpretations": {
+        "H1": "SOPORTADA: Relación aleta-peso extremadamente fuerte.",
+        "H2": "SOPORTADA: Diferencias físicas significativas entre especies.",
+        "H3": "SOPORTADA: Asociación crítica entre especie e isla.",
+        "H4": "SOPORTADA: Relación negativa entre profundidad de pico y aleta.",
+        "H5": "CONFIRMADA: El ratio de sexo es equitativo."
+    }
+}

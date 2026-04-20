@@ -1,3 +1,21 @@
 # Cache files
 test_suite_analysis
 managed_context
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# uv files
+.python-version
+pyproject.toml
+uv.lock
+
+.vscode/

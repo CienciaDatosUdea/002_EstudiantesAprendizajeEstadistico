@@ -1,0 +1,58 @@
+{
+  "plots": [
+    {
+      "plot_id": "count_diagnosis",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/count_diagnosis__DESCRIBE__20260314_105600.png",
+      "timestamp": "20260314_105600"
+    },
+    {
+      "plot_id": "hist_id_by_diagnosis",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_id_by_diagnosis__DESCRIBE__20260314_105600.png",
+      "timestamp": "20260314_105600"
+    },
+    {
+      "plot_id": "hist_area_worst_by_diagnosis",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_area_worst_by_diagnosis__DESCRIBE__20260314_105600.png",
+      "timestamp": "20260314_105600"
+    },
+    {
+      "plot_id": "hist_area_mean_by_diagnosis",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_area_mean_by_diagnosis__DESCRIBE__20260314_105600.png",
+      "timestamp": "20260314_105600"
+    },
+    {
+      "plot_id": "box_id_by_diagnosis",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/box_id_by_diagnosis__DESCRIBE__20260314_105600.png",
+      "timestamp": "20260314_105600"
+    },
+    {
+      "plot_id": "box_radius_mean_by_diagnosis",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/box_radius_mean_by_diagnosis__DESCRIBE__20260314_105600.png",
+      "timestamp": "20260314_105600"
+    },
+    {
+      "plot_id": "scatter_id_vs_area_se_hue_diagnosis",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/scatter_id_vs_area_se_hue_diagnosis__DESCRIBE__20260314_105600.png",
+      "timestamp": "20260314_105600"
+    },
+    {
+      "plot_id": "scatter_radius_mean_vs_perimeter_mean_hue_diagnosis",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/scatter_radius_mean_vs_perimeter_mean_hue_diagnosis__DESCRIBE__20260314_105600.png",
+      "timestamp": "20260314_105600"
+    },
+    {
+      "plot_id": "heatmap_corr_pearson",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/heatmap_corr_pearson__DESCRIBE__20260314_105601.png",
+      "timestamp": "20260314_105601"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "plots": [
+    {
+      "plot_id": "hist_tick_volume",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/hist_tick_volume__DESCRIBE__20260326_224951.png",
+      "timestamp": "20260326_224951"
+    },
+    {
+      "plot_id": "hist_id",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/hist_id__DESCRIBE__20260326_224951.png",
+      "timestamp": "20260326_224951"
+    },
+    {
+      "plot_id": "hist_spread",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/hist_spread__DESCRIBE__20260326_224951.png",
+      "timestamp": "20260326_224951"
+    },
+    {
+      "plot_id": "scatter_id_vs_high",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_id_vs_high__DESCRIBE__20260326_224952.png",
+      "timestamp": "20260326_224952"
+    },
+    {
+      "plot_id": "scatter_open_vs_MeanCloseOpen",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_open_vs_MeanCloseOpen__DESCRIBE__20260326_224952.png",
+      "timestamp": "20260326_224952"
+    },
+    {
+      "plot_id": "heatmap_corr_pearson",
+      "phase": "DESCRIBE",
+      "path": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/heatmap_corr_pearson__DESCRIBE__20260326_224952.png",
+      "timestamp": "20260326_224952"
+    }
+  ]
+}

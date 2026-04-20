@@ -1,0 +1,135 @@
+{
+  "total_cells": 18208,
+  "total_missing": 0,
+  "pct_missing_overall": 0.0,
+  "by_column": {
+    "id": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " diagnosis": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " radius_mean": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " texture_mean": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " perimeter_mean": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " area_mean": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " smoothness_mean": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " compactness_mean": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " concavity_mean": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " concave_points_mean": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " symmetry_mean": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " fractal_dimension_mean": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " radius_se": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " texture_se": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " perimeter_se": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " area_se": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " smoothness_se": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " compactness_se": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " concavity_se": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " concave_points_se": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " symmetry_se": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " fractal_dimension_se": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " radius_worst": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " texture_worst": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " perimeter_worst": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " area_worst": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " smoothness_worst": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " compactness_worst": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " concavity_worst": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " concave_points_worst": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " symmetry_worst": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    " fractal_dimension_worst": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "hypotheses": [
+    {
+      "id": "H1",
+      "origin": "ai_observer",
+      "statement": "La distribución de area_mean difiere entre los grupos M y B, con el grupo M asociado a valores mayores y una cola derecha más pronunciada.",
+      "variables": {
+        "x": "area_mean",
+        "group": "diagnosis"
+      },
+      "suggested_tests": [
+        "Mann-Whitney U (no paramétrico, preferido dado skew=1.65)",
+        "t-test de muestras independientes (para comparación)"
+      ],
+      "evidence_refs": [
+        "04a_numeric_summary__DESCRIBE__20260314_105559.json:area_mean.skewness=1.646",
+        "04a_numeric_summary__DESCRIBE__20260314_105559.json:area_mean.mean=654.89_vs_median=551.1",
+        "05_visual_registry__DESCRIBE__20260314_105602.json:hist_area_mean_by_diagnosis",
+        "student_log.md:Phase_3_Q6:area_mean_ranked_second_cleanest_separator"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H2",
+      "origin": "ai_observer",
+      "statement": "Las distribuciones de concavity_mean y concave_points_mean difieren entre los grupos M y B, con el grupo M asociado a valores más altos, pero con un solapamiento entre grupos visualmente mayor que el observado para las características de tamaño.",
+      "variables": {
+        "x": "concavity_mean",
+        "y": "concave_points_mean",
+        "group": "diagnosis"
+      },
+      "suggested_tests": [
+        "Mann-Whitney U para cada feature independientemente",
+        "Correlación punto-biserial entre cada feature y diagnosis codificado como binario"
+      ],
+      "evidence_refs": [
+        "04a_numeric_summary__DESCRIBE__20260314_105559.json:concavity_mean.skewness=1.401",
+        "04a_numeric_summary__DESCRIBE__20260314_105559.json:concavity_mean.min=0.0",
+        "04a_numeric_summary__DESCRIBE__20260314_105559.json:concave_points_mean.min=0.0",
+        "05_visual_registry_hypothesize__HYPOTHESIZE__20260314_112737.json:box_concave_points_mean_by_diagnosis",
+        "05_visual_registry_hypothesize__HYPOTHESIZE__20260314_112737.json:hist_concavity_mean_by_diagnosis",
+        "05_visual_registry_hypothesize__HYPOTHESIZE__20260314_112737.json:scatter_concavity_mean_vs_concave_points_mean_hue_diagnosis",
+        "student_log.md:Phase_3_Q6:concavity_mean_ranked_third_concave_points_ranked_last_due_to_outliers"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H3",
+      "origin": "ai_observer",
+      "statement": "radius_mean, perimeter_mean y area_mean son predictores funcionalmente redundantes: sus correlaciones de Pearson por pares superan 0.985, lo que implica que incluir los tres simultáneamente en un modelo no aportaría información independiente adicional respecto a usar cualquiera de ellos por separado.",
+      "variables": {
+        "x": "radius_mean",
+        "y": "perimeter_mean",
+        "z_note": "area_mean también implicada"
+      },
+      "suggested_tests": [
+        "Factor de Inflación de Varianza (VIF) para el grupo de características de tamaño",
+        "PCA sobre la matriz de 30 características para cuantificar reducción de dimensionalidad"
+      ],
+      "evidence_refs": [
+        "04d_correlation_pearson__DESCRIBE__20260314_105559.json:radius_mean.perimeter_mean=0.998",
+        "04d_correlation_pearson__DESCRIBE__20260314_105559.json:radius_mean.area_mean=0.987",
+        "04d_correlation_pearson__DESCRIBE__20260314_105559.json:perimeter_mean.area_mean=0.987",
+        "05_visual_registry__DESCRIBE__20260314_105602.json:scatter_radius_mean_vs_perimeter_mean_hue_diagnosis",
+        "student_log.md:Phase_3_Q7:tres_pesos_para_valores_dependientes_introduce_sesgo"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H4",
+      "origin": "ai_observer",
+      "statement": "Dentro de cada familia de medición, las características _worst se asocian más fuertemente con sus contrapartes _mean que las características _se, lo que sugiere que _worst y _mean capturan información estructural similar (extremo vs. promedio sobre la misma imagen celular) mientras que _se refleja una fuente distinta de variabilidad (dispersión de la medición).",
+      "variables": {
+        "x": "radius_mean",
+        "y_worst": "radius_worst",
+        "y_se": "radius_se",
+        "note": "generalizable a las 10 familias de medición"
+      },
+      "suggested_tests": [
+        "Comparación pareada de r(_mean, _worst) vs r(_mean, _se) para las 10 familias",
+        "Clustering jerárquico de las 30 características para visualizar estructura de agrupamiento"
+      ],
+      "evidence_refs": [
+        "04d_correlation_pearson__DESCRIBE__20260314_105559.json:radius_mean.radius_worst=0.970",
+        "04d_correlation_pearson__DESCRIBE__20260314_105559.json:radius_mean.radius_se=0.679",
+        "04d_correlation_pearson__DESCRIBE__20260314_105559.json:concave_points_mean.concave_points_worst=0.910",
+        "04d_correlation_pearson__DESCRIBE__20260314_105559.json:concave_points_mean.concave_points_se=0.616",
+        "05_visual_registry__DESCRIBE__20260314_105602.json:heatmap_corr_pearson",
+        "student_log.md:Phase_2_Q4:bloque_mean_worst_mas_correlacionado_confirma_worst_derivado_de_mean"
+      ],
+      "decision_needed": "human"
+    }
+  ]
+}

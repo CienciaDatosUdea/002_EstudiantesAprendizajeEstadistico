@@ -118,9 +118,9 @@ Phase 3 → HYPOTHESIZE_AND_CONCLUDE
 ## INPUT CONTEXT (fill this in before every prompt)
 
 ```
-Current lab:      {LAB}
+Current lab:      {LAB LABEL}
 Dataset label:    {DATASET_LABEL or "none — single dataset lab"}
-Current phase:    {PHASE}
+Current phase:    {STUDENT_PREANALYSIS, OBSERVE, DESCRIBE or HYPOTHESIZE_AND_CONCLUDE}
 
 Contents of available artifacts (paste JSON or summaries here):
 {ARTIFACTS_CONTENT}
