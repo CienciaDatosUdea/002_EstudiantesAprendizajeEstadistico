@@ -1,0 +1,24 @@
+{
+    "conclusiones": {
+        "capa_a_descriptiva": {
+            "hallazgo": "El sistema presenta lagunas de información (entropía) en variables críticas.",
+            "evidencia": "Existen 2 valores faltantes en dimensiones físicas y 11 en la variable 'sex' (ver 00_raw_profile.json).",
+            "interpretacion": "La pérdida de datos es mínima pero concentrada, lo que sugiere fallos puntuales en el aparato de medición."
+        },
+        "capa_b_visual": {
+            "hallazgo": "Existen acoplamientos lineales fuertes y distribuciones multimodales.",
+            "evidencia": "El scatter plot (flipper vs body_mass) muestra una correlación de Pearson de 0.87. El histograma de bill_length es bimodal.",
+            "interpretacion": "La bimodalidad confirma que el sistema es una mezcla de estados (especies) con leyes de escala distintas."
+        },
+        "capa_c_proximas_hipotesis": {
+            "hallazgo": "La masa corporal puede ser modelada como una función de las dimensiones de las aletas.",
+            "evidencia": "El p-valor de la prueba de correlación es < 0.05 (ver 08_tests.json).",
+            "interpretacion": "Se propone transicionar de un modelo descriptivo a uno predictivo (Regresión Multivariada) para estimar la masa."
+        }
+    },
+    "preguntas_investigador": [
+        "¿Cómo afecta el dimorfismo sexual (variable 'sex') a las leyes de escala observadas en la masa corporal?",
+        "¿Es necesario realizar una imputación de datos para los valores faltantes antes de proceder al modelado predictivo?",
+        "¿Existen variables ambientales no registradas en las islas que expliquen la segregación de especies observada en el test de Chi-cuadrado?"
+    ]
+}
