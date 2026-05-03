@@ -1,0 +1,106 @@
+{
+  "timestamp": "2026-05-02T18:35:30.852450",
+  "plots": [
+    {
+      "type": "count",
+      "variable": "species",
+      "path": "artifacts\\plots\\count_species.png",
+      "id": "count_species"
+    },
+    {
+      "type": "count",
+      "variable": "island",
+      "path": "artifacts\\plots\\count_island.png",
+      "id": "count_island"
+    },
+    {
+      "type": "count",
+      "variable": "sex",
+      "path": "artifacts\\plots\\count_sex.png",
+      "id": "count_sex"
+    },
+    {
+      "type": "count_hue",
+      "variable": "island",
+      "hue": "species",
+      "path": "artifacts\\plots\\count_island_by_species.png",
+      "id": "count_island_by_species"
+    },
+    {
+      "type": "count_hue",
+      "variable": "sex",
+      "hue": "species",
+      "path": "artifacts\\plots\\count_sex_by_species.png",
+      "id": "count_sex_by_species"
+    },
+    {
+      "type": "histogram",
+      "variable": "body_mass_g",
+      "groupby": "species",
+      "path": "artifacts\\plots\\hist_body_mass_g_by_species.png",
+      "id": "hist_body_mass_g_by_species"
+    },
+    {
+      "type": "histogram",
+      "variable": "flipper_length_mm",
+      "groupby": "species",
+      "path": "artifacts\\plots\\hist_flipper_length_mm_by_species.png",
+      "id": "hist_flipper_length_mm_by_species"
+    },
+    {
+      "type": "histogram",
+      "variable": "bill_length_mm",
+      "groupby": "species",
+      "path": "artifacts\\plots\\hist_bill_length_mm_by_species.png",
+      "id": "hist_bill_length_mm_by_species"
+    },
+    {
+      "type": "histogram",
+      "variable": "bill_depth_mm",
+      "groupby": "species",
+      "path": "artifacts\\plots\\hist_bill_depth_mm_by_species.png",
+      "id": "hist_bill_depth_mm_by_species"
+    },
+    {
+      "type": "boxplot",
+      "x": "species",
+      "y": "body_mass_g",
+      "path": "artifacts\\plots\\box_body_mass_g_by_species.png",
+      "id": "box_body_mass_g_by_species"
+    },
+    {
+      "type": "boxplot",
+      "x": "species",
+      "y": "flipper_length_mm",
+      "path": "artifacts\\plots\\box_flipper_length_mm_by_species.png",
+      "id": "box_flipper_length_mm_by_species"
+    },
+    {
+      "type": "boxplot",
+      "x": "species",
+      "y": "bill_length_mm",
+      "path": "artifacts\\plots\\box_bill_length_mm_by_species.png",
+      "id": "box_bill_length_mm_by_species"
+    },
+    {
+      "type": "scatter",
+      "x": "body_mass_g",
+      "y": "flipper_length_mm",
+      "hue": "species",
+      "path": "artifacts\\plots\\scatter_body_mass_g_vs_flipper_length_mm_hue_species.png",
+      "id": "scatter_body_mass_g_vs_flipper_length_mm_hue_species"
+    },
+    {
+      "type": "heatmap",
+      "method": "pearson",
+      "path": "artifacts\\plots\\heatmap_corr_pearson.png",
+      "id": "heatmap_corr_pearson"
+    },
+    {
+      "type": "heatmap",
+      "method": "spearman",
+      "path": "artifacts\\plots\\heatmap_corr_spearman.png",
+      "id": "heatmap_corr_spearman"
+    }
+  ]
+}
