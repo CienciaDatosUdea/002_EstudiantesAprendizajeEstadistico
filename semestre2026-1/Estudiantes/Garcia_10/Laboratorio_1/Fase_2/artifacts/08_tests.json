@@ -1,0 +1,42 @@
+{
+    "H1": {
+        "pearson": {
+            "statistic": 0.8729788986,
+            "p_value": 3.132836251e-105,
+            "result": "significant"
+        },
+        "spearman": {
+            "statistic": 0.840390205,
+            "p_value": 4.630423991e-90,
+            "result": "significant"
+        }
+    },
+    "H2": {
+        "anova": {
+            "statistic": 341.8948949481,
+            "p_value": 3.744505126e-81,
+            "result": "significant"
+        }
+    },
+    "H3": {
+        "chi_square": {
+            "statistic": 299.5503274315,
+            "p_value": 1.35457383e-63,
+            "result": "significant"
+        }
+    },
+    "H4": {
+        "spearman": {
+            "statistic": -0.5173169963,
+            "p_value": 3.456493128e-24,
+            "result": "significant"
+        }
+    },
+    "H5": {
+        "chi_square_gof": {
+            "statistic": 0.027027027,
+            "p_value": 0.8694170607,
+            "result": "not_significant"
+        }
+    }
+}

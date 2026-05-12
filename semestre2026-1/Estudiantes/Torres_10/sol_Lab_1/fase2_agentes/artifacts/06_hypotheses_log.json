@@ -1,0 +1,31 @@
+{
+  "hypotheses": [
+    {
+      "id": "H1",
+      "origin": "ai_observer",
+      "statement": "La masa corporal difiere entre especies de pingüinos.",
+      "variables": {"x": "species", "y": "body_mass_g"},
+      "suggested_tests": ["ANOVA", "Kruskal-Wallis"],
+      "evidence_refs": ["04_descriptive_stats.json:numeric_summary.body_mass_g", "05_visual_registry.json:box_species_body_mass"],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H2",
+      "origin": "ai_observer",
+      "statement": "Existe asociación entre la longitud de la aleta y la masa corporal.",
+      "variables": {"x": "flipper_length_mm", "y": "body_mass_g"},
+      "suggested_tests": ["Pearson", "Spearman"],
+      "evidence_refs": ["04_descriptive_stats.json:correlations.pearson", "05_visual_registry.json:scatter_flipper_body_mass_species"],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H3",
+      "origin": "ai_observer",
+      "statement": "La proporción de sexos difiere entre especies.",
+      "variables": {"x": "species", "y": "sex"},
+      "suggested_tests": ["Chi-cuadrado"],
+      "evidence_refs": ["04_descriptive_stats.json:crosstabs.species_vs_sex", "05_visual_registry.json:count_sex"],
+      "decision_needed": "human"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+linear_regression_gd/__init__.py
+linear_regression_gd/regression.py
+linear_regression_gd.egg-info/PKG-INFO
+linear_regression_gd.egg-info/SOURCES.txt
+linear_regression_gd.egg-info/dependency_links.txt
+linear_regression_gd.egg-info/requires.txt
+linear_regression_gd.egg-info/top_level.txt
