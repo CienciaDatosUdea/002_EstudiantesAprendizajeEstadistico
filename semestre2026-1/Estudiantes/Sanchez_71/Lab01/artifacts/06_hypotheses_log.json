@@ -1,0 +1,25 @@
+{
+    "hypotheses": [
+        {
+            "id": 1,
+            "variable_x": "flipper_length_mm",
+            "variable_y": "body_mass_g",
+            "description": "Existe una correlaci\u00f3n lineal positiva significativa entre la longitud de la aleta y la masa corporal.",
+            "evidence_source": "scatter_flipper_length_mm_body_mass_g.png"
+        },
+        {
+            "id": 2,
+            "variable_x": "species",
+            "variable_y": "bill_length_mm",
+            "description": "El valor medio de la longitud del pico (bill_length_mm) var\u00eda significativamente entre las diferentes especies.",
+            "evidence_source": "boxplot_bill_length_mm_species.png"
+        },
+        {
+            "id": 3,
+            "variable_x": "island",
+            "variable_y": "species",
+            "description": "La distribuci\u00f3n de las especies de ping\u00fcinos depende de la isla de observaci\u00f3n (asociaci\u00f3n categ\u00f3rica).",
+            "evidence_source": "Tabla cruzada: Especies vs Isla"
+        }
+    ]
+}
