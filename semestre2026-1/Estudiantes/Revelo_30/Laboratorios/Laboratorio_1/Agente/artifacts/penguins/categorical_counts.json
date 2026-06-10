@@ -1,0 +1,56 @@
+[
+  {
+    "column": "species",
+    "category": "Adelie",
+    "count": 152,
+    "percentage": 44.19
+  },
+  {
+    "column": "species",
+    "category": "Gentoo",
+    "count": 124,
+    "percentage": 36.05
+  },
+  {
+    "column": "species",
+    "category": "Chinstrap",
+    "count": 68,
+    "percentage": 19.77
+  },
+  {
+    "column": "island",
+    "category": "Biscoe",
+    "count": 168,
+    "percentage": 48.84
+  },
+  {
+    "column": "island",
+    "category": "Dream",
+    "count": 124,
+    "percentage": 36.05
+  },
+  {
+    "column": "island",
+    "category": "Torgersen",
+    "count": 52,
+    "percentage": 15.12
+  },
+  {
+    "column": "sex",
+    "category": "MALE",
+    "count": 168,
+    "percentage": 48.84
+  },
+  {
+    "column": "sex",
+    "category": "FEMALE",
+    "count": 165,
+    "percentage": 47.97
+  },
+  {
+    "column": "sex",
+    "category": "<MISSING>",
+    "count": 11,
+    "percentage": 3.2
+  }
+]

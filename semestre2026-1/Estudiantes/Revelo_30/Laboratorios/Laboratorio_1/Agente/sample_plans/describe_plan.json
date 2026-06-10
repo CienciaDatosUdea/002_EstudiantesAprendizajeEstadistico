@@ -1,0 +1,116 @@
+{
+  "phase": "DESCRIBE",
+  "phase_goal": "Generate descriptive summaries and a compact exploratory visual record.",
+  "evidence_status": {
+    "sufficient_for_current_phase": false,
+    "missing_requirements": [
+      "numeric summaries",
+      "categorical summaries",
+      "correlations",
+      "exploratory plots"
+    ]
+  },
+  "actions_to_run": [
+    {
+      "op": "numeric_summary",
+      "params": {}
+    },
+    {
+      "op": "categorical_summary",
+      "params": {}
+    },
+    {
+      "op": "crosstab",
+      "params": {
+        "x": "species",
+        "y": "island"
+      }
+    },
+    {
+      "op": "crosstab",
+      "params": {
+        "x": "species",
+        "y": "sex"
+      }
+    },
+    {
+      "op": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      }
+    },
+    {
+      "op": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      }
+    },
+    {
+      "op": "histogram_descriptions",
+      "params": {}
+    },
+    {
+      "op": "plot_count",
+      "params": {
+        "column": "species"
+      }
+    },
+    {
+      "op": "plot_count",
+      "params": {
+        "column": "island"
+      }
+    },
+    {
+      "op": "plot_count",
+      "params": {
+        "column": "sex"
+      }
+    },
+    {
+      "op": "plot_hist",
+      "params": {
+        "column": "bill_length_mm"
+      }
+    },
+    {
+      "op": "plot_hist",
+      "params": {
+        "column": "body_mass_g"
+      }
+    },
+    {
+      "op": "plot_box",
+      "params": {
+        "num_col": "bill_length_mm",
+        "cat_col": "species"
+      }
+    },
+    {
+      "op": "plot_scatter",
+      "params": {
+        "x": "flipper_length_mm",
+        "y": "body_mass_g",
+        "hue": "species"
+      }
+    },
+    {
+      "op": "plot_heatmap_corr",
+      "params": {
+        "method": "pearson"
+      }
+    }
+  ],
+  "artifacts_to_write": {
+    "artifacts/00_raw_profile.json": {},
+    "artifacts/04_descriptive_stats.json": {},
+    "artifacts/05_visual_registry.json": {},
+    "artifacts/06_hypotheses_log.json": {},
+    "artifacts/07_conclusions.json": {},
+    "artifacts/08_tests.json": {},
+    "artifacts/09_questions.json": {},
+    "artifacts/report.md": ""
+  },
+  "questions_for_human": [],
+  "ready_for_next_phase": false
+}
