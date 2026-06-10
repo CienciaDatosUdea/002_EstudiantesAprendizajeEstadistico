@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observatorio de Datos — Pingüinos</title>
+    <style>
+        :root {
+            --bg: #f8f9fa;
+            --card: #ffffff;
+            --border: #dee2e6;
+            --accent: #0d6efd;
+            --accent2: #198754;
+            --text: #212529;
+            --muted: #6c757d;
+            --success: #198754;
+            --danger: #dc3545;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        header p {
+            color: #adb5bd;
+            font-size: 0.95rem;
+        }
+
+        nav {
+            background: #16213e;
+            padding: 0.6rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+        }
+
+        nav a {
+            color: #adb5bd;
+            text-decoration: none;
+            padding: 0.35rem 0.9rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: all .2s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, .1);
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.2rem;
+            color: #16213e;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            margin: 1rem 0 0.6rem;
+            color: #16213e;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .06);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+        }
+
+        @media (max-width: 768px) {
+
+            .grid-2,
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .stat-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .stat-box .value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .stat-box .label {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            margin: 0.6rem 0;
+        }
+
+        th,
+        td {
+            padding: 0.5rem 0.7rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: #f1f3f5;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        tr:hover td {
+            background: #f8f9fa;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.55rem;
+            border-radius: 12px;
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+
+        .badge-success {
+            background: #d1e7dd;
+            color: var(--success);
+        }
+
+        .badge-danger {
+            background: #f8d7da;
+            color: var(--danger);
+        }
+
+        .badge-info {
+            background: #cff4fc;
+            color: #055160;
+        }
+
+        .hypothesis-card {
+            border-left: 4px solid var(--accent);
+            padding: 0.8rem 1rem;
+            margin-bottom: 0.8rem;
+            background: #f8f9ff;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .hypothesis-card strong {
+            color: var(--accent);
+        }
+
+        .test-result {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .test-result:last-child {
+            border-bottom: none;
+        }
+
+        .plot-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1rem;
+        }
+
+        .plot-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .plot-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .plot-item .caption {
+            padding: 0.5rem 0.8rem;
+            font-size: 0.82rem;
+            color: var(--muted);
+            text-align: center;
+            background: #f8f9fa;
+        }
+
+        .finding {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .finding:last-child {
+            border-bottom: none;
+        }
+
+        .ref {
+            font-size: 0.78rem;
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        .question-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 0.3rem;
+        }
+
+        .corr-cell {
+            text-align: center !important;
+            font-family: 'Consolas', monospace;
+        }
+
+        .corr-strong-pos {
+            background: #d4edda;
+        }
+
+        .corr-strong-neg {
+            background: #f8d7da;
+        }
+
+        .corr-mod {
+            background: #fff3cd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--muted);
+            font-size: 0.82rem;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+
+        .toc-num {
+            font-weight: 600;
+            color: var(--accent);
+            margin-right: 0.3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🐧 Observatorio de Datos — Pingüinos</h1>
+        <p>Laboratorio 01 · Fisica computacional II · Jhonatan Jurado</p>
+    </header>
+
+    <nav>
+        <a href="#perfil">Perfil</a>
+        <a href="#esquema">Esquema</a>
+        <a href="#faltantes">Faltantes</a>
+        <a href="#numericas">Numéricas</a>
+        <a href="#categoricas">Categóricas</a>
+        <a href="#crosstabs">Tablas cruzadas</a>
+        <a href="#correlaciones">Correlaciones</a>
+        <a href="#graficos">Gráficos</a>
+        <a href="#hipotesis">Hipótesis</a>
+        <a href="#pruebas">Pruebas</a>
+        <a href="#conclusiones">Conclusiones</a>
+        <a href="#preguntas">Preguntas</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- ============ PERFIL ============ -->
+        <section id="perfil">
+            <h2><span class="toc-num">1.</span> Perfil del dataset</h2>
+            <div class="grid-3">
+                <div class="stat-box">
+                    <div class="value">344</div>
+                    <div class="label">Filas</div>
+                </div>
+                <div class="stat-box">
+                    <div class="value">7</div>
+                    <div class="label">Columnas</div>
+                </div>
+                <div class="stat-box">
+                    <div class="value">0</div>
+                    <div class="label">Filas duplicadas</div>
+                </div>
+            </div>
+            <div class="card" style="margin-top:1rem;">
+                <strong>Variables:</strong> species, island, bill_length_mm, bill_depth_mm, flipper_length_mm,
+                body_mass_g, sex<br>
+                <strong>Memoria:</strong> 67,547 bytes
+            </div>
+        </section>
+
+        <!-- ============ ESQUEMA ============ -->
+        <section id="esquema">
+            <h2><span class="toc-num">2.</span> Esquema inferido</h2>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Tipo</th>
+                            <th>Rol</th>
+                            <th>Únicos</th>
+                            <th>Valores de muestra</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>species</td>
+                            <td>str</td>
+                            <td><span class="badge badge-info">categórica baja card.</span></td>
+                            <td>3</td>
+                            <td>Adelie, Chinstrap, Gentoo</td>
+                        </tr>
+                        <tr>
+                            <td>island</td>
+                            <td>str</td>
+                            <td><span class="badge badge-info">categórica baja card.</span></td>
+                            <td>3</td>
+                            <td>Torgersen, Biscoe, Dream</td>
+                        </tr>
+                        <tr>
+                            <td>bill_length_mm</td>
+                            <td>float64</td>
+                            <td><span class="badge badge-success">numérica</span></td>
+                            <td>164</td>
+                            <td>39.1, 39.5, 40.3</td>
+                        </tr>
+                        <tr>
+                            <td>bill_depth_mm</td>
+                            <td>float64</td>
+                            <td><span class="badge badge-success">numérica</span></td>
+                            <td>80</td>
+                            <td>18.7, 17.4, 18.0</td>
+                        </tr>
+                        <tr>
+                            <td>flipper_length_mm</td>
+                            <td>float64</td>
+                            <td><span class="badge badge-success">numérica</span></td>
+                            <td>55</td>
+                            <td>181, 186, 195</td>
+                        </tr>
+                        <tr>
+                            <td>body_mass_g</td>
+                            <td>float64</td>
+                            <td><span class="badge badge-success">numérica</span></td>
+                            <td>94</td>
+                            <td>3750, 3800, 3250</td>
+                        </tr>
+                        <tr>
+                            <td>sex</td>
+                            <td>str</td>
+                            <td><span class="badge badge-info">categórica baja card.</span></td>
+                            <td>2</td>
+                            <td>Male, Female</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============ FALTANTES ============ -->
+        <section id="faltantes">
+            <h2><span class="toc-num">3.</span> Valores faltantes</h2>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Faltantes</th>
+                            <th>Porcentaje</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>species</td>
+                            <td>0</td>
+                            <td>0.00%</td>
+                            <td><span class="badge badge-success">Completa</span></td>
+                        </tr>
+                        <tr>
+                            <td>island</td>
+                            <td>0</td>
+                            <td>0.00%</td>
+                            <td><span class="badge badge-success">Completa</span></td>
+                        </tr>
+                        <tr>
+                            <td>bill_length_mm</td>
+                            <td>2</td>
+                            <td>0.58%</td>
+                            <td><span class="badge badge-danger">Faltantes</span></td>
+                        </tr>
+                        <tr>
+                            <td>bill_depth_mm</td>
+                            <td>2</td>
+                            <td>0.58%</td>
+                            <td><span class="badge badge-danger">Faltantes</span></td>
+                        </tr>
+                        <tr>
+                            <td>flipper_length_mm</td>
+                            <td>2</td>
+                            <td>0.58%</td>
+                            <td><span class="badge badge-danger">Faltantes</span></td>
+                        </tr>
+                        <tr>
+                            <td>body_mass_g</td>
+                            <td>2</td>
+                            <td>0.58%</td>
+                            <td><span class="badge badge-danger">Faltantes</span></td>
+                        </tr>
+                        <tr>
+                            <td>sex</td>
+                            <td>11</td>
+                            <td>3.20%</td>
+                            <td><span class="badge badge-danger">Faltantes</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============ RESUMEN NUMÉRICAS ============ -->
+        <section id="numericas">
+            <h2><span class="toc-num">4.</span> Resumen de variables numéricas</h2>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Variable</th>
+                            <th>Media</th>
+                            <th>Mediana</th>
+                            <th>Desv. Est.</th>
+                            <th>Min</th>
+                            <th>Q1</th>
+                            <th>Q3</th>
+                            <th>Max</th>
+                            <th>IQR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>bill_length_mm</td>
+                            <td>43.92</td>
+                            <td>44.45</td>
+                            <td>5.46</td>
+                            <td>32.10</td>
+                            <td>39.23</td>
+                            <td>48.50</td>
+                            <td>59.60</td>
+                            <td>9.28</td>
+                        </tr>
+                        <tr>
+                            <td>bill_depth_mm</td>
+                            <td>17.15</td>
+                            <td>17.30</td>
+                            <td>1.97</td>
+                            <td>13.10</td>
+                            <td>15.60</td>
+                            <td>18.70</td>
+                            <td>21.50</td>
+                            <td>3.10</td>
+                        </tr>
+                        <tr>
+                            <td>flipper_length_mm</td>
+                            <td>200.92</td>
+                            <td>197.00</td>
+                            <td>14.06</td>
+                            <td>172.00</td>
+                            <td>190.00</td>
+                            <td>213.00</td>
+                            <td>231.00</td>
+                            <td>23.00</td>
+                        </tr>
+                        <tr>
+                            <td>body_mass_g</td>
+                            <td>4201.75</td>
+                            <td>4050.00</td>
+                            <td>801.95</td>
+                            <td>2700.00</td>
+                            <td>3550.00</td>
+                            <td>4750.00</td>
+                            <td>6300.00</td>
+                            <td>1200.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============ RESUMEN CATEGÓRICAS ============ -->
+        <section id="categoricas">
+            <h2><span class="toc-num">5.</span> Resumen de variables categóricas</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>species</h3>
+                    <table>
+                        <tr>
+                            <td>Adelie</td>
+                            <td>152</td>
+                            <td>44.19%</td>
+                        </tr>
+                        <tr>
+                            <td>Gentoo</td>
+                            <td>124</td>
+                            <td>36.05%</td>
+                        </tr>
+                        <tr>
+                            <td>Chinstrap</td>
+                            <td>68</td>
+                            <td>19.77%</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card">
+                    <h3>island</h3>
+                    <table>
+                        <tr>
+                            <td>Biscoe</td>
+                            <td>168</td>
+                            <td>48.84%</td>
+                        </tr>
+                        <tr>
+                            <td>Dream</td>
+                            <td>124</td>
+                            <td>36.05%</td>
+                        </tr>
+                        <tr>
+                            <td>Torgersen</td>
+                            <td>52</td>
+                            <td>15.12%</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card">
+                    <h3>sex</h3>
+                    <table>
+                        <tr>
+                            <td>Male</td>
+                            <td>168</td>
+                            <td>48.84%</td>
+                        </tr>
+                        <tr>
+                            <td>Female</td>
+                            <td>165</td>
+                            <td>47.97%</td>
+                        </tr>
+                        <tr>
+                            <td><em>NaN</em></td>
+                            <td>11</td>
+                            <td>3.20%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TABLAS CRUZADAS ============ -->
+        <section id="crosstabs">
+            <h2><span class="toc-num">6.</span> Tablas cruzadas</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>species × island</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Biscoe</th>
+                                <th>Dream</th>
+                                <th>Torgersen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Adelie</strong></td>
+                                <td>44</td>
+                                <td>56</td>
+                                <td>52</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Chinstrap</strong></td>
+                                <td>0</td>
+                                <td>68</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gentoo</strong></td>
+                                <td>124</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card">
+                    <h3>species × sex</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Female</th>
+                                <th>Male</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Adelie</strong></td>
+                                <td>73</td>
+                                <td>73</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Chinstrap</strong></td>
+                                <td>34</td>
+                                <td>34</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gentoo</strong></td>
+                                <td>58</td>
+                                <td>61</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card">
+                <h3>island × sex</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Female</th>
+                            <th>Male</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Biscoe</strong></td>
+                            <td>80</td>
+                            <td>83</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dream</strong></td>
+                            <td>61</td>
+                            <td>62</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Torgersen</strong></td>
+                            <td>24</td>
+                            <td>23</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============ CORRELACIONES ============ -->
+        <section id="correlaciones">
+            <h2><span class="toc-num">7.</span> Matrices de correlación</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Pearson</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>bill_len</th>
+                                <th>bill_dep</th>
+                                <th>flipper</th>
+                                <th>mass</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>bill_length_mm</strong></td>
+                                <td class="corr-cell">1.000</td>
+                                <td class="corr-cell corr-mod">−0.235</td>
+                                <td class="corr-cell corr-strong-pos">0.656</td>
+                                <td class="corr-cell corr-strong-pos">0.595</td>
+                            </tr>
+                            <tr>
+                                <td><strong>bill_depth_mm</strong></td>
+                                <td class="corr-cell corr-mod">−0.235</td>
+                                <td class="corr-cell">1.000</td>
+                                <td class="corr-cell corr-strong-neg">−0.584</td>
+                                <td class="corr-cell corr-mod">−0.472</td>
+                            </tr>
+                            <tr>
+                                <td><strong>flipper_length_mm</strong></td>
+                                <td class="corr-cell corr-strong-pos">0.656</td>
+                                <td class="corr-cell corr-strong-neg">−0.584</td>
+                                <td class="corr-cell">1.000</td>
+                                <td class="corr-cell corr-strong-pos">0.871</td>
+                            </tr>
+                            <tr>
+                                <td><strong>body_mass_g</strong></td>
+                                <td class="corr-cell corr-strong-pos">0.595</td>
+                                <td class="corr-cell corr-mod">−0.472</td>
+                                <td class="corr-cell corr-strong-pos">0.871</td>
+                                <td class="corr-cell">1.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card">
+                    <h3>Spearman</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>bill_len</th>
+                                <th>bill_dep</th>
+                                <th>flipper</th>
+                                <th>mass</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>bill_length_mm</strong></td>
+                                <td class="corr-cell">1.000</td>
+                                <td class="corr-cell corr-mod">−0.222</td>
+                                <td class="corr-cell corr-strong-pos">0.673</td>
+                                <td class="corr-cell corr-strong-pos">0.584</td>
+                            </tr>
+                            <tr>
+                                <td><strong>bill_depth_mm</strong></td>
+                                <td class="corr-cell corr-mod">−0.222</td>
+                                <td class="corr-cell">1.000</td>
+                                <td class="corr-cell corr-strong-neg">−0.523</td>
+                                <td class="corr-cell corr-mod">−0.432</td>
+                            </tr>
+                            <tr>
+                                <td><strong>flipper_length_mm</strong></td>
+                                <td class="corr-cell corr-strong-pos">0.673</td>
+                                <td class="corr-cell corr-strong-neg">−0.523</td>
+                                <td class="corr-cell">1.000</td>
+                                <td class="corr-cell corr-strong-pos">0.840</td>
+                            </tr>
+                            <tr>
+                                <td><strong>body_mass_g</strong></td>
+                                <td class="corr-cell corr-strong-pos">0.584</td>
+                                <td class="corr-cell corr-mod">−0.432</td>
+                                <td class="corr-cell corr-strong-pos">0.840</td>
+                                <td class="corr-cell">1.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ GRÁFICOS ============ -->
+        <section id="graficos">
+            <h2><span class="toc-num">8.</span> Gráficos exploratorios</h2>
+
+            <h3>Conteos</h3>
+            <div class="plot-gallery">
+                <div class="plot-item">
+                    <img src="plots/count_species.png" alt="Conteo de species">
+                    <div class="caption">Conteo de species</div>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/count_island.png" alt="Conteo de island">
+                    <div class="caption">Conteo de island</div>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/count_sex.png" alt="Conteo de sex">
+                    <div class="caption">Conteo de sex</div>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/count_island_by_species.png" alt="Conteo de island por species">
+                    <div class="caption">Conteo de island por species</div>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/count_sex_by_species.png" alt="Conteo de sex por species">
+                    <div class="caption">Conteo de sex por species</div>
+                </div>
+            </div>
+
+            <h3>Histogramas</h3>
+            <div class="plot-gallery">
+                <div class="plot-item">
+                    <img src="plots/hist_body_mass_g_by_species.png" alt="Histograma body_mass_g">
+                    <div class="caption">body_mass_g por species</div>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/hist_flipper_length_mm_by_species.png" alt="Histograma flipper_length_mm">
+                    <div class="caption">flipper_length_mm por species</div>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/hist_bill_length_mm_by_species.png" alt="Histograma bill_length_mm">
+                    <div class="caption">bill_length_mm por species</div>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/hist_bill_depth_mm_by_species.png" alt="Histograma bill_depth_mm">
+                    <div class="caption">bill_depth_mm por species</div>
+                </div>
+            </div>
+
+            <h3>Boxplots</h3>
+            <div class="plot-gallery">
+                <div class="plot-item">
+                    <img src="plots/box_body_mass_g_by_species.png" alt="Boxplot body_mass_g">
+                    <div class="caption">body_mass_g por species</div>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/box_flipper_length_mm_by_species.png" alt="Boxplot flipper_length_mm">
+                    <div class="caption">flipper_length_mm por species</div>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/box_bill_length_mm_by_species.png" alt="Boxplot bill_length_mm">
+                    <div class="caption">bill_length_mm por species</div>
+                </div>
+            </div>
+
+            <h3>Scatter</h3>
+            <div class="plot-gallery">
+                <div class="plot-item">
+                    <img src="plots/scatter_body_mass_g_vs_flipper_length_mm_hue_species.png"
+                        alt="Scatter body_mass vs flipper_length">
+                    <div class="caption">body_mass_g vs flipper_length_mm (por species)</div>
+                </div>
+            </div>
+
+            <h3>Heatmaps de correlación</h3>
+            <div class="plot-gallery">
+                <div class="plot-item">
+                    <img src="plots/heatmap_corr_pearson.png" alt="Heatmap Pearson">
+                    <div class="caption">Correlación Pearson</div>
+                </div>
+                <div class="plot-item">
+                    <img src="plots/heatmap_corr_spearman.png" alt="Heatmap Spearman">
+                    <div class="caption">Correlación Spearman</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ HIPÓTESIS ============ -->
+        <section id="hipotesis">
+            <h2><span class="toc-num">9.</span> Hipótesis</h2>
+            <div class="hypothesis-card">
+                <strong>H1:</strong> flipper_length_mm se asocia positivamente con body_mass_g<br>
+                <span class="ref">Tests sugeridos: pearson_correlation, spearman_correlation</span><br>
+                <span class="ref">Evidencia: 04_descriptive_stats.json:correlations.pearson ·
+                    05_visual_registry.json:scatter</span>
+            </div>
+            <div class="hypothesis-card">
+                <strong>H2:</strong> bill_length_mm difiere significativamente entre species<br>
+                <span class="ref">Tests sugeridos: kruskal_wallis, one_way_anova</span><br>
+                <span class="ref">Evidencia: 04_descriptive_stats.json:numeric_summary ·
+                    05_visual_registry.json:box_bill_length_mm</span>
+            </div>
+            <div class="hypothesis-card">
+                <strong>H3:</strong> La distribución de species se asocia con island<br>
+                <span class="ref">Tests sugeridos: chi_squared</span><br>
+                <span class="ref">Evidencia: 04_descriptive_stats.json:crosstabs ·
+                    05_visual_registry.json:count_island_by_species</span>
+            </div>
+            <div class="hypothesis-card">
+                <strong>H4:</strong> body_mass_g difiere entre sexos (Male vs Female)<br>
+                <span class="ref">Tests sugeridos: mann_whitney_u, t_test_independent</span><br>
+                <span class="ref">Evidencia: 04_descriptive_stats.json:numeric_summary · categorical_summary.sex</span>
+            </div>
+        </section>
+
+        <!-- ============ PRUEBAS ============ -->
+        <section id="pruebas">
+            <h2><span class="toc-num">10.</span> Pruebas estadísticas</h2>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hipótesis</th>
+                            <th>Prueba</th>
+                            <th>Estadístico</th>
+                            <th>p-valor</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>H1</strong></td>
+                            <td>Pearson</td>
+                            <td>0.8712</td>
+                            <td>4.37 × 10<sup>−107</sup></td>
+                            <td><span class="badge badge-success">Apoya</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>H1</strong></td>
+                            <td>Spearman</td>
+                            <td>0.8400</td>
+                            <td>2.76 × 10<sup>−92</sup></td>
+                            <td><span class="badge badge-success">Apoya</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>H2</strong></td>
+                            <td>Kruskal-Wallis</td>
+                            <td>244.14</td>
+                            <td>9.69 × 10<sup>−54</sup></td>
+                            <td><span class="badge badge-success">Apoya</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>H3</strong></td>
+                            <td>Chi-cuadrado (dof=4)</td>
+                            <td>299.55</td>
+                            <td>1.35 × 10<sup>−63</sup></td>
+                            <td><span class="badge badge-success">Apoya</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>H4</strong></td>
+                            <td>Mann-Whitney U</td>
+                            <td>20845.50</td>
+                            <td>1.81 × 10<sup>−15</sup></td>
+                            <td><span class="badge badge-success">Apoya</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top:0.8rem; font-size:0.85rem; color:var(--muted);">
+                    Nivel de significancia α = 0.05. Las 4 hipótesis se apoyan con evidencia estadística muy fuerte
+                    (todos p &lt; 10<sup>−15</sup>).
+                </p>
+            </div>
+        </section>
+
+        <!-- ============ CONCLUSIONES ============ -->
+        <section id="conclusiones">
+            <h2><span class="toc-num">11.</span> Conclusiones</h2>
+
+            <h3>A) Hallazgos descriptivos</h3>
+            <div class="card">
+                <div class="finding">
+                    El dataset contiene 344 observaciones de 3 especies de pingüinos con 7 variables.
+                    <div class="ref">Refs: 00_raw_profile.json:profile.n_rows, profile.n_cols</div>
+                </div>
+                <div class="finding">
+                    Existen valores faltantes concentrados en sex (11, 3.2%) y variables de medición corporal (2 cada
+                    una, 0.58%).
+                    <div class="ref">Refs: 00_raw_profile.json:missing</div>
+                </div>
+                <div class="finding">
+                    Las variables numéricas presentan rangos y dispersiones diferentes según especie; body_mass_g tiene
+                    la mayor varianza.
+                    <div class="ref">Refs: 04_descriptive_stats.json:numeric_summary</div>
+                </div>
+            </div>
+
+            <h3>B) Patrones visuales</h3>
+            <div class="card">
+                <div class="finding">
+                    Los histogramas de bill_length_mm muestran distribuciones diferenciadas por especie, con Adelie
+                    presentando picos más bajos.
+                    <div class="ref">Refs: 05_visual_registry.json:hist_bill_length_mm_by_species</div>
+                </div>
+                <div class="finding">
+                    El scatter de body_mass_g vs flipper_length_mm muestra agrupaciones por especie con tendencia lineal
+                    positiva.
+                    <div class="ref">Refs: 05_visual_registry.json:scatter_body_mass_g_vs_flipper_length_mm_hue_species
+                    </div>
+                </div>
+            </div>
+
+            <h3>C) Próximas hipótesis</h3>
+            <div class="card">
+                <ul>
+                    <li>Explorar si bill_depth_mm también difiere por species controlando por sex.</li>
+                    <li>Analizar si la relación flipper_length — body_mass varía por island.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ PREGUNTAS ============ -->
+        <section id="preguntas">
+            <h2><span class="toc-num">12.</span> Preguntas para el investigador</h2>
+            <div class="card">
+                <ol class="question-list">
+                    <li>¿Cómo deben tratarse los valores faltantes en sex? ¿Eliminar filas o imputar?</li>
+                    <li>¿Se debería controlar el análisis por species al comparar sexos?</li>
+                    <li>¿Existe un factor temporal (año) que pueda afectar las mediciones?</li>
+                </ol>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        Observatorio de Datos — Pingüinos · Laboratorio 01 · Jurado_90 · Aprendizaje Estadístico 2026-1<br>
+        Generado automáticamente a partir de artifacts del runner.
+    </footer>
+
+</body>
+
+</html>
