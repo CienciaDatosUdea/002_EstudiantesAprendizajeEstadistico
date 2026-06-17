@@ -1,0 +1,64 @@
+{
+  "dataset_name": "penguins",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "origin": "agent",
+      "statement": "flipper_length_mm is associated with body_mass_g",
+      "variables": {
+        "x": "flipper_length_mm",
+        "y": "body_mass_g",
+        "group": ""
+      },
+      "suggested_tests": [
+        "Pearson",
+        "Spearman"
+      ],
+      "evidence_refs": [
+        "artifacts/pearson_corr.json",
+        "artifacts/spearman_corr.json",
+        "artifacts/plots/heatmap_pearson_corr.png",
+        "artifacts/04_descriptive_stats.json"
+      ],
+      "decision_needed": "none"
+    },
+    {
+      "id": "H2",
+      "origin": "agent",
+      "statement": "bill_length_mm differs across species",
+      "variables": {
+        "x": "bill_length_mm",
+        "y": "",
+        "group": "species"
+      },
+      "suggested_tests": [
+        "ANOVA",
+        "Kruskal"
+      ],
+      "evidence_refs": [
+        "artifacts/04_descriptive_stats.json",
+        "artifacts/plots/boxplot_bill_length_mm_by_species.png",
+        "artifacts/05_visual_registry.json"
+      ],
+      "decision_needed": "none"
+    },
+    {
+      "id": "H3",
+      "origin": "agent",
+      "statement": "species is associated with island",
+      "variables": {
+        "x": "species",
+        "y": "island",
+        "group": ""
+      },
+      "suggested_tests": [
+        "Chi-square"
+      ],
+      "evidence_refs": [
+        "artifacts/cross_table_species_island.json",
+        "artifacts/04_descriptive_stats.json"
+      ],
+      "decision_needed": "none"
+    }
+  ]
+}

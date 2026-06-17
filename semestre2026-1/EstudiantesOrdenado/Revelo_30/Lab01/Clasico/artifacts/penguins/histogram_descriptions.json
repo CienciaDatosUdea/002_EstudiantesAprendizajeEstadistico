@@ -1,0 +1,46 @@
+{
+    "bill_length_mm": {
+        "skewness": "skewed to the right",
+        "center": "centered around the mean",
+        "spread": "small spread compared to the center",
+        "outliers": "there are no outliers that may affect the distribution",
+        "gaps": "there are no gaps in the distribution",
+        "mean": 43.99279279279279,
+        "median": 44.5,
+        "max": 59.6,
+        "min": 32.1
+    },
+    "bill_depth_mm": {
+        "skewness": "skewed to the left",
+        "center": "centered around the mean",
+        "spread": "small spread compared to the center",
+        "outliers": "there are no outliers that may affect the distribution",
+        "gaps": "there are no gaps in the distribution",
+        "mean": 17.164864864864864,
+        "median": 17.3,
+        "max": 21.5,
+        "min": 13.1
+    },
+    "flipper_length_mm": {
+        "skewness": "skewed to the right",
+        "center": "centered around the mean",
+        "spread": "small spread compared to the center",
+        "outliers": "there are no outliers that may affect the distribution",
+        "gaps": "there are no gaps in the distribution",
+        "mean": 200.96696696696696,
+        "median": 197.0,
+        "max": 231,
+        "min": 172
+    },
+    "body_mass_g": {
+        "skewness": "skewed to the right",
+        "center": "centered around the mean",
+        "spread": "small spread compared to the center",
+        "outliers": "there are no outliers that may affect the distribution",
+        "gaps": "there are no gaps in the distribution",
+        "mean": 4207.057057057057,
+        "median": 4050.0,
+        "max": 6300,
+        "min": 2700
+    }
+}

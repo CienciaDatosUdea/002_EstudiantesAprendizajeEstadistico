@@ -1,0 +1,194 @@
+{
+  "id": {
+    "dtype": "int64",
+    "semantic_type": "numeric",
+    "n_unique": 569,
+    "high_cardinality": false
+  },
+  " diagnosis": {
+    "dtype": "str",
+    "semantic_type": "categorical",
+    "n_unique": 2,
+    "high_cardinality": false
+  },
+  " radius_mean": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 456,
+    "high_cardinality": false
+  },
+  " texture_mean": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 479,
+    "high_cardinality": false
+  },
+  " perimeter_mean": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 522,
+    "high_cardinality": false
+  },
+  " area_mean": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 539,
+    "high_cardinality": false
+  },
+  " smoothness_mean": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 474,
+    "high_cardinality": false
+  },
+  " compactness_mean": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 537,
+    "high_cardinality": false
+  },
+  " concavity_mean": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 537,
+    "high_cardinality": false
+  },
+  " concave_points_mean": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 542,
+    "high_cardinality": false
+  },
+  " symmetry_mean": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 432,
+    "high_cardinality": false
+  },
+  " fractal_dimension_mean": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 499,
+    "high_cardinality": false
+  },
+  " radius_se": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 540,
+    "high_cardinality": false
+  },
+  " texture_se": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 519,
+    "high_cardinality": false
+  },
+  " perimeter_se": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 533,
+    "high_cardinality": false
+  },
+  " area_se": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 528,
+    "high_cardinality": false
+  },
+  " smoothness_se": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 547,
+    "high_cardinality": false
+  },
+  " compactness_se": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 541,
+    "high_cardinality": false
+  },
+  " concavity_se": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 533,
+    "high_cardinality": false
+  },
+  " concave_points_se": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 507,
+    "high_cardinality": false
+  },
+  " symmetry_se": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 498,
+    "high_cardinality": false
+  },
+  " fractal_dimension_se": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 545,
+    "high_cardinality": false
+  },
+  " radius_worst": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 457,
+    "high_cardinality": false
+  },
+  " texture_worst": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 511,
+    "high_cardinality": false
+  },
+  " perimeter_worst": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 514,
+    "high_cardinality": false
+  },
+  " area_worst": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 544,
+    "high_cardinality": false
+  },
+  " smoothness_worst": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 411,
+    "high_cardinality": false
+  },
+  " compactness_worst": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 529,
+    "high_cardinality": false
+  },
+  " concavity_worst": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 539,
+    "high_cardinality": false
+  },
+  " concave_points_worst": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 492,
+    "high_cardinality": false
+  },
+  " symmetry_worst": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 500,
+    "high_cardinality": false
+  },
+  " fractal_dimension_worst": {
+    "dtype": "float64",
+    "semantic_type": "numeric",
+    "n_unique": 535,
+    "high_cardinality": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-06T00:37:22.408344",
+    "source": "data/penguins.csv"
+  },
+  "payload": {
+    "anova": {
+      "var_cat": "species",
+      "var_num": "bill_length_mm",
+      "f": 397.29943741282784,
+      "p": 1.3809842053152184e-88
+    },
+    "pearson": {
+      "vars": [
+        "bill_length_mm",
+        "bill_depth_mm"
+      ],
+      "r": -0.22862563591302906,
+      "p": 2.5282897209443604e-05
+    },
+    "chi_square": {
+      "vars": [
+        "species",
+        "island"
+      ],
+      "chi2": 284.5900126880923,
+      "p": 2.2818915409873682e-60
+    }
+  }
+}

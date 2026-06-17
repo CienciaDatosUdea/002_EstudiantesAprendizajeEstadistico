@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-05-02T18:35:40.131653",
+  "tests": [
+    {
+      "hypothesis_id": "H1",
+      "test": "pearson_correlation",
+      "statistic": 0.8712,
+      "p_value": 4.3706809630006207e-107,
+      "supports_hypothesis": true
+    },
+    {
+      "hypothesis_id": "H1",
+      "test": "spearman_correlation",
+      "statistic": 0.84,
+      "p_value": 2.763218997179663e-92,
+      "supports_hypothesis": true
+    },
+    {
+      "hypothesis_id": "H2",
+      "test": "kruskal_wallis",
+      "statistic": 244.1367,
+      "p_value": 9.691371997194331e-54,
+      "supports_hypothesis": true
+    },
+    {
+      "hypothesis_id": "H3",
+      "test": "chi_squared",
+      "statistic": 299.5503,
+      "p_value": 1.354573829719252e-63,
+      "dof": 4,
+      "supports_hypothesis": true
+    },
+    {
+      "hypothesis_id": "H4",
+      "test": "mann_whitney_u",
+      "statistic": 20845.5,
+      "p_value": 1.8133343032461053e-15,
+      "supports_hypothesis": true
+    }
+  ]
+}

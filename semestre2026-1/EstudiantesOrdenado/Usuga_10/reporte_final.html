@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reporte final - Agente Pingui</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --accent: #0f766e;
+      --line: #e5e7eb;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top right, #dff6f3 0%, var(--bg) 45%);
+    }
+    main {
+      max-width: 980px;
+      margin: 28px auto;
+      padding: 0 16px 40px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 14px;
+      box-shadow: 0 6px 20px rgba(15, 118, 110, 0.08);
+    }
+    h1, h2 {
+      margin: 0 0 12px;
+    }
+    h1 {
+      color: var(--accent);
+      font-size: 1.6rem;
+    }
+    h2 {
+      font-size: 1.1rem;
+    }
+    p, li {
+      line-height: 1.45;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 2px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    th {
+      background: #f0fdfa;
+    }
+    .ok {
+      color: #166534;
+      font-weight: 600;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .chip {
+      display: inline-block;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin: 2px;
+      background: #f9fafb;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h1>Reporte final - Flujo con agente</h1>
+      <p class="meta">Proyecto: Agente Pingui | Fecha de consolidacion: 2026-03-13</p>
+      <p>Este reporte consolida resultados de los artifacts generados por el runner en las fases OBSERVE, DESCRIBE y HYPOTHESIZE_AND_CONCLUDE.</p>
+    </section>
+
+    <section class="card">
+      <h2>1) Perfil del dataset</h2>
+      <div class="grid">
+        <div><strong>Filas:</strong> 344</div>
+        <div><strong>Columnas:</strong> 7</div>
+        <div><strong>Duplicados:</strong> 0</div>
+      </div>
+      <p><strong>Variables numericas:</strong></p>
+      <p>
+        <span class="chip">bill_length_mm</span>
+        <span class="chip">bill_depth_mm</span>
+        <span class="chip">flipper_length_mm</span>
+        <span class="chip">body_mass_g</span>
+      </p>
+      <p><strong>Variables categoricas:</strong></p>
+      <p>
+        <span class="chip">species</span>
+        <span class="chip">island</span>
+        <span class="chip">sex</span>
+      </p>
+      <p><strong>Faltantes:</strong> sex=11; bill_length_mm=2; bill_depth_mm=2; flipper_length_mm=2; body_mass_g=2.</p>
+    </section>
+
+    <section class="card">
+      <h2>2) Hipotesis y conclusiones</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Hipotesis</th>
+            <th>Prueba</th>
+            <th>Estadistico</th>
+            <th>p-valor</th>
+            <th>Decision</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>H1</td>
+            <td>flipper_length_mm se asocia con body_mass_g</td>
+            <td>Spearman</td>
+            <td>0.839974</td>
+            <td>2.7632e-92</td>
+            <td class="ok">Apoyada</td>
+          </tr>
+          <tr>
+            <td>H2</td>
+            <td>bill_length_mm difiere por species</td>
+            <td>Kruskal-Wallis</td>
+            <td>244.136718</td>
+            <td>9.6914e-54</td>
+            <td class="ok">Apoyada</td>
+          </tr>
+          <tr>
+            <td>H3</td>
+            <td>species se asocia con island</td>
+            <td>Chi-cuadrado</td>
+            <td>299.550327</td>
+            <td>1.3546e-63</td>
+            <td class="ok">Apoyada</td>
+          </tr>
+        </tbody>
+      </table>
+      <ul>
+        <li>Las conclusiones son asociativas y descriptivas; no se infiere causalidad.</li>
+        <li>La relacion entre flipper_length_mm y body_mass_g es la mas fuerte del analisis.</li>
+        <li>La distribucion de especies depende de la isla en este dataset.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3) Registro de interaccion con el agente</h2>
+      <p>Se utilizo un prompt base parametrizado por fase (archivo Promts/hola_agentes.txt) y un ciclo repetido:</p>
+      <ol>
+        <li>Solicitar plan al agente con artifacts disponibles.</li>
+        <li>Ejecutar acciones concretas con el runner.</li>
+        <li>Guardar artifacts de salida.</li>
+        <li>Revisar evidencia y avanzar de fase.</li>
+      </ol>
+      <p>Decisiones destacadas:</p>
+      <ul>
+        <li>DESCRIBE: seleccion de graficos exploratoria, sin sesgo predefinido.</li>
+        <li>HYPOTHESIZE_AND_CONCLUDE: hipotesis falsables, sin afirmaciones causales.</li>
+        <li>TEST: validacion con Spearman, Kruskal-Wallis y Chi-cuadrado.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4) Artifacts de soporte</h2>
+      <ul>
+        <li>00_raw_profile.json</li>
+        <li>04_descriptive_stats.json</li>
+        <li>05_visual_registry.json</li>
+        <li>06_hypotheses_log.json</li>
+        <li>07_conclusions.json</li>
+        <li>08_tests.json</li>
+        <li>resumen.md</li>
+        <li>registro_interaccion_agente.md</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

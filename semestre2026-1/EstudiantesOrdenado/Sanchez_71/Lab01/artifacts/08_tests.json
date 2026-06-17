@@ -1,0 +1,17 @@
+{
+    "h1": {
+        "statistic": 0.8712017673060113,
+        "p_value": 4.3706809630004724e-107,
+        "conclusion": "Apoyada"
+    },
+    "h2": {
+        "statistic": 410.6002550405077,
+        "p_value": 2.6946137388895495e-91,
+        "conclusion": "Apoyada"
+    },
+    "h3": {
+        "statistic": 299.55032743148195,
+        "p_value": 1.3545738297192517e-63,
+        "conclusion": "Apoyada"
+    }
+}

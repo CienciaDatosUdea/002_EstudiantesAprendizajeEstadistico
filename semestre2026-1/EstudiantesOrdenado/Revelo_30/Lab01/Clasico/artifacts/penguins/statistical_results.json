@@ -1,0 +1,32 @@
+{
+    "bill_length_mm-bill_depth_mm": {
+        "hypothesis": "There is a correlation between bill_length_mm and bill_depth_mm.",
+        "test": "Pearson correlation test",
+        "correlation_coefficient": -0.2286256359130291,
+        "p_value": 2.5282897209443397e-05,
+        "interpretation": "weak negative correlation",
+        "significant": "True",
+        "conclusion": "Reject H0",
+        "outcome": "Hypothesis supported"
+    },
+    "bill_length_mm-flipper_length_mm": {
+        "hypothesis": "There is no correlation between bill_length_mm and flipper_length_mm.",
+        "test": "Pearson correlation test",
+        "correlation_coefficient": 0.6530956386670859,
+        "p_value": 7.211340708097467e-42,
+        "interpretation": "strong positive correlation",
+        "significant": "True",
+        "conclusion": "Reject H0",
+        "outcome": "Hypothesis refuted"
+    },
+    "bill_length_mm-body_mass_g": {
+        "hypothesis": "There is no correlation between bill_length_mm and body_mass_g.",
+        "test": "Pearson correlation test",
+        "correlation_coefficient": 0.5894511101769491,
+        "p_value": 1.538613514485931e-32,
+        "interpretation": "moderate positive correlation",
+        "significant": "True",
+        "conclusion": "Reject H0",
+        "outcome": "Hypothesis refuted"
+    }
+}

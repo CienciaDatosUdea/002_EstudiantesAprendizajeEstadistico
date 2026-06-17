@@ -1,0 +1,118 @@
+{
+  "hypotheses": [
+    {
+      "id": "H1",
+      "origin": "ai_observer",
+      "statement": "Cytodiffusion anomaly score is positively associated with anomaly_label.",
+      "variables": {
+        "x": "cytodiffusion_anomaly_score",
+        "y": "anomaly_label",
+        "group": "anomaly_label"
+      },
+      "suggested_tests": [
+        "Point-biserial correlation",
+        "Mann-Whitney U"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.cytodiffusion_anomaly_score",
+        "05_visual_registry.json:hist_04",
+        "05_visual_registry.json:box_06"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H2",
+      "origin": "ai_observer",
+      "statement": "Cytodiffusion classification confidence is negatively associated with anomaly_label.",
+      "variables": {
+        "x": "cytodiffusion_classification_confidence",
+        "y": "anomaly_label",
+        "group": "anomaly_label"
+      },
+      "suggested_tests": [
+        "Point-biserial correlation",
+        "Mann-Whitney U"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.cytodiffusion_classification_confidence",
+        "05_visual_registry.json:heatmap_08"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H3",
+      "origin": "ai_observer",
+      "statement": "Labeller confidence score differs between anomaly_label groups.",
+      "variables": {
+        "x": "anomaly_label",
+        "y": "labeller_confidence_score",
+        "group": "anomaly_label"
+      },
+      "suggested_tests": [
+        "Levene test",
+        "Mann-Whitney U",
+        "Two-sample t-test"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:correlation_matrices.pearson.anomaly_label.labeller_confidence_score",
+        "05_visual_registry.json:box_07"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H4",
+      "origin": "ai_observer",
+      "statement": "Disease category composition differs by anomaly_label.",
+      "variables": {
+        "x": "disease_category",
+        "y": "anomaly_label",
+        "group": "disease_category"
+      },
+      "suggested_tests": [
+        "Chi-squared test of independence"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:crosstabs.disease_category_x_anomaly_label",
+        "05_visual_registry.json:count_02",
+        "05_visual_registry.json:count_01"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H5",
+      "origin": "ai_observer",
+      "statement": "Cell type composition differs by anomaly_label.",
+      "variables": {
+        "x": "cell_type",
+        "y": "anomaly_label",
+        "group": "cell_type"
+      },
+      "suggested_tests": [
+        "Chi-squared test of independence"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:crosstabs.cell_type_x_anomaly_label"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H6",
+      "origin": "ai_observer",
+      "statement": "Circularity is negatively associated with eccentricity.",
+      "variables": {
+        "x": "circularity",
+        "y": "eccentricity",
+        "group": null
+      },
+      "suggested_tests": [
+        "Pearson correlation",
+        "Spearman correlation"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:correlation_matrices.pearson.circularity.eccentricity",
+        "05_visual_registry.json:heatmap_08"
+      ],
+      "decision_needed": "human"
+    }
+  ]
+}

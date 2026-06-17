@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reporte Final - Observatorio de Datos Penguins</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #5b6472;
+      --line: #d8deea;
+      --accent: #2b6cb0;
+      --accent-soft: #ebf4ff;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    h1, h2, h3 {
+      line-height: 1.2;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+    }
+    h2 {
+      margin-top: 32px;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 8px;
+    }
+    .lead {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+      margin: 16px 0;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .metric {
+      background: var(--accent-soft);
+      border: 1px solid #c7dbff;
+      border-radius: 10px;
+      padding: 14px;
+    }
+    .metric strong {
+      display: block;
+      font-size: 1.3rem;
+      color: var(--accent);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #eef2f7;
+    }
+    code {
+      background: #eef2f7;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    figure {
+      margin: 0;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+    }
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: white;
+    }
+    figcaption {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .foot {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <h1>Reporte Final: Observatorio de Datos (Penguins)</h1>
+    <p class="lead">Reporte reproducible construido a partir de los artifacts generados por el runner en las fases <code>OBSERVE</code>, <code>DESCRIBE</code> y <code>HYPOTHESIZE_AND_CONCLUDE</code>.</p>
+
+    <section class="card">
+      <h2>Resumen Ejecutivo</h2>
+      <p>El dataset contiene 344 filas y 7 columnas. Se identificaron 4 variables numericas y 3 variables categoricas. No se detectaron filas duplicadas. Se registraron valores faltantes en cuatro columnas numericas y en <code>sex</code>. La evidencia descriptiva documenta resúmenes numericos, conteos categoricos, una tabla cruzada entre <code>species</code> e <code>island</code>, matrices de correlacion de Pearson y Spearman, y un conjunto compacto de visualizaciones.</p>
+      <p>Las hipotesis documentadas son: asociacion entre <code>flipper_length_mm</code> y <code>body_mass_g</code>, diferencia de <code>bill_length_mm</code> entre especies, y asociacion entre <code>species</code> e <code>island</code>. Las pruebas registradas incluyen Pearson, Spearman, ANOVA, Kruskal y Chi-square.</p>
+      <p>Fuentes: <code>00_raw_profile.json</code>, <code>04_descriptive_stats.json</code>, <code>06_hypotheses_log.json</code>, <code>08_tests.json</code>.</p>
+    </section>
+
+    <h2>1. Observacion Inicial</h2>
+    <div class="grid">
+      <div class="metric"><span>Filas</span><strong>344</strong></div>
+      <div class="metric"><span>Columnas</span><strong>7</strong></div>
+      <div class="metric"><span>Duplicados</span><strong>0</strong></div>
+      <div class="metric"><span>Baja cardinalidad</span><strong>species, island, sex</strong></div>
+    </div>
+
+    <div class="card">
+      <h3>Esquema</h3>
+      <p><strong>Numericas:</strong> <code>bill_length_mm</code>, <code>bill_depth_mm</code>, <code>flipper_length_mm</code>, <code>body_mass_g</code></p>
+      <p><strong>Categoricas:</strong> <code>species</code>, <code>island</code>, <code>sex</code></p>
+      <h3>Valores faltantes</h3>
+      <table>
+        <thead>
+          <tr><th>Variable</th><th>Faltantes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>species</td><td>0</td></tr>
+          <tr><td>island</td><td>0</td></tr>
+          <tr><td>bill_length_mm</td><td>2</td></tr>
+          <tr><td>bill_depth_mm</td><td>2</td></tr>
+          <tr><td>flipper_length_mm</td><td>2</td></tr>
+          <tr><td>body_mass_g</td><td>2</td></tr>
+          <tr><td>sex</td><td>11</td></tr>
+        </tbody>
+      </table>
+      <p>Fuente: <code>00_raw_profile.json</code></p>
+    </div>
+
+    <h2>2. Descripcion del Dataset</h2>
+    <div class="card">
+      <h3>Resumen numerico</h3>
+      <table>
+        <thead>
+          <tr><th>Variable</th><th>Mean</th><th>Median</th><th>Std</th><th>IQR</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>bill_length_mm</td><td>43.9219</td><td>44.45</td><td>5.4596</td><td>9.2750</td></tr>
+          <tr><td>bill_depth_mm</td><td>17.1512</td><td>17.3</td><td>1.9748</td><td>3.1000</td></tr>
+          <tr><td>flipper_length_mm</td><td>200.9152</td><td>197.0</td><td>14.0617</td><td>23.0</td></tr>
+          <tr><td>body_mass_g</td><td>4201.7544</td><td>4050.0</td><td>801.9545</td><td>1200.0</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Resumen categorico</h3>
+      <table>
+        <thead>
+          <tr><th>Variable</th><th>Categoria</th><th>Count</th><th>Percentage</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>species</td><td>Adelie</td><td>152</td><td>44.19</td></tr>
+          <tr><td>species</td><td>Gentoo</td><td>124</td><td>36.05</td></tr>
+          <tr><td>species</td><td>Chinstrap</td><td>68</td><td>19.77</td></tr>
+          <tr><td>island</td><td>Biscoe</td><td>168</td><td>48.84</td></tr>
+          <tr><td>island</td><td>Dream</td><td>124</td><td>36.05</td></tr>
+          <tr><td>island</td><td>Torgersen</td><td>52</td><td>15.12</td></tr>
+          <tr><td>sex</td><td>MALE</td><td>168</td><td>48.84</td></tr>
+          <tr><td>sex</td><td>FEMALE</td><td>165</td><td>47.97</td></tr>
+          <tr><td>sex</td><td>&lt;MISSING&gt;</td><td>11</td><td>3.20</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Asociaciones descriptivas</h3>
+      <p>La asociacion numerica mas fuerte registrada aparece entre <code>flipper_length_mm</code> y <code>body_mass_g</code>.</p>
+      <table>
+        <thead>
+          <tr><th>Metodo</th><th>Par</th><th>Coeficiente</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Pearson</td><td>flipper_length_mm / body_mass_g</td><td>0.8712</td></tr>
+          <tr><td>Spearman</td><td>flipper_length_mm / body_mass_g</td><td>0.8400</td></tr>
+        </tbody>
+      </table>
+      <p>La tabla cruzada documentada entre <code>species</code> e <code>island</code> muestra una asociacion categórica relevante para posteriores pruebas.</p>
+      <p>Fuente: <code>04_descriptive_stats.json</code></p>
+    </div>
+
+    <h2>3. Visualizaciones</h2>
+    <div class="gallery">
+      <figure>
+        <img src="plots/categorical_count_plot_species.png" alt="Count plot species">
+        <figcaption>Count plot de <code>species</code>. Fuente: <code>05_visual_registry.json</code>.</figcaption>
+      </figure>
+      <figure>
+        <img src="plots/boxplot_bill_length_mm_by_species.png" alt="Boxplot bill length by species">
+        <figcaption>Boxplot de <code>bill_length_mm</code> por <code>species</code>. Fuente: <code>05_visual_registry.json</code>.</figcaption>
+      </figure>
+      <figure>
+        <img src="plots/heatmap_pearson_corr.png" alt="Heatmap Pearson correlation">
+        <figcaption>Heatmap de correlacion de Pearson. Fuente: <code>05_visual_registry.json</code>.</figcaption>
+      </figure>
+    </div>
+    <div class="card">
+      <p>El registro visual actual incluye count plots para <code>species</code>, <code>island</code> y <code>sex</code>; histogramas para las cuatro variables numericas; boxplots por especie; y un heatmap de correlacion de Pearson.</p>
+      <p>Fuente: <code>05_visual_registry.json</code></p>
+    </div>
+
+    <h2>4. Hipotesis</h2>
+    <div class="card">
+      <ol>
+        <li><code>flipper_length_mm</code> is associated with <code>body_mass_g</code>.</li>
+        <li><code>bill_length_mm</code> differs across <code>species</code>.</li>
+        <li><code>species</code> is associated with <code>island</code>.</li>
+      </ol>
+      <p>Fuente: <code>06_hypotheses_log.json</code></p>
+    </div>
+
+    <h2>5. Pruebas Estadisticas</h2>
+    <div class="card">
+      <table>
+        <thead>
+          <tr><th>Test</th><th>Variables</th><th>Statistic</th><th>p-value</th><th>Extra</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Pearson</td><td>flipper_length_mm / body_mass_g</td><td>0.8712017673060113</td><td>4.3706809630004724e-107</td><td>n = 342</td></tr>
+          <tr><td>Spearman</td><td>flipper_length_mm / body_mass_g</td><td>0.8399741230312999</td><td>2.763218997179657e-92</td><td>n = 342</td></tr>
+          <tr><td>ANOVA</td><td>bill_length_mm by species</td><td>410.6002550405077</td><td>2.6946137388895495e-91</td><td>n_groups = 3</td></tr>
+          <tr><td>Kruskal</td><td>bill_length_mm by species</td><td>244.13671803364164</td><td>9.691371997194331e-54</td><td>n_groups = 3</td></tr>
+          <tr><td>Chi-square</td><td>species / island</td><td>299.55032743148195</td><td>1.3545738297192517e-63</td><td>dof = 4</td></tr>
+        </tbody>
+      </table>
+      <p>Fuente: <code>08_tests.json</code></p>
+    </div>
+
+    <h2>6. Conclusiones</h2>
+    <div class="card">
+      <h3>Hallazgos descriptivos</h3>
+      <ul>
+        <li>Hay hallazgos descriptivos disponibles para variables numericas, resumenes categoricos y la tabla cruzada <code>species-island</code>.</li>
+      </ul>
+      <h3>Patrones visuales</h3>
+      <ul>
+        <li>El registro visual actual incluye count plots, histogramas, boxplots y un heatmap de correlacion de Pearson.</li>
+      </ul>
+      <h3>Proximas hipotesis a probar</h3>
+      <ul>
+        <li>Probar la asociacion entre <code>flipper_length_mm</code> y <code>body_mass_g</code> con Pearson y Spearman.</li>
+        <li>Probar si <code>bill_length_mm</code> difiere entre especies con ANOVA y Kruskal.</li>
+        <li>Probar la asociacion entre <code>species</code> e <code>island</code> con Chi-square.</li>
+      </ul>
+      <p>Fuente: <code>07_conclusions.json</code></p>
+    </div>
+
+    <h2>7. Preguntas para el Investigador</h2>
+    <div class="card">
+      <ol>
+        <li>Como deben tratarse las filas con valores faltantes de <code>sex</code> en analisis estratificados.</li>
+        <li>Si debe aplicarse complete-case handling u otra regla de preprocesamiento antes de pruebas con variables numericas.</li>
+      </ol>
+      <p>Fuente: <code>09_questions.json</code></p>
+    </div>
+
+    <h2>8. Artifacts Utilizados</h2>
+    <div class="card">
+      <ul>
+        <li><code>00_raw_profile.json</code></li>
+        <li><code>04_descriptive_stats.json</code></li>
+        <li><code>05_visual_registry.json</code></li>
+        <li><code>06_hypotheses_log.json</code></li>
+        <li><code>07_conclusions.json</code></li>
+        <li><code>08_tests.json</code></li>
+        <li><code>09_questions.json</code></li>
+      </ul>
+    </div>
+
+    <p class="foot">Reporte generado a partir de artifacts reproducibles del workflow con agente y runner.</p>
+  </main>
+</body>
+</html>

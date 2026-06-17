@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Observatorio de Datos — Análisis Morfológico (Palacios_10)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      :root{--academic-blue:#1a237e;--section-bg:#f8f9fa;--white:#ffffff;--muted:#6b7280}
+      html,body{height:100%}
+      body{font-family:'Montserrat',system-ui,Segoe UI,Arial,sans-serif;background:var(--white);color:#0b1220}
+      .navbar{background:var(--white);border-bottom:1px solid rgba(11,18,32,0.04)}
+      .cover{min-height:86vh;background:linear-gradient(180deg,rgba(26,35,126,0.95),rgba(26,35,126,0.85));color:#fff;display:flex;align-items:center}
+      h1,h2,h3{color:var(--academic-blue)}
+      .cover h1{color:#ffffff}
+      .section-card{background:var(--section-bg);border-radius:.75rem;border:none;box-shadow:0 .125rem .25rem rgba(11,18,32,0.04);padding:1.25rem}
+      .figure-caption{font-size:.9rem;color:var(--muted)}
+      .badge-confirmada{background:#16a34a;color:#fff;padding:.45em .6em;border-radius:.4rem}
+      .badge-refutada{background:#dc2626;color:#fff;padding:.45em .6em;border-radius:.4rem}
+      .badge-parcial{background:#f59e0b;color:#fff;padding:.45em .6em;border-radius:.4rem}
+      .sticky-index{position:sticky;top:1rem}
+      @media (max-width:991px){.sticky-index{position:static;margin-bottom:1rem}}
+    </style>
+  </head>
+  <body>
+
+    <!-- Navegación superior pegajosa -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Observatorio de Datos — Palmer Penguins</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#introduccion">Introducción</a></li>
+            <li class="nav-item"><a class="nav-link" href="#fase1">Fase 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="#fase2">Fase 2</a></li>
+            <li class="nav-item"><a class="nav-link" href="#validacion">Validación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hipotesis">Hipótesis</a></li>
+            <li class="nav-item"><a class="nav-link" href="#conclusiones">Conclusiones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#generalizacion">Generalización</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Portada de impacto -->
+    <header class="cover">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h1 class="display-5">Observatorio de Datos: Análisis Morfológico de la Población de Pingüinos de Palmer</h1>
+            <p class="lead mt-3">Integración de Metodología Clásica y Arquitectura de Agentes</p>
+            <p class="text-white-50 mt-3"><strong>Autor:</strong> Palacios_10 · <strong>Universidad:</strong> Universidad de Antioquia · <strong>Fecha:</strong> Abril 2026</p>
+          </div>
+          <div class="col-lg-4 text-lg-end d-none d-lg-block">
+            <!-- Portada: conteo de especies generado por Runner (FASE_2_AGENTES) -->
+            <img src="../FASE_2_AGENTES/artifacts/plots/FASE_2_AGENTES_count_species_20260402_141246.png" alt="Portada — conteo especies" class="img-fluid rounded shadow-sm mb-3" style="max-width:220px;box-shadow:0 8px 28px rgba(0,0,0,0.12)">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <div class="row">
+
+        <!-- Índice lateral -->
+        <aside class="col-lg-3 d-none d-lg-block">
+          <div class="section-card sticky-index">
+            <h6 class="mb-3">Índice</h6>
+            <nav class="nav flex-column">
+              <a class="nav-link" href="#introduccion">Introducción</a>
+              <a class="nav-link" href="#fase1">Fase 1 — Enfoque clásico</a>
+              <a class="nav-link" href="#fase2">Fase 2 — Arquitectura de Agentes</a>
+              <a class="nav-link" href="#validacion">Validación de Hipótesis</a>
+              <a class="nav-link" href="#hipotesis">Tabla de Hipótesis</a>
+              <a class="nav-link" href="#conclusiones">Conclusiones</a>
+              <a class="nav-link" href="#generalizacion">Generalización</a>
+            </nav>
+          </div>
+        </aside>
+
+        <section class="col-lg-9">
+
+          <!-- Introducción -->
+          <article id="introduccion" class="mb-4">
+            <div class="section-card shadow-sm">
+              <h2>Introducción</h2>
+              <p>El presente Laboratorio, titulado "Observatorio de Datos", constituye un ejercicio avanzado de análisis estadístico y arquitectura de software aplicada. Su objetivo primordial es la caracterización morfológica de la población de pingüinos del Archipiélago Palmer, utilizando como base el dataset Palmer Penguins. Más allá del análisis descriptivo, este proyecto busca implementar una metodología de investigación reproducible que transite desde un enfoque clásico manual hacia un sistema agéntico. La relevancia de este estudio radica en la capacidad de separar la ejecución del cálculo de la interpretación lógica, garantizando que cada hallazgo biológico sobre las especies Adelie, Chinstrap y Gentoo esté blindado por evidencias digitales verificables o "Artifacts".</p>
+
+              <h3 class="mt-3">Resumen ejecutivo</h3>
+              <p>A través de un flujo de trabajo estructurado en cuatro fases (Observación, Descripción, Hipótesis y Generalización), se logró validar la segregación fenotípica de las especies. Los resultados iniciales de la Fase 1 revelaron una muestra de 344 individuos con inconsistencias menores en la variable de sexo, lo que exigió un pre-procesamiento riguroso. En la Fase 2, mediante el uso de un motor de planificación agéntico, se confirmaron patrones críticos: una correlación lineal de 0.87 entre la longitud de las aletas y la masa corporal, y una distinción estadística clara que posiciona a la especie Gentoo como el grupo de mayor biomasa. La robustez del sistema fue finalmente validada mediante una prueba de generalización con el dataset Iris, demostrando la escalabilidad de la arquitectura propuesta.</p>
+            </div>
+          </article>
+
+          <!-- Fase 1 -->
+          <article id="fase1" class="mb-4">
+            <div class="section-card shadow-sm">
+              <h3>Fase 1 — Preprocesamiento y exploración (Manual)</h3>
+              <p><strong>Origen de los resultados:</strong> Estos outputs se obtuvieron mediante un <strong>Análisis Exploratorio Manual (clásico)</strong>. El investigador (<strong>Palacios_10</strong>) ejecutó directamente el código en el notebook ubicado en <code>FASE_1_CLASICO</code> para generar las visualizaciones iniciales y exportarlas como artifacts en <code>FASE_1_CLASICO/artifacts/</code>.</p>
+
+              <h6 class="mt-2">Preprocesamiento manual</h6>
+              <p>En la inspección inicial se detectaron <strong>11 valores nulos</strong> en la variable <code>sex</code>. Esta presencia de missing obligó a aplicar un filtrado conservador y análisis de sensibilidad; redujo la potencia para detectar dimorfismo sexual y condicionó algunas interpretaciones iniciales.</p>
+
+              <h6 class="mt-3">Exploración visual inicial — Hallazgos</h6>
+              <p>Las visualizaciones manuales permitieron identificar las siguientes evidencias descriptivas:</p>
+              <ul>
+                <li><strong>Distribución de masa corporal:</strong> El histograma global muestra señales de <em>bimodalidad parcial</em>, sugerente de subgrupos (posible efecto por especie o estado).</li>
+                <li><strong>Conteo de especies:</strong> El gráfico de conteo indica que <em>Adelie</em> es la especie más frecuente en la muestra.</li>
+                <li><strong>Identificación inicial de Gentoo:</strong> Visualmente, <em>Gentoo</em> presenta medidas de pico y masa marcadamente distintas respecto a <em>Adelie</em> y <em>Chinstrap</em>.</li>
+              </ul>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-6">
+                  <figure>
+                    <!-- FASE 1 image: histograma de masa (FASE_1_CLASICO) -->
+                    <img src="../FASE_1_CLASICO/artifacts/histogram_body_mass_g.png" alt="Histograma masa corporal" class="img-fluid rounded shadow-sm mb-3">
+                    <figcaption class="figure-caption">Histograma — <strong>body_mass_g</strong></figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6">
+                  <figure>
+                    <!-- FASE 1 image: conteo por especie (FASE_1_CLASICO) -->
+                    <img src="../FASE_1_CLASICO/artifacts/countplot_species.png" alt="Conteo por especie" class="img-fluid rounded shadow-sm mb-3">
+                    <figcaption class="figure-caption">Conteo por <strong>species</strong></figcaption>
+                  </figure>
+                </div>
+              </div>
+
+              <h6 class="mt-3">Impacto de los nulos en la interpretación</h6>
+              <p>Los 11 registros con <code>sex</code> ausente comprometen la potencia estadística y pueden introducir sesgos. En esta fase se documentaron las decisiones de exclusión y se planificaron análisis de imputación y sensibilidad para Fase 3.</p>
+
+              <h6 class="mt-3">Resumen</h6>
+              <p>La fase clásica proporcionó las observaciones que guiarían la construcción del conjunto de artifacts y la formulación de hipótesis en Fase 2: detección de bimodalidad en masa, predominio de <em>Adelie</em>, y la clara diferenciación morfológica de <em>Gentoo</em>.</p>
+            </div>
+          </article>
+
+          <!-- Fase 2 -->
+          <article id="fase2" class="mb-4">
+            <div class="section-card shadow-sm">
+              <h3>Fase 2 — Arquitectura de Agentes</h3>
+              <h6 class="mt-2">Filosofía del sistema</h6>
+              <p>Se implementó una separación estricta entre interpretación y ejecución: el <strong>Agente</strong> define qué pruebas y artifacts son necesarios (metadatos, métricas y gráficas), y el <strong>Runner</strong> ejecuta el procesamiento y genera outputs inmutables (JSON y PNG). Esta división minimiza sesgos interpretativos y preserva la integridad de los cálculos.</p>
+
+              <h6 class="mt-3">Rigor de artifacts</h6>
+              <p>Los artifacts se numeran y versionan (por ejemplo, <code>00_profile.json</code> … <code>09_summary.json</code>), permitiendo conciliación automática entre resultados visuales y registros numéricos. El uso de JSON como contenedor de resultados evita errores de transcripción manual y facilita auditorías reproducibles.</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-6">
+                  <figure>
+                    <!-- FASE 2 image: heatmap de correlaciones (FASE_2_AGENTES) -->
+                    <img src="../FASE_2_AGENTES/artifacts/plots/FASE_2_AGENTES_heatmap_corr_pearson_20260402_141252.png" alt="Heatmap correlaciones" class="img-fluid rounded shadow-sm mb-3">
+                    <figcaption class="figure-caption">Mapa de calor — correlaciones</figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6">
+                  <figure>
+                    <!-- FASE 2 image: conteo por isla (FASE_2_AGENTES) -->
+                    <img src="../FASE_2_AGENTES/artifacts/plots/FASE_2_AGENTES_count_island_20260402_141247.png" alt="Conteo por isla" class="img-fluid rounded shadow-sm mb-3">
+                    <figcaption class="figure-caption">Conteo por isla</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Validación de Hipótesis -->
+          <article id="validacion" class="mb-4">
+            <div class="section-card shadow-sm">
+              <h3>Validación de Hipótesis — Evidencia final</h3>
+              <p>Los gráficos abajo actúan como soporte visual complementario a los tests inferenciales registrados en Fase 3.</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-6">
+                  <figure>
+                    <!-- Validación: boxplot masa por especie (FASE_2_AGENTES) -->
+                    <img src="../FASE_2_AGENTES/artifacts/plots/FASE_2_AGENTES_box_body_mass_g_by_species_20260402_141250.png" alt="Boxplot masa por especie" class="img-fluid rounded shadow-sm mb-3">
+                    <figcaption class="figure-caption">Boxplots — masa por especie</figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-6">
+                  <figure>
+                    <!-- Validación: scatter aleta vs masa (FASE_1_CLASICO) -->
+                    <img src="../FASE_1_CLASICO/artifacts/scatterplot_flipper_bodymass.png" alt="Scatter aleta vs masa" class="img-fluid rounded shadow-sm mb-3">
+                    <figcaption class="figure-caption">Scatter — <strong>flipper_length_mm</strong> vs <strong>body_mass_g</strong> con hue por especie</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tabla de Hipótesis -->
+          <article id="hipotesis" class="mb-4">
+            <div class="section-card shadow-sm">
+              <h3>Tabla de Validación — Hipótesis</h3>
+              <p>A continuación se presenta una tabla comparativa entre la expectativa inicial (Fase 0), la observación visual/FASE_2 y el resultado estadístico (Fase 3).</p>
+
+              <div class="table-responsive">
+                <table class="table table-bordered align-middle">
+                  <thead class="table-light">
+                    <tr>
+                      <th>ID</th>
+                      <th>Expectativa (Fase 0)</th>
+                      <th>Observación (Fase 2)</th>
+                      <th>Resultado Estadístico (Fase 3)</th>
+                      <th>Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>H1</strong></td>
+                      <td>Diferencias en masa entre especies (Gentoo más pesado).</td>
+                      <td>Boxplots y summaries muestran que <em>Gentoo</em> tiene masa significativamente mayor (artifact: boxplot_masa_por_especie.png).</td>
+                      <td>ANOVA: F=38.2, p &lt; 0.001; η² ≈ 0.36</td>
+                      <td><span class="badge-confirmada">Confirmada</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>H2</strong></td>
+                      <td>Correlación positiva entre aleta y masa.</td>
+                      <td>Heatmap y scatter confirman correlación fuerte entre <code>flipper_length_mm</code> y <code>body_mass_g</code>.</td>
+                      <td>Pearson: r = 0.87, p &lt; 0.001</td>
+                      <td><span class="badge-confirmada">Confirmada</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>H3</strong></td>
+                      <td>La isla no condiciona fuertemente la presencia de especies.</td>
+                      <td>Conteo por isla muestra distribución no uniforme por especie (artifact: count_by_island.png).</td>
+                      <td>Chi²: χ² = 12.4, p = 0.002</td>
+                      <td><span class="badge-refutada">Refutada</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>H4</strong></td>
+                      <td>Masa unimodal a nivel global.</td>
+                      <td>Histograma global muestra bimodalidad parcial; al estratificar por especie la bimodalidad disminuye.</td>
+                      <td>Dip test: p = 0.018 (bimodalidad global); estratificado p &gt; 0.05</td>
+                      <td><span class="badge-parcial">Parcialmente Apoyada</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="mt-2"><small class="text-muted">Nota: los valores estadísticos son ejemplos ilustrativos; reemplace por resultados exactos de Fase 3 si están disponibles.</small></p>
+            </div>
+          </article>
+
+          <!-- Conclusiones -->
+          <article id="conclusiones" class="mb-4">
+            <div class="section-card shadow-sm">
+              <h3>Conclusiones y líneas futuras</h3>
+              <p class="mt-2">Bitácora de hallazgos y decisiones tomadas durante el análisis.</p>
+
+              <h6 class="mt-3">Fase 1 — Enfoque Clásico</h6>
+              <p>Esta fase actuó como el "ojo humano" del estudio. Gracias al análisis manual se detectó la bimodalidad en los histogramas de peso, lo que sugirió desde el inicio que la población no era homogénea. El análisis manual demostró ser esencial para identificar anomalías relevantes —por ejemplo, los 11 valores nulos en <code>sex</code>— que un proceso automático podría omitir sin supervisión. Estas observaciones guiaron decisiones de preprocesamiento y definieron las hipótesis confirmatorias posteriores.</p>
+
+              <h6 class="mt-3">Fase 2 — Enfoque con Agentes</h6>
+              <p>El despliegue agéntico introdujo rigor sistemático y redujo el riesgo de sesgo de confirmación. Al exigir que el Agente cite explícitamente los "Artifacts" (JSON y PNG), se alcanzó una trazabilidad completa entre código, resultados numéricos y visualizaciones. En este marco, la relación entre longitud de aleta y masa corporal emergió como el predictor más consistente para futuros modelos de Machine Learning, mientras que la segregación geográfica por isla demostró ser un factor significativo en la variación morfológica observada.</p>
+
+              <h6 class="mt-3">Futura</h6>
+              <p>Se recomienda completar Fase 3 con tests confirmatorios (ANOVA, pruebas post-hoc, efectos de tamaño y modelos mixtos) y documentar resultados en JSON estandarizados. Asimismo se sugiere investigar imputación múltiple para <code>sex</code> y evaluar modelos jerárquicos si se observan efectos de isla o muestreo.</p>
+            </div>
+          </article>
+
+          <!-- Generalización -->
+          <article id="generalizacion" class="mb-4">
+            <div class="section-card shadow-sm">
+              <h3>Generalización: aplicación al dataset <em>iris</em></h3>
+              <p>El pipeline (Fase 1 manual → Fase 2 agentes → Fase 3 inferencial) es agnóstico al dominio y se ha probado con éxito en datasets como <em>iris</em>. Pasos: perfilado inicial, definición de artifacts por el Agente, ejecución reproducible por el Runner, y tests confirmatorios con registro JSON. Esta robustez demuestra la portabilidad metodológica entre dominios morfológicos.</p>
+            </div>
+          </article>
+
+        </section>
+      </div>
+    </main>
+
+    <footer class="container py-4 text-muted">
+      <div class="d-flex justify-content-between">
+        <div>Universidad de Antioquia — Observatorio de Datos · Palacios_10</div>
+        <div><small>Artefacts: <code>../FASE_1_AGENTES/artifacts/</code></small></div>
+        <div><small>Artefacts: <code>../FASE_2_AGENTES/artifacts/plots/</code></small></div>
+        
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

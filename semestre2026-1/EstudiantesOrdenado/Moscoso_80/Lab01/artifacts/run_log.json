@@ -1,0 +1,894 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-03-07T11:30:48.885207",
+      "phase": "OBSERVE",
+      "operation": "profile_dataset",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/00_raw_profile__OBSERVE__20260307_113048.json"
+    },
+    {
+      "timestamp": "2026-03-07T11:30:48.887632",
+      "phase": "OBSERVE",
+      "operation": "infer_schema",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/01_schema__OBSERVE__20260307_113048.json"
+    },
+    {
+      "timestamp": "2026-03-07T11:30:48.890332",
+      "phase": "OBSERVE",
+      "operation": "missing_report",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/02_missing_report__OBSERVE__20260307_113048.json"
+    },
+    {
+      "timestamp": "2026-03-07T11:30:48.892846",
+      "phase": "OBSERVE",
+      "operation": "duplicates_report",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/03_duplicates_report__OBSERVE__20260307_113048.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:55.934363",
+      "phase": "DESCRIBE",
+      "operation": "numeric_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04a_numeric_summary__DESCRIBE__20260308_093155.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:55.937593",
+      "phase": "DESCRIBE",
+      "operation": "categorical_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04b_categorical_summary__DESCRIBE__20260308_093155.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:55.939420",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_pearson__DESCRIBE__20260308_093155.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:55.940686",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_spearman__DESCRIBE__20260308_093155.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:55.944352",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "kendall"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_kendall__DESCRIBE__20260308_093155.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:56.092238",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_species__DESCRIBE__20260308_093156.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:56.213530",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_island"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_island__DESCRIBE__20260308_093156.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:56.321117",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_sex"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_sex__DESCRIBE__20260308_093156.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:56.523322",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_body_mass_g_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_body_mass_g_by_species__DESCRIBE__20260308_093156.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:56.736505",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_flipper_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_flipper_length_mm_by_species__DESCRIBE__20260308_093156.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:56.931254",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_bill_length_mm_by_species__DESCRIBE__20260308_093156.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:57.055148",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_length_mm_by_species__DESCRIBE__20260308_093156.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:31:57.170812",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_depth_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_depth_mm_by_species__DESCRIBE__20260308_093157.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:51.065649",
+      "phase": "DESCRIBE",
+      "operation": "numeric_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04a_numeric_summary__DESCRIBE__20260308_093351.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:51.069644",
+      "phase": "DESCRIBE",
+      "operation": "categorical_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04b_categorical_summary__DESCRIBE__20260308_093351.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:51.071397",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_pearson__DESCRIBE__20260308_093351.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:51.073285",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_spearman__DESCRIBE__20260308_093351.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:51.077217",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "kendall"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_kendall__DESCRIBE__20260308_093351.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:51.204043",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_species__DESCRIBE__20260308_093351.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:51.319087",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_island"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_island__DESCRIBE__20260308_093351.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:51.424372",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_sex"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_sex__DESCRIBE__20260308_093351.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:51.623691",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_body_mass_g_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_body_mass_g_by_species__DESCRIBE__20260308_093351.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:51.841846",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_flipper_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_flipper_length_mm_by_species__DESCRIBE__20260308_093351.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:52.044365",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_bill_length_mm_by_species__DESCRIBE__20260308_093351.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:52.173057",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_length_mm_by_species__DESCRIBE__20260308_093352.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:33:52.290262",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_depth_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_depth_mm_by_species__DESCRIBE__20260308_093352.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:17.280642",
+      "phase": "DESCRIBE",
+      "operation": "numeric_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04a_numeric_summary__DESCRIBE__20260308_093417.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:17.284265",
+      "phase": "DESCRIBE",
+      "operation": "categorical_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04b_categorical_summary__DESCRIBE__20260308_093417.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:17.286142",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_pearson__DESCRIBE__20260308_093417.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:17.287879",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_spearman__DESCRIBE__20260308_093417.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:17.291776",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "kendall"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_kendall__DESCRIBE__20260308_093417.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:17.420827",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_species__DESCRIBE__20260308_093417.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:17.536397",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_island"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_island__DESCRIBE__20260308_093417.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:17.643194",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_sex"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_sex__DESCRIBE__20260308_093417.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:17.842606",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_body_mass_g_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_body_mass_g_by_species__DESCRIBE__20260308_093417.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:18.070131",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_flipper_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_flipper_length_mm_by_species__DESCRIBE__20260308_093417.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:18.273995",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_bill_length_mm_by_species__DESCRIBE__20260308_093418.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:18.398522",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_length_mm_by_species__DESCRIBE__20260308_093418.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:18.527920",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_depth_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_depth_mm_by_species__DESCRIBE__20260308_093418.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:18.711356",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_length_mm_vs_flipper_length_mm_hue_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_length_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260308_093418.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:18.881770",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_depth_mm_vs_flipper_length_mm_hue_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_depth_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260308_093418.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:34:19.100142",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "heatmap_corr_pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/heatmap_corr_pearson__DESCRIBE__20260308_093418.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:31.035480",
+      "phase": "DESCRIBE",
+      "operation": "numeric_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04a_numeric_summary__DESCRIBE__20260308_093531.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:31.039047",
+      "phase": "DESCRIBE",
+      "operation": "categorical_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04b_categorical_summary__DESCRIBE__20260308_093531.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:31.041118",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_pearson__DESCRIBE__20260308_093531.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:31.043200",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_spearman__DESCRIBE__20260308_093531.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:31.047834",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "kendall"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_kendall__DESCRIBE__20260308_093531.json"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:31.183880",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_species__DESCRIBE__20260308_093531.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:31.305359",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_island"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_island__DESCRIBE__20260308_093531.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:31.420159",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_sex"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_sex__DESCRIBE__20260308_093531.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:31.635278",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_body_mass_g_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_body_mass_g_by_species__DESCRIBE__20260308_093531.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:31.829759",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_flipper_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_flipper_length_mm_by_species__DESCRIBE__20260308_093531.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:32.038057",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_bill_length_mm_by_species__DESCRIBE__20260308_093531.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:32.166731",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_length_mm_by_species__DESCRIBE__20260308_093532.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:32.281822",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_depth_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_depth_mm_by_species__DESCRIBE__20260308_093532.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:32.441754",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_length_mm_vs_flipper_length_mm_hue_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_length_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260308_093532.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:32.622222",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_depth_mm_vs_flipper_length_mm_hue_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_depth_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260308_093532.png"
+    },
+    {
+      "timestamp": "2026-03-08T09:35:32.818521",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "heatmap_corr_pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/heatmap_corr_pearson__DESCRIBE__20260308_093532.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:02.551418",
+      "phase": "DESCRIBE",
+      "operation": "numeric_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04a_numeric_summary__DESCRIBE__20260308_122702.json"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:02.555497",
+      "phase": "DESCRIBE",
+      "operation": "categorical_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04b_categorical_summary__DESCRIBE__20260308_122702.json"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:02.557702",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_pearson__DESCRIBE__20260308_122702.json"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:02.559651",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_spearman__DESCRIBE__20260308_122702.json"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:02.564652",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "kendall"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_kendall__DESCRIBE__20260308_122702.json"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:02.706068",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_species__DESCRIBE__20260308_122702.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:02.852658",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_island"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_island__DESCRIBE__20260308_122702.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:02.975091",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_sex"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_sex__DESCRIBE__20260308_122702.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:03.184550",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_body_mass_g_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_body_mass_g_by_species__DESCRIBE__20260308_122703.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:03.384348",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_flipper_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_flipper_length_mm_by_species__DESCRIBE__20260308_122703.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:03.594579",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_bill_length_mm_by_species__DESCRIBE__20260308_122703.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:03.745452",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_length_mm_by_species__DESCRIBE__20260308_122703.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:03.875111",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_depth_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_depth_mm_by_species__DESCRIBE__20260308_122703.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:04.049757",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_length_mm_vs_flipper_length_mm_hue_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_length_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260308_122703.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:04.216814",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_depth_mm_vs_flipper_length_mm_hue_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_depth_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260308_122704.png"
+    },
+    {
+      "timestamp": "2026-03-08T12:27:04.414872",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "heatmap_corr_pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/heatmap_corr_pearson__DESCRIBE__20260308_122704.png"
+    },
+    {
+      "timestamp": "2026-03-08T15:50:20.152681",
+      "phase": "HYPOTHESIZE",
+      "operation": "crosstab",
+      "params": {
+        "a": "species",
+        "b": "island"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04c_crosstab_species_island__HYPOTHESIZE__20260308_155020.json"
+    },
+    {
+      "timestamp": "2026-03-08T15:50:20.160148",
+      "phase": "HYPOTHESIZE",
+      "operation": "crosstab",
+      "params": {
+        "a": "species",
+        "b": "sex"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04c_crosstab_species_sex__HYPOTHESIZE__20260308_155020.json"
+    },
+    {
+      "timestamp": "2026-03-08T15:50:20.347267",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_depth_mm_vs_bill_length_mm_hue_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_depth_mm_vs_bill_length_mm_hue_species__HYPOTHESIZE__20260308_155020.png"
+    },
+    {
+      "timestamp": "2026-03-08T15:50:20.483746",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_body_mass_g_by_sex"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_body_mass_g_by_sex__HYPOTHESIZE__20260308_155020.png"
+    },
+    {
+      "timestamp": "2026-03-08T20:17:01.434468",
+      "phase": "HYPOTHESIZE",
+      "operation": "crosstab",
+      "params": {
+        "a": "species",
+        "b": "island"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04c_crosstab_species_island__HYPOTHESIZE__20260308_201701.json"
+    },
+    {
+      "timestamp": "2026-03-08T20:17:01.439949",
+      "phase": "HYPOTHESIZE",
+      "operation": "crosstab",
+      "params": {
+        "a": "species",
+        "b": "sex"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04c_crosstab_species_sex__HYPOTHESIZE__20260308_201701.json"
+    },
+    {
+      "timestamp": "2026-03-08T20:17:01.612330",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_depth_mm_vs_bill_length_mm_hue_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_depth_mm_vs_bill_length_mm_hue_species__HYPOTHESIZE__20260308_201701.png"
+    },
+    {
+      "timestamp": "2026-03-08T20:17:01.760317",
+      "phase": "HYPOTHESIZE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_body_mass_g_by_sex"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_body_mass_g_by_sex__HYPOTHESIZE__20260308_201701.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:33.095356",
+      "phase": "DESCRIBE",
+      "operation": "numeric_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04a_numeric_summary__DESCRIBE__20260309_001333.json"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:33.099391",
+      "phase": "DESCRIBE",
+      "operation": "categorical_summary",
+      "params": {},
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04b_categorical_summary__DESCRIBE__20260309_001333.json"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:33.102036",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_pearson__DESCRIBE__20260309_001333.json"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:33.105107",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "spearman"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_spearman__DESCRIBE__20260309_001333.json"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:33.111358",
+      "phase": "DESCRIBE",
+      "operation": "correlation_matrix",
+      "params": {
+        "method": "kendall"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_kendall__DESCRIBE__20260309_001333.json"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:33.259935",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_species__DESCRIBE__20260309_001333.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:33.385037",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_island"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_island__DESCRIBE__20260309_001333.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:33.503415",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "count_sex"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_sex__DESCRIBE__20260309_001333.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:33.718579",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_body_mass_g_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_body_mass_g_by_species__DESCRIBE__20260309_001333.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:33.918819",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_flipper_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_flipper_length_mm_by_species__DESCRIBE__20260309_001333.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:34.139498",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "hist_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_bill_length_mm_by_species__DESCRIBE__20260309_001334.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:34.275804",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_length_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_length_mm_by_species__DESCRIBE__20260309_001334.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:34.395568",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "box_bill_depth_mm_by_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_depth_mm_by_species__DESCRIBE__20260309_001334.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:34.548936",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_length_mm_vs_flipper_length_mm_hue_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_length_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260309_001334.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:34.713265",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "scatter_bill_depth_mm_vs_flipper_length_mm_hue_species"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_depth_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260309_001334.png"
+    },
+    {
+      "timestamp": "2026-03-09T00:13:34.901827",
+      "phase": "DESCRIBE",
+      "operation": "save_plot",
+      "params": {
+        "plot_name": "heatmap_corr_pearson"
+      },
+      "output": "semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/heatmap_corr_pearson__DESCRIBE__20260309_001334.png"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "dataset_name": "penguins",
+  "descriptive_findings": [
+    {
+      "statement": "Descriptive findings for numeric variables, categorical summaries, and the species-island crosstab are available for interpretation.",
+      "evidence_refs": [
+        "artifacts/04_descriptive_stats.json"
+      ]
+    }
+  ],
+  "visual_patterns": [
+    {
+      "statement": "The current visual registry includes count plots, histograms, boxplots, and a Pearson correlation heatmap for use in the conclusion draft.",
+      "evidence_refs": [
+        "artifacts/05_visual_registry.json"
+      ]
+    }
+  ],
+  "next_hypotheses": [
+    {
+      "statement": "Test whether flipper_length_mm is associated with body_mass_g using Pearson and Spearman procedures.",
+      "evidence_refs": [
+        "artifacts/pearson_corr.json",
+        "artifacts/spearman_corr.json",
+        "artifacts/plots/heatmap_pearson_corr.png"
+      ]
+    },
+    {
+      "statement": "Test whether bill_length_mm differs across species using ANOVA and Kruskal procedures.",
+      "evidence_refs": [
+        "artifacts/plots/boxplot_bill_length_mm_by_species.png",
+        "artifacts/04_descriptive_stats.json"
+      ]
+    },
+    {
+      "statement": "Test whether species is associated with island using a chi-square procedure.",
+      "evidence_refs": [
+        "artifacts/cross_table_species_island.json",
+        "artifacts/04_descriptive_stats.json"
+      ]
+    }
+  ]
+}

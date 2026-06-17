@@ -1,0 +1,109 @@
+{
+  "dataset_name": "penguins",
+  "plots": [
+    {
+      "kind": "box",
+      "path": "artifacts/plots/boxplot_bill_length_mm_by_species.png",
+      "variables": {
+        "num_col": "bill_length_mm",
+        "cat_col": "species"
+      },
+      "evidence_refs": [
+        "artifacts/numeric_summary.json:bill_length_mm",
+        "artifacts/categorical_counts.json:species"
+      ]
+    },
+    {
+      "kind": "box",
+      "path": "artifacts/plots/boxplot_body_mass_g_by_species.png",
+      "variables": {
+        "num_col": "body_mass_g",
+        "cat_col": "species"
+      },
+      "evidence_refs": [
+        "artifacts/numeric_summary.json:body_mass_g",
+        "artifacts/categorical_counts.json:species"
+      ]
+    },
+    {
+      "kind": "count",
+      "path": "artifacts/plots/categorical_count_plot_island.png",
+      "variables": {
+        "column": "island"
+      },
+      "evidence_refs": [
+        "artifacts/categorical_counts.json:island"
+      ]
+    },
+    {
+      "kind": "count",
+      "path": "artifacts/plots/categorical_count_plot_sex.png",
+      "variables": {
+        "column": "sex"
+      },
+      "evidence_refs": [
+        "artifacts/categorical_counts.json:sex"
+      ]
+    },
+    {
+      "kind": "count",
+      "path": "artifacts/plots/categorical_count_plot_species.png",
+      "variables": {
+        "column": "species"
+      },
+      "evidence_refs": [
+        "artifacts/categorical_counts.json:species"
+      ]
+    },
+    {
+      "kind": "heatmap_corr",
+      "path": "artifacts/plots/heatmap_pearson_corr.png",
+      "variables": {
+        "method": "pearson"
+      },
+      "evidence_refs": [
+        "artifacts/pearson_corr.json"
+      ]
+    },
+    {
+      "kind": "hist",
+      "path": "artifacts/plots/histogram_bill_depth_mm.png",
+      "variables": {
+        "column": "bill_depth_mm"
+      },
+      "evidence_refs": [
+        "artifacts/histogram_descriptions.json:bill_depth_mm"
+      ]
+    },
+    {
+      "kind": "hist",
+      "path": "artifacts/plots/histogram_bill_length_mm.png",
+      "variables": {
+        "column": "bill_length_mm"
+      },
+      "evidence_refs": [
+        "artifacts/histogram_descriptions.json:bill_length_mm"
+      ]
+    },
+    {
+      "kind": "hist",
+      "path": "artifacts/plots/histogram_body_mass_g.png",
+      "variables": {
+        "column": "body_mass_g"
+      },
+      "evidence_refs": [
+        "artifacts/histogram_descriptions.json:body_mass_g"
+      ]
+    },
+    {
+      "kind": "hist",
+      "path": "artifacts/plots/histogram_flipper_length_mm.png",
+      "variables": {
+        "column": "flipper_length_mm"
+      },
+      "evidence_refs": [
+        "artifacts/histogram_descriptions.json:flipper_length_mm"
+      ]
+    }
+  ]
+}
