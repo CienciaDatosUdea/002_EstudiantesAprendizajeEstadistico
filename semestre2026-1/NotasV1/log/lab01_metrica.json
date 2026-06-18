@@ -1,0 +1,41 @@
+{
+  "laboratorio": "Laboratorio_01_pinguinos_v2_IA.ipynb",
+  "titulo": "LABORATORIO — Observatorio de Datos (Pingüinos)",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / puntos_posibles * 5.0)",
+  "fases": [
+    { "id": "A", "nombre": "Observación inicial",      "puntos": [1,2,3,4,5]    },
+    { "id": "B", "nombre": "Descripción",              "puntos": [6,7,8,9]      },
+    { "id": "C", "nombre": "Visualización",            "puntos": [10,11,12,13,14] },
+    { "id": "D", "nombre": "Hipótesis",                "puntos": [15]           },
+    { "id": "E", "nombre": "Pruebas estadísticas",     "puntos": [16,17,18]     },
+    { "id": "F", "nombre": "Conclusiones y reporte",   "puntos": [19,20]        },
+    { "id": "G", "nombre": "Pipeline (bonus)",         "puntos": [21,22], "bonus": true }
+  ],
+  "puntos": [
+    { "numero": 1,  "fase": "A", "texto": "¿Cuántas filas y columnas tiene el dataset?" },
+    { "numero": 2,  "fase": "A", "texto": "¿Qué variables son numéricas y cuáles categóricas?" },
+    { "numero": 3,  "fase": "A", "texto": "¿Cuántos valores faltantes hay por columna?" },
+    { "numero": 4,  "fase": "A", "texto": "¿Existen filas duplicadas?" },
+    { "numero": 5,  "fase": "A", "texto": "¿Qué variables tienen baja cardinalidad?" },
+    { "numero": 6,  "fase": "B", "texto": "Media, mediana, desviación estándar y rango intercuartílico por variable numérica." },
+    { "numero": 7,  "fase": "B", "texto": "Conteos y porcentajes por variable categórica." },
+    { "numero": 8,  "fase": "B", "texto": "Tablas cruzadas para pares de variables categóricas relevantes." },
+    { "numero": 9,  "fase": "B", "texto": "Matrices de correlación (Pearson y Spearman) entre variables numéricas." },
+    { "numero": 10, "fase": "C", "texto": "Gráficos de conteo para variables categóricas de baja cardinalidad." },
+    { "numero": 11, "fase": "C", "texto": "Histogramas para variables numéricas con descripción de su forma." },
+    { "numero": 12, "fase": "C", "texto": "Boxplots de variable numérica por categoría." },
+    { "numero": 13, "fase": "C", "texto": "Scatter entre dos variables numéricas coloreado por categoría." },
+    { "numero": 14, "fase": "C", "texto": "Heatmap de correlación." },
+    { "numero": 15, "fase": "D", "texto": "Al menos 3 hipótesis falsables basadas en gráficos y descriptivos." },
+    { "numero": 16, "fase": "E", "texto": "Prueba adecuada para cada hipótesis (Pearson/Spearman, ANOVA/Kruskal, chi-cuadrado)." },
+    { "numero": 17, "fase": "E", "texto": "Estadístico y p-valor reportados." },
+    { "numero": 18, "fase": "E", "texto": "Interpretación de la evidencia sin afirmar causalidad." },
+    { "numero": 19, "fase": "F", "texto": "Conclusiones en tres capas: hallazgos, patrones visuales y próximas hipótesis." },
+    { "numero": 20, "fase": "F", "texto": "Preguntas para un investigador humano." },
+    { "numero": 21, "fase": "G", "texto": "Ejecución del pipeline: python pipeline.py", "bonus": true },
+    { "numero": 22, "fase": "G", "texto": "Revisión del HTML final en artifacts/observatorio.html.", "bonus": true }
+  ]
+}

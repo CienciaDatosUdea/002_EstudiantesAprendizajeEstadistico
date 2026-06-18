@@ -1,0 +1,23 @@
+{
+  "laboratorio": "Laboratorio_08_clasificacionLogistica.ipynb",
+  "titulo": "Lab 8: Clasificación Logística",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / 12 * 5.0)",
+  "total_puntos": 12,
+  "puntos": [
+    { "numero": 1,  "texto": "Dividir los datos en train and test." },
+    { "numero": 2,  "texto": "Entrenar el algoritmo." },
+    { "numero": 3,  "texto": "Analizar las curvas de aprendizaje." },
+    { "numero": 4,  "texto": "Realizar predicciones." },
+    { "numero": 5,  "texto": "Aplicar regularización." },
+    { "numero": 6,  "texto": "Encontrar la matriz de correlación con corr() y seaborn heatmap." },
+    { "numero": 7,  "texto": "Separar datos en entrenamiento y test con train_test_split." },
+    { "numero": 8,  "texto": "Construir un modelo de regresión logística para clasificar setosa vs no setosa." },
+    { "numero": 9,  "texto": "Determinar la frontera de clasificación." },
+    { "numero": 10, "texto": "Gráfica de la regresión logística con valores de probabilidad." },
+    { "numero": 11, "texto": "Construir el multiclasificador con LogisticRegression." },
+    { "numero": 12, "texto": "Dado X=[4.9,5.0,1.8,0.3], ¿cuál es la probabilidad de cada clase?" }
+  ]
+}

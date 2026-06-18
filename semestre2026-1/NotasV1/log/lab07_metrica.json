@@ -1,0 +1,28 @@
+{
+  "laboratorio": "Laboratorio_07_abc_modelo_v1.ipynb",
+  "titulo": "Lab 7: ABC del Modelo (EDA y pipeline)",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / 17 * 5.0)",
+  "total_puntos": 17,
+  "puntos": [
+    { "numero": 1,  "texto": "¿Qué puede concluir respecto al modelo empleado?" },
+    { "numero": 2,  "texto": "¿El modelo de regresión lineal es válido para lo construido?" },
+    { "numero": 3,  "texto": "¿Qué información nos da el score?" },
+    { "numero": 4,  "texto": "¿Puede ser ajustado a otro modelo?" },
+    { "numero": 5,  "texto": "¿Cómo puede automatizar todo el proceso empleando pipelines?" },
+    { "numero": 6,  "texto": "Para las columnas (análisis de variables)." },
+    { "numero": 7,  "texto": "Construye un histograma para cada columna con seaborn." },
+    { "numero": 8,  "texto": "Empleando el código, realiza el gráfico boxplot." },
+    { "numero": 9,  "texto": "Determina la matriz de correlación." },
+    { "numero": 10, "texto": "Con las columnas, realiza un gráfico pairplot usando seaborn." },
+    { "numero": 11, "texto": "Realiza un scatter plot con seaborn (color por variable)." },
+    { "numero": 12, "texto": "¿La línea es adecuada para separar el dataframe en train/test?" },
+    { "numero": 13, "texto": "Puedes agregar nuevas variables al dataframe para el análisis." },
+    { "numero": 14, "texto": "Compara las siguientes variables." },
+    { "numero": 15, "texto": "¿Qué realizan las siguientes líneas de código?" },
+    { "numero": 16, "texto": "Las variables pueden ser escaladas como sigue." },
+    { "numero": 17, "texto": "Para todos los pasos anteriores, construye ordenadamente: limpieza, escalamiento de variables, entrenamiento, validación." }
+  ]
+}

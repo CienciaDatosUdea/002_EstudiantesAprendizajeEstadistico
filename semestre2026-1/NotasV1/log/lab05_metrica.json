@@ -1,0 +1,18 @@
+{
+  "laboratorio": "Laboratorio_05_reg_multivariada_v2.ipynb",
+  "titulo": "Lab 5: Regresión multivariada",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / 7 * 5.0)",
+  "total_puntos": 7,
+  "puntos": [
+    { "numero": 1, "texto": "Definir y = 2.1*x1 - 3.1*x2, generar puntos aleatorios en el plano y graficar en 3D." },
+    { "numero": 2, "texto": "Inicializar parámetros Θ de manera aleatoria." },
+    { "numero": 3, "texto": "Construir la matriz X con dimensiones (n+1, m)." },
+    { "numero": 4, "texto": "Calcular la función de coste (h, Λ, J) verificando dimensiones." },
+    { "numero": 5, "texto": "Aplicar gradiente descendente: calcular gradiente y actualizar Θ." },
+    { "numero": 6, "texto": "Iterar hasta encontrar los Θ que ajustan el plano." },
+    { "numero": 7, "texto": "Reescribir el código como una clase MultilinearRegresion." }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "laboratorio": "Laboratorio_12_random_forest.ipynb",
+  "titulo": "Lab 12: Random Forest",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / 3 * 5.0)",
+  "total_puntos": 3,
+  "puntos": [
+    { "numero": 1, "texto": "Cargar load_digits." },
+    { "numero": 2, "texto": "Aplicar Random Forest usando sklearn para clasificar el dataset." },
+    { "numero": 3, "texto": "Con el número de árboles fijo y número de características, optimizar el criterio de parada (min_samples_split) variando el parámetro." }
+  ]
+}
