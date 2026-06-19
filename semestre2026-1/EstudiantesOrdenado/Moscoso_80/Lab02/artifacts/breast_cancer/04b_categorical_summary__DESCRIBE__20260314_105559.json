@@ -1,0 +1,14 @@
+{
+  "diagnosis": {
+    "n_unique": 2,
+    "top_value": "B",
+    "value_counts": {
+      "B": 357,
+      "M": 212
+    },
+    "proportions": {
+      "B": 0.6274,
+      "M": 0.3726
+    }
+  }
+}

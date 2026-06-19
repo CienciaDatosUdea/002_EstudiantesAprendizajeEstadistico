@@ -1,0 +1,181 @@
+REGISTRO DE PROTOCOLOS EXPERIMENTALES
+LABORATORIO 1 - OBSERVATORIO DE DATOS
+Fecha de consolidacion: 2026-04-12
+
+Disclaimer de ejecucion:
+Este registro documenta prompts ejecutados con GitHub Copilot (version abril 2026), bajo licencia estudiantil (Student License), siguiendo el protocolo de desacoplamiento Agente/Runner.
+
+==================================================
+FASE: OBSERVE
+==================================================
+OBJETIVO:
+Caracterizar el sistema Penguin a nivel estructural sin acceder a microestados crudos, obteniendo dimensionalidad, tipos de variables y perfil de completitud.
+
+PROMPT DEL AGENTE (reconstruido):
+"You are acting as the Theoretical Agent in a Statistical Learning experiment.
+Your objective is to infer the macroscopic laws of a physical system using ONLY the provided artifacts.
+You are strictly forbidden from accessing the raw CSV microstates.
+
+Context:
+#file:artifacts/00_raw_profile.json
+
+Task:
+1. Characterize the system's phase space (dimensions, types, and missing values).
+2. Report data quality signals relevant for inference reliability."
+
+DECISION/RESULTADO:
+Generacion y consolidacion del perfil de observacion del sistema en artifacts/00_raw_profile.json:
+- N = 344 observaciones.
+- d = 7 variables (4 numericas, 3 categoricas).
+- Faltantes concentrados en sex (11) y minimos en variables fisicas (2 cada una).
+- Duplicados = 0.
+
+
+==================================================
+FASE: DESCRIBE
+==================================================
+OBJETIVO:
+Extraer estadistica descriptiva de primer orden, correlaciones y registro visual del sistema para identificar patrones macroscópicos.
+
+PROMPT DEL AGENTE (reconstruido):
+"Using only artifact summaries, produce descriptive statistics and phase-space couplings.
+Context:
+#file:artifacts/04_descriptive_stats.json
+#file:artifacts/05_visual_registry.json
+
+Include:
+1. Numerical and categorical descriptive summaries.
+2. Pearson/Spearman couplings.
+3. Main visual patterns (bimodality, separability, linear trends)."
+
+DECISION/RESULTADO:
+Generacion de artifacts/04_descriptive_stats.json y artifacts/05_visual_registry.json con:
+- Momentos y cuantiles para bill_length_mm, bill_depth_mm, flipper_length_mm, body_mass_g.
+- Matrices Pearson/Spearman con acoplamiento dominante flipper_length_mm-body_mass_g (Pearson = 0.871).
+- Registro de visualizaciones: histogramas, conteos categoricos, boxplots e heatmap.
+
+
+==================================================
+FASE: HYPOTHESIZE
+==================================================
+OBJETIVO:
+Formular hipotesis fisico-estadisticas falsables y solicitar validacion inferencial por parte del Runner.
+
+PROMPT DEL AGENTE (exacto registrado):
+"Basado en la correlación de Pearson (0.87) y la bimodalidad observada en los histogramas:
+1. Formule 3 hipótesis falsables sobre el acoplamiento de las variables.
+2. Runner, ejecute las pruebas estadísticas (Pearson, ANOVA, Chi-cuadrado) para validar estas hipótesis.
+3. Redacte las conclusiones finales y proponga preguntas para un investigador humano."
+
+DECISION/RESULTADO:
+Generacion de artifacts/06_hypotheses_log.json con tres hipotesis:
+1) Correlacion positiva flipper_length_mm vs body_mass_g.
+2) Diferencias interespecie en bill_length_mm.
+3) Asociacion categórica species-island.
+
+
+==================================================
+FASE: VALIDATE
+==================================================
+OBJETIVO:
+Ejecutar pruebas de contraste para aceptar/rechazar hipotesis nulas del sistema Penguin.
+
+PROMPT DEL AGENTE (reconstruido):
+"Runner, execute validation tests for the proposed couplings:
+- Pearson/Spearman for continuous interactions,
+- ANOVA for species-conditioned mean differences,
+- Chi-squared for categorical dependence.
+Return p-values and concise inferential decision." 
+
+DECISION/RESULTADO:
+Generacion de artifacts/08_tests.json con resultados de pruebas y p-valores.
+Se observo evidencia estadistica suficiente (p < 0.05) para rechazar hipotesis nulas clave de independencia.
+
+
+==================================================
+FASE: CONCLUDE
+==================================================
+OBJETIVO:
+Construir sintesis cientifica final del sistema, enlazando capa descriptiva, capa visual y agenda de investigacion.
+
+PROMPT DEL AGENTE (reconstruido):
+"Produce final scientific conclusions for the Penguin system using validated tests and visual evidence.
+Include:
+1. Descriptive findings.
+2. Visual-pattern interpretation.
+3. Next-step hypotheses for predictive modeling.
+4. Questions for a human researcher." 
+
+DECISION/RESULTADO:
+Generacion de artifacts/07_conclusions.json con:
+- Hallazgos descriptivos (faltantes concentrados en sex).
+- Patrones visuales (acoplamiento lineal fuerte y multimodalidad).
+- Transicion recomendada a modelado predictivo.
+- Preguntas abiertas para investigacion humana.
+
+
+==================================================
+FASE: GENERALIZACION
+==================================================
+OBJETIVO:
+Verificar portabilidad del protocolo Agente/Runner en un sistema distinto (Iris) sin cambios estructurales de alto nivel.
+
+PROMPT DEL AGENTE (exacto/reconstruido desde registro Iris):
+"SISTEMA: Iris Dataset
+FASE: GENERALIZACION
+
+Ejecute el mismo pipeline de observacion, descripcion, hipotesis y validacion,
+sin modificar la arquitectura base del Runner.
+Reporte si la inferencia se mantiene consistente en un dominio diferente." 
+
+DECISION/RESULTADO:
+Prueba de generalizacion exitosa en iris.csv:
+- Runner detecto dinamicamente 150 instancias y 5 variables.
+- Se reprodujeron correlaciones y pruebas ANOVA en el nuevo dominio.
+- Se confirmo portabilidad del protocolo de inferencia desacoplada.
+
+
+==================================================
+FASE: REPORTE_HTML
+==================================================
+OBJETIVO:
+Generar un reporte maestro autocontenido en HTML con estilo cientifico-profesional, integrando artefactos, hipotesis, conclusiones y generalizacion.
+
+PROMPT DEL AGENTE (exacto):
+"Generate a single, self-contained HTML file for the \"Reporte Final: Observatorio de Datos - Laboratorio 1\".
+The report must be in Spanish and follow a professional scientific aesthetic (use clean CSS/Bootstrap-like styling).
+
+Context:
+#file:artifacts/00_raw_profile.json
+#file:artifacts/04_descriptive_stats.json
+#file:artifacts/06_hypotheses_log.json
+#file:artifacts/07_conclusions.json
+#file:artifacts/05_visual_registry.json
+
+Requirements:
+1. Header: Title, Author (Juan Pablo Sanchez), Course (Física Computacional 2), and Date.
+2. Disclaimer: Add a clear note stating: \"Este reporte fue generado íntegramente por una Inteligencia Artificial (GitHub Copilot) mediante el análisis de artefactos de datos, bajo el protocolo de desacoplamiento Agente/Runner.\"
+3. Section 1: Caracterización del Sistema (using 00_raw_profile.json).
+4. Section 2: Análisis Estadístico y Visual (using 04_descriptive_stats.json and referencing images in 05_visual_registry.json).
+5. Section 3: Hipótesis y Validación (using 06_hypotheses_log.json).
+6. Section 4: Conclusiones y Preguntas de Investigación (using 07_conclusions.json).
+7. Section 5: Comparación de Enfoques. Compare the \"Enfoque Clásico\" (manual exploration) vs \"Enfoque con Agentes\" (decoupled inference). Highlight the \"Generalization\" test performed with the Iris dataset.
+8. Section 6: Metadatos del Agente. Include the prompt used to generate this report.
+
+Output: Provide the full HTML/CSS code."
+
+DECISION/RESULTADO:
+Generacion del reporte maestro en artifacts/observatorio.html.
+Contenido integrado:
+- Caracterizacion del sistema.
+- Analisis estadistico y visual.
+- Hipotesis y validacion.
+- Conclusiones y preguntas de investigacion.
+- Comparacion de enfoques y evidencia de generalizacion Iris.
+
+
+==================================================
+CIERRE DEL PROTOCOLO LAB 1
+==================================================
+Resultado global:
+El proceso completo OBSERVE -> DESCRIBE -> HYPOTHESIZE -> VALIDATE -> CONCLUDE -> GENERALIZACION -> REPORTE_HTML fue ejecutado con consistencia metodologica, manteniendo desacoplamiento entre calculo y razonamiento interpretativo.

@@ -1,0 +1,13 @@
+{
+  "laboratorio": "Laboratorio_10_nn_keras__V1.ipynb",
+  "titulo": "Lab 10: Red neuronal con Keras",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / 2 * 5.0)",
+  "total_puntos": 2,
+  "puntos": [
+    { "numero": 1, "texto": "Para make_moons (sklearn), construir un modelo de red neuronal con Keras para clasificación." },
+    { "numero": 2, "texto": "Para load_digits (sklearn), construir un modelo de red neuronal con Keras para clasificación." }
+  ]
+}

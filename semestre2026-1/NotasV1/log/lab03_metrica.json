@@ -1,0 +1,31 @@
+{
+  "laboratorio": "Laboratorio_03_intuicion_estadistica_v2.ipynb",
+  "titulo": "Lab 3: Intuición estadística",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / puntos_posibles * 5.0)",
+  "nota_sobre": 3,
+  "referencia_principal": "v2",
+  "nota": "La versión v1 tiene 10 puntos; la versión v2 (oficial) tiene 3. Se evalúa sobre 3 puntos. Si el estudiante entregó v1, los primeros 3 puntos cuentan.",
+  "puntos": [
+    {
+      "numero": 1,
+      "texto": "Curva del score en función del parámetro gamma. Identificar mejor solución (train 80%, test 20%).",
+      "referencia_v1": "Puntos 1-7 de v1 (generación de datos, DataFrame, clasificadores)",
+      "referencia_v2": "Punto 1 de v2"
+    },
+    {
+      "numero": 2,
+      "texto": "Curvas de aprendizaje estadístico y comparación con sklearn GridSearch.",
+      "referencia_v1": "Puntos 8-9 de v1",
+      "referencia_v2": "Punto 2 de v2"
+    },
+    {
+      "numero": 3,
+      "texto": "Nuevos datasets con overfitting y underfitting. Análisis gráfico y de resultados.",
+      "referencia_v1": "Punto 10 de v1",
+      "referencia_v2": "Punto 3 de v2"
+    }
+  ]
+}

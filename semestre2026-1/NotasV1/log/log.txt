@@ -1,0 +1,1366 @@
+2026-06-10 hernansalinas | clean laboratorios directory
+
+semestre2026-1/Estudiantes/.DS_Store
+2026-06-10 CienciaDatosUdea | Merge pull request #254 from Juanjusug/main
+2026-06-10 CienciaDatosUdea | Merge pull request #256 from Marlonjhassir/patch-1
+2026-06-10 CienciaDatosUdea | Merge pull request #258 from JoseLu1ss/main
+2026-06-10 CienciaDatosUdea | Merge pull request #259 from moranv/main
+2026-06-10 CienciaDatosUdea | Merge pull request #261 from MiguelRevelo/main
+2026-06-10 CienciaDatosUdea | Merge pull request #253 from jaroldgarcia-rgb/main
+2026-06-10 CienciaDatosUdea | Merge pull request #257 from victorhpalaciosk/main
+2026-06-10 CienciaDatosUdea | Merge pull request #263 from Marlonjhassir/main
+2026-06-10 CienciaDatosUdea | Merge pull request #264 from davidgarciag02/mi-rama
+2026-06-10 CienciaDatosUdea | Merge pull request #262 from SiririComun/main
+2026-06-10 CienciaDatosUdea | Merge pull request #265 from Jhonatan-Jurado/main
+2026-06-10 Jarold Alaya Giovanny García Arias | Delete semestre2026-1/Estudiantes/garcia_62/Final_Comp_II.ipynb
+
+semestre2026-1/Estudiantes/garcia_62/Final_Comp_II.ipynb
+2026-06-10 Jarold Alaya Giovanny García Arias | Ultima tanda de labs
+
+semestre2026-1/Estudiantes/garcia_62/Copia_de_Laboratorio_12_RandomForest.ipynb
+semestre2026-1/Estudiantes/garcia_62/Copia_de_Laboratorio_13_Hopfield.ipynb
+semestre2026-1/Estudiantes/garcia_62/Laboratorio_Desicion_Tree.ipynb
+2026-06-10 CienciaDatosUdea | Merge pull request #260 from JhoanMoscoso/main
+2026-06-10 CienciaDatosUdea | Merge pull request #255 from fernandamora/main
+2026-06-10 Jhonatan Jurado | Solución laboratorio 13
+
+semestre2026-1/Estudiantes/Jurado_90/Laboratorio_13_Hopfield.ipynb
+2026-06-10 Jhonatan Jurado | Solución laboratorio 12
+
+semestre2026-1/Estudiantes/Jurado_90/Laboratorio_12_random_forest.ipynb
+2026-06-09 ricardo.moranv | Entrega paractica C++
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/C++/HolaMundo.cpp
+2026-06-09 victorh.palacios | ENTREGA C++: Hola mundo
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/C++/hola.cpp
+2026-06-09 Jarold Alaya Giovanny García Arias | Proyecto final
+
+semestre2026-1/Estudiantes/garcia_62/Final_Comp_II.ipynb
+2026-06-09 Jhonatan Jurado | Se sube solución de laboratorio 11
+
+semestre2026-1/Estudiantes/Jurado_90/Laboratorio_11_desicion_tree.ipynb
+2026-06-09 Jhonatan Jurado | Solución laboratorio 8 y 10
+
+semestre2026-1/Estudiantes/Jurado_90/Laboratorio_08_clasificacionLogistica.ipynb
+semestre2026-1/Estudiantes/Jurado_90/Laboratorio_10_nn_keras__V1.ipynb
+2026-06-05 ricardo.moranv | Entrega Laboratorio 12 Random Forest
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_12/Laboratorio_12_random_forest.ipynb
+2026-05-28 ELS4nchez | Completado Lab 13: Redes de Hopfield, memorias asociativas, binarización de imágenes y optimización de energía O(1)
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab13/Lab13.ipynb
+2026-05-28 ELS4nchez | Completado Lab 12: Bosques aleatorios, simulación de bootstrapping, optimización con GridSearchCV e importancia de píxeles
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab12/Lab12_Sanchez.ipynb
+2026-05-28 ELS4nchez | Completado Lab 10: Redes Neuronales con Keras, clasificación multiclase y prueba de validación externa
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab10/Lab10_Sanchez.ipynb
+2026-05-28 ELS4nchez | Completado Lab 11: Algoritmo CART, visualización de árboles de decisión, Índice de Gini y feature importances
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab11/Lab11_Sanchez.ipynb
+2026-05-26 JhoanMoscoso | Lab_13 update
+
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_13_Hopfield/Laboratorio_13_Hopfield.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_13_Hopfield/p1.jpeg
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_13_Hopfield/p2.jpeg
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_13_Hopfield/p3.jpeg
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_13_Hopfield/p4.jpeg
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_13_Hopfield/p5.jpeg
+2026-05-26 victorh.palacios | Entrega lab 13: hopfield
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB13_HOPFIELD/Copia_de_Laboratorio_13_Hopfield.ipynb
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB13_HOPFIELD/Lab13_Hopfield_version2.ipynb
+2026-05-26 Juanjusug | Lab13
+
+semestre2026-1/Estudiantes/Usuga_10/Lab13.ipynb
+2026-05-26 Juanjusug | Delete semestre2026-1/Estudiantes/Usuga_10/Lab13.ipynb
+
+semestre2026-1/Estudiantes/Usuga_10/Lab13.ipynb
+2026-05-26 Marlon Jhassir García Velásquez | Add files via upload
+
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_13_Hopfield_v2.ipynb
+2026-05-26 Juanjusug | Cambios al laboratorio 3
+
+semestre2026-1/Estudiantes/Usuga_10/Lab13.ipynb
+2026-05-26 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab 21 mayo/Copia_de_Laboratorio_13_Hopfield V2.ipynb
+2026-05-26 Juanjusug | Lab3
+
+semestre2026-1/Estudiantes/Lab13.ipynb
+2026-05-25 Marlon Garcia | Laboratorio 9 con datos sinteticos
+
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_9/Laboratorio_09_nn_zeroV1.ipynb
+"semestre2026-1/Estudiantes/Garcia_10/Laboratorio_9/Laboratorio_09_nn_zeroV1_SOLUCI\303\223N.ipynb"
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_9/test_catvnoncat.h5
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_9/train_catvnoncat.h5
+2026-05-25 Marlon Garcia | Laboratorios 7,8,9 y 10, falta realizar el 9
+
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_10/Laboratorio_10_nn_keras__V1.ipynb
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_7/Laboratorio_07_abc_modelo_v1_completo (1).ipynb
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_8/Laboratorio_08_clasificacionLogistica.ipynb
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_9/Laboratorio_09_nn_zeroV1.ipynb
+2026-05-21 victorh.palacios | Entrega LAB 13: hopfield version 1 en clase
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB13_HOPFIELD/Copia_de_Laboratorio_13_Hopfield.ipynb
+2026-05-21 ricardo.moranv | Avance Laboratorio_13_Hopfield_clase
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_13/Laboratorio_13_Hopfield_clase.ipynb
+2026-05-21 Jose Luis Torres L. | Add files via upload
+
+semestre2026-1/Estudiantes/Torres_10/Lab_13/Laboratorio_13_Hopfield_v1.ipynb
+2026-05-21 JhoanMoscoso | Subida parcial de Lab 13 sobre redes de Hopfield
+
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_13_Hopfield/Laboratorio_13_Hopfield.ipynb
+2026-05-21 Marlon Jhassir García Velásquez | Add files via upload
+
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_13_Hopfield.ipynb
+2026-05-21 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab 21 mayo/Copia_de_Laboratorio_13_Hopfield.ipynb
+2026-05-21 Fernanda Mora Rey | Add readme.txt for Lab 21 mayo
+
+semestre2026-1/Estudiantes/Mora_862/Lab 21 mayo/readme.txt
+2026-05-21 juanj.usuga | Usuga_10: agrega Lab13.ipynb
+
+semestre2026-1/Estudiantes/Usuga_10/Lab13.ipynb
+2026-05-21 juanj.usuga | Usuga_10: restaura Lab3V2
+
+semestre2026-1/Estudiantes/Usuga_10/Lab3V2.ipynb
+2026-05-21 juanj.usuga | Usuga_10: elimina notebooks duplicados
+
+semestre2026-1/Estudiantes/Usuga_10/Lab3V2.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Laboratorio_03_intuicion_estadistica_v1.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Laboratorio_09_nn_zeroV1.ipynb
+2026-05-21 juanj.usuga | Usuga_10: agrega laboratorios pendientes
+
+semestre2026-1/Estudiantes/Usuga_10/Laboratorio_03_intuicion_estadistica_v1.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Laboratorio_09_nn_zeroV1.ipynb
+2026-05-21 juanj.usuga | Usuga_10: notebooks, data y requirements
+
+semestre2026-1/Estudiantes/Usuga_10/Lab11.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab12.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab2.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab2_solucion.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab7.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab9.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Pandas_data_historical_dataEURUSD.csv
+semestre2026-1/Estudiantes/Usuga_10/Sesion_07_housing.csv
+semestre2026-1/Estudiantes/Usuga_10/lab10.ipynb
+semestre2026-1/Estudiantes/Usuga_10/requirements.txt
+semestre2026-1/Estudiantes/Usuga_10/requirements_tf.txt
+semestre2026-1/Estudiantes/Usuga_10/test_catvnoncat.h5
+semestre2026-1/Estudiantes/Usuga_10/train_catvnoncat.h5
+2026-05-19 JhoanMoscoso | Laboratorios 07,08,09,10,11 y 12
+
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_04/Lab_04.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_07_abc_modelo/Laboratorio_07_abc_modelo_v1.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_08_clasificacionLogistica/Laboratorio_08_clasificacionLogistica copy.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_09_nnzero/Laboratorio_09_nn_zeroV1.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_09_nnzero/test_catvnoncat.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_09_nnzero/train_catvnoncat.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/Laboratorio_10_nn_keras__V1.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/oracle.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_00/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_00/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_00/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_01/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_01/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_01/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_02/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_02/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_02/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_03/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_03/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_03/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_04/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_04/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_04/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_05/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_05/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_05/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_06/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_06/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_06/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_07/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_07/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_07/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_08/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_08/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_08/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_09/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_09/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_09/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_10/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_10/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_10/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_11/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_11/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_11/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_12/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_12/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_12/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_13/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_13/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_13/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_14/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_14/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_14/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_15/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_15/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_15/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_16/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_16/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_16/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_17/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_17/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_17/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_18/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_18/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_18/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_19/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_19/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/trial_19/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_digits/digits_search/tuner0.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/oracle.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_00/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_00/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_00/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_01/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_01/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_01/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_02/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_02/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_02/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_03/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_03/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_03/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_04/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_04/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_04/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_05/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_05/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_05/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_06/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_06/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_06/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_07/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_07/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_07/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_08/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_08/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_08/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_09/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_09/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_09/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_10/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_10/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_10/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_11/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_11/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_11/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_12/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_12/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_12/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_13/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_13/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_13/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_14/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_14/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_14/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_15/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_15/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_15/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_16/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_16/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_16/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_17/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_17/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_17/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_18/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_18/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_18/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_19/build_config.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_19/checkpoint.weights.h5
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/trial_19/trial.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_10_keras/kt_moons/moons_search/tuner0.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_11_decision_tree/Laboratorio_11_desicion_tree.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_12_Random_Forest/Laboratorio_12_random_forest.ipynb
+2026-05-19 juanj.usuga | Agregar soluciones de Usuga_10: Lab7 (regresión lineal), Lab8 (regresión logística), Lab9 (red neuronal)
+
+semestre2026-1/Estudiantes/Usuga_10/Lab2_solucion.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab3V1.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab3V2.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab4.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab5.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab6.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab6V1.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab7.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab8.ipynb
+semestre2026-1/Estudiantes/Usuga_10/Lab9.ipynb
+2026-05-19 ricardo.moranv | Entrega laboratorio 11 Decision Tree
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_11/Laboratorio_11_Desicion_Tree.ipynb
+2026-05-16 victorh.palacios | Entrega Lab 12: bosques aleatorios
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB12_BOSQUES_ALEATORIOS/lab12_bosques_aleatorios.ipynb
+2026-05-16 victorh.palacios | Entrega Lab 11: decision arboles
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB11_DECISION_ARBOLES/lab11_decision_arboles.ipynb
+2026-05-16 victorh.palacios | Entrega Lab 10: red neuronal keras
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB10_RED_NEURONAL_KERAS/lab10_red_neuronal_keras.ipynb
+2026-05-16 victorh.palacios | Entrega Lab 9: red neuronal
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB9_RED_NEURONAL/lab9_red_neuronal.ipynb
+2026-05-12 ricardo.moranv | Entrega laboratorio 10 redes neuronales con keras
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_10/Laboratorio_10_nn_keras__V1.ipynb
+2026-05-10 Miguel Revelo | Lab12 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_12/lab12.ipynb
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_12/lab12.py
+2026-05-10 Miguel Revelo | Lab 11 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_11/lab11.ipynb
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_11/lab11.py
+2026-05-09 Miguel Revelo | Lab10 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_10/Lab10.ipynb
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_10/Lab10.py
+2026-05-09 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_12/Laboratorio_12_RandomForest.ipynb
+2026-05-09 Fernanda Mora Rey | Add readme.txt for Lab 12 on random forest
+
+semestre2026-1/Estudiantes/Mora_862/Lab_12/readme.txt
+2026-05-09 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_11/Laboratorio_09_Desicion_Tree-2.ipynb
+2026-05-09 Fernanda Mora Rey | Create readme.txt
+
+semestre2026-1/Estudiantes/Mora_862/Lab_11/readme.txt
+2026-05-04 ricardo.moranv | Entrega Laboratorio 8 Clasificación Logística
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_08/Lab_08.ipynb
+2026-05-04 Jarold Alaya Giovanny García Arias | Lab 10
+
+semestre2026-1/Estudiantes/garcia_62/Laboratorio_10_nn_keras__V1 (1).ipynb
+2026-05-04 Jarold Alaya Giovanny García Arias | Lab 9
+
+semestre2026-1/Estudiantes/garcia_62/Laboratorio_09_nn_zeroV1.ipynb
+2026-05-04 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_10/Laboratorio_10_nn_keras__V1-5.ipynb
+2026-05-04 Fernanda Mora Rey | Create readme.txt
+
+semestre2026-1/Estudiantes/Mora_862/Lab_10/readme.txt
+2026-05-02 JhonatanJ | subida de laboratorios
+2026-04-26 Miguel Revelo | lab8 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_8/lab8.py
+2026-04-24 ELS4nchez | Completado Lab 09: Red Neuronal Profunda desde cero, implementación de Backpropagation manual y análisis de sobreajuste
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab09/Lab09_Sanchez.ipynb
+2026-04-22 Fernanda Mora Rey | Add files via upload
+
+"semestre2026-1/Estudiantes/Mora_862/Lab_9/demostracio\314\201n.pdf"
+2026-04-21 JhonatanJ | subida laboratorio 2
+
+semestre2026-1/Estudiantes/Jurado_90/Laboratorio_02_pandas_Jurado.ipynb
+2026-04-20 ELS4nchez | Completado Lab 08: Clasificación Logística, análisis multiclase (Iris) y reto de clasificación de púlsares con regularización
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab08/Lab08_Sanchez.ipynb
+2026-04-20 David | laboratiorio 4
+
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_04/Laboratorio_04_reg_lin_grad_desc_v2.ipynb
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_04/Solucion_lab_04.ipynb
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_04/linear_gd_lib/README.md
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_04/linear_gd_lib/src/linear_gd_lib/__init__.py
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_04/linear_gd_lib/src/linear_gd_lib/core.py
+2026-04-20 victorh.palacios | Entrega LAB 3: Over y under fitting
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB3_OVER_UNDER_FITTING/lab3_over-under.ipynb
+2026-04-20 victorh.palacios | Entrega LAB 7: Modelo ABC
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB7_ABC_MODELO/abc_version1.ipynb
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB7_ABC_MODELO/abc_version2.ipynb
+2026-04-20 victorh.palacios | Entrega LAB 8: clasificacion logistica
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB8_CLASIFICACION_LOGISTICA/lab8_clasificacion_log.ipynb
+2026-04-20 ELS4nchez | Completado Lab 07: ABC del aprendizaje de máquina - Implementación de pipeline de limpieza, ingeniería de atributos y escalamiento
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab07/Lab07_Sanchez.ipynb
+2026-04-20 victorh.palacios | Merge branch 'main' of https://github.com/CienciaDatosUdea/002_EstudiantesAprendizajeEstadistico
+2026-04-20 ELS4nchez | Completado Lab 06: Ecuación Normal, regresión con dataset de Boston e interpretación probabilística
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab06/Lab06.ipynb
+2026-04-20 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_9/Laboratorio_09_nn_zeroV1.ipynb
+semestre2026-1/Estudiantes/Mora_862/Lab_9/test_catvnoncat.h5
+semestre2026-1/Estudiantes/Mora_862/Lab_9/train_catvnoncat.h5
+2026-04-20 Fernanda Mora Rey | Create readme.txt
+
+semestre2026-1/Estudiantes/Mora_862/Lab_9/readme.txt
+2026-04-20 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_7/Laboratorio_07_abc_modelo_v2.ipynb
+2026-04-20 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_8/Laboratorio_08_clasificacionLogistica.ipynb
+2026-04-20 Fernanda Mora Rey | Add README.txt for Lab 8
+
+semestre2026-1/Estudiantes/Mora_862/Lab_8/README.txt
+2026-04-20 ELS4nchez | Limpieza final: remover rutas antiguas de las carpetas renombradas
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/Lab01_Sanchez_Classical.ipynb
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/REPORT_LAB01.md
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/00_raw_profile.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/04_descriptive_stats.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/05_visual_registry.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/06_hypotheses_log.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/07_conclusions.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/08_tests.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/boxplot_bill_length_mm_species.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/count_island.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/count_sex.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/count_species.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/heatmap_pearson.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/hist_bill_depth_mm.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/hist_bill_length_mm.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/hist_body_mass_g.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/hist_flipper_length_mm.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/observatorio.html
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/scatter_flipper_length_mm_body_mass_g.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/data/penguins.csv
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/interaction_log.txt
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/runner.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/__init__.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/analytical.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/dynamics.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/kinematics.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/stats.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/visuals.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab02_Pandas/Lab02_Pandas_Sanchez.ipynb
+2026-04-20 ELS4nchez | Completado Lab 05: Regresión multivariada, vectorización y refactorización a POO
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab05/Lab05_Sanchez.ipynb
+2026-04-20 ELS4nchez | Refactor: estandarización de nombres de carpetas y limpieza de archivos HTML innecesarios
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/Lab01_Sanchez.ipynb
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/REPORT_LAB01.md
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/00_raw_profile.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/04_descriptive_stats.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/05_visual_registry.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/06_hypotheses_log.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/07_conclusions.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/08_tests.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/boxplot_bill_length_mm_species.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/count_island.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/count_sex.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/count_species.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/heatmap_pearson.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/hist_bill_depth_mm.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/hist_bill_length_mm.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/hist_body_mass_g.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/hist_flipper_length_mm.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/observatorio.html
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/artifacts/scatter_flipper_length_mm_body_mass_g.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/data/penguins.csv
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/interaction_log.txt
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/runner.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/src/__init__.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/src/analytical.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/src/dynamics.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/src/kinematics.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/src/stats.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01/src/visuals.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab02/Lab02_Sanchez.ipynb
+semestre2026-1/Estudiantes/Sanchez_71/Lab04/Lab04.html
+semestre2026-1/Estudiantes/Sanchez_71/Lab04/Lab04_Sanchez.ipynb
+2026-04-19 ELS4nchez | Completado Lab 04: Regresión Lineal y Gradiente Descendente con implementación de librería propia
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab04/Lab04.html
+semestre2026-1/Estudiantes/Sanchez_71/Lab04/Lab04.ipynb
+semestre2026-1/Estudiantes/Sanchez_71/Lab04/README.md
+semestre2026-1/Estudiantes/Sanchez_71/Lab04/linear_gd_lib/__init__.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab04/linear_gd_lib/regresion.py
+2026-04-19 Jarold Alaya Giovanny García Arias | Labs 5 al 8
+
+semestre2026-1/Estudiantes/garcia_62/Laborario_05.ipynb
+semestre2026-1/Estudiantes/garcia_62/Laboratorio_06.ipynb
+semestre2026-1/Estudiantes/garcia_62/Laboratorio_07.ipynb
+semestre2026-1/Estudiantes/garcia_62/Laboratorio_08.ipynb
+2026-04-19 ELS4nchez | Add Lab 03: Statistical Intuition and Model Selection - Sanchez_71
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab03/Lab03_Sanchez.ipynb
+2026-04-18 ELS4nchez | Entrega Lab 02 - Juan Pablo Sanchez (Sanchez_71)
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab02_Pandas/Lab02_Pandas_Sanchez.ipynb
+2026-04-18 David | Laboratorio 3
+
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_03/Laboratorio_03_intuicion_estadistica_solucion.ipynb
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_03/Laboratorio_03_intuicion_estadistica_solucion_v2.ipynb
+2026-04-17 ricardo.moranv | Entrega completa del Laboratorio 7 - ABC del aprendizaje de máquina
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_07/Lab_07.ipynb
+2026-04-16 ricardo.moranv | Entrega Laboratorio 3 - Overfitting y underfitting
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_03/Lab_03.ipynb
+2026-04-16 Marlon Garcia | Lab 7 v1
+
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_7/Laboratorio_07_abc_modelo_v1.ipynb
+2026-04-16 Marlon Garcia | Laboratorios 4,5 y 6
+
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_4/Laboratorio_04_reg_lin_grad_desc_v2.ipynb
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_4/example.py
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_4/linreg_gd/__init__.py
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_4/linreg_gd/__pycache__/__init__.cpython-311.pyc
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_4/linreg_gd/__pycache__/core.cpython-311.pyc
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_4/linreg_gd/core.py
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_4/readme.md
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_4/resultado_linreg_gd.png
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_4/setup.py
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_5/Laboratorio_05_reg_multivariada_RESUELTO.ipynb
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_6/Laboratorio_06_normal_equations_RESUELTO.ipynb
+2026-04-12 ELS4nchez | Entrega Lab 01: Arquitectura Agente/Runner completa - Sanchez_71
+
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/Lab01_Sanchez_Classical.ipynb
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/REPORT_LAB01.md
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/00_raw_profile.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/04_descriptive_stats.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/05_visual_registry.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/06_hypotheses_log.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/07_conclusions.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/08_tests.json
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/boxplot_bill_length_mm_species.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/count_island.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/count_sex.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/count_species.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/heatmap_pearson.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/hist_bill_depth_mm.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/hist_bill_length_mm.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/hist_body_mass_g.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/hist_flipper_length_mm.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/observatorio.html
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/artifacts/scatter_flipper_length_mm_body_mass_g.png
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/data/penguins.csv
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/interaction_log.txt
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/runner.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/__init__.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/analytical.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/dynamics.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/kinematics.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/stats.py
+semestre2026-1/Estudiantes/Sanchez_71/Lab01_Observatorio/src/visuals.py
+2026-04-12 Miguel Revelo | last for PR
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/final_report.html
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/hypotheses_and_conclusions.md
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/summary.md
+2026-04-12 Miguel Revelo | update on agent interaction
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/.opencode/agents/observatory-planner.md
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/.opencode/agents/observatory-reviewer.md
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/.opencode/tools/lab.ts
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/AGENTS.md
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/Agent-iteraction.md
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/Instructions.md
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/agente.py
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/00_raw_profile.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/04_descriptive_stats.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/05_visual_registry.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/06_hypotheses_log.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/07_conclusions.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/08_tests.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/09_questions.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/categorical_cols.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/categorical_counts.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/cross_table_species_island.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/duplicated_rows.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/histogram_descriptions.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/low_cardinality_cols.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/null_counts.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/numeric_cols.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/numeric_summary.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/pearson_corr.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/plots/boxplot_bill_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/plots/boxplot_body_mass_g_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/plots/categorical_count_plot_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/plots/categorical_count_plot_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/plots/categorical_count_plot_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/plots/heatmap_pearson_corr.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/plots/histogram_bill_depth_mm.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/plots/histogram_bill_length_mm.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/plots/histogram_body_mass_g.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/plots/histogram_flipper_length_mm.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/rows_cols.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/artifacts/penguins/spearman_corr.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/sample_plans/describe_plan.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/sample_plans/hypothesize_plan.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/sample_plans/observe_plan.json
+2026-04-12 Miguel Revelo | to create pull request
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_7/lab7.ipynb
+2026-04-12 Miguel Revelo | Merge remote-tracking branch 'upstream'
+2026-04-12 Miguel Revelo | Lab 7 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_7/lab7.ipynb
+2026-04-12 Miguel Revelo | Lab 6 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_6/lab6.ipynb
+2026-04-12 JhoanMoscoso | Lab06
+
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_06_normal_equations/Laboratorio_06_normal_equations_v1.ipynb
+2026-04-12 JhoanMoscoso | Lab04 y Lab05
+
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_04_linear_reg_and_gradient_desc/Lab_04.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_04_linear_reg_and_gradient_desc/fcii_regression/README.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_04_linear_reg_and_gradient_desc/fcii_regression/example.py
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_04_linear_reg_and_gradient_desc/fcii_regression/fcii_regression/__init__.py
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_04_linear_reg_and_gradient_desc/fcii_regression/fcii_regression/cost_functions.py
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_04_linear_reg_and_gradient_desc/fcii_regression/fcii_regression/gradient_descent.py
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_04_linear_reg_and_gradient_desc/fcii_regression/fcii_regression/linear_regression.py
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_04_linear_reg_and_gradient_desc/fcii_regression/setup.py
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_05_reg_multivariada/Laboratorio_05_reg_multivariada_v2.ipynb
+2026-04-07 Jose Luis Torres L. | Add files via upload
+
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_02/Sol_Lab_02.ipynb
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_04/Readme_04.txt
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_04/Sol_Lab_04.ipynb
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_04/mireglineal/__pycache__/regresion.cpython-311.pyc
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_04/mireglineal/regresion.py
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_05/Sol_Lab_05.ipynb
+2026-04-07 Jose Luis Torres L. | Merge branch 'CienciaDatosUdea:main' into main
+2026-04-07 JhoanMoscoso | Merge remote-tracking branch 'upstream/main'
+2026-04-07 JhoanMoscoso | Lab_04 70%
+
+semestre2026-1/Estudiantes/Moscoso_80/DS_AGENT.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/Entregables/Laboratorio_02_pandas_v3.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_04/Lab_04.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Laboratorio_02/Laboratorio_02_pandas_v3.ipynb
+2026-04-07 victorh.palacios | Entraga LAB 6: Ecuación Normal
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB6_ECU_NORMAL/ecuacion_normal.ipynb
+2026-04-07 ricardo.moranv | Entrega Laboratorio 5
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_05/Laboratorio_05_reg_multivariada_completo.ipynb
+2026-04-07 victorh.palacios | Entrega LAB 5: Regresion multivariada
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB5_REGRESION_MULTIVARIADA/regresion_multi.ipynb
+2026-04-07 ricardo.moranv | Entrega Laboratorio 4
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_04/lab04.ipynb
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_04/linear_regressor/README.md
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_04/linear_regressor/example.py
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_04/linear_regressor/linreg/__init__.py
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_04/linear_regressor/linreg/model.py
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_04/linear_regressor/setup.py
+2026-04-07 ricardo.moranv | Entrega laboratorio 2 PANDAS
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_02/Laboratorio_pandas_02.ipynb
+2026-04-07 victorh.palacios | Entrega LAB4: Regresion lineal
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/lab_04_regresion_lineal.ipynb
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/README_instrucciones.md
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/ejemplo_uso.py
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/mi_libreria/__init__.py
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/mi_libreria/__pycache__/__init__.cpython-313.pyc
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/mi_libreria/__pycache__/regresion.cpython-313.pyc
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/mi_libreria/regresion.py
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/mi_libreria_regresion.egg-info/PKG-INFO
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/mi_libreria_regresion.egg-info/SOURCES.txt
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/mi_libreria_regresion.egg-info/dependency_links.txt
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/mi_libreria_regresion.egg-info/requires.txt
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/mi_libreria_regresion.egg-info/top_level.txt
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB4_REGRESION_LINEAL/laboratorio_regresion/setup.py
+2026-04-07 ricardo.moranv | Merge branch 'main' of https://github.com/moranv/002_EstudiantesAprendizajeEstadistico hola
+2026-04-07 ricardo.moranv | Entrega del Laboratorio 01 Pinguinos
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_01/Lab_01_clasico.ipynb
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_01/Lab_01_moderno/Entregables/comparacion_enfoques.md
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_01/Lab_01_moderno/Entregables/hipotesis_y_conclusiones.md
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_01/Lab_01_moderno/Entregables/registro_interaccion_agente.md
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_01/Lab_01_moderno/Entregables/reporte_completo.html
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_01/Lab_01_moderno/Entregables/resumen_fases.md
+2026-04-07 RICARDO FELIPE MORAN VAQUEZ | Merge branch 'CienciaDatosUdea:main' into main
+2026-04-07 ricardo.moranv | Entrega Lab_07
+
+semestre2026-1/Estudiantes/Moran_23/laboratorios/Lab_07/Lab_07.ipynb
+2026-04-07 victorh.palacios | Entrega LAB 1: PNGUINOS
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB1_PINGUINOS/Entregables/comparacion_enfoques.md
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB1_PINGUINOS/Entregables/hipotesis_conclusiones.md
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB1_PINGUINOS/Entregables/historial_chat_completo.md
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB1_PINGUINOS/Entregables/registro_interaccion_resumido.md
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB1_PINGUINOS/Entregables/reporte_final.html
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB1_PINGUINOS/Entregables/resumen_ejecutivo.md
+2026-04-07 victorh.palacios | Entrega Lab 7 version1: ABC modelo hecho en clase
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB7_ABC_MODELO/abc_version1.ipynb
+2026-04-07 Jose Luis Torres L. | Add files via upload
+
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_7/Laboratorio_07_abc_modelo_solucion_detallada.ipynb
+2026-04-07 Marlon Jhassir García Velásquez | Laboratorio 7 version 1
+
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_07/Laboratorio_07_abc_modelo_v1.ipynb
+2026-04-07 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_7/Laboratorio_07_abc_modelo_v1.ipynb
+2026-04-07 Fernanda Mora Rey | Add readme.txt for Lab 7 with class notes
+
+semestre2026-1/Estudiantes/Mora_862/Lab_7/readme.txt
+2026-04-07 Marlon Jhassir García Velásquez | Add initial README for Laboratorio 07
+
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_07/readme.md
+2026-04-07 Jarold Alaya Giovanny García Arias | Laboratorio 3
+
+semestre2026-1/Estudiantes/garcia_62/Copia_de_Sesion_03_intuicion_estadistica_II_v1.ipynb
+2026-04-07 Hernan David Salinas | Merge pull request #246 from victorhpalaciosk/main
+2026-04-07 Hernan David Salinas | Merge pull request #247 from davidgarciag02/mi-rama
+2026-04-07 Hernan David Salinas | Merge pull request #248 from fernandamora/main
+2026-04-07 Hernan David Salinas | Merge pull request #249 from MiguelRevelo/main
+2026-04-07 Hernan David Salinas | Merge pull request #250 from Marlonjhassir/main
+2026-04-07 Hernan David Salinas | Merge pull request #251 from JhoanMoscoso/main
+2026-04-07 CienciaDatosUdea | Merge pull request #252 from Juanjusug/main
+2026-04-06 Miguel Revelo | Lab 5 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_5/lab5.py
+2026-03-31 JhoanMoscoso | laboratorio 3 - Curvas de aprendizaje, under y overfitting
+
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_03_over&under/2026-03-12_13-03.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_03_over&under/Laboratorio_03_intuicion_estadistica_v2.ipynb
+2026-03-27 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_6/Laboratorio_06_normal_equations_v1.ipynb
+semestre2026-1/Estudiantes/Mora_862/Lab_6/demostracion.pdf
+2026-03-27 Fernanda Mora Rey | Create Readme.txt
+
+semestre2026-1/Estudiantes/Mora_862/Lab_6/Readme.txt
+2026-03-27 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab 5/Laborario_05_reg_multivaraida.ipynb
+2026-03-27 Fernanda Mora Rey | Add Readme.txt for Lab 5
+
+semestre2026-1/Estudiantes/Mora_862/Lab 5/Readme.txt
+2026-03-27 JhoanMoscoso | Laboratorio 02, actualizacion Lab_01 y AGENT.md
+
+semestre2026-1/Estudiantes/Moscoso_80/AGENT.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/Entregables/Laboratorio_01_pinguinos_v2_IA.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/Entregables/Laboratorio_02_pandas_v3.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/Entregables/report_breast_cancer.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/Entregables/report_eurusd.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/Entregables/student_log.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/00_raw_profile__OBSERVE__20260314_103022.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/01_schema__OBSERVE__20260314_103022.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/02_missing_report__OBSERVE__20260314_103022.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/03_duplicates_report__OBSERVE__20260314_103022.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04_descriptive_stats__DESCRIBE__20260314_105602.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04a_numeric_summary__DESCRIBE__20260314_105559.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04b_categorical_summary__DESCRIBE__20260314_105559.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04d_correlation_kendall__DESCRIBE__20260314_105559.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04d_correlation_pearson__DESCRIBE__20260314_105559.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/04d_correlation_spearman__DESCRIBE__20260314_105559.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/05_visual_registry__DESCRIBE__20260314_105602.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/05_visual_registry_hypothesize__HYPOTHESIZE__20260314_112737.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/06_hypotheses_log__HYPOTHESIZE__20260314.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/07_conclusions__HYPOTHESIZE__20260314.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/box_concave_points_mean_by_diagnosis__HYPOTHESIZE__20260314_112737.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/box_radius_mean_by_diagnosis__DESCRIBE__20260314_105600.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/count_diagnosis__DESCRIBE__20260314_105600.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/heatmap_corr_pearson__DESCRIBE__20260314_105601.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_area_mean_by_diagnosis__DESCRIBE__20260314_105600.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_area_worst_by_diagnosis__DESCRIBE__20260314_105600.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/hist_concavity_mean_by_diagnosis__HYPOTHESIZE__20260314_112737.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/scatter_concavity_mean_vs_concave_points_mean_hue_diagnosis__HYPOTHESIZE__20260314_112737.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/breast_cancer/plots/scatter_radius_mean_vs_perimeter_mean_hue_diagnosis__DESCRIBE__20260314_105600.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/00_raw_profile__OBSERVE__20260319_090129.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/01_schema__OBSERVE__20260319_090129.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/02_missing_report__OBSERVE__20260319_090129.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/03_duplicates_report__OBSERVE__20260319_090129.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04_descriptive_stats__DESCRIBE__20260326_224952.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04a_numeric_summary__DESCRIBE__20260326_224951.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04b_categorical_summary__DESCRIBE__20260326_224951.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04d_correlation_kendall__DESCRIBE__20260326_224951.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04d_correlation_pearson__DESCRIBE__20260326_224951.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/04d_correlation_spearman__DESCRIBE__20260326_224951.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/05_visual_registry__DESCRIBE__20260326_224952.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/05_visual_registry_hypothesize__HYPOTHESIZE__20260326_234412.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/heatmap_corr_pearson__DESCRIBE__20260326_224952.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/hist_id__DESCRIBE__20260326_224951.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/hist_spread__DESCRIBE__20260326_224951.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/hist_tick_volume__DESCRIBE__20260326_224951.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_close_vs_tick_volume__HYPOTHESIZE__20260326_234412.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_id_vs_close__HYPOTHESIZE__20260326_234412.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_id_vs_high__DESCRIBE__20260326_224952.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_id_vs_spread__HYPOTHESIZE__20260326_234412.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/eurusd/plots/scatter_open_vs_MeanCloseOpen__DESCRIBE__20260326_224952.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/artifacts/run_log.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/datasets/historical_data_EURUSD.csv
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/datasets/wdbc_docs.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_02_pandas/datasets/wdbcdata.csv
+2026-03-25 Marlon Garcia | Laboratorio 3
+
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_3/Sesion_03_intuicion_estadistica_II_v1.ipynb
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_3/readme.md
+2026-03-24 Miguel Revelo | Merge remote-tracking branch 'upstream'
+2026-03-24 hernansalinas | update
+
+semestre2026-1/Estudiantes/Garcia_262
+2026-03-22 Marlon Garcia | Laboratorio 2
+
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_2/Laboratorio_02_pandas_v3.ipynb
+2026-03-22 Miguel Revelo | Lab 4 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_4/lab4.py
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_4/linear_reg_library/README.md
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_4/linear_reg_library/example_usage.py
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_4/linear_reg_library/linear_reg_lib.py
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_4/linear_reg_library/test_linear_reg_lib.py
+2026-03-22 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_4/Laboratorio_04_reg_lin_grad_desc_v2.ipynb
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/INSTALAR.md
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/README.md
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/linear_regression_gd.egg-info/PKG-INFO
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/linear_regression_gd.egg-info/SOURCES.txt
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/linear_regression_gd.egg-info/dependency_links.txt
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/linear_regression_gd.egg-info/requires.txt
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/linear_regression_gd.egg-info/top_level.txt
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/linear_regression_gd/__init__.py
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/linear_regression_gd/__pycache__/__init__.cpython-314.pyc
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/linear_regression_gd/__pycache__/regression.cpython-314.pyc
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/linear_regression_gd/regression.py
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/requirements.txt
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/setup.cfg
+semestre2026-1/Estudiantes/Mora_862/Lab_4/linear_regression_gd/setup.py
+2026-03-22 Fernanda Mora Rey | Notebook results explanation
+
+semestre2026-1/Estudiantes/Mora_862/Lab_4/Readme.txt
+2026-03-22 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_3/Lab 3_ Model_Selection and Train Validation Test Sets.ipynb
+2026-03-22 Fernanda Mora Rey | Add initial README for Lab 3
+
+semestre2026-1/Estudiantes/Mora_862/Lab_3/Readme.txt
+2026-03-21 Miguel Revelo | Lab 3 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_3/lab3.ipynb
+2026-03-20 David | cambios primer lab
+
+semestre2026-1/Estudiantes/Garcia_77/AGENT.md
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/Entregables/comparacion_clasico_vs_agentes.md
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/Entregables/hipotesis_y_conclusiones.md
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/Entregables/registro_interaccion_agente.md
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/Entregables/reporte_final.html
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/Entregables/resumen.md
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/Laboratorio_01_pinguinos_v2_IA.ipynb
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/00_raw_profile__OBSERVE__20260320_151726.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/01_schema__OBSERVE__20260320_151726.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/02_missing_report__OBSERVE__20260320_151726.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/03_duplicates_report__OBSERVE__20260320_151726.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/04_descriptive_stats__DESCRIBE__20260320_151832.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/04a_numeric_summary__DESCRIBE__20260320_151829.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/04b_categorical_summary__DESCRIBE__20260320_151829.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/04c_crosstab_species_island__HYPOTHESIZE__20260320_153631.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/04c_crosstab_species_sex__HYPOTHESIZE__20260320_153631.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/04d_correlation_kendall__DESCRIBE__20260320_151829.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/04d_correlation_pearson__DESCRIBE__20260320_151829.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/04d_correlation_pearson__HYPOTHESIZE__20260320_153631.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/04d_correlation_spearman__DESCRIBE__20260320_151829.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/04d_correlation_spearman__HYPOTHESIZE__20260320_153631.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/05_visual_registry__DESCRIBE__20260320_151832.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/05_visual_registry_hypothesize__HYPOTHESIZE__20260320_153631.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/06_hypotheses_log__HYPOTHESIZE_AND_CONCLUDE__20260320_154100.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/07_conclusions__HYPOTHESIZE_AND_CONCLUDE__20260320_154100.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/08_tests__HYPOTHESIZE_AND_CONCLUDE__20260320_154944.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/box_bill_depth_mm_by_species__DESCRIBE__20260320_151831.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/box_bill_length_mm_by_species__DESCRIBE__20260320_151831.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/count_island__DESCRIBE__20260320_151830.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/count_sex__DESCRIBE__20260320_151830.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/count_species__DESCRIBE__20260320_151830.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/heatmap_corr_pearson__DESCRIBE__20260320_151832.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/hist_bill_length_mm_by_species__DESCRIBE__20260320_151831.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/hist_body_mass_g_by_species__DESCRIBE__20260320_151830.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/hist_flipper_length_mm_by_species__DESCRIBE__20260320_151830.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/scatter_bill_depth_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260320_151831.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/scatter_bill_length_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260320_151831.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/plots/scatter_flipper_length_mm_vs_body_mass_g_hue_species__HYPOTHESIZE__20260320_153631.png
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/report__HYPOTHESIZE_AND_CONCLUDE__20260320_154100.md
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/artifacts/run_log.json
+semestre2026-1/Estudiantes/Garcia_77/Laboratorios/Lab_01/student_log.md
+semestre2026-1/Estudiantes/Garcia_77/runner.py
+semestre2026-1/Estudiantes/Garcia_77/usage_guide.md
+2026-03-19 Miguel Revelo | Merge remote-tracking branch 'upstream/main'
+2026-03-19 Miguel Revelo | Lab 2 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_2/lab2.ipynb
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_2/wdbc.data
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_2/wdbc.names
+2026-03-19 victorh.palacios | Entrego la carpeta del laboratorio 2 Pandas
+
+semestre2026-1/Estudiantes/Palacios_10/LABORATORIOS/LAB2_PANDAS/lab_02_pandas.ipynb
+2026-03-18 Hernan David Salinas | Merge pull request #239 from bandinoots/main
+2026-03-18 Hernan David Salinas | Merge pull request #240 from LauraOstos00/main
+2026-03-18 Hernan David Salinas | Merge pull request #241 from davidgarciag02/mi-rama
+2026-03-18 Hernan David Salinas | Merge pull request #242 from jaroldgarcia-rgb/main
+2026-03-18 Hernan David Salinas | Merge pull request #243 from JhoanMoscoso/main
+2026-03-18 Hernan David Salinas | Merge pull request #244 from fernandamora/main
+2026-03-17 Marlon Garcia | Finalización Laboratorio 1
+
+semestre2026-1/Estudiantes/Garcia_10
+semestre2026-1/Estudiantes/Garcia_10/.gitignore
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/agente.txt
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/00_raw_profile.json
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/01_schema.json
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/02_missing_report.json
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/03_duplicates_report.json
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/04_descriptive_stats.json
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/05_visual_registry.json
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/06_hypotheses_log.json
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/07_conclusions.json
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/08_tests.json
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/plots/box_species_flipper_length_mm.png
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/plots/count_island_species.png
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/plots/count_species_none.png
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/plots/heatmap_correlation.png
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/plots/hist_bill_length_mm_species.png
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/plots/hist_body_mass_g_species.png
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/plots/scatter_bill_length_mm_body_mass_g.png
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/artifacts/report.md
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/prompts/Interacciones.txt
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/prompts/hola_agentes.txt
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Fase_2/runner.py
+semestre2026-1/Estudiantes/Garcia_10/Laboratorio_1/Laboratorio_01_pinguinos_v2_IA.ipynb
+semestre2026-1/Estudiantes/Garcia_10/readme.md
+2026-03-17 Jarold Alaya Giovanny García Arias | Add files via upload
+
+semestre2026-1/Estudiantes/garcia_62/lab 4/Lab_04_EL_COLAB.ipynb
+2026-03-17 jaroldgarcia-rgb | Add Lab 4 Python package for linear regression with gradient descent
+
+semestre2026-1/Estudiantes/garcia_62/lab 4/README.md
+semestre2026-1/Estudiantes/garcia_62/lab 4/docs/USO.md
+semestre2026-1/Estudiantes/garcia_62/lab 4/examples/ejemplo_laboratorio.py
+semestre2026-1/Estudiantes/garcia_62/lab 4/examples/instalacion_y_uso.md
+semestre2026-1/Estudiantes/garcia_62/lab 4/pyproject.toml
+semestre2026-1/Estudiantes/garcia_62/lab 4/src/lab4_reglin/__init__.py
+semestre2026-1/Estudiantes/garcia_62/lab 4/src/lab4_reglin/__pycache__/__init__.cpython-314.pyc
+semestre2026-1/Estudiantes/garcia_62/lab 4/src/lab4_reglin/__pycache__/core.cpython-314.pyc
+semestre2026-1/Estudiantes/garcia_62/lab 4/src/lab4_reglin/core.py
+semestre2026-1/Estudiantes/garcia_62/lab 4/src/lab4_reglin_gd.egg-info/PKG-INFO
+semestre2026-1/Estudiantes/garcia_62/lab 4/src/lab4_reglin_gd.egg-info/SOURCES.txt
+semestre2026-1/Estudiantes/garcia_62/lab 4/src/lab4_reglin_gd.egg-info/dependency_links.txt
+semestre2026-1/Estudiantes/garcia_62/lab 4/src/lab4_reglin_gd.egg-info/requires.txt
+semestre2026-1/Estudiantes/garcia_62/lab 4/src/lab4_reglin_gd.egg-info/top_level.txt
+2026-03-17 Miguel Revelo | series de tiempo parte 1 DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_2/series_de_tiempo.py
+2026-03-16 Miguel Revelo | lab 1. classic DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_bill_depth_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_bill_depth_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_bill_depth_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_bill_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_bill_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_bill_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_body_mass_g_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_body_mass_g_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_body_mass_g_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_flipper_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_flipper_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/boxplot_flipper_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/categorical_count_plot_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/categorical_count_plot_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/categorical_count_plot_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/heatmap_pearson_corr.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/histogram_bill_depth_mm.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/histogram_bill_length_mm.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/histogram_body_mass_g.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/histogram_flipper_length_mm.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_depth_mm_vs_bill_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_depth_mm_vs_bill_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_depth_mm_vs_bill_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_depth_mm_vs_body_mass_g_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_depth_mm_vs_body_mass_g_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_depth_mm_vs_body_mass_g_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_depth_mm_vs_flipper_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_depth_mm_vs_flipper_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_depth_mm_vs_flipper_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_length_mm_vs_bill_depth_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_length_mm_vs_bill_depth_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_length_mm_vs_bill_depth_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_length_mm_vs_body_mass_g_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_length_mm_vs_body_mass_g_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_length_mm_vs_body_mass_g_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_length_mm_vs_flipper_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_length_mm_vs_flipper_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_bill_length_mm_vs_flipper_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_body_mass_g_vs_bill_depth_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_body_mass_g_vs_bill_depth_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_body_mass_g_vs_bill_depth_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_body_mass_g_vs_bill_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_body_mass_g_vs_bill_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_body_mass_g_vs_bill_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_body_mass_g_vs_flipper_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_body_mass_g_vs_flipper_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_body_mass_g_vs_flipper_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_flipper_length_mm_vs_bill_depth_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_flipper_length_mm_vs_bill_depth_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_flipper_length_mm_vs_bill_depth_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_flipper_length_mm_vs_bill_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_flipper_length_mm_vs_bill_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_flipper_length_mm_vs_bill_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_flipper_length_mm_vs_body_mass_g_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_flipper_length_mm_vs_body_mass_g_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/plots/scatterplot_flipper_length_mm_vs_body_mass_g_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/clasico.py
+2026-03-13 Jose Luis Torres L. | Add files via upload
+
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/Lab_1_A.ipynb
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/Lab_1_M.ipynb
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/00_raw_profile.json
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/04_descriptive_stats.json
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/05_visual_registry.json
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/06_hypotheses_log.json
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/07_conclusions.json
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/09_questions.json
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/comparacion_enfoques.txt
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/hipotesis_conclusiones.txt
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/observatorio.html
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/registro_interaccion_agente.txt
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/artifacts/resumen_markdown.txt
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/plan_describe.json
+semestre2026-1/Estudiantes/Torres_10/sol_Lab_1/fase2_agentes/runner.py
+2026-03-13 Jarold Alaya Giovanny García Arias | Lab_1_EL_de_Verdad
+
+semestre2026-1/Estudiantes/garcia_62/Tarea_00_pinguinos_checkpoint.ipynb
+2026-03-13 Jarold Alaya Giovanny García Arias | Delete semestre2026-1/Estudiantes/garcia_62/lab 1/Lab_1_Metodo_Tradicional.ipynb
+
+semestre2026-1/Estudiantes/garcia_62/lab 1/Lab_1_Metodo_Tradicional.ipynb
+2026-03-13 Jarold Alaya Giovanny García Arias | Laboratorio_02
+
+semestre2026-1/Estudiantes/garcia_62/Laboratorio_02_pandas_v3.ipynb
+2026-03-13 jaroldgarcia-rgb | Add blood_cell_anomaly replication run as replicability evidence
+
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/00_raw_profile.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/04_descriptive_stats.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/05_visual_registry.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/06_hypotheses_log.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/07_conclusions.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/08_tests.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/plots/box_06.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/plots/box_07.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/plots/count_01.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/plots/count_02.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/plots/count_03.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/plots/heatmap_08.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/plots/hist_04.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/plots/hist_05.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/report.html
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/artifacts/report.md
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/readme.md
+semestre2026-1/Estudiantes/garcia_62/lab 1/runs/blood_cell_anomaly/runner.ipynb
+2026-03-13 jaroldgarcia-rgb | Lab 1. Hecho con agentes
+
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/00_raw_profile.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/04_descriptive_stats.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/05_visual_registry.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/06_hypotheses_log.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/07_conclusions.json
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/plots/box_08.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/plots/box_09.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/plots/count_01.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/plots/count_02.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/plots/count_03.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/plots/heatmap_10.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/plots/hist_04.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/plots/hist_05.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/plots/hist_06.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/plots/hist_07.png
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/report.html
+semestre2026-1/Estudiantes/garcia_62/lab 1/artifacts/report.md
+semestre2026-1/Estudiantes/garcia_62/lab 1/deliverables/comparacion_clasico_vs_agentes.md
+semestre2026-1/Estudiantes/garcia_62/lab 1/deliverables/interaction_log.md
+semestre2026-1/Estudiantes/garcia_62/lab 1/deliverables/resumen.md
+semestre2026-1/Estudiantes/garcia_62/lab 1/readme.md
+semestre2026-1/Estudiantes/garcia_62/lab 1/runner.ipynb
+2026-03-13 Jarold Alaya Giovanny García Arias | Add files via upload
+
+semestre2026-1/Estudiantes/garcia_62/lab 1/Lab_1_Metodo_Tradicional.ipynb
+2026-03-13 Jarold Alaya Giovanny García Arias | Create readme.md
+
+semestre2026-1/Estudiantes/garcia_62/lab 1/readme.md
+2026-03-13 Juanjusug | Laboratorio 2 series de tiempo
+
+semestre2026-1/Estudiantes/Usuga_10/Lab2.ipynb
+2026-03-13 Juanjusug | Pinguinos
+
+semestre2026-1/Estudiantes/Usuga_10/AgenPingui.ipynb
+semestre2026-1/Estudiantes/Usuga_10/PinguiInformeclasico.ipynb
+semestre2026-1/Estudiantes/Usuga_10/registro_interaccion_agente.md
+semestre2026-1/Estudiantes/Usuga_10/reporte_final.html
+2026-03-12 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_2/Laboratorio_02_pandas_v3.ipynb
+2026-03-12 Fernanda Mora Rey | Add Readme for Lab 2 on basic descriptive statistics
+
+semestre2026-1/Estudiantes/Mora_862/Lab_2/Readme.txt
+2026-03-12 Fernanda Mora Rey | Delete semestre2026-1/Estudiantes/Mora_862/Lab_2
+
+semestre2026-1/Estudiantes/Mora_862/Lab_2
+2026-03-12 Fernanda Mora Rey | Create Lab_2
+
+semestre2026-1/Estudiantes/Mora_862/Lab_2
+2026-03-12 Miguel Revelo | lab1. clasico DoD
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_bill_depth_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_bill_depth_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_bill_depth_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_bill_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_bill_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_bill_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_body_mass_g_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_body_mass_g_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_body_mass_g_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_flipper_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_flipper_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/boxplot_flipper_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/categorical_cols.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/categorical_count_plot_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/categorical_count_plot_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/categorical_count_plot_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/categorical_counts.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/cross_table_sex_island.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/cross_table_species_island.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/cross_table_species_sex.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/duplicated_rows.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/heatmap_pearson_corr.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/histogram_bill_depth_mm.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/histogram_bill_length_mm.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/histogram_body_mass_g.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/histogram_descriptions.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/histogram_flipper_length_mm.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/hypotheses.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/low_cardinality_cols.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/null_counts.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/numeric_cols.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/numeric_summary.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/pearson_corr.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/rows_cols.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_depth_mm_vs_bill_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_depth_mm_vs_bill_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_depth_mm_vs_bill_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_depth_mm_vs_body_mass_g_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_depth_mm_vs_body_mass_g_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_depth_mm_vs_body_mass_g_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_depth_mm_vs_flipper_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_depth_mm_vs_flipper_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_depth_mm_vs_flipper_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_length_mm_vs_bill_depth_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_length_mm_vs_bill_depth_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_length_mm_vs_bill_depth_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_length_mm_vs_body_mass_g_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_length_mm_vs_body_mass_g_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_length_mm_vs_body_mass_g_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_length_mm_vs_flipper_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_length_mm_vs_flipper_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_bill_length_mm_vs_flipper_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_body_mass_g_vs_bill_depth_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_body_mass_g_vs_bill_depth_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_body_mass_g_vs_bill_depth_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_body_mass_g_vs_bill_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_body_mass_g_vs_bill_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_body_mass_g_vs_bill_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_body_mass_g_vs_flipper_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_body_mass_g_vs_flipper_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_body_mass_g_vs_flipper_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_flipper_length_mm_vs_bill_depth_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_flipper_length_mm_vs_bill_depth_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_flipper_length_mm_vs_bill_depth_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_flipper_length_mm_vs_bill_length_mm_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_flipper_length_mm_vs_bill_length_mm_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_flipper_length_mm_vs_bill_length_mm_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_flipper_length_mm_vs_body_mass_g_by_island.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_flipper_length_mm_vs_body_mass_g_by_sex.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/scatterplot_flipper_length_mm_vs_body_mass_g_by_species.png
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/spearman_corr.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/artifacts/penguins/statistical_results.json
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/clasico.py
+2026-03-10 Miguel Revelo | beggining of lab1
+
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Agente/agente.py
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_1/Clasico/clasico.py
+semestre2026-1/Estudiantes/Revelo_30/Laboratorios/Laboratorio_2/series_de_tiempo.py
+2026-03-10 Fernanda Mora Rey | Add files via upload
+
+semestre2026-1/Estudiantes/Mora_862/Lab_1/Laboratorio_01_pinguinos_v2_IA.ipynb
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/artifacts/00_raw_profile.json
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/artifacts/04_descriptive_stats.json
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/artifacts/05_boxplot_exploratory.png
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/artifacts/05_correlation_heatmap.png
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/artifacts/05_visual_registry.json
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/artifacts/06_hypotheses_log.json
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/artifacts/07_conclusions.json
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/artifacts/08_tests.json
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/artifacts/09_questions.json
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/data/penguins.csv
+semestre2026-1/Estudiantes/Mora_862/Lab_1/laboratorio_agentes/runner.py
+semestre2026-1/Estudiantes/Mora_862/Lab_1/reporte.html
+2026-03-10 Fernanda Mora Rey | Add execution instructions for terminal commands
+
+semestre2026-1/Estudiantes/Mora_862/Lab_1/Lab_1.txt
+2026-03-09 JhoanMoscoso | Base de agentes: runner, guia de uso, AGENT.md y Lab_01_pinguinos
+
+semestre2026-1/Estudiantes/Moscoso_80/AGENT.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/Entregables/Laboratorio_01_pinguinos_v2_IA.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/Entregables/comparacion_enfoques.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/Entregables/historial_prompts.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/Entregables/report.html
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/Entregables/resumen_conversacion.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/Entregables/student_log.md
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/00_raw_profile__OBSERVE__20260307_113048.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/01_schema__OBSERVE__20260307_113048.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/02_missing_report__OBSERVE__20260307_113048.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/03_duplicates_report__OBSERVE__20260307_113048.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04_descriptive_stats__DESCRIBE__20260308_093532.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04a_numeric_summary__DESCRIBE__20260308_093531.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04b_categorical_summary__DESCRIBE__20260309_001333.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04c_crosstab_species_island__HYPOTHESIZE__20260308_201701.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04c_crosstab_species_sex__HYPOTHESIZE__20260308_201701.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_kendall__DESCRIBE__20260309_001333.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_pearson__DESCRIBE__20260309_001333.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/04d_correlation_spearman__DESCRIBE__20260309_001333.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/05_visual_registry__DESCRIBE__20260309_001334.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/05_visual_registry_hypothesize__HYPOTHESIZE__20260308_201701.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_depth_mm_by_species__DESCRIBE__20260309_001334.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_bill_length_mm_by_species__DESCRIBE__20260309_001334.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/box_body_mass_g_by_sex__HYPOTHESIZE__20260308_201701.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_island__DESCRIBE__20260309_001333.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_sex__DESCRIBE__20260309_001333.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/count_species__DESCRIBE__20260309_001333.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/heatmap_corr_pearson__DESCRIBE__20260309_001334.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_bill_length_mm_by_species__DESCRIBE__20260309_001334.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_body_mass_g_by_species__DESCRIBE__20260309_001333.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/hist_flipper_length_mm_by_species__DESCRIBE__20260309_001333.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_depth_mm_vs_bill_length_mm_hue_species__HYPOTHESIZE__20260308_201701.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_depth_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260309_001334.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/plots/scatter_bill_length_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260309_001334.png
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Lab_01_pinguinos/artifacts/run_log.json
+semestre2026-1/Estudiantes/Moscoso_80/Laboratorios/Laboratorio_02/Laboratorio_02_pandas_v3.ipynb
+semestre2026-1/Estudiantes/Moscoso_80/Readme.md
+semestre2026-1/Estudiantes/Moscoso_80/runner.py
+semestre2026-1/Estudiantes/Moscoso_80/usage_guide.md
+2026-03-08 Jarold Alaya Giovanny García Arias | Create Readme.md
+
+semestre2026-1/Estudiantes/garcia_62/Readme.md
+2026-03-05 David | Creacion de carpeta
+
+semestre2026-1/Estudiantes/Garcia_77/README.md
+2026-03-02 ricardo.moranv | Añadí un AGENT.md
+
+semestre2026-1/Estudiantes/Moran_23/AGENT.md
+2026-02-26 LauraOstos00 | Create readme.md
+
+semestre2026-1/Estudiantes/Ostos_09/readme.md
+2026-02-26 bandinoots | Create readme.md
+
+semestre2026-1/Estudiantes/garcia_262/readme.md
+2026-02-24 Hernan David Salinas | Merge pull request #236 from victorhpalaciosk/main
+2026-02-24 Hernan David Salinas | Merge pull request #237 from MiguelRevelo/main
+2026-02-24 MiguelRevelo | Create README.md
+
+semestre2026-1/Estudiantes/Revelo_30/README.md
+2026-02-24 MiguelRevelo | Delete semestre2026-1/Estudiantes/Revelo730/README.md
+
+semestre2026-1/Estudiantes/Revelo730/README.md
+2026-02-24 Víctor Palacios | Create readme.md
+
+semestre2026-1/Estudiantes/Palacios_10/readme.md
+2026-02-24 Víctor Palacios | Delete semestre2026-1/Estudiantes/Palacios_10
+
+semestre2026-1/Estudiantes/Palacios_10
+2026-02-24 Hernan David Salinas | Merge pull request #224 from bandinoots/bandinoots-patch-1
+2026-02-24 Hernan David Salinas | Merge pull request #225 from fernandamora/main
+2026-02-24 Hernan David Salinas | Merge pull request #226 from anferivera/main
+2026-02-24 Hernan David Salinas | Merge pull request #227 from CreeperMaster2000/main
+2026-02-24 Hernan David Salinas | Merge pull request #228 from Marlonjhassir/main
+2026-02-24 Hernan David Salinas | Merge pull request #229 from Juanjusug/main
+2026-02-24 Hernan David Salinas | Merge pull request #230 from JoseLu1ss/main
+2026-02-24 Hernan David Salinas | Merge pull request #231 from victorhpalaciosk/main
+2026-02-24 Hernan David Salinas | Merge pull request #232 from moranv/main
+2026-02-24 Hernan David Salinas | Merge pull request #233 from SiririComun/main
+2026-02-24 Hernan David Salinas | Merge pull request #234 from JhoanMoscoso/main
+2026-02-24 Jhonatan Jurado | Create README.md
+
+semestre2026-1/Estudiantes/Jurado_90/README.md
+2026-02-24 moranv | Create Readme.md
+
+semestre2026-1/Estudiantes/Moran_23/Readme.md
+2026-02-24 Víctor Palacios | Create Palacios_10
+
+semestre2026-1/Estudiantes/Palacios_10
+2026-02-24 Juanjusug | Add note about Ezequiel and bathtub
+
+semestre2026-1/Estudiantes/Usuga_10/readme.md
+2026-02-24 Jhoan Sebastian Moscoso Velásquez | Add initial README.md with greeting message
+
+semestre2026-1/Estudiantes/Moscoso_80/Readme.md
+2026-02-24 Jhonatan Jurado | Create Readme.md
+
+semestre2026-1/Estudiantes/Jurado_90/Readme.md
+2026-02-24 Juan Pablo Sanchez Arroyave | Add README.md with initial content
+
+semestre2026-1/Estudiantes/Sanchez_71/README.md
+2026-02-24 JoseLu1ss | Rename Readme.txt to Readme.md
+
+semestre2026-1/Estudiantes/Torres_10/Readme.md
+2026-02-24 JoseLu1ss | Update Readme.txt
+
+semestre2026-1/Estudiantes/Torres_10/Readme.txt
+2026-02-24 Juan Esteban Berrío Salazar | Update readme.md
+
+"semestre2026-1/Estudiantes/Berr\303\255o_99/readme.md"
+2026-02-24 Marlonjhassir | Create Garcia_10
+
+semestre2026-1/Estudiantes/Garcia_10
+2026-02-24 Juan Pablo Sanchez Arroyave | Delete semestre2026-1/Estudiantes/Sanchez71 directory
+
+semestre2026-1/Estudiantes/Sanchez71/README.md
+2026-02-24 Juanjusug | Create readme.md
+
+semestre2026-1/Estudiantes/Usuga_10/readme.md
+2026-02-24 Juan Pablo Sanchez Arroyave | Add README.md with initial content
+
+semestre2026-1/Estudiantes/Sanchez71/README.md
+2026-02-24 Marlonjhassir | Delete semestre2026-1/Estudiantes/Garcia-10 directory
+
+semestre2026-1/Estudiantes/Garcia-10/readme.md
+2026-02-24 JoseLu1ss | Create Readme.txt
+
+semestre2026-1/Estudiantes/Torres_10/Readme.txt
+2026-02-24 MiguelRevelo | Create README.md
+
+semestre2026-1/Estudiantes/Revelo730/README.md
+2026-02-24 Marlonjhassir | Create readme.md
+
+semestre2026-1/Estudiantes/Garcia-10/readme.md
+2026-02-24 fernandamora | Add initial content to Readme.md
+
+semestre2026-1/Estudiantes/Mora_862/Readme.md
+2026-02-24 Andrés Felipe Rivera Romero | Create Readme.md
+
+semestre2026-1/Estudiantes/Rivera_16/Readme.md
+2026-02-24 Juan Esteban Berrío Salazar | Update course title to 'Haga caso'
+
+"semestre2026-1/Estudiantes/Berr\303\255o_99/readme.md"
+2026-02-24 Juan Esteban Berrío Salazar | Update readme with course information
+
+"semestre2026-1/Estudiantes/Berr\303\255o_99/readme.md"
+2026-02-24 bandinoots | Create Garcia_262
+
+semestre2026-1/Estudiantes/Garcia_262
+2026-02-24 hernansalinas | update Estudiantes
+
+semestre2026-1/Estudiantes/.DS_Store

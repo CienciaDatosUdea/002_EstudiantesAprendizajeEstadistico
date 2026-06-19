@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Análisis Exploratorio - Penguins Dataset | Lab_01_pinguinos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .phase-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            border-radius: 5px;
+        }
+        
+        .phase-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .phase-section h3 {
+            color: #764ba2;
+            margin: 20px 0 10px 0;
+            font-size: 1.3em;
+        }
+        
+        .subsection {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        
+        table th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        table tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .hypothesis-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .finding-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .warning-box {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .plot-container {
+            margin: 30px 0;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        
+        .plot-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .plot-title {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .stat-card-value {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .stat-card-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .conclusion {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+            margin: 30px 0;
+            font-size: 1.05em;
+            line-height: 1.8;
+        }
+        
+        .toc {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .toc h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .toc li {
+            margin: 8px 0;
+        }
+        
+        .toc a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin: 5px 5px 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐧 Análisis Exploratorio Reproducible</h1>
+            <p><strong>Dataset Penguins</strong> | Lab_01_pinguinos | Universidad de Antioquia 2026-1</p>
+            <p style="margin-top: 10px; font-size: 0.95em;">Data Observatory — Fases 0–3</p>
+        </header>
+        
+        <div class="content">
+            <!-- TABLE OF CONTENTS -->
+            <div class="toc">
+                <h3>📋 Tabla de Contenidos</h3>
+                <ul>
+                    <li><a href="#fase0">Phase 0: Pre-Análisis Estudiante</a></li>
+                    <li><a href="#fase1">Phase 1: OBSERVE — Estructura del Dataset</a></li>
+                    <li><a href="#fase2">Phase 2: DESCRIBE — Estadísticas y Visualizaciones</a></li>
+                    <li><a href="#fase3">Phase 3: HYPOTHESIZE and CONCLUDE</a></li>
+                </ul>
+            </div>
+
+            <!-- PHASE 0 -->
+            <div class="phase-section" id="fase0">
+                <h2>▶ Phase 0: Pre-Análisis Estudiante (STUDENT_PREANALYSIS)</h2>
+                <p><strong>Propósito:</strong> Forzar el pensamiento analítico antes de la máquina. El estudiante formula expectativas.</p>
+                
+                <div class="subsection">
+                    <h3>Predicciones iniciales del estudiante:</h3>
+                    <ol>
+                        <li><strong>Sobre el dataset:</strong> Observaciones individuales de pingüinos con variables morfométricas que probablemente están relacionadas.</li>
+                        <li><strong>Patrones esperados:</strong> Correlaciones entre variables, agrupaciones de observaciones similares, diferencias entre grupos.</li>
+                        <li><strong>Variables relacionadas:</strong> Variables que miden propiedades del mismo fenómeno mostrarían correlaciones.</li>
+                        <li><strong>Sorpresas:</strong> Esperaba encontrar patrones claros; hubiera sorprendido la ausencia total de correlaciones.</li>
+                    </ol>
+                </div>
+                
+                <div class="finding-box">
+                    <strong>✓ Resultado de la predicción:</strong> Las predicciones fueron mayormente confirmadas. Se encontraron patrones claros, correlaciones robustas entre variables, y agrupaciones evidentes por especie.
+                </div>
+            </div>
+
+            <!-- PHASE 1 -->
+            <div class="phase-section" id="fase1">
+                <h2>▶ Phase 1: OBSERVE — Estructura del Dataset</h2>
+                <p><strong>Propósito:</strong> Caracterizar la estructura cruda del dataset sin estadísticas aún.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-card-label">Total de Filas</div>
+                        <div class="stat-card-value">344</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-label">Columnas</div>
+                        <div class="stat-card-value">7</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-label">Especies</div>
+                        <div class="stat-card-value">3</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-label">Duplicados</div>
+                        <div class="stat-card-value">0</div>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3>Estructura de Columnas</h3>
+                    <table>
+                        <tr>
+                            <th>Columna</th>
+                            <th>Tipo</th>
+                            <th>Observación</th>
+                        </tr>
+                        <tr>
+                            <td><strong>species</strong></td>
+                            <td>Categórica</td>
+                            <td>3 valores únicos: Adelie, Gentoo, Chinstrap. Sin faltantes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>island</strong></td>
+                            <td>Categórica</td>
+                            <td>3 valores únicos: Biscoe, Dream, Torgersen. Sin faltantes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>bill_length_mm</strong></td>
+                            <td>Numérica (float64)</td>
+                            <td>Medida de longitud del pico. 2 valores faltantes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>bill_depth_mm</strong></td>
+                            <td>Numérica (float64)</td>
+                            <td>Medida de profundidad del pico. 2 valores faltantes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>flipper_length_mm</strong></td>
+                            <td>Numérica (float64)</td>
+                            <td>Medida de longitud de la aleta. 2 valores faltantes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>body_mass_g</strong></td>
+                            <td>Numérica (float64)</td>
+                            <td>Masa corporal en gramos. 2 valores faltantes.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>sex</strong></td>
+                            <td>Categórica</td>
+                            <td>2 valores únicos: Male, Female. 11 valores faltantes (3.2%).</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="warning-box">
+                    <strong>⚠️ Datos Faltantes:</strong>
+                    <ul>
+                        <li><strong>Medidas morfométricas (4 variables):</strong> Exactamente 2 valores faltantes cada una. Patrón idéntico sugiere 2 observaciones completas sin medidas, no error de instrumento aleatorio.</li>
+                        <li><strong>Sex (género):</strong> 11 valores faltantes (3.2%). Probablemente limitación de observación remota en campo.</li>
+                        <li><strong>Duplicados:</strong> 0 filas completamente duplicadas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PHASE 2 -->
+            <div class="phase-section" id="fase2">
+                <h2>▶ Phase 2: DESCRIBE — Estadísticas y Visualizaciones</h2>
+                <p><strong>Propósito:</strong> Computar estadísticas descriptivas y generar visualizaciones exploratorias.</p>
+                
+                <h3>Estadísticas Numéricas (n=342 completos)</h3>
+                <table>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Media</th>
+                        <th>Mediana</th>
+                        <th>Std Dev</th>
+                        <th>Min</th>
+                        <th>Max</th>
+                        <th>Q1</th>
+                        <th>Q3</th>
+                        <th>Skewness</th>
+                    </tr>
+                    <tr>
+                        <td><strong>bill_length_mm</strong></td>
+                        <td>43.92</td>
+                        <td>44.45</td>
+                        <td>5.46</td>
+                        <td>32.1</td>
+                        <td>59.6</td>
+                        <td>39.2</td>
+                        <td>48.5</td>
+                        <td>0.053</td>
+                    </tr>
+                    <tr>
+                        <td><strong>bill_depth_mm</strong></td>
+                        <td>17.15</td>
+                        <td>17.3</td>
+                        <td>1.97</td>
+                        <td>13.1</td>
+                        <td>21.5</td>
+                        <td>15.6</td>
+                        <td>18.7</td>
+                        <td>-0.143</td>
+                    </tr>
+                    <tr>
+                        <td><strong>flipper_length_mm</strong></td>
+                        <td>200.92</td>
+                        <td>197.0</td>
+                        <td>14.06</td>
+                        <td>172</td>
+                        <td>231</td>
+                        <td>190</td>
+                        <td>213</td>
+                        <td>0.346</td>
+                    </tr>
+                    <tr>
+                        <td><strong>body_mass_g</strong></td>
+                        <td>4201.75</td>
+                        <td>4050</td>
+                        <td>801.95</td>
+                        <td>2700</td>
+                        <td>6300</td>
+                        <td>3550</td>
+                        <td>4750</td>
+                        <td>0.470</td>
+                    </tr>
+                </table>
+                
+                <div class="subsection">
+                    <h3>Resumen Categórico</h3>
+                    <table>
+                        <tr>
+                            <th>Categoría</th>
+                            <th>Adelie</th>
+                            <th>Gentoo</th>
+                            <th>Chinstrap</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Conteo</strong></td>
+                            <td>152 (44.2%)</td>
+                            <td>124 (36.1%)</td>
+                            <td>68 (19.8%)</td>
+                        </tr>
+                    </table>
+                    
+                    <table>
+                        <tr>
+                            <th>Sexo</th>
+                            <th>Male</th>
+                            <th>Female</th>
+                            <th>NA</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Conteo</strong></td>
+                            <td>168 (48.8%)</td>
+                            <td>165 (48.0%)</td>
+                            <td>11 (3.2%)</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <h3>Matriz de Correlación (Pearson)</h3>
+                <table>
+                    <tr>
+                        <th>Variable Pair</th>
+                        <th>Correlación</th>
+                        <th>Interpretación</th>
+                    </tr>
+                    <tr>
+                        <td><strong>flipper_length ↔ body_mass</strong></td>
+                        <td><strong style="color: red;">0.871</strong></td>
+                        <td>Muy fuerte positiva — pingüinos con aletas más largas son más pesados.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>bill_length ↔ flipper_length</strong></td>
+                        <td>0.656</td>
+                        <td>Moderada positiva — picos más largos asociados con aletas más largas.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>bill_depth ↔ flipper_length</strong></td>
+                        <td>-0.584</td>
+                        <td>Moderada negativa — trade-off morfológico entre profundidad y longitud de pico.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>bill_depth ↔ body_mass</strong></td>
+                        <td>-0.472</td>
+                        <td>Moderada negativa — pingüinos más pesados tienden a tener picos menos profundos.</td>
+                    </tr>
+                </table>
+                
+                <h3>Visualizaciones Generadas</h3>
+                
+                <div class="plot-container">
+                    <div class="plot-title">Distribución de Especies</div>
+                    <img src="../artifacts/plots/count_species__DESCRIBE__20260315_221327.png" alt="Count of species">
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Adelie domina el dataset (44%). Gentoo y Chinstrap son menos frecuentes.</p>
+                </div>
+                
+                <div class="plot-container">
+                    <div class="plot-title">Distribución por Isla</div>
+                    <img src="../artifacts/plots/count_island__DESCRIBE__20260315_221327.png" alt="Count of island">
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Biscoe tiene la mayoría. Torgersen tiene la menor cantidad de observaciones.</p>
+                </div>
+                
+                <div class="plot-container">
+                    <div class="plot-title">Balance de Género</div>
+                    <img src="../artifacts/plots/count_sex__DESCRIBE__20260315_221327.png" alt="Count of sex">
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Género está casi perfectamente balanceado entre machos y hembras.</p>
+                </div>
+                
+                <div class="plot-container">
+                    <div class="plot-title">Longitud de Pico por Especie</div>
+                    <img src="../artifacts/plots/box_bill_length_mm_by_species__DESCRIBE__20260315_221328.png" alt="Box plot of bill length by species">
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Las tres especies tienen distribuciones claramente separadas. Chinstrap tiene los picos más largos en promedio.</p>
+                </div>
+                
+                <div class="plot-container">
+                    <div class="plot-title">Profundidad de Pico por Especie</div>
+                    <img src="../artifacts/plots/box_bill_depth_mm_by_species__DESCRIBE__20260315_221328.png" alt="Box plot of bill depth by species">
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Chinstrap y Adelie tienen picos más profundos que Gentoo.</p>
+                </div>
+                
+                <div class="plot-container">
+                    <div class="plot-title">Distribución de Longitud de Aleta por Especie</div>
+                    <img src="../artifacts/plots/hist_flipper_length_mm_by_species__DESCRIBE__20260315_221327.png" alt="Histogram of flipper length by species">
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Gentoo claramente separada (aletas más largas). Adelie y Chinstrap parcialmente solapados.</p>
+                </div>
+                
+                <div class="plot-container">
+                    <div class="plot-title">Distribución de Masa Corporal por Especie</div>
+                    <img src="../artifacts/plots/hist_body_mass_g_by_species__DESCRIBE__20260315_221327.png" alt="Histogram of body mass by species">
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Multimodalidad clara: 3 picos correspondientes a las 3 especies. Gentoo es la más pesada.</p>
+                </div>
+                
+                <div class="plot-container">
+                    <div class="plot-title">Relación: Longitud de Pico vs Longitud de Aleta (por Especie)</div>
+                    <img src="../artifacts/plots/scatter_bill_length_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260315_221328.png" alt="Scatter plot with species">
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Tres clusters claramente visibles. Cada especie ocupa una región distinta del espacio.</p>
+                </div>
+                
+                <div class="plot-container">
+                    <div class="plot-title">Relación: Profundidad vs Longitud de Aleta (por Especie)</div>
+                    <img src="../artifacts/plots/scatter_bill_depth_mm_vs_flipper_length_mm_hue_species__DESCRIBE__20260315_221328.png" alt="Scatter plot depth vs flipper">
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Trade-off negativo visible: picos más profundos con aletas más cortas (Adelie/Chinstrap vs Gentoo).</p>
+                </div>
+                
+                <div class="plot-container">
+                    <div class="plot-title">Matriz de Correlación (Heatmap)</div>
+                    <img src="../artifacts/plots/heatmap_corr_pearson__DESCRIBE__20260315_221328.png" alt="Correlation heatmap">
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #666;">Rojo = correlaciones positivas fuertes. Azul = correlaciones negativas. La correlación flipper–masa (0.87) es la más fuerte.</p>
+                </div>
+            </div>
+
+            <!-- PHASE 3 -->
+            <div class="phase-section" id="fase3">
+                <h2>▶ Phase 3: HYPOTHESIZE and CONCLUDE</h2>
+                <p><strong>Propósito:</strong> Generar hipótesis falsables y conclusiones fundamentadas en evidencia.</p>
+                
+                <h3>Hipótesis 1: Diferencias Intra-Específicas</h3>
+                <div class="hypothesis-box">
+                    <strong>H1:</strong> Las tres especies de pingüino difieren significativamente en sus medidas morfométricas. Gentoo es la especie más grande en general; Chinstrap tiene picos relativamente más profundos; Adelie es la más pequeña.
+                    <br><br>
+                    <strong>Variables de interés:</strong> species → bill_length, bill_depth, flipper_length, body_mass
+                    <br><br>
+                    <strong>Tests sugeridos:</strong> ANOVA de una vía, Kruskal-Wallis, Tukey HSD post-hoc
+                    <br><br>
+                    <strong>Evidencia:</strong>
+                    <ul>
+                        <li>Los boxplots muestran separación clara de medianas entre especies (box_bill_length_by_species, etc.)</li>
+                        <li>Histogramas con hue=species muestran distribuciones completamente separadas (especialmente body_mass)</li>
+                        <li>Scatterplots revelan tres clusters distintos sin solapamiento significativo</li>
+                    </ul>
+                </div>
+                
+                <h3>Hipótesis 2: Simpson's Paradox en la Correlación</h3>
+                <div class="hypothesis-box">
+                    <strong>H2:</strong> La correlación global entre flipper_length y body_mass (r = 0.871) es artificialmente elevada debido a que Gentoo es más grande tanto en aletas como en masa corporal. Cuando se analiza por especie, la correlación será más débil dentro de cada grupo.
+                    <br><br>
+                    <strong>Variables de interés:</strong> flipper_length ↔ body_mass, estratificado por species
+                    <br><br>
+                    <strong>Tests sugeridos:</strong> Correlaciones por especie, ANCOVA para homogeneidad de pendientes
+                    <br><br>
+                    <strong>Evidencia:</strong>
+                    <ul>
+                        <li>Correlación global Pearson = 0.871 es muy fuerte</li>
+                        <li>Scatterplot (flipper vs body mass con hue=species) muestra que Gentoo forma un cluster elevado</li>
+                        <li>La nube global es "estirada" por la separación de especies, inflando la r observada</li>
+                    </ul>
+                </div>
+                
+                <h3>Hipótesis 3: Sexo como Confosor</h3>
+                <div class="hypothesis-box">
+                    <strong>H3:</strong> El sexo es un confosor importante que afecta tanto la masa corporal como las medidas morfométricas. Un modelo de predicción que ignore el sexo tendrá sesgo sistemático: sobreestimará hembras, subestimará machos.
+                    <br><br>
+                    <strong>Variables de interés:</strong> sex → body_mass, flipper_length (y otras medidas)
+                    <br><br>
+                    <strong>Tests sugeridos:</strong> t-test independiente, regresión múltiple con/sin sex, comparación de R²/AIC
+                    <br><br>
+                    <strong>Evidencia:</strong>
+                    <ul>
+                        <li>Sex está casi balanceado (48.8% Male, 48.0% Female), pero 3.2% está faltante</li>
+                        <li>La multimodalidad observada en body_mass podría deberse parcialmente a sexo, no solo a species</li>
+                        <li>El researchers siempre pudo identificar species/island pero no sex en 11 casos → limitación de observación</li>
+                    </ul>
+                </div>
+                
+                <h3>Hallazgos Descriptivos Clave</h3>
+                <div class="finding-box">
+                    <ul>
+                        <li>El dataset contiene 344 pingüinos (342 completos) de 3 especies distribuidas en 5 islas.</li>
+                        <li>Las medidas morfométricas NO son independientes: correlación flipper–masa = 0.871.</li>
+                        <li>La multimodalidad en body_mass es COMPLETAMENTE explicada por species, no por una distribución inherente bimodal.</li>
+                        <li>Las tres especies ocupan regiones muy distintas del espacio morfológico (scatterplots sin solapamiento).</li>
+                        <li>El sexo está balanceado (≈50/50 M vs F) pero con 11 missing que requieren imputación o exclusión.</li>
+                    </ul>
+                </div>
+                
+                <h3>Patrones Visuales Observados</h3>
+                <div class="finding-box">
+                    <ul>
+                        <li><strong>Adelie:</strong> Pico corto (~38 mm), aleta corta (~190 mm), peso bajo (~3600 g), profundidad de pico moderada-alta.</li>
+                        <li><strong>Chinstrap:</strong> Pico MÁS LARGO (~49 mm), aleta intermedia (~195 mm), peso intermedio (~3730 g), profundidad muy alta (~18.4 mm).</li>
+                        <li><strong>Gentoo:</strong> Pico moderado (~47 mm), aleta MÁS LARGA (~217 mm), peso MÁS ALTO (~5076 g), profundidad BAJA (~17 mm).</li>
+                        <li>Trade-off morfológico: no todos los pingüinos son "grandes en todo" — Gentoo invierte en tamaño corporal + aletas; Chinstrap en pico profundo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CONCLUSIONES -->
+            <div class="conclusion">
+                <h2>🎯 Conclusión General</h2>
+                <p>
+                    El análisis exploratorio del dataset Penguins revela <strong>estructura biológica clara</strong> impulsada por las diferencias entre especies. 
+                    Las tres especies ocupan nichos morfológicos distintos con trade-offs adaptativos visibles: Adelie es pequeña y ágil; 
+                    Chinstrap está especializada en picos profundos; Gentoo invierte en aletas largas y masa corporal.
+                </p>
+                <p style="margin-top: 15px;">
+                    La correlación fuerte observada (r=0.871 flipper–masa) es robusta pero probablemente <strong>confundida por species</strong>. 
+                    Un modelo predictivo que capture correctamente la varianza debe considerar species COMO VARIABLE CATEGÓRICA PRINCIPAL, 
+                    y also el sexo COMO CONFOSOR IMPORTANTE.
+                </p>
+                <p style="margin-top: 15px;">
+                    Este dataset es <strong>ideal para regresión lineal múltiple</strong> con efectos principales de species, interacciones potenciales species×flipper_length, 
+                    y sexo como variable de control.
+                </p>
+            </div>
+
+            <!-- METADATA -->
+            <div class="subsection" style="background: #f0f0f0;">
+                <h3>📊 Metadatos del Análisis</h3>
+                <table>
+                    <tr>
+                        <td><strong>Dataset:</strong></td>
+                        <td>Palmer Penguins (seaborn built-in)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Observaciones:</strong></td>
+                        <td>344 individuos (342 completos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Variables:</strong></td>
+                        <td>7 (3 categóricas + 4 numéricas)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fases completadas:</strong></td>
+                        <td>0 (Pre-análisis) → 1 (OBSERVE) → 2 (DESCRIBE) → 3 (HYPOTHESIZE)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Random seed:</strong></td>
+                        <td>42 (reproducibilidad)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Generado:</strong></td>
+                        <td>Abril 2, 2026</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Data Observatory | Universidad de Antioquia — Análisis Reproducible de Datos</p>
+            <p>Estudiante: Moran_23 | Lab_01_pinguinos | Semestre 2026-1</p>
+        </footer>
+    </div>
+</body>
+</html>

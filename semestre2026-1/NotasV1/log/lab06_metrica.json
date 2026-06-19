@@ -1,0 +1,13 @@
+{
+  "laboratorio": "Laboratorio_06_normal_equations_v1.ipynb",
+  "titulo": "Lab 6: Ecuación Normal",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / 2 * 5.0)",
+  "total_puntos": 2,
+  "puntos": [
+    { "numero": 1, "texto": "Para los datos del laboratorio anterior aplicar la ecuación normal." },
+    { "numero": 2, "texto": "Tomar el dataset de casas de Boston y construir un modelo de regresión multivariada con la ecuación normal." }
+  ]
+}

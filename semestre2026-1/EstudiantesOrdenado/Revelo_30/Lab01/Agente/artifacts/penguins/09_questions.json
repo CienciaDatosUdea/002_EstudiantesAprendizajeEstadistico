@@ -1,0 +1,23 @@
+{
+  "dataset_name": "penguins",
+  "questions": [
+    {
+      "id": "Q1",
+      "question": "How should rows with missing sex values be handled in any later stratified analysis involving sex?",
+      "why_it_matters": "The dataset includes missing values in sex, so a preprocessing choice may affect grouped summaries or tests that use this variable.",
+      "evidence_refs": [
+        "artifacts/null_counts.json",
+        "artifacts/categorical_counts.json"
+      ]
+    },
+    {
+      "id": "Q2",
+      "question": "Should analyses that involve numeric variables use complete-case handling for the rows with missing numeric entries, or should another preprocessing rule be applied first?",
+      "why_it_matters": "Several numeric columns have missing values, so the analysis rule can affect which rows enter later tests.",
+      "evidence_refs": [
+        "artifacts/null_counts.json",
+        "artifacts/00_raw_profile.json"
+      ]
+    }
+  ]
+}

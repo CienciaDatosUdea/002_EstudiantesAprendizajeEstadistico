@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-06T00:37:22.408898",
+    "source": "data/penguins.csv"
+  },
+  "payload": {
+    "questions": [
+      {
+        "prompt": "\u00bfExisten sesgos en la recolecci\u00f3n de datos que expliquen las asociaciones encontradas?",
+        "ref": "07_conclusions.json"
+      },
+      {
+        "prompt": "\u00bfC\u00f3mo afecta el desbalance de categor\u00edas observado en 04_descriptive_stats a las pruebas H1 y H3?",
+        "ref": "04_descriptive_stats.json"
+      }
+    ]
+  }
+}

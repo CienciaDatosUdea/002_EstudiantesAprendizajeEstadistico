@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reporte — Observatorio de Datos | Pingüinos de Palmer</title>
+  <style>
+    :root {
+      --blue:    #2563eb;
+      --green:   #16a34a;
+      --red:     #dc2626;
+      --yellow:  #ca8a04;
+      --gray:    #6b7280;
+      --light:   #f8fafc;
+      --border:  #e2e8f0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #1e293b;
+      background: #f1f5f9;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%);
+      color: white;
+      padding: 2.5rem 3rem;
+    }
+    header h1 { font-size: 1.9rem; font-weight: 700; margin-bottom: 0.4rem; }
+    header p  { opacity: 0.85; font-size: 0.95rem; }
+    .meta { display: flex; gap: 2rem; margin-top: 1rem; flex-wrap: wrap; }
+    .meta span { background: rgba(255,255,255,0.15); padding: 0.25rem 0.75rem;
+                 border-radius: 999px; font-size: 0.85rem; }
+
+    main { max-width: 960px; margin: 2rem auto; padding: 0 1.5rem 4rem; }
+
+    section { background: white; border: 1px solid var(--border);
+              border-radius: 12px; padding: 2rem; margin-bottom: 1.5rem;
+              box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+    h2 { font-size: 1.2rem; font-weight: 700; color: var(--blue);
+         border-bottom: 2px solid var(--border); padding-bottom: 0.5rem;
+         margin-bottom: 1.2rem; }
+    h3 { font-size: 1rem; font-weight: 600; color: #334155; margin: 1.2rem 0 0.5rem; }
+    p  { margin-bottom: 0.8rem; }
+    ul, ol { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+    li { margin-bottom: 0.3rem; }
+
+    .ref { font-size: 0.78rem; color: var(--gray); font-style: italic; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem;
+            margin-bottom: 1rem; }
+    th { background: #f1f5f9; text-align: left; padding: 0.5rem 0.8rem;
+         border: 1px solid var(--border); font-weight: 600; }
+    td { padding: 0.45rem 0.8rem; border: 1px solid var(--border); }
+    tr:nth-child(even) td { background: #f8fafc; }
+
+    .badge {
+      display: inline-block; padding: 0.15rem 0.6rem; border-radius: 999px;
+      font-size: 0.78rem; font-weight: 600;
+    }
+    .badge-green  { background:#dcfce7; color:#15803d; }
+    .badge-red    { background:#fee2e2; color:#b91c1c; }
+    .badge-yellow { background:#fef9c3; color:#854d0e; }
+    .badge-blue   { background:#dbeafe; color:#1d4ed8; }
+
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
+
+    .stat-box {
+      background: var(--light); border: 1px solid var(--border);
+      border-radius: 8px; padding: 1rem; text-align: center;
+    }
+    .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--blue); }
+    .stat-box .lbl { font-size: 0.82rem; color: var(--gray); margin-top: 0.2rem; }
+
+    .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+    @media (max-width: 700px) { .grid4 { grid-template-columns: repeat(2,1fr); } }
+
+    .callout {
+      border-left: 4px solid var(--blue); background: #eff6ff;
+      padding: 0.8rem 1rem; border-radius: 0 8px 8px 0; margin-bottom: 1rem;
+    }
+    .callout.green  { border-color: var(--green); background: #f0fdf4; }
+    .callout.yellow { border-color: var(--yellow); background: #fefce8; }
+    .callout.red    { border-color: var(--red); background: #fef2f2; }
+
+    code { background: #f1f5f9; padding: 0.1rem 0.35rem; border-radius: 4px;
+           font-family: 'Cascadia Code', monospace; font-size: 0.88em; }
+
+    footer { text-align: center; color: var(--gray); font-size: 0.82rem;
+             padding: 2rem 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Observatorio de Datos — Pingüinos de Palmer</h1>
+  <p>Reporte final de análisis exploratorio — Laboratorio 01</p>
+  <div class="meta">
+    <span>👤 Moscoso_80</span>
+    <span>📅 2026-03-09</span>
+    <span>🔬 Aprendizaje Estadístico | UdeA 2026-1</span>
+    <span>📦 Dataset: seaborn › penguins</span>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════════ SECCIÓN 1 ═══════════════════════════ -->
+<section>
+  <h2>1 — Descripción del dataset</h2>
+  <p>
+    El dataset contiene <strong>344 observaciones individuales</strong> de pingüinos de tres
+    especies registradas en tres islas del archipiélago de Palmer, con 7 variables que describen
+    morfología, origen y sexo. No se encontraron filas duplicadas y la tasa de faltantes global
+    es del <strong>0.79 %</strong>.
+  </p>
+  <div class="grid4" style="margin: 1.2rem 0;">
+    <div class="stat-box"><div class="num">344</div><div class="lbl">registros</div></div>
+    <div class="stat-box"><div class="num">7</div><div class="lbl">variables</div></div>
+    <div class="stat-box"><div class="num">0</div><div class="lbl">duplicados</div></div>
+    <div class="stat-box"><div class="num">19</div><div class="lbl">valores faltantes</div></div>
+  </div>
+  <p class="ref">Fuente: 00_raw_profile__OBSERVE__20260307_113048.json · 03_duplicates_report__OBSERVE__20260307_113048.json</p>
+
+  <h3>Variables</h3>
+  <table>
+    <tr><th>Variable</th><th>Tipo semántico</th><th>Valores únicos</th><th>Faltantes</th></tr>
+    <tr><td><code>species</code></td><td>Categórica</td><td>3</td><td>0</td></tr>
+    <tr><td><code>island</code></td><td>Categórica</td><td>3</td><td>0</td></tr>
+    <tr><td><code>bill_length_mm</code></td><td>Numérica</td><td>164</td><td>2 (0.58 %)</td></tr>
+    <tr><td><code>bill_depth_mm</code></td><td>Numérica</td><td>80</td><td>2 (0.58 %)</td></tr>
+    <tr><td><code>flipper_length_mm</code></td><td>Numérica</td><td>55</td><td>2 (0.58 %)</td></tr>
+    <tr><td><code>body_mass_g</code></td><td>Numérica</td><td>94</td><td>2 (0.58 %)</td></tr>
+    <tr><td><code>sex</code></td><td>Categórica</td><td>2</td><td>11 (3.20 %)</td></tr>
+  </table>
+  <p class="ref">Fuente: 01_schema__OBSERVE__20260307_113048.json · 02_missing_report__OBSERVE__20260307_113048.json</p>
+
+  <div class="callout yellow">
+    <strong>Nota metodológica:</strong> Las 4 variables numéricas comparten exactamente
+    2 valores faltantes cada una. Es probable que correspondan a las mismas 2 filas con
+    registros incompletos — observable con <code>df[df.isnull().any(axis=1)]</code>.
+    <code>sex</code> tiene 11 faltantes, cuyo patrón (MCAR vs MAR) no puede determinarse
+    sin análisis adicional.
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SECCIÓN 2 ═══════════════════════════ -->
+<section>
+  <h2>2 — Estadísticas descriptivas</h2>
+
+  <h3>Variables numéricas</h3>
+  <table>
+    <tr><th>Variable</th><th>Media</th><th>Mediana</th><th>Std</th><th>IQR</th><th>Skewness</th><th>Kurtosis</th></tr>
+    <tr><td><code>bill_length_mm</code></td><td>43.92</td><td>44.45</td><td>5.46</td><td>9.28</td><td>0.053</td><td>−0.88</td></tr>
+    <tr><td><code>bill_depth_mm</code></td><td>17.15</td><td>17.30</td><td>1.97</td><td>3.10</td><td>−0.143</td><td>−0.91</td></tr>
+    <tr><td><code>flipper_length_mm</code></td><td>200.92</td><td>197.0</td><td>14.06</td><td>23.0</td><td>0.346</td><td>−0.98</td></tr>
+    <tr><td><code>body_mass_g</code></td><td>4 201.75</td><td>4 050.0</td><td>801.95</td><td>1 200.0</td><td>0.470</td><td>−0.72</td></tr>
+  </table>
+  <p class="ref">Fuente: 04a_numeric_summary__DESCRIBE__20260308_093531.json</p>
+  <p>
+    Todas las kurtosis son negativas (distribuciones platikúrticas). El skewness positivo de
+    <code>body_mass_g</code> (0.47) y <code>flipper_length_mm</code> (0.35) sugiere una cola
+    hacia valores altos — consistente con la presencia de pingüinos Gentoo, la especie de mayor
+    tamaño y la segunda más representada.
+  </p>
+
+  <h3>Variables categóricas</h3>
+  <div class="grid2">
+    <div>
+      <table>
+        <tr><th>Especie</th><th>n</th><th>%</th></tr>
+        <tr><td>Adelie</td><td>152</td><td>44.19 %</td></tr>
+        <tr><td>Gentoo</td><td>124</td><td>36.05 %</td></tr>
+        <tr><td>Chinstrap</td><td>68</td><td>19.77 %</td></tr>
+      </table>
+    </div>
+    <div>
+      <table>
+        <tr><th>Isla</th><th>n</th><th>%</th></tr>
+        <tr><td>Biscoe</td><td>168</td><td>48.84 %</td></tr>
+        <tr><td>Dream</td><td>124</td><td>36.05 %</td></tr>
+        <tr><td>Torgersen</td><td>52</td><td>15.12 %</td></tr>
+      </table>
+    </div>
+  </div>
+  <p class="ref">Fuente: 04b_categorical_summary__DESCRIBE__20260308_093531.json</p>
+</section>
+
+<!-- ═══════════════════════════ SECCIÓN 3 ═══════════════════════════ -->
+<section>
+  <h2>3 — Correlaciones</h2>
+  <p>
+    Se calcularon matrices de correlación con tres métodos para contrastar supuestos:
+    Pearson (lineal), Spearman (monotónica / robusta a outliers) y Kendall (pequeñas muestras).
+  </p>
+
+  <h3>Tabla comparativa — pares clave</h3>
+  <table>
+    <tr><th>Par de variables</th><th>Pearson</th><th>Spearman</th><th>Kendall</th><th>Interpretación</th></tr>
+    <tr>
+      <td><code>flipper_length_mm</code> × <code>body_mass_g</code></td>
+      <td><strong>0.871</strong></td><td>0.840</td><td>0.660</td>
+      <td><span class="badge badge-green">Asociación muy fuerte</span></td>
+    </tr>
+    <tr>
+      <td><code>bill_length_mm</code> × <code>flipper_length_mm</code></td>
+      <td>0.656</td><td>0.673</td><td>0.483</td>
+      <td><span class="badge badge-blue">Asociación moderada-alta</span></td>
+    </tr>
+    <tr>
+      <td><code>bill_length_mm</code> × <code>body_mass_g</code></td>
+      <td>0.595</td><td>0.584</td><td>0.433</td>
+      <td><span class="badge badge-blue">Asociación moderada</span></td>
+    </tr>
+    <tr>
+      <td><code>bill_depth_mm</code> × <code>flipper_length_mm</code></td>
+      <td>−0.584</td><td>−0.523</td><td>−0.282</td>
+      <td><span class="badge badge-yellow">Negativa global — ver nota</span></td>
+    </tr>
+    <tr>
+      <td><code>bill_depth_mm</code> × <code>bill_length_mm</code></td>
+      <td>−0.235</td><td>−0.222</td><td>−0.123</td>
+      <td><span class="badge badge-red">Paradoja de Simpson</span></td>
+    </tr>
+  </table>
+  <p class="ref">Fuente: 04d_correlation_pearson/spearman/kendall__DESCRIBE__20260308_093531.json</p>
+
+  <div class="callout red">
+    <strong>Paradoja de Simpson — <code>bill_depth_mm</code> × <code>bill_length_mm</code>:</strong>
+    la correlación global es −0.235 (negativa), pero el scatter coloreado por especie
+    (<code>scatter_bill_depth_mm_vs_bill_length_mm_hue_species</code>) muestra que dentro
+    de cada especie el patrón podría diferir. Mezclar tres grupos morfológicamente distintos
+    produce una correlación global que no representa a ningún grupo individual.
+    Este hallazgo fue identificado por el estudiante antes de ver el scatter, solo a partir
+    del número global — un ejemplo de pensamiento estadístico crítico.
+  </div>
+</section>
+
+<!-- ═══════════════════════════ SECCIÓN 4 ═══════════════════════════ -->
+<section>
+  <h2>4 — Hallazgo clave: distribución species × island</h2>
+  <p>
+    El crosstab entre <code>species</code> e <code>island</code> revela una estructura
+    casi perfectamente exclusiva:
+  </p>
+  <table>
+    <tr><th>Especie \ Isla</th><th>Biscoe</th><th>Dream</th><th>Torgersen</th></tr>
+    <tr><td><strong>Adelie</strong></td><td>44</td><td>56</td><td>52</td></tr>
+    <tr><td><strong>Chinstrap</strong></td><td>0</td><td>68</td><td>0</td></tr>
+    <tr><td><strong>Gentoo</strong></td><td>124</td><td>0</td><td>0</td></tr>
+  </table>
+  <p class="ref">Fuente: 04c_crosstab_species_island__HYPOTHESIZE__20260308_201701.json</p>
+
+  <div class="callout green">
+    <strong>Interpretación:</strong> Gentoo es exclusiva de Biscoe (124 individuos, 0 en otras islas).
+    Chinstrap es exclusiva de Dream (68 individuos). <strong>Adelie es la única especie presente en las
+    tres islas</strong> (44 / 56 / 52). Esta separación fue confirmada estadísticamente con
+    χ² altamente significativo y V de Cramér ≈ 1 (asociación prácticamente perfecta).
+  </div>
+
+  <h3>Distribución de sexos por especie</h3>
+  <table>
+    <tr><th>Especie</th><th>Female</th><th>Male</th><th>Diferencia</th></tr>
+    <tr><td>Adelie</td><td>73</td><td>73</td><td>0</td></tr>
+    <tr><td>Chinstrap</td><td>34</td><td>34</td><td>0</td></tr>
+    <tr><td>Gentoo</td><td>58</td><td>61</td><td>3</td></tr>
+  </table>
+  <p class="ref">Fuente: 04c_crosstab_species_sex__HYPOTHESIZE__20260308_201701.json</p>
+  <p>
+    La distribución de sexos es perfectamente simétrica en Adelie y Chinstrap.
+    En Gentoo hay apenas 3 machos adicionales — insuficiente para explicar el
+    skewness positivo de <code>body_mass_g</code> (0.47) observado a nivel global.
+    El skewness se explica mejor por la presencia de Gentoo como especie más masiva.
+  </p>
+</section>
+
+<!-- ═══════════════════════════ SECCIÓN 5 ═══════════════════════════ -->
+<section>
+  <h2>5 — Hipótesis y pruebas estadísticas</h2>
+
+  <table>
+    <tr>
+      <th>ID</th><th>Hipótesis</th><th>Prueba</th><th>Resultado</th><th>Veredicto</th>
+    </tr>
+    <tr>
+      <td>H1</td>
+      <td><code>flipper_length_mm</code> y <code>body_mass_g</code> no caracterizan la especie</td>
+      <td>ANOVA + Kruskal-Wallis por especie</td>
+      <td>F(flipper)=567.4, p=1.59×10⁻¹⁰⁷<br>F(mass)=341.9, p=3.74×10⁻⁸¹</td>
+      <td><span class="badge badge-red">RECHAZADA</span></td>
+    </tr>
+    <tr>
+      <td>H2</td>
+      <td><code>bill_length_mm</code> y <code>body_mass_g</code> están asociadas positivamente</td>
+      <td>Pearson + Spearman</td>
+      <td>r=0.595, ρ=0.584, p≪0.05</td>
+      <td><span class="badge badge-green">APOYADA</span></td>
+    </tr>
+    <tr>
+      <td>H3</td>
+      <td>Cada especie se asocia con una única isla</td>
+      <td>Chi-cuadrado + V de Cramér</td>
+      <td>χ²≫0, p≪0.05, V≈1.0</td>
+      <td><span class="badge badge-green">APOYADA</span></td>
+    </tr>
+    <tr>
+      <td>H4</td>
+      <td>La correlación global negativa <code>bill_depth_mm</code>×<code>bill_length_mm</code> es un artefacto de mezclar especies (Paradoja de Simpson)</td>
+      <td>Correlación por subgrupo de especie</td>
+      <td>Pendiente de ejecución</td>
+      <td><span class="badge badge-yellow">PENDIENTE</span></td>
+    </tr>
+    <tr>
+      <td>H5</td>
+      <td><code>body_mass_g</code> difiere entre los tres sexos controlando por especie</td>
+      <td>Mann-Whitney U / t-test de Welch por especie</td>
+      <td>Pendiente de ejecución</td>
+      <td><span class="badge badge-yellow">PENDIENTE</span></td>
+    </tr>
+  </table>
+</section>
+
+<!-- ═══════════════════════════ SECCIÓN 6 ═══════════════════════════ -->
+<section>
+  <h2>6 — Comparación: pre-análisis vs resultados</h2>
+  <table>
+    <tr><th>Expectativa (Phase 0)</th><th>Resultado observado</th><th>Estado</th></tr>
+    <tr>
+      <td>Diferentes especies tendrán picos distintos por adaptación al entorno</td>
+      <td>Confirmado: los box plots muestran rangos distintos por especie para todas las variables morfológicas</td>
+      <td><span class="badge badge-green">✓ Confirmada</span></td>
+    </tr>
+    <tr>
+      <td>Una misma isla podría ser compartida por dos o más especies</td>
+      <td>Parcialmente: Adelie comparte las 3 islas, pero Chinstrap y Gentoo son exclusivas de una. La exclusividad es casi perfecta.</td>
+      <td><span class="badge badge-yellow">⚠ Parcial</span></td>
+    </tr>
+    <tr>
+      <td><code>flipper_length_mm</code> y <code>body_mass_g</code> estarán correlacionadas (esperaba r ≈ 0.6–0.7)</td>
+      <td>Pearson = 0.871 — supera la expectativa del estudiante</td>
+      <td><span class="badge badge-green">✓ Superada</span></td>
+    </tr>
+    <tr>
+      <td>Los machos de Gentoo podrían ser más numerosos, explicando el skewness de <code>body_mass_g</code></td>
+      <td>Diferencia de solo 3 individuos (61M vs 58F) — insuficiente para explicar el skewness</td>
+      <td><span class="badge badge-red">✗ No sostenida</span></td>
+    </tr>
+  </table>
+</section>
+
+<!-- ═══════════════════════════ SECCIÓN 7 ═══════════════════════════ -->
+<section>
+  <h2>7 — Conclusiones en tres capas</h2>
+
+  <h3>A) Hallazgos descriptivos</h3>
+  <ul>
+    <li>344 individuos, 0 duplicados, 0.79 % de faltantes. Dataset limpio y listo para análisis. <span class="ref">[00_raw_profile, 03_duplicates_report]</span></li>
+    <li>Adelie es la especie dominante (44.19 %); Chinstrap la minoría (19.77 %). <span class="ref">[04b_categorical_summary]</span></li>
+    <li>La distribución de sexos es casi perfectamente balanceada dentro de cada especie (Adelie y Chinstrap exactamente 50/50). <span class="ref">[04c_crosstab_species_sex]</span></li>
+    <li>La asociación <code>species</code>×<code>island</code> es prácticamente determinista: Gentoo→Biscoe, Chinstrap→Dream, Adelie→las tres. <span class="ref">[04c_crosstab_species_island]</span></li>
+    <li><code>flipper_length_mm</code> es el predictor morfológico más fuerte de <code>body_mass_g</code> (Pearson=0.871, consistente en Spearman y Kendall). <span class="ref">[04d_correlation_*]</span></li>
+  </ul>
+
+  <h3>B) Patrones visuales</h3>
+  <ul>
+    <li>Los histogramas de todas las variables numéricas muestran bimodalidad, indicando la presencia de al menos dos subpoblaciones diferenciadas.</li>
+    <li>Los box plots por especie muestran poco solapamiento en <code>flipper_length_mm</code> y <code>body_mass_g</code>, confirmando la separación entre grupos.</li>
+    <li>El scatter <code>bill_depth_mm</code> vs <code>bill_length_mm</code> coloreado por especie revela tres regiones distinguibles, sugiriendo que la correlación negativa global es un artefacto de mezcla (Paradoja de Simpson).</li>
+  </ul>
+
+  <h3>C) Próximas hipótesis a probar</h3>
+  <ol>
+    <li><strong>Correlaciones intra-especie:</strong> calcular Pearson/Spearman por subgrupo para confirmar la Paradoja de Simpson en <code>bill_depth_mm</code>×<code>bill_length_mm</code>.</li>
+    <li><strong>Dimorfismo sexual:</strong> Mann-Whitney U o t-test de Welch para <code>body_mass_g</code> entre sexos, controlando por especie.</li>
+    <li><strong>Regresión flipper→mass:</strong> ajustar un modelo lineal global y uno por especie para cuantificar la asociación y detectar interacciones.</li>
+    <li><strong>Clasificación de especie:</strong> explorar si <code>bill_length_mm</code> + <code>flipper_length_mm</code> son suficientes para separar las tres especies (inspección visual en Phase 3 lo sugiere).</li>
+  </ol>
+</section>
+
+<!-- ═══════════════════════════ SECCIÓN 8 ═══════════════════════════ -->
+<section>
+  <h2>8 — Preguntas para el investigador</h2>
+  <ol>
+    <li><strong>Datos faltantes en <code>sex</code>:</strong> ¿el sexo se registró con un protocolo sistemático o depende del estado del animal? ¿Podría la ausencia de <code>sex</code> correlacionar con alguna especie o isla?</li>
+    <li><strong>Control por especie:</strong> la correlación global <code>bill_length_mm</code>×<code>body_mass_g</code> (r=0.595) mezcla tres especies. ¿Se mantiene el mismo signo y magnitud dentro de cada especie?</li>
+    <li><strong>Exclusividad isla-especie:</strong> ¿la restricción geográfica observada es biológica o refleja un sesgo de muestreo? ¿Se han registrado casos de cohabitación en otras fuentes?</li>
+    <li><strong>Skewness de <code>body_mass_g</code>:</strong> dado que el desbalance de sexos en Gentoo no explica el skewness, ¿hay otros factores (estación, año, estado nutricional) que puedan contextualizarlo?</li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+  Generado el 2026-03-09 · Lab_01_pinguinos · Moscoso_80 · UdeA 2026-1<br>
+  Artifacts: <code>00–05__OBSERVE/DESCRIBE/HYPOTHESIZE</code> · Runner v1.0
+</footer>
+
+</body>
+</html>

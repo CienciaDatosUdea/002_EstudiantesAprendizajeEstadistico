@@ -1,0 +1,28 @@
+{
+  "laboratorio": "Laboratorio_04_reg_lin_grad_desc_v2.ipynb",
+  "titulo": "Lab 4: Regresión lineal y gradiente descendente",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / 12 * 5.0)",
+  "total_puntos": 12,
+  "secciones": [
+    { "id": "A", "nombre": "Función de coste", "puntos": [1,2,3,4,5,6,7,8,9] },
+    { "id": "B", "nombre": "Gradiente descendente", "puntos": [10,11] },
+    { "id": "C", "nombre": "Librería Python (packaging)", "puntos": [12] }
+  ],
+  "puntos": [
+    { "numero": 1,  "texto": "Construir DataFrame de pandas con datos lineales simples." },
+    { "numero": 2,  "texto": "Definir función que calcule la función de coste cuadrática." },
+    { "numero": 3,  "texto": "Fijar θ₀=0, evaluar y graficar la función de coste para distintos θ₁. Graficar la recta." },
+    { "numero": 4,  "texto": "Variar θ₀ y θ₁. Construir malla con meshgrid, evaluar y representar superficie y curvas de nivel." },
+    { "numero": 5,  "texto": "Interpretar geométricamente la función de coste e identificar el mínimo global." },
+    { "numero": 6,  "texto": "Repetir con datos con ruido y comparar con el caso ideal." },
+    { "numero": 7,  "texto": "Analizar el efecto de un valor atípico. Discutir limitaciones de la función cuadrática." },
+    { "numero": 8,  "texto": "Comparar ajuste lineal sobre datos no lineales. Discutir si minimizar J garantiza buen modelo." },
+    { "numero": 9,  "texto": "Obtener expresión teórica de J con 1 y 2 parámetros e interpretar sus mínimos." },
+    { "numero": 10, "texto": "Implementar gradiente descendente para minimizar f(x)=(x-4)². Probar con ≥3 valores de α." },
+    { "numero": 11, "texto": "Gradiente descendente para F(x,y)=sin(½x²-¼y²+3)cos(2x+1-eʸ). Gráfica 3D y contorno." },
+    { "numero": 12, "texto": "Regresión lineal completa + comparación sklearn + empaquetar como librería Python (README, pip)." }
+  ]
+}

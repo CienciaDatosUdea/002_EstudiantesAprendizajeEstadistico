@@ -1,0 +1,18 @@
+{
+  "laboratorio": "Laboratorio_11_desicion_tree.ipynb",
+  "titulo": "Lab 11: Árbol de decisión",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / 7 * 5.0)",
+  "total_puntos": 7,
+  "puntos": [
+    { "numero": 1, "texto": "Importar el dataset iris." },
+    { "numero": 2, "texto": "Generar una intuición respecto al dataset iris (análisis exploratorio)." },
+    { "numero": 3, "texto": "Dividir el dataset usando train_test_split de sklearn." },
+    { "numero": 4, "texto": "Aplicar DecisionTreeClassifier de sklearn." },
+    { "numero": 5, "texto": "Para el clasificador, analizar el gráfico de decisión." },
+    { "numero": 6, "texto": "Características importantes (feature importances)." },
+    { "numero": 7, "texto": "Fronteras de decisión." }
+  ]
+}

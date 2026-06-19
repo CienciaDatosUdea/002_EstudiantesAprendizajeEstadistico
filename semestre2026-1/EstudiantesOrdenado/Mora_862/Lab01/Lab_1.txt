@@ -1,0 +1,8 @@
+Para ejecutar cada una de las partes desde la terminal: 
+
+1. Entrar a la carpeta:
+cd "/Users/fernanda/Desktop/Física Computacional II/Pingüinos"
+
+2. python3 runner.py --file data/penguins.csv --phase observe      
+3. python3 runner.py --file data/penguins.csv --phase describe
+4. python3 runner.py --file data/penguins.csv --phase hypothesize

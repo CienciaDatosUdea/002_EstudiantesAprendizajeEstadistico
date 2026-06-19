@@ -1,0 +1,85 @@
+{
+  "hypotheses": [
+    {
+      "id": "H1",
+      "origin": "ai_observer",
+      "statement": "Flipper length is positively associated with body mass in the observed sample.",
+      "variables": {
+        "x": "flipper_length_mm",
+        "y": "body_mass_g",
+        "group": null
+      },
+      "suggested_tests": [
+        "Pearson correlation",
+        "Spearman correlation"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:correlation_matrices.pearson.flipper_length_mm.body_mass_g",
+        "04_descriptive_stats.json:correlation_matrices.spearman.flipper_length_mm.body_mass_g",
+        "05_visual_registry.json:heatmap_10"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H2",
+      "origin": "ai_observer",
+      "statement": "Body mass distributions differ across species groups.",
+      "variables": {
+        "x": "species",
+        "y": "body_mass_g",
+        "group": "species"
+      },
+      "suggested_tests": [
+        "Levene test",
+        "One-way ANOVA",
+        "Kruskal-Wallis"
+      ],
+      "evidence_refs": [
+        "05_visual_registry.json:box_08",
+        "05_visual_registry.json:hist_07",
+        "04_descriptive_stats.json:categorical_summary.species.top_values"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H3",
+      "origin": "ai_observer",
+      "statement": "Flipper length distributions differ across species groups.",
+      "variables": {
+        "x": "species",
+        "y": "flipper_length_mm",
+        "group": "species"
+      },
+      "suggested_tests": [
+        "Levene test",
+        "One-way ANOVA",
+        "Kruskal-Wallis"
+      ],
+      "evidence_refs": [
+        "05_visual_registry.json:box_09",
+        "05_visual_registry.json:hist_06",
+        "04_descriptive_stats.json:categorical_summary.species.top_values"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H4",
+      "origin": "ai_observer",
+      "statement": "Species composition differs by island category.",
+      "variables": {
+        "x": "island",
+        "y": "species",
+        "group": "island"
+      },
+      "suggested_tests": [
+        "Chi-squared test of independence"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:crosstabs.species_x_island",
+        "05_visual_registry.json:count_01",
+        "05_visual_registry.json:count_02"
+      ],
+      "decision_needed": "human"
+    }
+  ]
+}

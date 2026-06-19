@@ -1,0 +1,15 @@
+{
+  "laboratorio": "Laboratorio_09_nn_zeroV1.ipynb",
+  "titulo": "Lab 9: Red neuronal desde cero",
+  "version": "1.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, puntos_obtenidos / 4 * 5.0)",
+  "total_puntos": 4,
+  "puntos": [
+    { "numero": 1, "texto": "Construir una clase que permita definir una red neuronal con la topología dada." },
+    { "numero": 2, "texto": "Construir una generalización de la red (entrada el valor inicial y resultado el tensor de activaciones)." },
+    { "numero": 3, "texto": "Encontrar la función de coste." },
+    { "numero": 4, "texto": "Construir un código que permita realizar el BackPropagation." }
+  ]
+}

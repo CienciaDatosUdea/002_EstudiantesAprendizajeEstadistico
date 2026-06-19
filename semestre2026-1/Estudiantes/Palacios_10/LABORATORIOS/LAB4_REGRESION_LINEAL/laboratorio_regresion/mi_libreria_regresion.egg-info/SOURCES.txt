@@ -1,0 +1,8 @@
+setup.py
+mi_libreria/__init__.py
+mi_libreria/regresion.py
+mi_libreria_regresion.egg-info/PKG-INFO
+mi_libreria_regresion.egg-info/SOURCES.txt
+mi_libreria_regresion.egg-info/dependency_links.txt
+mi_libreria_regresion.egg-info/requires.txt
+mi_libreria_regresion.egg-info/top_level.txt

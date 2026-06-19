@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reporte Final - Lab_01 Penguins</title>
+  <style>
+    body { font-family: "Segoe UI", Arial, sans-serif; max-width: 980px; margin: 24px auto; padding: 0 16px; line-height: 1.45; color: #1f2937; }
+    h1, h2 { color: #111827; }
+    .muted { color: #4b5563; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+    th, td { border: 1px solid #d1d5db; padding: 8px; text-align: left; }
+    th { background: #f3f4f6; }
+    code { background: #f3f4f6; padding: 1px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Reporte Final - Lab_01 (Penguins)</h1>
+  <p class="muted">Generado desde artifacts del flujo OBSERVE, DESCRIBE y HYPOTHESIZE_AND_CONCLUDE.</p>
+
+  <h2>Resumen del dataset</h2>
+  <ul>
+    <li>Filas: 344</li>
+    <li>Columnas: 7</li>
+    <li>Faltantes globales: 0.79%</li>
+    <li>Duplicados: 0</li>
+  </ul>
+
+  <h2>Hipotesis evaluadas</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Hipotesis</th>
+        <th>Prueba</th>
+        <th>Estadistico</th>
+        <th>p-valor</th>
+        <th>Decision (alpha=0.05)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>H1</td><td>flipper_length_mm se asocia con body_mass_g</td><td>Pearson</td><td>0.8712017673060113</td><td>4.3706809630006207e-107</td><td>rechazar_H0</td></tr>
+      <tr><td>H1</td><td>flipper_length_mm se asocia con body_mass_g</td><td>Spearman</td><td>0.8399741230312999</td><td>2.763218997179663e-92</td><td>rechazar_H0</td></tr>
+      <tr><td>H2</td><td>bill_length_mm difiere entre especies</td><td>ANOVA_one_way</td><td>410.6002550405077</td><td>2.6946137388895146e-91</td><td>rechazar_H0</td></tr>
+      <tr><td>H2</td><td>bill_length_mm difiere entre especies</td><td>Kruskal_Wallis</td><td>244.13671803364164</td><td>9.691371997194331e-54</td><td>rechazar_H0</td></tr>
+      <tr><td>H3</td><td>species se asocia con island</td><td>Chi_square_independence</td><td>299.55032743148195</td><td>1.354573829719252e-63</td><td>rechazar_H0</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Conclusiones principales</h2>
+  <ul>
+    <li>Existe asociacion fuerte entre <code>flipper_length_mm</code> y <code>body_mass_g</code>.</li>
+    <li>Hay evidencia de diferencias de <code>bill_length_mm</code> entre especies.</li>
+    <li>Hay evidencia de asociacion entre <code>species</code> e <code>island</code>.</li>
+    <li>Tamano de efecto para H3: Cramer's V = 0.6598431008795325.</li>
+  </ul>
+
+  <h2>Trazabilidad</h2>
+  <p>Archivos de respaldo usados:</p>
+  <ul>
+    <li>artifacts/06_hypotheses_log__HYPOTHESIZE_AND_CONCLUDE__20260320_154100.json</li>
+    <li>artifacts/07_conclusions__HYPOTHESIZE_AND_CONCLUDE__20260320_154100.json</li>
+    <li>artifacts/08_tests__HYPOTHESIZE_AND_CONCLUDE__20260320_154944.json</li>
+    <li>artifacts/report__HYPOTHESIZE_AND_CONCLUDE__20260320_154100.md</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "species": "Adelie",
+    "Biscoe": 44,
+    "Dream": 56,
+    "Torgersen": 52
+  },
+  {
+    "species": "Chinstrap",
+    "Biscoe": 0,
+    "Dream": 68,
+    "Torgersen": 0
+  },
+  {
+    "species": "Gentoo",
+    "Biscoe": 124,
+    "Dream": 0,
+    "Torgersen": 0
+  }
+]

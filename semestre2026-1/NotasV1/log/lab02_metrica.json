@@ -1,0 +1,48 @@
+{
+  "laboratorio": "Laboratorio_02_pandas_v3.ipynb",
+  "titulo": "Lab 2: Estadística Descriptiva Básica 2",
+  "version": "2.0",
+  "fecha": "2026-06-17",
+  "escala": { "min": 0.0, "max": 5.0, "aprobacion": 3.0 },
+  "formula_nota": "min(5.0, (s1_hits + s2_hits) / 23 * 5.0)",
+  "total_puntos": 23,
+  "secciones": [
+    {
+      "id": "S1",
+      "nombre": "Series de tiempo (EUR/USD)",
+      "keywords": ["eurusd", "eur/usd", "diffprice", "series de tiempo", "fitter", "grouper", "15d"],
+      "puntos": [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    },
+    {
+      "id": "S2",
+      "nombre": "Análisis con pandas (Breast Cancer Wisconsin)",
+      "keywords": ["breast", "radiusmean", "diagnosisnumeric", "diagnosis", "violín", "violin", "benigno", "maligno"],
+      "puntos": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+    }
+  ],
+  "puntos": [
+    { "id": "S1_P1",  "seccion": "S1", "numero": 1,  "texto": "Leer el dataset EUR/USD desde GitHub." },
+    { "id": "S1_P2",  "seccion": "S1", "numero": 2,  "texto": "Definir como índice la columna time." },
+    { "id": "S1_P3",  "seccion": "S1", "numero": 3,  "texto": "Obtener información del dataframe." },
+    { "id": "S1_P4",  "seccion": "S1", "numero": 4,  "texto": "Determinar null/NaN en el dataframe." },
+    { "id": "S1_P5",  "seccion": "S1", "numero": 5,  "texto": "Usar PascalCase y trabajar solo con la columna Close." },
+    { "id": "S1_P6",  "seccion": "S1", "numero": 6,  "texto": "Calcular DiffPrice, histograma y ajuste de distribución con fitter." },
+    { "id": "S1_P7",  "seccion": "S1", "numero": 7,  "texto": "Seleccionar solo datos del 2023." },
+    { "id": "S1_P8",  "seccion": "S1", "numero": 8,  "texto": "groupby con periodicidad 15D, 1 semana y 1 mes." },
+    { "id": "S1_P9",  "seccion": "S1", "numero": 9,  "texto": "Histograma por mes (2023) usando groupby." },
+    { "id": "S2_P1",  "seccion": "S2", "numero": 1,  "texto": "Leer datos Breast Cancer Wisconsin desde web." },
+    { "id": "S2_P2",  "seccion": "S2", "numero": 2,  "texto": "Renombrar columnas en formato PascalCase." },
+    { "id": "S2_P3",  "seccion": "S2", "numero": 3,  "texto": "head(), tail(), describe(), info() sobre el DataFrame." },
+    { "id": "S2_P4",  "seccion": "S2", "numero": 4,  "texto": "Contabilizar valores nulos y proponer estrategia de reemplazo." },
+    { "id": "S2_P5",  "seccion": "S2", "numero": 5,  "texto": "Identificar valores únicos en columna target (B y M) con unique()." },
+    { "id": "S2_P6",  "seccion": "S2", "numero": 6,  "texto": "Conteo de casos B y M con seaborn countplot()." },
+    { "id": "S2_P7",  "seccion": "S2", "numero": 7,  "texto": "Agregar columna DiagnosisNumeric (B=0, M=1)." },
+    { "id": "S2_P8",  "seccion": "S2", "numero": 8,  "texto": "Normalizar columnas con (x - mean) / std." },
+    { "id": "S2_P9",  "seccion": "S2", "numero": 9,  "texto": "Agrupar características y calcular promedios con regex o startswith." },
+    { "id": "S2_P10", "seccion": "S2", "numero": 10, "texto": "Histograma de RadiusMean separado por diagnóstico (naranja/azul)." },
+    { "id": "S2_P11", "seccion": "S2", "numero": 11, "texto": "Gráficos de violín para múltiples características." },
+    { "id": "S2_P12", "seccion": "S2", "numero": 12, "texto": "Detectar y eliminar outliers en RadiusMean (IQR o Z-score)." },
+    { "id": "S2_P13", "seccion": "S2", "numero": 13, "texto": "Matriz de correlación con corr() y heatmap de seaborn." },
+    { "id": "S2_P14", "seccion": "S2", "numero": 14, "texto": "Otros gráficos para entender mejor los datos." }
+  ]
+}

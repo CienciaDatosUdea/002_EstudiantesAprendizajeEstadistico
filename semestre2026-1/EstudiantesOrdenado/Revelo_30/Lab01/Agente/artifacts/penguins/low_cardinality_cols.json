@@ -1,0 +1,11 @@
+[
+  {
+    "low_cardinality_columns": "species"
+  },
+  {
+    "low_cardinality_columns": "island"
+  },
+  {
+    "low_cardinality_columns": "sex"
+  }
+]

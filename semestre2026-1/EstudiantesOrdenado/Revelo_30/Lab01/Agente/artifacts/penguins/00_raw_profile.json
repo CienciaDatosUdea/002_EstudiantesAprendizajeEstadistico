@@ -1,0 +1,45 @@
+{
+  "dataset_name": "penguins",
+  "rows_cols": {
+    "num_rows": 344,
+    "num_cols": 7
+  },
+  "schema": {
+    "numeric_columns": [
+      "bill_length_mm",
+      "bill_depth_mm",
+      "flipper_length_mm",
+      "body_mass_g"
+    ],
+    "categorical_columns": [
+      "species",
+      "island",
+      "sex"
+    ]
+  },
+  "missing_values": {
+    "species": 0,
+    "island": 0,
+    "bill_length_mm": 2,
+    "bill_depth_mm": 2,
+    "flipper_length_mm": 2,
+    "body_mass_g": 2,
+    "sex": 11
+  },
+  "duplicated_rows": {
+    "duplicated_rows": 0
+  },
+  "low_cardinality_columns": [
+    "species",
+    "island",
+    "sex"
+  ],
+  "evidence_refs": [
+    "artifacts/rows_cols.json",
+    "artifacts/numeric_cols.json",
+    "artifacts/categorical_cols.json",
+    "artifacts/null_counts.json",
+    "artifacts/duplicated_rows.json",
+    "artifacts/low_cardinality_cols.json"
+  ]
+}

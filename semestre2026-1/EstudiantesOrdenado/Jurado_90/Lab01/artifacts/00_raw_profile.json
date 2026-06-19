@@ -1,0 +1,139 @@
+{
+  "timestamp": "2026-05-02T18:35:19.870620",
+  "profile": {
+    "n_rows": 344,
+    "n_cols": 7,
+    "columns": [
+      "species",
+      "island",
+      "bill_length_mm",
+      "bill_depth_mm",
+      "flipper_length_mm",
+      "body_mass_g",
+      "sex"
+    ],
+    "dtypes": {
+      "species": "str",
+      "island": "str",
+      "bill_length_mm": "float64",
+      "bill_depth_mm": "float64",
+      "flipper_length_mm": "float64",
+      "body_mass_g": "float64",
+      "sex": "str"
+    },
+    "memory_bytes": 67547
+  },
+  "schema": {
+    "species": {
+      "dtype": "str",
+      "role": "categorical_low_cardinality",
+      "n_unique": 3,
+      "sample_values": [
+        "Adelie",
+        "Chinstrap",
+        "Gentoo"
+      ]
+    },
+    "island": {
+      "dtype": "str",
+      "role": "categorical_low_cardinality",
+      "n_unique": 3,
+      "sample_values": [
+        "Torgersen",
+        "Biscoe",
+        "Dream"
+      ]
+    },
+    "bill_length_mm": {
+      "dtype": "float64",
+      "role": "numeric",
+      "n_unique": 164,
+      "sample_values": [
+        39.1,
+        39.5,
+        40.3,
+        36.7,
+        39.3
+      ]
+    },
+    "bill_depth_mm": {
+      "dtype": "float64",
+      "role": "numeric",
+      "n_unique": 80,
+      "sample_values": [
+        18.7,
+        17.4,
+        18.0,
+        19.3,
+        20.6
+      ]
+    },
+    "flipper_length_mm": {
+      "dtype": "float64",
+      "role": "numeric",
+      "n_unique": 55,
+      "sample_values": [
+        181.0,
+        186.0,
+        195.0,
+        193.0,
+        190.0
+      ]
+    },
+    "body_mass_g": {
+      "dtype": "float64",
+      "role": "numeric",
+      "n_unique": 94,
+      "sample_values": [
+        3750.0,
+        3800.0,
+        3250.0,
+        3450.0,
+        3650.0
+      ]
+    },
+    "sex": {
+      "dtype": "str",
+      "role": "categorical_low_cardinality",
+      "n_unique": 2,
+      "sample_values": [
+        "Male",
+        "Female"
+      ]
+    }
+  },
+  "missing": {
+    "species": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    "island": {
+      "n_missing": 0,
+      "pct_missing": 0.0
+    },
+    "bill_length_mm": {
+      "n_missing": 2,
+      "pct_missing": 0.58
+    },
+    "bill_depth_mm": {
+      "n_missing": 2,
+      "pct_missing": 0.58
+    },
+    "flipper_length_mm": {
+      "n_missing": 2,
+      "pct_missing": 0.58
+    },
+    "body_mass_g": {
+      "n_missing": 2,
+      "pct_missing": 0.58
+    },
+    "sex": {
+      "n_missing": 11,
+      "pct_missing": 3.2
+    }
+  },
+  "duplicates": {
+    "n_duplicates": 0,
+    "pct_duplicates": 0.0
+  }
+}

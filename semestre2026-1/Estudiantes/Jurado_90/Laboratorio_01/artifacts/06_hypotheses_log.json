@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-05-02T18:35:40.095699",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "origin": "ai_observer",
+      "statement": "flipper_length_mm se asocia positivamente con body_mass_g",
+      "variables": {
+        "x": "flipper_length_mm",
+        "y": "body_mass_g"
+      },
+      "suggested_tests": [
+        "pearson_correlation",
+        "spearman_correlation"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:correlations.pearson",
+        "05_visual_registry.json:scatter_body_mass_g_vs_flipper_length_mm"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H2",
+      "origin": "ai_observer",
+      "statement": "bill_length_mm difiere significativamente entre species",
+      "variables": {
+        "x": "bill_length_mm",
+        "group": "species"
+      },
+      "suggested_tests": [
+        "kruskal_wallis",
+        "one_way_anova"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:numeric_summary.bill_length_mm",
+        "05_visual_registry.json:box_bill_length_mm_by_species"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H3",
+      "origin": "ai_observer",
+      "statement": "La distribución de species se asocia con island",
+      "variables": {
+        "x": "species",
+        "y": "island"
+      },
+      "suggested_tests": [
+        "chi_squared"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:crosstabs.species_x_island",
+        "05_visual_registry.json:count_island_by_species"
+      ],
+      "decision_needed": "human"
+    },
+    {
+      "id": "H4",
+      "origin": "ai_observer",
+      "statement": "body_mass_g difiere entre sexos (Male vs Female)",
+      "variables": {
+        "x": "body_mass_g",
+        "group": "sex"
+      },
+      "suggested_tests": [
+        "mann_whitney_u",
+        "t_test_independent"
+      ],
+      "evidence_refs": [
+        "04_descriptive_stats.json:numeric_summary.body_mass_g",
+        "04_descriptive_stats.json:categorical_summary.sex"
+      ],
+      "decision_needed": "human"
+    }
+  ]
+}

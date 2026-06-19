@@ -1,0 +1,98 @@
+{
+  "profile": {
+    "shape": [
+      344,
+      7
+    ],
+    "columns": [
+      "species",
+      "island",
+      "bill_length_mm",
+      "bill_depth_mm",
+      "flipper_length_mm",
+      "body_mass_g",
+      "sex"
+    ],
+    "dtypes": {
+      "species": "object",
+      "island": "object",
+      "bill_length_mm": "float64",
+      "bill_depth_mm": "float64",
+      "flipper_length_mm": "float64",
+      "body_mass_g": "float64",
+      "sex": "object"
+    },
+    "head": {
+      "species": [
+        "Adelie",
+        "Adelie",
+        "Adelie",
+        "Adelie",
+        "Adelie"
+      ],
+      "island": [
+        "Torgersen",
+        "Torgersen",
+        "Torgersen",
+        "Torgersen",
+        "Torgersen"
+      ],
+      "bill_length_mm": [
+        39.1,
+        39.5,
+        40.3,
+        NaN,
+        36.7
+      ],
+      "bill_depth_mm": [
+        18.7,
+        17.4,
+        18.0,
+        NaN,
+        19.3
+      ],
+      "flipper_length_mm": [
+        181.0,
+        186.0,
+        195.0,
+        NaN,
+        193.0
+      ],
+      "body_mass_g": [
+        3750.0,
+        3800.0,
+        3250.0,
+        NaN,
+        3450.0
+      ],
+      "sex": [
+        "Male",
+        "Female",
+        "Female",
+        NaN,
+        "Female"
+      ]
+    }
+  },
+  "schema": {
+    "species": "categorical",
+    "island": "categorical",
+    "bill_length_mm": "numeric",
+    "bill_depth_mm": "numeric",
+    "flipper_length_mm": "numeric",
+    "body_mass_g": "numeric",
+    "sex": "categorical"
+  },
+  "missing": {
+    "species": 0,
+    "island": 0,
+    "bill_length_mm": 2,
+    "bill_depth_mm": 2,
+    "flipper_length_mm": 2,
+    "body_mass_g": 2,
+    "sex": 11
+  },
+  "duplicates": {
+    "n_duplicates": 0
+  }
+}

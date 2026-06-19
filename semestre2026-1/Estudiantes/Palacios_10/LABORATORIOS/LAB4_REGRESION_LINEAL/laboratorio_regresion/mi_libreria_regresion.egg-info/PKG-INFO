@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: mi_libreria_regresion
+Version: 0.1
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Dynamic: requires-dist

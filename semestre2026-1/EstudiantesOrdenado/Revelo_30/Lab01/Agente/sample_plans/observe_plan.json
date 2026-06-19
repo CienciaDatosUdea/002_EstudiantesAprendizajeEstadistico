@@ -1,0 +1,48 @@
+{
+  "phase": "OBSERVE",
+  "phase_goal": "Build the raw dataset profile required for the observatory.",
+  "evidence_status": {
+    "sufficient_for_current_phase": false,
+    "missing_requirements": [
+      "dataset dimensions",
+      "schema",
+      "missing values",
+      "duplicated rows",
+      "low-cardinality columns"
+    ]
+  },
+  "actions_to_run": [
+    {
+      "op": "profile_dataset",
+      "params": {}
+    },
+    {
+      "op": "infer_schema",
+      "params": {}
+    },
+    {
+      "op": "missing_report",
+      "params": {}
+    },
+    {
+      "op": "duplicates_report",
+      "params": {}
+    },
+    {
+      "op": "low_cardinality_report",
+      "params": {}
+    }
+  ],
+  "artifacts_to_write": {
+    "artifacts/00_raw_profile.json": {},
+    "artifacts/04_descriptive_stats.json": {},
+    "artifacts/05_visual_registry.json": {},
+    "artifacts/06_hypotheses_log.json": {},
+    "artifacts/07_conclusions.json": {},
+    "artifacts/08_tests.json": {},
+    "artifacts/09_questions.json": {},
+    "artifacts/report.md": ""
+  },
+  "questions_for_human": [],
+  "ready_for_next_phase": false
+}

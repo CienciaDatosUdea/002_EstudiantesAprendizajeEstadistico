@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-05-02T18:35:40.144996",
+  "questions": [
+    "¿Cómo deben tratarse los valores faltantes en sex? ¿Eliminar filas o imputar?",
+    "¿Se debería controlar el análisis por species al comparar sexos?",
+    "¿Existe un factor temporal (año) que pueda afectar las mediciones?"
+  ]
+}
