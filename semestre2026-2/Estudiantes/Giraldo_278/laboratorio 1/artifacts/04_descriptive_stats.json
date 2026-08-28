@@ -1,0 +1,235 @@
+{
+  "numericas": {
+    "describe": {
+      "bill_length_mm": {
+        "count": 342.0,
+        "mean": 43.922,
+        "std": 5.46,
+        "min": 32.1,
+        "25%": 39.225,
+        "50%": 44.45,
+        "75%": 48.5,
+        "max": 59.6
+      },
+      "bill_depth_mm": {
+        "count": 342.0,
+        "mean": 17.151,
+        "std": 1.975,
+        "min": 13.1,
+        "25%": 15.6,
+        "50%": 17.3,
+        "75%": 18.7,
+        "max": 21.5
+      },
+      "flipper_length_mm": {
+        "count": 342.0,
+        "mean": 200.915,
+        "std": 14.062,
+        "min": 172.0,
+        "25%": 190.0,
+        "50%": 197.0,
+        "75%": 213.0,
+        "max": 231.0
+      },
+      "body_mass_g": {
+        "count": 342.0,
+        "mean": 4201.754,
+        "std": 801.955,
+        "min": 2700.0,
+        "25%": 3550.0,
+        "50%": 4050.0,
+        "75%": 4750.0,
+        "max": 6300.0
+      }
+    },
+    "missing": {
+      "bill_length_mm": 2,
+      "bill_depth_mm": 2,
+      "flipper_length_mm": 2,
+      "body_mass_g": 2
+    },
+    "pearson": {
+      "bill_length_mm": {
+        "bill_length_mm": 1.0,
+        "bill_depth_mm": -0.235,
+        "flipper_length_mm": 0.656,
+        "body_mass_g": 0.595
+      },
+      "bill_depth_mm": {
+        "bill_length_mm": -0.235,
+        "bill_depth_mm": 1.0,
+        "flipper_length_mm": -0.584,
+        "body_mass_g": -0.472
+      },
+      "flipper_length_mm": {
+        "bill_length_mm": 0.656,
+        "bill_depth_mm": -0.584,
+        "flipper_length_mm": 1.0,
+        "body_mass_g": 0.871
+      },
+      "body_mass_g": {
+        "bill_length_mm": 0.595,
+        "bill_depth_mm": -0.472,
+        "flipper_length_mm": 0.871,
+        "body_mass_g": 1.0
+      }
+    },
+    "spearman": {
+      "bill_length_mm": {
+        "bill_length_mm": 1.0,
+        "bill_depth_mm": -0.222,
+        "flipper_length_mm": 0.673,
+        "body_mass_g": 0.584
+      },
+      "bill_depth_mm": {
+        "bill_length_mm": -0.222,
+        "bill_depth_mm": 1.0,
+        "flipper_length_mm": -0.523,
+        "body_mass_g": -0.432
+      },
+      "flipper_length_mm": {
+        "bill_length_mm": 0.673,
+        "bill_depth_mm": -0.523,
+        "flipper_length_mm": 1.0,
+        "body_mass_g": 0.84
+      },
+      "body_mass_g": {
+        "bill_length_mm": 0.584,
+        "bill_depth_mm": -0.432,
+        "flipper_length_mm": 0.84,
+        "body_mass_g": 1.0
+      }
+    }
+  },
+  "categoricas": {
+    "species": {
+      "conteos": {
+        "Adelie": 152,
+        "Gentoo": 124,
+        "Chinstrap": 68
+      },
+      "porcentajes": {
+        "Adelie": 44.19,
+        "Gentoo": 36.05,
+        "Chinstrap": 19.77
+      },
+      "nulos": 0
+    },
+    "island": {
+      "conteos": {
+        "Biscoe": 168,
+        "Dream": 124,
+        "Torgersen": 52
+      },
+      "porcentajes": {
+        "Biscoe": 48.84,
+        "Dream": 36.05,
+        "Torgersen": 15.12
+      },
+      "nulos": 0
+    },
+    "sex": {
+      "conteos": {
+        "MALE": 168,
+        "FEMALE": 165,
+        "NaN": 11
+      },
+      "porcentajes": {
+        "MALE": 48.84,
+        "FEMALE": 47.97,
+        "NaN": 3.2
+      },
+      "nulos": 11
+    }
+  },
+  "cruzadas": {
+    "species_x_island": {
+      "conteos": {
+        "Biscoe": {
+          "Adelie": 44,
+          "Chinstrap": 0,
+          "Gentoo": 124
+        },
+        "Dream": {
+          "Adelie": 56,
+          "Chinstrap": 68,
+          "Gentoo": 0
+        },
+        "Torgersen": {
+          "Adelie": 52,
+          "Chinstrap": 0,
+          "Gentoo": 0
+        }
+      },
+      "porcentajes_fila": {
+        "Biscoe": {
+          "Adelie": 0.289,
+          "Chinstrap": 0.0,
+          "Gentoo": 1.0
+        },
+        "Dream": {
+          "Adelie": 0.368,
+          "Chinstrap": 1.0,
+          "Gentoo": 0.0
+        },
+        "Torgersen": {
+          "Adelie": 0.342,
+          "Chinstrap": 0.0,
+          "Gentoo": 0.0
+        }
+      }
+    },
+    "species_x_sex": {
+      "conteos": {
+        "FEMALE": {
+          "Adelie": 73,
+          "Chinstrap": 34,
+          "Gentoo": 58
+        },
+        "MALE": {
+          "Adelie": 73,
+          "Chinstrap": 34,
+          "Gentoo": 61
+        }
+      },
+      "porcentajes_fila": {
+        "FEMALE": {
+          "Adelie": 0.5,
+          "Chinstrap": 0.5,
+          "Gentoo": 0.487
+        },
+        "MALE": {
+          "Adelie": 0.5,
+          "Chinstrap": 0.5,
+          "Gentoo": 0.513
+        }
+      }
+    },
+    "island_x_sex": {
+      "conteos": {
+        "FEMALE": {
+          "Biscoe": 80,
+          "Dream": 61,
+          "Torgersen": 24
+        },
+        "MALE": {
+          "Biscoe": 83,
+          "Dream": 62,
+          "Torgersen": 23
+        }
+      },
+      "porcentajes_fila": {
+        "FEMALE": {
+          "Biscoe": 0.491,
+          "Dream": 0.496,
+          "Torgersen": 0.511
+        },
+        "MALE": {
+          "Biscoe": 0.509,
+          "Dream": 0.504,
+          "Torgersen": 0.489
+        }
+      }
+    }
+  }
+}

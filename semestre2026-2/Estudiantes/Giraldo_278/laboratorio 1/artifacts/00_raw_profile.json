@@ -1,0 +1,41 @@
+{
+  "n_filas": 344,
+  "n_columnas": 7,
+  "columnas": [
+    "species",
+    "island",
+    "bill_length_mm",
+    "bill_depth_mm",
+    "flipper_length_mm",
+    "body_mass_g",
+    "sex"
+  ],
+  "dtypes": {
+    "species": "object",
+    "island": "object",
+    "bill_length_mm": "float64",
+    "bill_depth_mm": "float64",
+    "flipper_length_mm": "float64",
+    "body_mass_g": "float64",
+    "sex": "object"
+  },
+  "nulos_por_columna": {
+    "species": 0,
+    "island": 0,
+    "bill_length_mm": 2,
+    "bill_depth_mm": 2,
+    "flipper_length_mm": 2,
+    "body_mass_g": 2,
+    "sex": 11
+  },
+  "duplicados": 0,
+  "cardinalidad": {
+    "species": 3,
+    "island": 3,
+    "bill_length_mm": 164,
+    "bill_depth_mm": 80,
+    "flipper_length_mm": 55,
+    "body_mass_g": 94,
+    "sex": 2
+  }
+}

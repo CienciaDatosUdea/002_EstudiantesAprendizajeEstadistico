@@ -1,0 +1,13 @@
+{
+  "species_bar": "05_species_bar.png",
+  "island_bar": "05_island_bar.png",
+  "sex_bar": "05_sex_bar.png",
+  "bill_length_mm_hist": "05_bill_length_mm_hist.png",
+  "bill_depth_mm_hist": "05_bill_depth_mm_hist.png",
+  "flipper_length_mm_hist": "05_flipper_length_mm_hist.png",
+  "body_mass_g_hist": "05_body_mass_g_hist.png",
+  "body_mass_g_by_species_boxplot": "05_body_mass_g_by_species_boxplot.png",
+  "bill_length_mm_by_island_boxplot": "05_bill_length_mm_by_island_boxplot.png",
+  "bill_length_mm_vs_flipper_length_mm_by_species_scatter": "05_bill_length_mm_vs_flipper_length_mm_by_species_scatter.png",
+  "numeric_correlation_heatmap": "05_numeric_correlation_heatmap.png"
+}
