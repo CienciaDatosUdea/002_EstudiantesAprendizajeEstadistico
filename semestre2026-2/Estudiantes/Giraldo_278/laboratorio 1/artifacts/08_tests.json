@@ -1,0 +1,24 @@
+[
+  {
+    "tipo": "anova",
+    "col_grupo": "species",
+    "col_valor": "body_mass_g",
+    "f": 343.626,
+    "p_valor": 2.8923681333773435e-82
+  },
+  {
+    "tipo": "chi2",
+    "col1": "species",
+    "col2": "island",
+    "chi2": 299.55,
+    "p_valor": 1.354573829719252e-63,
+    "dof": 4
+  },
+  {
+    "tipo": "pearson",
+    "col1": "bill_length_mm",
+    "col2": "flipper_length_mm",
+    "r": 0.656,
+    "p_valor": 1.7439736176205688e-43
+  }
+]
