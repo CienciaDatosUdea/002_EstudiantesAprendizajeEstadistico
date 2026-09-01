@@ -1,0 +1,20 @@
+# Entorno virtual
+venv/
+.venv/
+
+# Archivos temporales
+temp.md
+
+# Variables de entorno / secretos
+.env
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

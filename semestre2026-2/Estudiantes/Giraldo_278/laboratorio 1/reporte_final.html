@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reporte final del laboratorio</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+      margin: 0;
+      padding: 32px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+      padding: 32px;
+    }
+    h1, h2, h3 {
+      color: #0f172a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+    }
+    th, td {
+      border: 1px solid #dbe2ea;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background: #eef4ff;
+    }
+    .stats {
+      margin-top: 14px;
+    }
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 16px 0;
+    }
+    .ok {
+      color: #0f766e;
+      font-weight: bold;
+    }
+    .warn {
+      color: #b45309;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      border: 1px solid #dfe7f1;
+      border-radius: 8px;
+      margin: 12px 0;
+      background: white;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Reporte final del laboratorio</h1>
+
+    <h2>1. Objetivo</h2>
+    <p>
+      Analizar la estructura, la distribución y las relaciones entre variables del dataset de pingüinos,
+      con base en los artifacts generados por el runner y la evidencia estadística asociada.
+    </p>
+
+    <h2>2. Perfil del dataset</h2>
+    <div class="card">
+      <p><strong>Fuente:</strong> artifact <code>00_raw_profile.json</code></p>
+      <ul>
+        <li>344 filas</li>
+        <li>7 columnas</li>
+        <li>0 duplicados</li>
+        <li>11 valores faltantes en <code>sex</code></li>
+        <li>2 valores faltantes en <code>bill_length_mm</code>, <code>bill_depth_mm</code>, <code>flipper_length_mm</code> y <code>body_mass_g</code></li>
+      </ul>
+    </div>
+
+    <h2>3. Resumen descriptivo</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Variable</th>
+          <th>Media</th>
+          <th>Desv. Est.</th>
+          <th>Mín.</th>
+          <th>Máx.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>bill_length_mm</td>
+          <td>43.922</td>
+          <td>5.460</td>
+          <td>32.1</td>
+          <td>59.6</td>
+        </tr>
+        <tr>
+          <td>bill_depth_mm</td>
+          <td>17.151</td>
+          <td>1.975</td>
+          <td>13.1</td>
+          <td>21.5</td>
+        </tr>
+        <tr>
+          <td>flipper_length_mm</td>
+          <td>200.915</td>
+          <td>14.062</td>
+          <td>172.0</td>
+          <td>231.0</td>
+        </tr>
+        <tr>
+          <td>body_mass_g</td>
+          <td>4201.754</td>
+          <td>801.955</td>
+          <td>2700.0</td>
+          <td>6300.0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Distribución de categorías</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>species</h4>
+        <ul>
+          <li>Adelie: 152 (44.19%)</li>
+          <li>Gentoo: 124 (36.05%)</li>
+          <li>Chinstrap: 68 (19.77%)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>island</h4>
+        <ul>
+          <li>Biscoe: 168 (48.84%)</li>
+          <li>Dream: 124 (36.05%)</li>
+          <li>Torgersen: 52 (15.12%)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>sex</h4>
+        <ul>
+          <li>MALE: 168 (48.84%)</li>
+          <li>FEMALE: 165 (47.97%)</li>
+          <li>Missing: 11 (3.20%)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>4. Correlaciones principales</h2>
+    <div class="card">
+      <p>La matriz de correlación Pearson muestra que la asociación más fuerte es entre <code>flipper_length_mm</code> y <code>body_mass_g</code> (r = 0.871).</p>
+      <p>También se observa una correlación positiva importante entre <code>bill_length_mm</code> y <code>flipper_length_mm</code> (r = 0.656).</p>
+      <p>La relación entre <code>bill_length_mm</code> y <code>body_mass_g</code> fue de r = 0.595.</p>
+    </div>
+
+    <h2>5. Patrones visuales</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>Boxplot de masa corporal por especie</h4>
+        <img src="artifacts/05_body_mass_g_by_species_boxplot.png" alt="Boxplot de body_mass_g por species" />
+      </div>
+      <div class="card">
+        <h4>Boxplot de longitud del pico por isla</h4>
+        <img src="artifacts/05_bill_length_mm_by_island_boxplot.png" alt="Boxplot de bill_length_mm por island" />
+      </div>
+      <div class="card">
+        <h4>Scatter de bill_length_mm vs flipper_length_mm</h4>
+        <img src="artifacts/05_bill_length_mm_vs_flipper_length_mm_by_species_scatter.png" alt="Scatter bill_length_mm vs flipper_length_mm" />
+      </div>
+      <div class="card">
+        <h4>Heatmap de correlación</h4>
+        <img src="artifacts/05_numeric_correlation_heatmap.png" alt="Heatmap de correlación" />
+      </div>
+    </div>
+
+    <h2>6. Hipótesis y pruebas</h2>
+
+    <div class="card">
+      <h3>Hipótesis 1: diferencias de masa corporal por especie</h3>
+      <p><strong>Prueba:</strong> ANOVA de una vía</p>
+      <p><strong>Resultado:</strong> F = 343.626, p = 2.89e-82</p>
+      <p class="ok">Evidencia: sí, la respalda.</p>
+    </div>
+
+    <div class="card">
+      <h3>Hipótesis 2: asociación entre especie e isla</h3>
+      <p><strong>Prueba:</strong> chi-cuadrado de independencia</p>
+      <p><strong>Resultado:</strong> chi2 = 299.55, dof = 4, p = 1.35e-63</p>
+      <p class="ok">Evidencia: sí, la respalda.</p>
+    </div>
+
+    <div class="card">
+      <h3>Hipótesis 3: asociación entre bill_length_mm y flipper_length_mm</h3>
+      <p><strong>Prueba:</strong> correlación de Pearson</p>
+      <p><strong>Resultado:</strong> r = 0.656, p = 1.74e-43</p>
+      <p class="ok">Evidencia: sí, la respalda.</p>
+    </div>
+
+    <h2>7. Conclusión</h2>
+    <p>
+      El dataset presenta diferencias morfológicas claras por especie, una asociación notable entre especie e isla,
+      y una correlación positiva significativa entre la longitud del pico y la longitud de la aleta.
+      Estas asociaciones están respaldadas por evidencia estadística del archivo <code>08_tests.json</code>.
+      Sin embargo, no puede afirmarse causalidad: solo puede sostenerse que existen relaciones estadísticamente
+      relevantes entre las variables examinadas.
+    </p>
+
+    <h2>8. Preguntas para un investigador humano</h2>
+    <ul>
+      <li>¿La asociación entre especie e isla refleja una distribución ecológica real o un sesgo de muestreo?</li>
+      <li>¿La diferencia en masa corporal podría explicarse por factores no observados como dieta, edad o condición fisiológica?</li>
+      <li>¿La correlación entre longitud del pico y longitud de la aleta es consistente en todas las especies?</li>
+      <li>¿Debe considerarse la variable sex como factor de confusión en comparaciones morfológicas?</li>
+      <li>¿Conviene controlar la isla al comparar especies para separar efectos geográficos de diferencias biológicas?</li>
+    </ul>
+
+    <h2>9. Comparación entre enfoque clásico (notebook manual) y enfoque con agentes</h2>
+    <p>
+      El enfoque clásico en un notebook manual suele ser más lineal y explícito: el analista escribe el código paso a paso,
+      decide qué explorar, ejecuta celdas en orden y valida cada resultado manualmente antes de avanzar. Eso da mucha
+      transparencia sobre qué se hizo en cada bloque, pero también exige más disciplina y vigilancia humana: si se cambia
+      un filtro, una limpieza o una hipótesis, es fácil perder trazabilidad y propagar errores sin darse cuenta. En términos
+      de reproducibilidad, un notebook manual puede ser muy reproducible cuando está bien documentado y se usa un entorno fijo,
+      pero depende mucho de la calidad del proceso manual y de la disciplina del usuario para mantener un registro claro de las decisiones.
+    </p>
+    <p>
+      El enfoque con agentes, como el que usamos en este laboratorio, cambia el flujo porque la lógica de análisis se articula
+      como una conversación en fases: OBSERVE, DESCRIBE y HYPOTHESIZE_AND_CONCLUDE. El agente propone qué hacer, el runner
+      ejecuta la operación y se generan artifacts (JSON y PNG) que sirven como evidencia formal. Esto aporta ventajas importantes:
+      aumenta la estructura del análisis, reduce la carga cognitiva del analista y mejora la trazabilidad porque cada etapa queda
+      reflejada en archivos específicos. También ayuda a mantener un criterio más homogéneo y a documentar mejor las decisiones.
+      En términos de control de errores, el agente puede ser útil para evitar sesgos de análisis y para reforzar la regla de que
+      las conclusiones deben basarse en evidencia disponible, pero también tiene una limitación importante: depende de la calidad
+      del prompt, del alcance de las herramientas y de la supervisión humana para evitar interpretaciones demasiado amplias o ejecución no deseada.
+    </p>
+    <p>
+      En resumen, el enfoque clásico ofrece más control directo y más libertad analítica, pero requiere mayor esfuerzo manual y más riesgo de errores de procedimiento.
+      El enfoque con agentes ofrece mayor organización, trazabilidad y automatización del flujo de análisis, pero exige una supervisión explícita para garantizar reproducibilidad,
+      validación y que la evidencia siga siendo rigurosamente la que aparece en los artifacts. En otras palabras, el notebook manual favorece la ejecución detallada y personalizada;
+      el enfoque con agentes favorece la estructura y la documentación, aunque con menos control operativo fino por parte del analista.
+    </p>
+
+    <h2>10. Archivos entregados</h2>
+    <ul>
+      <li>reporte_final.md</li>
+      <li>reporte_final.html</li>
+    </ul>
+  </div>
+</body>
+</html>
