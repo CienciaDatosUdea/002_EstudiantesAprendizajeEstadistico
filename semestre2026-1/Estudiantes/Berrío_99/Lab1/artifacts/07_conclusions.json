@@ -1,0 +1,15 @@
+{
+  "capa_a": "Hallazgos descriptivos: 344 ping\u00fcinos, 3 especies, sin duplicados. Gentoo 35% m\u00e1s pesada que Adelie.",
+  "capa_b": "Patrones visuales: Correlaci\u00f3n flipper-masa=0.87, Chinstrap en Dream, Gentoo en Biscoe, bimodalidad en bill_depth.",
+  "capa_c": "Pr\u00f3ximas hip\u00f3tesis: dimorfismo sexual, interacci\u00f3n species\u00d7sex, alometr\u00eda diferencial.",
+  "fortalezas": [
+    "Hip\u00f3tesis sustentadas",
+    "M\u00e9todos concordantes",
+    "Libre de causalidad"
+  ],
+  "limitaciones": [
+    "17 faltantes",
+    "11 sexos indeterminados",
+    "Desbalance muestral"
+  ]
+}
