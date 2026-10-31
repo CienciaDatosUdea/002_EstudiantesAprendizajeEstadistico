@@ -1,0 +1,9 @@
+README.md
+setup.py
+linreg_model/__init__.py
+linreg_model/regresion.py
+linreg_model.egg-info/PKG-INFO
+linreg_model.egg-info/SOURCES.txt
+linreg_model.egg-info/dependency_links.txt
+linreg_model.egg-info/requires.txt
+linreg_model.egg-info/top_level.txt
