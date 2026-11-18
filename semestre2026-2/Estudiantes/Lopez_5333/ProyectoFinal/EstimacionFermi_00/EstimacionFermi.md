@@ -54,6 +54,8 @@ $$
 
 Dado lo anterior establezcamos el siguiente caso: 
 
+---
+
 - $C_i = 2$ colectores interiores, $C_e = 3$ colectores exteriores (5 puntos en total).
 - $d_1 = 3\text{ horas}$ (aprox. 6:00 p. m. – 9:00 p. m.), $d_2 = 2\text{ horas}$ (aprox. 9:00 p. m. – 11:00 p. m.), para $T_{eff} = 5\text{ horas/noche}$.
 - $p_a = 0.65$ (65 % de las capturas corresponden a *Anopheles*).
@@ -63,6 +65,7 @@ Cálculo por noche:
 - Interior: $2 \cdot (6 \cdot 3 + 4 \cdot 2) = 2 \cdot 26 = 52$
 - Exterior: $3 \cdot (7 \cdot 3 + 3 \cdot 2) = 3 \cdot 27 = 81$
 
+**Tabla 1**: Caso Central de estimación
 | Descripción | Por noche | Cuatro noches |
 |---|---:|---:|
 | Capturas interiores | 52 | 208 |
@@ -71,6 +74,7 @@ Cálculo por noche:
 | Proporción de *Anopheles* ($p_a$) | 65 % | 65 % |
 | ***Anopheles* estimados** | **86** *(86.45)* | **346** *(345.8)* |
 
+---
 
 Establezcamos a continuación un rango, considerando casos de minima recolección y máxima recolección
 
@@ -85,6 +89,8 @@ Cálculo por noche:
 - Interior: $2 \cdot (4 \cdot 2 + 3 \cdot 1) = 2 \cdot 11 = 22$
 - Exterior: $3 \cdot (5 \cdot 2 + 3 \cdot 1) = 3 \cdot 13 = 39$
 
+
+**Tabla 2**: Caso Mínimo
 | Descripción | Por noche | Cuatro noches |
 |---|---:|---:|
 | Capturas interiores | 22 | 88 |
@@ -94,6 +100,9 @@ Cálculo por noche:
 | ***Anopheles* estimados** | **31** *(30.5)* | **122** *(122.0)* |
 
 *(Nota: si $p_a$ se mantuviera en 65 %, serían 40 *Anopheles* por noche y 159 en las 4 noches).*
+
+---
+
 
 Suponemos alta densidad poblacional, jornadas completas hasta medianoche ($T_{eff} = 6\text{ horas/noche}$), mayor captura intradomiciliaria por búsqueda de refugio ante lluvia ligera y alta dominancia de *Anopheles*:
 
@@ -106,6 +115,8 @@ Cálculo por noche:
 - Interior: $2 \cdot (8 \cdot 3 + 7 \cdot 3) = 2 \cdot 45 = 90$
 - Exterior: $3 \cdot (7 \cdot 3 + 4 \cdot 3) = 3 \cdot 33 = 99$
 
+
+**Tabla 3:** Caso de Maxima recolección
 | Descripción | Por noche | Cuatro noches |
 |---|---:|---:|
 | Capturas interiores | 90 | 360 |
@@ -116,8 +127,11 @@ Cálculo por noche:
 
 *(Nota: si $p_a$ se mantuviera en 65 %, serían 123 *Anopheles* por noche y 491 en las 4 noches).*
 
+---
+
 Obtengamos finalmente el rango estimado de mosquitos a obtener en la expedición de acuerdo a los supuestos y condiciones anteriormente establecidas.
 
+**Tabla 4**: Rangos Considerados
 
 | Escenario | Mosquitos totales / noche | Mosquitos totales (4 noches) | *Anopheles* estimados (4 noches) |
 |---|---:|---:|---:|
@@ -129,8 +143,11 @@ Obtengamos finalmente el rango estimado de mosquitos a obtener en la expedición
 
 Finalmente el estimado de mosquitos a recolectar durante las 4 noches sin tener el contexto de las recolecciones anteriores, se ubica en **532 mosquitos** y de estos, la idea es que alrededor de estos **346 sean de la especie Anopheles**.
 
-Respecto a la sensibilidad de lo anteriormente afirmado, que consideramos como el caso central, analizemos a continuación de forma aislada como afecta la variación de los 4 principales parámetros la cantidad de mosquitos recolectados, manteniendo los parámetros del caso central evaluado de manera fija.
+---
 
+Respecto a la sensibilidad de lo anteriormente afirmado, que consideramos como el caso central (*Tabla 1*), analizemos a continuación de forma aislada como afecta la variación de los 4 principales parámetros la cantidad de mosquitos recolectados, manteniendo los parámetros del caso central evaluado de manera fija.
+
+**Tabla 5**: Supuestos que mas aportan al cambio en el número de *Anopheles* recolectados
 
 | Supuesto evaluado (variando solo ese factor) | Rango evaluado | *Anopheles* en 4 noches |
 |---|---|---:|
