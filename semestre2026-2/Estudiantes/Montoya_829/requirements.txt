@@ -1,0 +1,14 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+scikit-learn>=1.4
+nbformat
+ipykernel
+fitter
+h5py
+tensorflow
+scikit-image
+openpyxl
+threadpoolctl
