@@ -1,0 +1,27 @@
+[
+  {
+    "ID": "P1",
+    "Area": "Datos faltantes",
+    "Pregunta": "\u00bfPor qu\u00e9 11 ping\u00fcinos sin sexo determinado?"
+  },
+  {
+    "ID": "P2",
+    "Area": "Control",
+    "Pregunta": "\u00bfAdelie en 3 islas: preferencia o muestreo?"
+  },
+  {
+    "ID": "P3",
+    "Area": "Biolog\u00eda",
+    "Pregunta": "\u00bfPor qu\u00e9 Gentoo 35% m\u00e1s pesada?"
+  },
+  {
+    "ID": "P4",
+    "Area": "Dimorfismo",
+    "Pregunta": "\u00bfBill_depth bimodal por sexo o especie?"
+  },
+  {
+    "ID": "P5",
+    "Area": "Alometr\u00eda",
+    "Pregunta": "\u00bfPendientes diferenciales por especie?"
+  }
+]

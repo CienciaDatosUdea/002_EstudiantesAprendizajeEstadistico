@@ -1,0 +1,26 @@
+{
+  "H1": {
+    "prueba": "Pearson",
+    "estadistico": 0.8712,
+    "p_valor": 4.37e-107,
+    "resultado": "APOYADA"
+  },
+  "H2": {
+    "prueba": "ANOVA",
+    "estadistico": 410.6003,
+    "p_valor": 2.69e-91,
+    "resultado": "APOYADA"
+  },
+  "H3": {
+    "prueba": "Chi-cuadrado",
+    "estadistico": 299.5503,
+    "p_valor": 1.35e-63,
+    "resultado": "APOYADA"
+  },
+  "H4": {
+    "prueba": "Pearson",
+    "estadistico": -0.5839,
+    "p_valor": 1.23e-32,
+    "resultado": "APOYADA"
+  }
+}

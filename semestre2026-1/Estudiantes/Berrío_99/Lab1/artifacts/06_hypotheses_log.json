@@ -1,0 +1,34 @@
+{
+  "H1": {
+    "texto": "flipper_length_mm se asocia con body_mass_g",
+    "tipo": "correlaci\u00f3n num\u00e9rica",
+    "evidencia": {
+      "r_pearson": 0.8712,
+      "p_valor": 4.37e-107
+    }
+  },
+  "H2": {
+    "texto": "bill_length_mm difiere por species",
+    "tipo": "diferencia categ\u00f3rica",
+    "evidencia": {
+      "F": 410.6003,
+      "p_valor": 2.69e-91
+    }
+  },
+  "H3": {
+    "texto": "species se asocia con island",
+    "tipo": "asociaci\u00f3n categ\u00f3rica",
+    "evidencia": {
+      "chi2": 299.5503,
+      "p_valor": 1.35e-63
+    }
+  },
+  "H4": {
+    "texto": "bill_depth_mm inversamente asociado con flipper_length_mm",
+    "tipo": "correlaci\u00f3n negativa",
+    "evidencia": {
+      "r_pearson": -0.5839,
+      "p_valor": 1.23e-32
+    }
+  }
+}
