@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte Final - Observatorio de Datos Pingüinos</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f6f9; color: #333; }
+        h1, h2 { color: #2c3e50; }
+        .card { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        img { max-width: 100%; height: auto; border-radius: 5px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Observatorio de Datos - Fase 2: Agente Reflexivo</h1>
+    
+    <div class="card">
+        <h2>1. Perfil de Datos (OBSERVE)</h2>
+        <p><strong>Filas:</strong> 344 | <strong>Columnas:</strong> 7</p>
+    </div>
+
+    <div class="card">
+        <h2>2. Visualización de Resultados</h2>
+        <img src="artifacts/fig_reflection_results.png" alt="Gráfica de Reflexión">
+    </div>
+
+    <div class="card">
+        <h2>3. Traza de Reflexión del Agente (Generador - Crítico - Revisor)</h2>
+        <pre>{
+    "experiment": "Reflective Analyst - Palmer Penguins",
+    "cycles": [
+        {
+            "iteration": 1,
+            "role_generator": {
+                "hypothesis": "Existe una correlación lineal negativa entre bill_length_mm y bill_depth_mm.",
+                "pearson_r": -0.235,
+                "p_value": 1e-05,
+                "conclusion": "A mayor longitud del pico, menor profundidad del mismo en la muestra global."
+            },
+            "role_critic": {
+                "objeciones": [
+                    "No se controló la variable categórica 'species' (Paradoja de Simpson)."
+                ],
+                "bloqueante": true
+            },
+            "role_reviser": {
+                "action": "Re-ejecutar análisis segmentando por la variable 'species'."
+            }
+        }
+    ]
+}</pre>
+    </div>
+
+    <div class="card">
+        <h2>4. Registro de Interacción Usuario-Agente</h2>
+        <pre>{
+    "agent_name": "reflexive-analyst",
+    "prompt_instructions": "Implementa reflexive_analyst.py: un agente de reflexión de tres roles sobre data/penguins.csv...",
+    "interaction_status": "SUCCESS",
+    "generated_artifacts": [
+        "reflexive_analyst.py",
+        "artifacts/06_reflection_log.json",
+        "artifacts/fig_reflection_results.png"
+    ]
+}</pre>
+    </div>
+</body>
+</html>
