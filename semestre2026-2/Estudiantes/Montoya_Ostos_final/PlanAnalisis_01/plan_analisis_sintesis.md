@@ -2,26 +2,20 @@
 
 Juan Montoya y Laura Ostos
 
-## De la Fermi al estudio
+## La idea y cómo la contrastamos
 
-Propusimos cuatro noches de noviembre en Cheté, dos en población y dos cerca de una mina, con cuatro recipientes pasivos durante 8–10 horas. Respondimos 3000 ± 800; el producto literal de 200 ± 50 por recipiente y noche es 3200 ± 800. Llevado a las 285 noches regionales del INS, el supuesto literal da 228 000 frente a 229 394 individuos en 1502 registros: apenas 0,61 % menos. Esa cercanía no mide la eficacia de los recipientes.
+La [Fermi original](../EstimacionFermi_00/estimacion_inicial.md) estimó **3000 ± 800** mosquitos para cuatro noches en Cheté. Propusimos noviembre o diciembre, cuatro frascos pasivos por noche y unas 8 horas: dos noches en población relativamente lejos de la mina y dos cerca. El plan concretó noviembre; 8–10 horas es una sensibilidad posterior. Contemplamos frascos claros y oscuros e interior/exterior. El producto literal de 200 ± 50 por frasco y noche da **3200 ± 800**. Los CDC [DPDx](https://www.cdc.gov/dpdx/malaria/index.html) y [Life Cycle](https://www.cdc.gov/mosquitoes/about/life-cycle-of-anopheles-mosquitoes.html) indican 50–200 huevos **por puesta**, no por día ni adultos por frasco. Un límite rígido de 200 no admitiría 250; sin ficha técnica no afirmamos esa capacidad, que tampoco sería una tasa.
 
-## Tres decisiones
+**Tres decisiones:** (1) observar la visita de una localidad, no cada noche; (2) estimar individuos por **96 h de colector humano**, equivalentes a cuatro noches del estudio, no a cuatro noches con frascos; (3) evaluar el error absoluto medio frente a la tasa histórica y a la última visita. La reserva de enero–marzo de 2023 se abrió para evaluar Poisson, no para seleccionar modelos en esta revisión. Los bosques fueron retrospectivos y no mejoraron consistentemente las referencias.
 
-- Observación: una localidad en un mes de campaña, agrupando sus puntos y especies. El ZIP agrupa noches; no podemos extraer cuatro días individuales ni suponer que una fila ausente equivale a cero.
-- Predicción: individuos por 96 horas de colector (cuatro noches del protocolo activo). Dividimos la suma de individuos por la suma de horas. Por evento usamos el máximo de noches declarado entre especies para no duplicar esfuerzo. La captura pasiva tiene un rendimiento desconocido.
-- Evaluación: comparamos el MAE en las mismas visitas posteriores con la tasa histórica y la última visita. Para el orden mensual, además comprobamos si anticipamos cuál de dos meses tuvo mayor cantidad a igual esfuerzo.
+## Las tres preguntas: revisión retrospectiva (solo desarrollo 2021–2022)
 
-## Qué cambia en Cheté
+1. **¿Qué factores se midieron?** Punto, calendario y esfuerzo permiten comparar tasas. El ZIP no separa interior/exterior ni mide color, señuelo, ácido láctico, CO₂, lluvia o exposición minera. La [hoja revisada](plan_analisis.md#hoja-de-campo-de-mosquitos) distingue horas efectivas, total, *Anopheles* confirmados o pendientes y fallos: cero no es un dato faltante. Antes se priorizó la lluvia; ahora se prioriza registrar **CO₂ ambiental en ppm y hora**, separado del señuelo, por ser una hipótesis de la Fermi no medida. No identifica gases mineros ni causas; la lluvia sigue siendo necesaria para comprobar la hipótesis de temporada.
+2. **¿Noviembre, diciembre y la noche?** Tasas por 96 h, en orden noviembre / diciembre / resto sin ambos / bimestre: **190,80 / 66,40 / 191,13 / 149,33** en 2021 y **360,00 / 124,50 / 232,92 / 242,25** en 2022. Diciembre quedó por debajo del resto ambos años; el bimestre no fue consistentemente mayor. El archivo no distingue tramos de la noche ni permite comparar día y noche.
+3. **¿Qué especies esperábamos y cuáles quedaron registradas?** La Fermi contemplaba *Aedes*, *Culex* y *Anopheles*; citó *An. darlingi* y *An. albimanus* a partir de [Wikipedia, fuente 2](https://es.wikipedia.org/wiki/Anopheles), como antecedente, no inventario. El archivo completo del [INS](https://doi.org/10.15472/kftrcn) tiene 1502 filas de hembras adultas de *An. neivai*, *An. albimanus* y *An. apicimacula*. No registra rasgos físicos ni demuestra ausencia de otros géneros. En noviembre y diciembre de ambos años, *An. albimanus* dominó en Cheté (1471/1529) y *An. neivai* en el panel de **21** localidades externas (38 059/41 678). El panel anterior de **24** compara solo los dos noviembres.
 
-Cheté en noviembre suma 1197 individuos en 432 horas: 2,77/h frente a 3,23/h en todo el ZIP, o 266 frente a 310 por 96 h (−14,3 %). No fijamos un umbral de equivalencia. Solo si un recipiente rindiera por hora lo mismo que una persona, el diseño pasivo daría 355–443. Al comparar los mismos noviembres, Cheté supera su tasa conjunta de los otros meses, pero queda por debajo del panel de 24 localidades externas en ambos años.
+**¿Se repite la diferencia entre puntos?** Chete1 superó a Chete2 en 18/19 visitas: diferencia pareada media de 252 por 96 h (IC 95 % aproximado: 172–347). Fuera de Cheté, el sentido persistió en 14/17 pares de 11 localidades con al menos tres meses comunes a ambos años; con cinco, el resultado fue el mismo. Con coordenadas únicas y distintas, persistió en 12/15 pares de nueve localidades. No son pares independientes ni estiman efectos mineros.
 
-En 19 visitas de desarrollo, Chete1 registró 3,44/h y Chete2 0,83/h. La diferencia emparejada media fue 252 por 96 h (IC 95 % aproximado: 172–347 con bloques de dos visitas). Los nombres de los puntos y el sombreado de la imagen no son categorías de exposición minera.
+## Qué cifra usar
 
-## Cuánto y cuándo
-
-El bosque regional usa todas las localidades. Para el focal ampliamos meses en Cheté (47,8 % de variación), no localidades de Timbiquí en noviembre (63,5 %). En 2022 ganó la tasa histórica; en enero–marzo de 2023, la última visita (MAE 44,83). La reserva se abrió para Poisson: la evaluación de los bosques es retrospectiva.
-
-En la región, la última tasa fue el predictor con mayor importancia media, seguido de la localidad. En Cheté no hubo un orden claro. No pudimos ordenar los factores de nuestra hoja: no se midieron o no se publicaron por separado.
-
-Al cierre de marzo de 2023, la referencia de Cheté da 200 por cuatro noches en cualquier mes. Para abril, el intervalo predictivo orientativo al 80 % es 45–354; a ocho meses no hay uno validado para noviembre. En 45 pares locales, el orden del bosque focal acertó un 60 %; el regional, 41 %; empatar siempre da 50 %. El ranking regional usa 27 etiquetas del ZIP frente a 25 localidades declaradas. Junio no tiene visitas ni puesto. Mantendríamos noviembre por comparabilidad.
+En noviembre, tres ponderaciones de Cheté dan **266,00; 246,35; 263,25** por 96 h frente a **310,32** en el ZIP completo (referencia histórica). El escenario pasivo de 355–443 supone igual rendimiento por hora de frasco y colector, algo no medido. El pronóstico histórico para el método humano es **200 por cuatro noches**: para abril, intervalo orientativo del 80 % de **45–354**; para noviembre no hay intervalo validado a ese horizonte.
