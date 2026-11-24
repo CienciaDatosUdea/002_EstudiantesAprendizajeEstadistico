@@ -10,7 +10,7 @@ Recolectores:
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-La hoja conserva cuatro frascos por noche: 1 y 2 oscuros, 3 y 4 claros. En población se contemplaban dos dentro de la vivienda y dos fuera. Cada fila corresponde a un frasco en una noche de unas 8 horas según la Fermi inicial; 8–10 horas es el rango de sensibilidad. Las horas efectivas son el tiempo observado de funcionamiento, no el previsto. Si hubo un fallo o se desconoce el resultado, se anota en «Estado/fallo» y no se imputa un cero. Un cero en el total indica que el frasco funcionó sin capturas; un cero en *Anopheles* indica que se completó la identificación y no se confirmó ninguno. Si falta identificar la muestra, se registra «pendiente». Para el CO₂ ambiental se anotan ppm y hora de lectura; si no se midió, se señala. El señuelo y el ácido láctico se registran por separado.
+La hoja conserva cuatro frascos por noche: 1 y 2 oscuros, 3 y 4 claros. En población se contemplaban dos dentro de la vivienda y dos fuera. Cada fila corresponde a un frasco en una noche de unas 8 horas según la Fermi inicial; 8–10 horas es el rango. Las horas efectivas son el tiempo observado de funcionamiento, no el previsto. Si hubo un fallo o se desconoce el resultado, se anota en «Estado/fallo» y no se imputa un cero. Un cero en el total indica que el frasco funcionó sin capturas; un cero en *Anopheles* indica que se completó la identificación y no se confirmó ninguno. Si falta identificar la muestra, se registra «pendiente». Para el CO₂ ambiental se anotan ppm y hora de lectura; si no se midió, se señala. El señuelo y el ácido láctico se registran por separado.
 
 **Noche 1: Población (relativamente lejos de la mina). Fecha:** __________
 
@@ -62,7 +62,11 @@ La hoja conserva cuatro frascos por noche: 1 y 2 oscuros, 3 y 4 claros. En pobla
 
 **¿Qué registró el estudio que ustedes no habían pensado, y qué echan de menos?**
 
-El estudio registró especie, sexo e identificador de muestra, detalles que no habíamos incluido en nuestra hoja. Véase el contraste entre lo que esperábamos y lo que registra el INS en [Especies y rasgos](#especies-y-rasgos).
+El estudio registró especie, sexo e identificador de muestra, que faltaban en la hoja inicial. Para completar las cuatro tablas sin repetir el esfuerzo por especie, vinculamos cada frasco y noche a una ficha de muestra. Las horas de instalación y retiro permiten revisar las horas efectivas; especie y sexo se completan al identificar la muestra. Véase [Especies y rasgos](#especies-y-rasgos).
+
+| Noche y frasco | ID de muestra | Hora de instalación | Hora de retiro | Especie y sexo, o pendiente |
+| --- | --- | --- | --- | --- |
+| | | | | |
 
 **¿Qué supuestos no se pueden comparar con la base de datos?**
 
@@ -74,7 +78,7 @@ Podemos seleccionar el género *Anopheles*, Cheté y noviembre, distinguir los d
 
 ![Tasas de Chete1 y Chete2 expresadas por 96 horas de colector](capturas_mensuales.png)
 
-La gráfica muestra variación entre visitas de Chete1 y Chete2. El eje vertical expresa individuos equivalentes a 96 horas de colector, no los conteos brutos. Los picos no demuestran un máximo repetido en septiembre ni confirman el supuesto de temporada lluviosa; para esto último faltan registros locales de precipitación.
+Esta gráfica del plan conserva la escala original por 96 horas de colector. El notebook y la presentación finales muestran las tasas por una hora: basta dividir por 96 para pasar de esta escala a la de la entrega. Ninguna de las dos es el conteo bruto. Los picos no demuestran un máximo repetido en septiembre ni confirman la temporada lluviosa; para esto último faltan registros locales de precipitación.
 
 ![Mapa de Cheté y ubicación de los puntos Chete1 y Chete2 señalados por el equipo](image.png)
 
@@ -90,7 +94,7 @@ Las tres preguntas de la Fermi se precisan en [Las preguntas que guían el traba
 En nuestra hoja, un recipiente durante una noche. En los datos publicados, una visita de una localidad en un mes de campaña, agrupando sus puntos y especies.
 
 **2\. Predicción:**  
-Se quiere predecir la cantidad de mosquitos capturados en cuatro noches en Cheté con el protocolo del estudio, equivalentes a 96 horas de colector. La conversión a nuestros recipientes pasivos depende de un rendimiento relativo que estos datos no miden.
+Predecimos la tasa de hembras adultas de *Anopheles* por hora de colector en Cheté. Para planificar cuatro noches del protocolo humano multiplicamos la tasa por 96 (2 personas × 12 horas × 4 noches). Para pasar a frascos pasivos habría que medir su rendimiento relativo, *q*.
 
 **3\. Funcionamiento:**   
 Comparar el error absoluto medio de las predicciones en las mismas visitas posteriores con la tasa histórica y la última visita de Cheté. Las comparaciones descriptivas entre lugares y meses se normalizan por esfuerzo y se presentan por separado.
@@ -110,11 +114,13 @@ Para construir el segundo ámbito nos planteamos las siguientes preguntas:
 
 **Modelo predictivo y revisión posterior**
 
-Primero se cerró el modelo de Poisson. Después se ensayaron dos bosques aleatorios de forma retrospectiva; no superaron de manera consistente las referencias sencillas. La [importancia por permutación en el notebook](../SintesisFinal_02/RetoMosquitos.ipynb#importancia-random-forest) mide cuánto cambia el error al mezclar las variables disponibles; no mide causalidad.
+Primero se cerró la regresión de Poisson en las 19 visitas de desarrollo de Cheté. Después se compararon retrospectivamente dos bosques de regresión, uno con 483 visitas regionales y otro con las 19 locales. No superaron consistentemente las dos reglas sencillas. En la entrega se expresan las predicciones y su MAE por hora; las cifras por 96 h del historial documentan el mismo cálculo en la escala inicial. La [importancia por permutación en el notebook](../SintesisFinal_02/RetoMosquitos.ipynb#importancia-random-forest) mide cuánto cambia el error al mezclar las variables disponibles; no mide causalidad.
 
 **Referencias**
 
 **[1]** Ahumada ML, Vargas-García N, Ballesteros J, Díaz-Herrera T, Cotazo K, Vargas E, Alvarez-Fernández N, Moreno C, Calderón N, Aguirre J, Lucumí D, Vargas E, Levine R, Lenhart A, Morales CA, Herrera-Varela M. (2021). Especies del género Anopheles (Diptera: Culicidae) asociadas al domicilio humano en 25 localidades de los municipios de Timbiquí, Guapi y Santa Bárbara ubicadas un área endémica para malaria al suroccidente de Colombia. v1.0. Instituto Nacional de Salud. Dataset/Occurrence. https://doi.org/10.15472/kftrcn
+
+La cita recomendada dentro del ZIP indica 2021; el mismo archivo de metadatos fecha la publicación el 21 de noviembre de 2023. El reto y la presentación citan esa publicación de 2023. Se trata de la misma versión 1.0 y el mismo DOI.
 
 **[2]** [Wikipedia: *Anopheles*](https://es.wikipedia.org/wiki/Anopheles). Antecedente consultado en la Fermi, no inventario local ni evidencia de un máximo en noviembre o diciembre.
 
@@ -204,6 +210,8 @@ El conjunto trata de Anopheles y malaria. No permite concluir sobre dengue, chik
 
 ## Cambios durante el trabajo
 
+Los apartados siguientes conservan decisiones y resultados de versiones anteriores, incluidas gráficas que se sustituyeron. Para la versión entregada, véanse la [síntesis del plan](plan_analisis_sintesis.md), el [notebook](../SintesisFinal_02/RetoMosquitos.ipynb) y la [presentación](../SintesisFinal_02/Presentacion.pdf).
+
 Después de revisar únicamente las visitas de desarrollo encontramos que el protocolo distingue interior y exterior, pero el archivo publicado no conserva esa separación. El campo de hábitat solo dice «En domicilio». Por eso sustituimos esa comparación por las tasas de los puntos Chete1 y Chete2 dentro de cada visita. Estos nombres no significan interior y exterior, ni población y mina.
 
 Una fila agrupa una especie y un evento. Sumaremos los individuos publicados por evento, tomaremos el máximo de noches declarado entre sus especies y mantendremos las horas de captura. Este máximo es una aproximación al esfuerzo del evento, no una reconstrucción garantizada de todas las noches sin capturas. En enero de 2021 el esfuerzo varía entre especies; comprobaremos el resultado excluyendo las dos visitas iniciales de catorce horas.
@@ -292,13 +300,15 @@ Para comparar especies, el panel incluye **21 localidades externas** con registr
 
 ### Diferencias entre puntos y sensibilidad a la ponderación
 
-Chete1 tuvo una tasa mayor que Chete2 en **18 de 19** visitas de desarrollo. La diferencia pareada media fue de aproximadamente **252** individuos por 96 h (IC 95 % aproximado **172–347**, remuestreo en bloques de dos visitas). El contraste es entre puntos publicados, no entre mina y población.
+Chete1 tuvo una tasa mayor que Chete2 en **18 de 19** visitas de desarrollo. En la figura final, la diferencia pareada media es de 2,62 individuos por hora de colector (IC del 95 % aproximado: 1,79–3,62; remuestreo en bloques de dos visitas). Equivale a unos 252 por 96 h (172–347). El contraste es entre puntos publicados, no entre mina y población.
 
 **Nueva pregunta propia:** ¿persiste el sentido de las diferencias entre puntos de otras localidades en los meses de calendario comunes a ambos años? Para cada par de códigos de una misma localidad, se calcula la diferencia mensual de tasas solo en los meses observados en ambos puntos y ambos años. Se compara el signo de la mediana de esas diferencias en 2021 con el de 2022. Con al menos tres meses comunes, **14 de 17 pares** en **11 localidades externas** conservaron el sentido. Exigir cinco meses no cambió la muestra. Al limitar a códigos con coordenadas únicas y distintas verificadas, lo conservaron **12 de 15 pares**, en **9 localidades**. Los pares pueden compartir puntos, meses o localidades: no son réplicas independientes ni estiman efectos de minería.
 
 La tasa de noviembre en Cheté es **266,00** agrupando por esfuerzo, **246,35** dando igual peso a ambos puntos y **263,25** dando igual peso a cada punto y año. Los tres valores quedan por debajo de **310,32**, la referencia descriptiva fija del ZIP completo establecida en el análisis anterior. No es un intervalo, no valida la equivalencia entre métodos ni identifica los sectores de la hoja.
 
 ## Uso de IA y entrega
+
+Para la campaña de abril de 2023, la referencia calculada al cierre de marzo fue 2,08 *Anopheles* por hora de colector, con margen orientativo de 0,47 a 3,69 por hora. Equivale a unos 200 en 96 horas (45–354). El último registro de Cheté es de marzo: abril es un pronóstico sin observación para contrastarlo. En una próxima campaña compararíamos el rendimiento horario de frascos y colectores para estimar *q*, además de registrar CO₂ ambiental y lluvia con fecha.
 
 La IA ayudó a organizar este plan a partir de nuestras ideas, a distinguir captura por noche de esfuerzo y a proponer una evaluación temporal. El código, las figuras y las cifras estarán en un único notebook que se pueda ejecutar completo con el archivo original. La síntesis del plan y la presentación serán documentos breves de apoyo.
 
