@@ -13,32 +13,33 @@ Nuestra estimación de Fermi, realizada sin consultar los datos históricos, fue
 
 ## Tres decisiones fundamentales
 
-- **Observación:** partimos de un registro de captura con información de fecha, lugar, especie y cantidad de individuos. Para comparar capturas, agruparemos por jornada o campaña y tendremos en cuenta el esfuerzo de muestreo disponible. Un registro de ocurrencia no siempre representa un solo mosquito.
-- **Qué predeciremos:** el número de *Anopheles* en cuatro noches en Cheté bajo condiciones de muestreo comparables. Si los registros no permiten reconstruir campañas equivalentes, informaremos esa limitación y consideraremos una estimación por jornada o por unidad de esfuerzo.
-- **Cómo sabremos si funciona:** compararemos los valores estimados con los observados mediante **MAE** (y, de ser útil, RMSE); contrastaremos con el promedio histórico y con la estimación de Fermi revisada. Reservaremos las campañas más recientes para una evaluación final, respetando el orden temporal y manteniendo agrupadas las observaciones relacionadas.
+- **Observación:** cada registro es una especie en una casa durante una campaña mensual y acumula varias noches. Usamos la **visita** (casa × mes) y, para el modelo, la **campaña** de Cheté (sus dos casas sumadas). La captura se mide como ***Anopheles* por casa-hora** (individuos / [noches × horas]), suponiendo un colector por casa.
+- **Qué predeciremos:** el número de *Anopheles* en cuatro noches en Cheté con nuestro diseño (5 colectores × 5 h × 4 noches = 100 colector-horas). Usaremos una **regresión lineal sin intercepto**, $\hat N = \beta \times \text{colector-horas}$, basada en **H1: la captura es proporcional al esfuerzo**. Es la estimación de Fermi con la tasa calibrada con datos.
+- **Cómo sabremos si funciona:** mediremos el **MAE** frente a Fermi original (tasa de 3,46 por colector-hora). Haremos una validación temporal (cada campaña se predice solo con las anteriores) y reservaremos las 4 campañas más recientes para la evaluación final.
 
 ## Fuentes y alcance
 
-Trabajaremos principalmente con los registros Darwin Core del INS (`occurrence.txt`) para Cheté. Usaremos otras localidades de Timbiquí para comparaciones exploratorias, sin mezclarlas automáticamente. Complementaremos con precipitación de DHIME-IDEAM (`dhime_mensual.csv` y `dhime_diario.csv`) y con nuestra propuesta de hoja de campo (`hoja_de_campo.md`).
+Trabajaremos principalmente con los registros Darwin Core del INS (`occurrence.txt`) para Cheté, dentro de Guapi y Timbiquí; los registros de Santa Bárbara (Nariño) se descartan. Compararemos Cheté con las localidades vecinas de la ribera del río Timbiquí (Coteje, Velásquez y San Miguel del Río) sin mezclarlas automáticamente. Complementaremos con precipitación de DHIME-IDEAM (`dhime_mensual.csv` y `dhime_diario.csv`) y con nuestra propuesta de hoja de campo (`hoja_de_campo.md`). El análisis está en `EDA.ipynb` y el modelo en `model.ipynb`.
 
 ## Preguntas principales del EDA
 
 1. ¿Cómo se distribuyen los registros por fecha, localidad y especie?
 2. ¿Qué calidad tienen los datos: fechas, coordenadas, duplicados, conteos y esfuerzo de muestreo?
-3. ¿Cómo varían las capturas entre meses y jornadas, considerando el esfuerzo disponible?
-4. ¿Qué patrones aparecen al comparar la precipitación y las capturas?
-5. ¿Cómo se comparan las agrupaciones exploratorias de cuatro jornadas en Cheté con los **346 *Anopheles*** previstos en Fermi?
+3. ¿Cómo varía la tasa de captura (*Anopheles* por casa-hora) entre meses y campañas?
+4. ¿Se correlaciona la lluvia (durante la campaña, 14 y 30 días antes) con la cantidad de mosquitos, el esfuerzo y la tasa de captura?
+5. ¿La captura es proporcional al esfuerzo (H1)? ¿Cómo se compara la tasa observada en Cheté con la implícita en los **346 *Anopheles*** de Fermi?
+6. ¿Las localidades vecinas de la ribera del río Timbiquí son equivalentes a Cheté en tasa y en especies?
 
 ## Herramientas propuestas
 
-Usaremos tablas, gráficas y medidas de dispersión en el EDA; **bootstrap** para expresar incertidumbre, siempre agrupando unidades de muestreo comparables; y, si la cantidad y calidad de campañas lo permiten, **una regresión sencilla** para la predicción. Las variables deberán estar disponibles **antes** de la campaña que se busca predecir.
+Usaremos tablas, gráficas, medidas de dispersión y correlación de Spearman en el EDA. Para expresar la incertidumbre usaremos **bootstrap de campañas completas**: IC 95 % de la tasa y del valor esperado, y rango del 80 % de una campaña nueva. Para la predicción, **una regresión lineal sin intercepto** sobre el esfuerzo, la única variable que se conoce **antes** de la campaña. La precipitación queda fuera del modelo porque su relación con la tasa fue débil.
 
 ## Alcances y precauciones
 
-- Las agrupaciones de cuatro fechas de `EDA.ipynb` **no son necesariamente campañas reales consecutivas**.
-- Debemos verificar qué significa `individualCount` y no asumir que un valor faltante equivale a un mosquito.
-- Un día registrado no equivale automáticamente a una jornada completa ni a una cantidad fija de horas-colector.
-- Los registros no permiten, por sí solos, determinar diferencias interior/exterior ni explicar características particulares de las viviendas si esas variables no están documentadas.
+- Descartamos las agrupaciones de cuatro fechas: mezclaban localidades y periodos de varios meses. Las noches de una campaña no siempre son consecutivas.
+- Debemos verificar qué significa `individualCount` y no asumir que un valor faltante equivale a un mosquito. Solo hay registros cuando hubo capturas, así que no se ven visitas con cero individuos.
+- Un día registrado no equivale automáticamente a una jornada completa ni a una cantidad fija de horas-colector. Suponemos un colector por casa, y la tasa medida con ~12 h por noche se aplica a las 5 h de nuestro diseño.
+- Los registros no permiten, por sí solos, determinar diferencias interior/exterior: todas las capturas históricas son dentro de la vivienda. Cheté tiene solo 2 casas y 22 campañas, y las casas difieren mucho entre sí.
 - Las precipitaciones de estaciones externas pueden diferir de la lluvia efectiva en Cheté; una asociación con capturas no demuestra causalidad.
 
-**Producto esperado:** una comparación razonada entre Fermi y los datos históricos, una estimación acompañada de incertidumbre y, si se implementa el modelo, una evaluación temporal honesta. Registraremos cualquier cambio de decisiones en el plan completo.
+**Producto esperado:** una comparación razonada entre Fermi y los datos históricos (por tasa horaria), una estimación de la próxima campaña acompañada de incertidumbre y una evaluación temporal honesta del modelo frente a Fermi original. Los cambios de decisiones quedan registrados en el plan completo (`plan_analisis.md`).
