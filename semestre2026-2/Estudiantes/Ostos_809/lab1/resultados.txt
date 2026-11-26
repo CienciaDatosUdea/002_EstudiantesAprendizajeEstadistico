@@ -1,0 +1,178 @@
+Filas y Columnas:
+hay 344 Filas y hay 7 columnas
+
+Tipos de Valores:
+Las variables categoricas aparecen como object y las numericas con float64
+species               object
+island                object
+bill_length_mm       float64
+bill_depth_mm        float64
+flipper_length_mm    float64
+body_mass_g          float64
+sex                   object
+dtype: object
+
+Valores faltantes:
+species               0
+island                0
+bill_length_mm        2
+bill_depth_mm         2
+flipper_length_mm     2
+body_mass_g           2
+sex                  11
+dtype: int64
+
+Filas duplicadas:
+ Hay 0 filas duplicadas
+
+Cardinalidad:
+species                3
+island                 3
+bill_length_mm       164
+bill_depth_mm         80
+flipper_length_mm     55
+body_mass_g           94
+sex                    2
+dtype: int64
+
+Variables numericas:Estadisticos descriptivos
+
+Variable: bill_length_mm
+Media: 43.9219298245614
+Mediana: 44.45
+Desviacion estandar: 5.4595837139265315
+Rango intercuartilico: 9.274999999999999
+
+Variable: bill_depth_mm
+Media: 17.151169590643278
+Mediana: 17.3
+Desviacion estandar: 1.9747931568167816
+Rango intercuartilico: 3.0999999999999996
+
+Variable: flipper_length_mm
+Media: 200.91520467836258
+Mediana: 197.0
+Desviacion estandar: 14.061713679356888
+Rango intercuartilico: 23.0
+
+Variable: body_mass_g
+Media: 4201.754385964912
+Mediana: 4050.0
+Desviacion estandar: 801.9545356980956
+Rango intercuartilico: 1200.0
+
+Variables categoricas: conteos y porcentajes
+           Conteo  porcentaje
+species                      
+Adelie        152   44.186047
+Gentoo        124   36.046512
+Chinstrap      68   19.767442
+           Conteo  porcentaje
+island                       
+Biscoe        168   48.837209
+Dream         124   36.046512
+Torgersen      52   15.116279
+        Conteo  porcentaje
+sex                       
+MALE       168    50.45045
+FEMALE     165    49.54955
+
+Tablas cruzadas
+tabla cruzada entre species y sex
+sex        FEMALE  MALE
+species                
+Adelie         73    73
+Chinstrap      34    34
+Gentoo         58    61
+
+tabla cruzada entre species y island
+island     Biscoe  Dream  Torgersen
+species                            
+Adelie         44     56         52
+Chinstrap       0     68          0
+Gentoo        124      0          0
+
+tabla cruzada entre sex y island
+sex        FEMALE  MALE
+island                 
+Biscoe         80    83
+Dream          61    62
+Torgersen      24    23
+
+Matrices de correlacion
+Matriz de correlacion de Pearson
+                   bill_length_mm  ...  body_mass_g
+bill_length_mm           1.000000  ...     0.595110
+bill_depth_mm           -0.235053  ...    -0.471916
+flipper_length_mm        0.656181  ...     0.871202
+body_mass_g              0.595110  ...     1.000000
+
+[4 rows x 4 columns]
+
+Matriz de correlacion de Spearman
+                   bill_length_mm  ...  body_mass_g
+bill_length_mm           1.000000  ...     0.583800
+bill_depth_mm           -0.221749  ...    -0.432372
+flipper_length_mm        0.672772  ...     0.839974
+body_mass_g              0.583800  ...     1.000000
+
+[4 rows x 4 columns]
+
+Graficos de conteo de variables categoricas
+
+Histogramas de varaibles numericas
+
+Boxplots: longitud del pico según especie
+
+Scatter entre variables numericas
+
+Heatmap de correlacion
+
+Hipotesis Falsables
+
+1. H0: La longitud de la aleta y la masa corporal de los penguinos son independientes.
+   H1: Existe una asociacion entre la longitud de la aleta y la masa corporal.
+
+2. H0: No existe diferencias significativas en la longitud del pico entre las especies.
+   H1: Existe diferencias significativas en la longitud del pico entre las especies.
+
+3. H0: La especie y la isla son independientes.
+   H1: Existe una asociacion entre la especie y la isla.
+
+Pruebas Estadisticas
+
+Hipotesis 1: Pearson
+Coeficiente de correlacion de Pearson:  0.8712017673060114
+Valor p:  4.3706809630004724e-107
+
+Hipotesis 1: Spearman
+Coeficiente de correlacion de Spearman:  0.8399741230312999
+Valor p:  2.7632189971796422e-92
+
+Hipotesis 2: ANOVA
+Estadistico F:  410.6002550405077
+Valor p:  2.6946137388895484e-91
+
+Hipotesis 3: Chi-cuadrado
+Estadistico Chi-cuadrado:  299.55032743148195
+Grados de libertad:  4
+p-valor:  1.3545738297192517e-63
+
+ Frecuencias esperadas: 
+ [[74.23255814 54.79069767 22.97674419]
+ [33.20930233 24.51162791 10.27906977]
+ [60.55813953 44.69767442 18.74418605]]
+
+Hipotesis 1 (Pearson): Se rechaza H0, existe una asociacion entre la longitud de la aleta y la masa corporal.
+
+Hipotesis 2 (ANOVA): Se rechaza H0, existe diferencias significativas en la longitud del pico entre las especies.
+
+Hipotesis 3 (Chi-cuadrado): Se rechaza H0, existe una asociacion entre la especie y la isla.
+
+Tabla de Pruebas:
+                          Hipótesis        Prueba  Estadístico        p-valor
+0  flipper_length_mm vs body_mass_g       Pearson     0.871202  4.370681e-107
+1      bill_length_mm según species         ANOVA   410.600255   2.694614e-91
+2                 species vs island  Chi-cuadrado   299.550327   1.354574e-63
+
+Conclusiones y Reporte Final
