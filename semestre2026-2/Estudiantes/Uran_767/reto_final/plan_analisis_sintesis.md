@@ -1,0 +1,27 @@
+# Síntesis del plan de análisis
+
+Queremos estimar cuántos mosquitos del género *Anopheles* podría traer el equipo después de cuatro noches de captura en Cheté. Esta cifra nos ayudaría a decidir cuántos frascos llevar y cuánto tiempo reservar en el laboratorio. Para llegar a ella, partimos de nuestra estimación de Fermi, revisamos cómo se hicieron las capturas y comparamos nuestras predicciones con lo que ocurrió en visitas posteriores.
+
+## De la hoja de campo a los registros reales
+
+En la estimación de Fermi imaginamos tres puestos interiores y tres exteriores, trabajando seis horas por noche. Si en cada puesto interior se capturaban dos mosquitos por hora y en cada exterior uno, esperábamos **216 mosquitos en cuatro noches**. Por eso, en nuestra hoja de campo anotaríamos la fecha, la vivienda, el puesto, las horas efectivas de trabajo y, por cada mosquito, la hora de captura, el sexo y la especie. También registraríamos las pausas por lluvia y los puestos donde se trabajó sin capturar mosquitos. Así podríamos distinguir una noche con cero capturas de una noche en la que el puesto estuvo cerrado.
+
+Al revisar los datos reales, vimos que una fila podía reunir varios mosquitos de una misma especie y que una visita podía aparecer en varias filas. Por eso definimos **una observación como una visita de muestreo a una sublocalidad**. Trabajamos con Cheté 1 y Cheté 2 porque allí se hará la próxima campaña. Al agrupar los 77 registros por visita obtuvimos **44 eventos y 7.418 mosquitos**. Para cada evento sumamos las capturas de sus especies y contamos las horas de trabajo una sola vez. Esta revisión también nos permitió ubicar en 2023 un registro de 349 mosquitos que venía sin fecha, pues otra especie capturada en la misma visita sí tenía el año anotado.
+
+## Qué aprendimos de las capturas
+
+En Cheté 1 se registraron 6.047 mosquitos y en Cheté 2 se registraron 1.371. Al ver esa diferencia, nos preguntamos si en Cheté 1 también se capturaban más mosquitos **por hora trabajada**. Elegimos *Anopheles albimanus*, la especie más frecuente, y comparamos los meses con registros en ambos sitios. Cheté 1 tuvo una tasa mayor en **20 de los 21 meses comparables**. La prueba de Wilcoxon para meses emparejados dio $p < 0{,}001$. Esto nos llevó a conservar de Fermi la idea de relacionar las capturas con las horas y a distinguir las dos sublocalidades para la predicción. También revisamos el supuesto de seis horas por noche, pues encontramos jornadas de doce horas. La diferencia que habíamos supuesto entre puestos interiores y exteriores quedó sin comprobar con los registros disponibles.
+
+## Qué vamos a predecir y cómo evaluamos el modelo
+
+Decidimos predecir **el total de mosquitos entre ambos sitios para una campaña de cuatro noches, con doce horas de trabajo por noche en cada uno**. Para nosotros, una buena predicción debía equivocarse, en promedio, por menos mosquitos por evento que una cuenta sencilla basada en las campañas anteriores. Como referencia usamos una tasa de captura por hora común para ambos sitios. Luego probamos una regresión de Poisson para estimar una tasa propia de cada sublocalidad y una regresión binomial negativa para tener en cuenta cuánto varían las capturas entre visitas.
+
+Usamos 2021 para ajustar los modelos y 2022 para compararlos. Elegimos Poisson porque tuvo el menor error promedio: **73,42 mosquitos por evento**, frente a 78,44 de la binomial negativa y 128,35 de la referencia. Después ajustamos el modelo elegido con 2021 y 2022 y lo evaluamos en los seis eventos de 2023. Allí el error fue de **66,59 mosquitos por evento**, frente a 111,75 de la referencia. Aun así, el modelo esperaba cerca de 1.230 capturas en las seis visitas y se observaron 878. Estos eventos quedaron fuera del ajuste, aunque sus conteos sí aparecieron en la exploración inicial. También queda pendiente evaluar una estimación de Fermi revisada de manera independiente.
+
+## Predicción para la próxima campaña
+
+Para 48 horas de muestreo por sitio esperamos **unas 330 capturas en Cheté 1 y 80 en Cheté 2, para un total de 410 mosquitos**. Para saber cuánto podría variar ese total, simulamos 10.000 campañas con la variación estimada mediante la binomial negativa. El 90 % central de los totales simulados quedó **entre 127 y 841 mosquitos**. Consideramos que el modelo le sirve al equipo para preparar los materiales y decidir en qué sitio disponer de más frascos. Tomaríamos las 410 capturas como base y llevaríamos material de reserva, porque incluso en visitas de igual duración los conteos cambiaron bastante.
+
+## Lo que nos preguntamos en campo
+
+Al encontrar tantas capturas en Cheté 1, nos surgió otra pregunta: **si escogiéramos al azar un mosquito capturado en cada sitio, ¿dónde sería más frecuente encontrar una especie distinta de *An. albimanus*?** En Cheté 1 encontramos 83 mosquitos de otras especies entre 6.047 capturas, mientras que en Cheté 2 fueron 48 entre 1.371. Esto corresponde al **1,37 % en Cheté 1 y al 3,50 % en Cheté 2**. En ambos sitios aparecieron las mismas tres especies, pero en Cheté 2 fue aproximadamente 2,6 veces más frecuente encontrar una distinta de *An. albimanus*, principalmente por la mayor proporción de *An. neivai*.
